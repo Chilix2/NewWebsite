@@ -1,0 +1,1239 @@
+{
+  "nav": {
+    "product": {
+      "title": "产品",
+      "items": {
+        "voice_agent": "Sailly Voice Agent",
+        "integrations": "系统集成",
+        "data_insights": "数据与洞察",
+        "security": "安全与合规",
+        "languages": "语言",
+        "partners": "战略合作伙伴"
+      }
+    },
+    "solutions": {
+      "title": "解决方案",
+      "items": {
+        "hotels": "酒店业",
+        "medical": "医疗诊所",
+        "restaurants": "餐饮业",
+        "services": "服务商与中小企业"
+      }
+    },
+    "resources": {
+      "title": "资源",
+      "items": {
+        "blog": "博客",
+        "case_studies": "案例研究",
+        "faq": "常见问题",
+        "help": "帮助中心"
+      }
+    },
+    "company": {
+      "title": "公司",
+      "items": {
+        "about": "关于我们",
+        "contact": "联系我们"
+      }
+    },
+    "pricing": "价格",
+    "demo": "申请演示"
+  },
+  "hero": {
+    "eyebrow": "您的团队服务客人，Sailly 打理办公。",
+    "title": "为您的团队减负的数字助手。",
+    "subtitle": "Sailly 接听电话、预约安排、回答问题——全天候无休。让您的员工重新专注于最重要的事：您的客户。",
+    "primary_cta": "申请演示",
+    "secondary_cta": "了解更多",
+    "badges": {
+      "gdpr": "符合GDPR标准",
+      "availability": "24/7 全天候",
+      "setup": "4周内上线"
+    },
+    "stats": {
+      "title": "我们合作伙伴的成果",
+      "items": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "员工满意度更高"
+        },
+        "containment": {
+          "value": "90%+",
+          "label": "常规咨询自动化处理"
+        },
+        "reduction": {
+          "value": "24/7",
+          "label": "客户可达性"
+        }
+      }
+    }
+  },
+  "problems": {
+    "badge": "挑战",
+    "title": "当电话打断了工作",
+    "subtitle": "在日常工作中，往往没时间接电话。这给团队带来压力，也让来电者感到沮丧。",
+    "cards": {
+      "missed": {
+        "title": "流失的订单",
+        "desc": "30%的来电无人接听，因为当时没有人能腾出手。这意味着白白丢掉的收入。"
+      },
+      "stress": {
+        "title": "疲惫的团队",
+        "desc": "不断的铃声打断员工的专注力或正在进行的现场服务。"
+      },
+      "cost": {
+        "title": "高昂的行政成本",
+        "desc": "关于价格或预约的常规咨询占用了专业人员的宝贵工作时间。"
+      }
+    }
+  },
+  "value_props": {
+    "badge": "为什么选择 Sailly",
+    "title": "远不止是一台答录机",
+    "subtitle": "Sailly 是一位智能的团队伙伴，能无缝融入您的运营。",
+    "cards": {
+      "human_like": {
+        "title": "有温度、自然流畅",
+        "desc": "听起来像真人，能理解方言，与您的客户进行愉快的对话。"
+      },
+      "always_on": {
+        "title": "随时为您待命",
+        "desc": "即使在下班后或您忙得不可开交时，也能接听来电。"
+      },
+      "instant_scale": {
+        "title": "无需等待",
+        "desc": "可同时接听数百通电话。完美应对周一早晨的高峰时段。"
+      },
+      "perfect_memory": {
+        "title": "可靠且精准",
+        "desc": "直接在您的日历中记录预约，始终提供准确的价格信息。"
+      },
+      "multilingual": {
+        "title": "支持30多种语言",
+        "desc": "用母语欢迎国际客人，消除语言障碍。"
+      },
+      "integration": {
+        "title": "团队协作者",
+        "desc": "与您现有的系统（日历、PMS、预订工具）无缝协作。"
+      }
+    }
+  },
+  "solutions": {
+    "badge": "解决方案",
+    "title": "Sailly 接管电话",
+    "subtitle": "您的智能语音助手，提供专业客户服务。",
+    "cards": {
+      "availability": {
+        "title": "100%可达性",
+        "desc": "没有忙音，没有等待。Sailly 立即接听——即使在夜间和周末。"
+      },
+      "appointments": {
+        "title": "智能预约",
+        "desc": "实时查询可用时间、预约并发送确认——全自动完成。"
+      },
+      "answers": {
+        "title": "精准的回答",
+        "desc": "基于最新数据，回答关于价格、服务和可用性的复杂问题。"
+      }
+    }
+  },
+  "roi_section": {
+    "badge": "投资回报",
+    "title": "从第一天起即可衡量的价值",
+    "subtitle": "通过最佳可达性，实现更高收入和更幸福的员工。",
+    "benefits": [
+      {
+        "title": "更高收入",
+        "desc": "不再错过任何来电。通过24/7全天候服务，预约和预订增加15-25%。",
+        "icon": "trending-up"
+      },
+      {
+        "title": "更高效的团队",
+        "desc": "您的专业人员每天节省2-3小时的电话时间，可以专注于服务客户。",
+        "icon": "zap"
+      },
+      {
+        "title": "满意的客户",
+        "desc": "无需等待即可获得即时回复。您的客户感受到被重视和关怀。",
+        "icon": "heart"
+      },
+      {
+        "title": "降低成本",
+        "desc": "避免昂贵的加班或外包呼叫中心。Sailly 无额外成本即可扩展。",
+        "icon": "euro"
+      }
+    ]
+  },
+  "security_trust": {
+    "badge": "安全与信任",
+    "title": "符合德国企业的最高标准",
+    "subtitle": "Sailly 满足所有德国和欧洲数据保护法规。",
+    "features": [
+      {
+        "title": "符合GDPR标准",
+        "desc": "完全遵守《通用数据保护条例》，数据存储在德国服务器。"
+      },
+      {
+        "title": "ISO 27001认证",
+        "desc": "信息管理系统的国际安全标准。"
+      },
+      {
+        "title": "端到端加密",
+        "desc": "所有通话和数据在传输和存储过程中均经过加密。"
+      },
+      {
+        "title": "德国服务器",
+        "desc": "所有数据保留在德国，受德国数据保护法管辖。"
+      }
+    ]
+  },
+  "industries": {
+    "hotels": {
+      "hero": {
+        "title": "您的数字礼宾，打造轻松的接待体验。",
+        "subtitle": "用AI助手支持您的前台团队，接听电话、管理预订、回答客人问题——24/7，友好且专业。",
+        "cta": "观看酒店演示"
+      },
+      "challenges": {
+        "title": "为前台减负",
+        "items": [
+          {
+            "title": "专注于客人",
+            "desc": "电话一响，前台服务就受影响。Sailly 为您撑起后方，让您专心提供个性化服务。"
+          },
+          {
+            "title": "弥补人手不足",
+            "desc": "优秀员工难觅。为您的团队提供数字化支持，处理常规咨询。"
+          },
+          {
+            "title": "国际客人",
+            "desc": "消除语言障碍。Sailly 用30多种语言流利地为您的客人提供服务。"
+          }
+        ]
+      },
+      "audio_samples": {
+        "title": "听听有何不同",
+        "subtitle": "Sailly 就是这样自然地为您的团队减负。",
+        "samples": [
+          {
+            "label": "客房预订",
+            "desc": "友好的预订，无需等待。"
+          },
+          {
+            "label": "客人咨询",
+            "desc": "关于早餐时间和停车场的信息。"
+          }
+        ]
+      },
+      "benefits": {
+        "title": "更多时间用于待客之道",
+        "items": [
+          {
+            "title": "直连PMS系统",
+            "desc": "与Oracle、Sihot等系统无缝对接，实现自动录入。"
+          },
+          {
+            "title": "24/7礼宾服务",
+            "desc": "无论是延迟退房还是换枕头——Sailly 随时为您的客人服务。"
+          },
+          {
+            "title": "可达即收入",
+            "desc": "不再因为占线而错失预订。"
+          }
+        ]
+      },
+      "tab_title": "Sailly – 不错过任何预订。您的客人得到应有的关注。"
+    },
+    "restaurants": {
+      "hero": {
+        "title": "更多时间给客人，更少时间在电话上。",
+        "subtitle": "让 Sailly 处理预订，而您做最完美的东道主。餐厅里不再有铃声，不再有爽约。",
+        "cta": "观看餐厅演示"
+      },
+      "challenges": {
+        "title": "座无虚席，没有电话压力",
+        "items": [
+          {
+            "title": "完美的东道主",
+            "desc": "没有什么比响铃更打扰服务了。全身心投入到餐桌旁的客人中去。"
+          },
+          {
+            "title": "可靠的预订",
+            "desc": "告别纸质记录和餐桌分配的误解。"
+          },
+          {
+            "title": "噪音与忙碌",
+            "desc": "高峰期接电话很困难。Sailly 始终能清晰理解您的客人。"
+          }
+        ]
+      },
+      "benefits": {
+        "title": "您的隐形餐厅经理",
+        "items": [
+          {
+            "title": "智能订座",
+            "desc": "连接OpenTable、Resmio等系统，自动完成餐桌预订。"
+          },
+          {
+            "title": "减少爽约",
+            "desc": "发送提醒和确认，确保预订的餐桌不会空置。"
+          },
+          {
+            "title": "过敏原与菜单咨询",
+            "desc": "专业、可靠地回答关于食材成分和每日特色菜的问题。"
+          }
+        ]
+      },
+      "tab_title": "Sailly – 不错过任何餐厅预订。您留在餐厅大厅。"
+    },
+    "medical": {
+      "hero": {
+        "title": "您诊所的数字医疗助理。",
+        "subtitle": "确保患者随时能联系到您，为医疗团队减负。预约挂号和处方申请——贴心且符合数据保护规定。",
+        "cta": "观看诊所演示"
+      },
+      "challenges": {
+        "title": "更多时间给患者",
+        "items": [
+          {
+            "title": "专注于诊疗",
+            "desc": "您的医疗助理应该服务于诊所里的患者。现在由 Sailly 来接电话。"
+          },
+          {
+            "title": "永不占线",
+            "desc": "患者随时可以联系到您——预约、处方或紧急分诊。"
+          },
+          {
+            "title": "数据保护优先",
+            "desc": "敏感的健康数据始终安全。符合GDPR标准，数据存储在德国服务器。"
+          }
+        ]
+      },
+      "benefits": {
+        "title": "为诊所团队减负",
+        "items": [
+          {
+            "title": "智能预约",
+            "desc": "连接Doctolib、Jameda和诊所日历，直接完成预约安排。"
+          },
+          {
+            "title": "处方电话2.0",
+            "desc": "结构化接收处方请求，并为签字做好准备。"
+          },
+          {
+            "title": "紧急识别",
+            "desc": "筛选紧急事务并立即转接给医疗人员。"
+          }
+        ]
+      },
+      "tab_title": "Sailly – 不错过任何患者。您的团队专注于护理。"
+    },
+    "services": {
+      "hero": {
+        "title": "师傅在工作，助手管办公。",
+        "subtitle": "无论是手工作坊、工作室还是维修店：专注于您的手艺。Sailly 负责预约、报价和客户咨询。",
+        "cta": "观看中小企业演示"
+      },
+      "challenges": {
+        "title": "专注于您的手艺",
+        "items": [
+          {
+            "title": "专心工作",
+            "desc": "纹身或维修时无法接电话。Sailly 为您守住后方。"
+          },
+          {
+            "title": "不漏掉任何订单",
+            "desc": "每个未接来电都是错失的收入。即使您正忙，也能抓住每个商机。"
+          },
+          {
+            "title": "专业形象",
+            "desc": "即使您正在梯子上，也能以即时可达性打动客户。"
+          }
+        ]
+      },
+      "benefits": {
+        "title": "您的虚拟前台",
+        "items": [
+          {
+            "title": "预约协调",
+            "desc": "直接在您的日历中安排客户预约，无需放下手中的锤子。"
+          },
+          {
+            "title": "报价与咨询",
+            "desc": "提前专业地回答关于价格、路线和服务的常见问题。"
+          },
+          {
+            "title": "状态更新",
+            "desc": "自动通知客户维修或订单的进度。"
+          }
+        ]
+      },
+      "tab_title": "Sailly – 不错过任何工作订单。您专注于工作本身。"
+    }
+  },
+  "howItWorks": {
+    "badge": "工作原理",
+    "title": "Sailly 如何运作",
+    "subtitle": "快速部署，无需您承担任何IT工作。",
+    "steps": {
+      "answer": {
+        "title": "接听",
+        "desc": "Sailly 接听来电——友好且专业。"
+      },
+      "understand": {
+        "title": "理解",
+        "desc": "AI识别来电者的需求并提取相关数据。"
+      },
+      "execute": {
+        "title": "执行",
+        "desc": "预约、提供信息或转接电话——Sailly 一手搞定。"
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "客户评价",
+    "title": "客户怎么说",
+    "items": [
+      {
+        "quote": "Sailly 彻底改变了我们的预订管理。我们的预订量增加了30%，团队也轻松了很多。",
+        "author": "玛丽亚·施密特",
+        "role": "业主，邮驿客栈",
+        "location": "慕尼黑"
+      },
+      {
+        "quote": "我们的患者对即时可达性赞不绝口。医疗助理终于可以重新专注于患者护理了。",
+        "author": "托马斯·韦伯医生",
+        "role": "全科诊所",
+        "location": "汉堡"
+      },
+      {
+        "author": "Sandra K.",
+        "role": "美容工作室老板",
+        "location": "北京",
+        "quote": "有了Sailly，我可以完全专注于我的客户。人工智能自动处理所有预约请求和价格咨询——简单方便，24/7全天可用。"
+      }
+    ]
+  },
+  "cta_section": {
+    "title": "准备好迈出下一步了吗？",
+    "subtitle": "立即开始使用 Sailly，变革您的客户服务。",
+    "demo": "申请免费演示",
+    "contact": "预约咨询",
+    "guarantee": "30天退款保证"
+  },
+  "pricing_page": {
+    "badge": "特别优惠",
+    "title": "简单透明的价格",
+    "trial_text": "试用期：所有套餐享受50%折扣，免费试用30天。",
+    "plans": {
+      "standard": {
+        "name": "Standard",
+        "description": "专业的来电转接与智能摘要。",
+        "cta": "立即开始",
+        "features": [
+          "24/7来电接听与转接",
+          "AI通话摘要",
+          "详细通话记录",
+          "预约管理",
+          "支持手动上传"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "description": "与您现有软件环境无缝集成。",
+        "cta": "选择Gold",
+        "features": [
+          "Standard套餐全部功能",
+          "直接软件集成",
+          "行业定制工作流",
+          "多语言支持（最多12种语言）",
+          "实时数据同步",
+          "另加通话分钟计费"
+        ]
+      },
+      "future": {
+        "name": "Future",
+        "description": "为最高需求量身定制的AI解决方案。",
+        "cta": "联系销售",
+        "features": [
+          "Gold套餐全部功能",
+          "专属AI模型训练",
+          "高级对话式AI",
+          "复杂工作流自动化",
+          "专属解决方案架构师"
+        ]
+      }
+    },
+    "meta": {
+      "popular": "最受欢迎",
+      "per_month": "/月",
+      "starting_at": "起价",
+      "plus_fees": "+ 通话按分钟计费",
+      "per_minute_example": "每月200通来电，额外费用约€24（约每分钟€0.12）"
+    }
+  },
+  "footer": {
+    "product": "产品",
+    "solutions": "解决方案",
+    "resources": "资源",
+    "legal": "法律信息",
+    "imprint": "法律声明",
+    "privacy": "数据保护",
+    "agb": "条款与条件",
+    "copyright": "© 2026 Sailly. 保留所有权利。",
+    "tagline": "面向德国中小企业的AI电话中心。接听来电、预约安排、为团队减负——24/7全天候。",
+    "links": {
+      "overview": "概览",
+      "technology": "技术",
+      "pricing": "价格",
+      "demo": "演示",
+      "hotels": "酒店业",
+      "medical": "医疗诊所",
+      "restaurants": "餐饮业",
+      "services": "服务商"
+    },
+    "made_in_germany": "Made in Germany 🇩🇪"
+  },
+  "audio_demo": {
+    "badge": "语音演示",
+    "title": "听听有何不同",
+    "subtitle": "Sailly 在电话中听起来就是这么自然、这么像真人。",
+    "language_label": "中文",
+    "samples": [
+      {
+        "label": "餐厅 – 餐位预订",
+        "desc": "您的团队服务客人时自动完成预订。"
+      },
+      {
+        "label": "酒店 – 房间查询",
+        "desc": "关于可用性和特殊要求的专业回答。"
+      }
+    ]
+  },
+  "dashboard_preview": {
+    "title": "实时概览",
+    "today": "今天，",
+    "systemActive": "系统活跃",
+    "calls": "通话",
+    "timeSaved": "节省时间",
+    "vsYesterday": "对比昨天",
+    "callVolume": "通话量",
+    "callsUnit": "通话",
+    "lastActivity": "最近活动",
+    "liveAgent": "实时座席",
+    "activities": [
+      "明天的预约已确认",
+      "客户咨询已回复",
+      "知识库已更新"
+    ]
+  },
+  "conversation_preview": {
+    "speaking": "正在通话...",
+    "listening": "正在收听...",
+    "customerLabel": "客户",
+    "saillyLabel": "Sailly",
+    "messages": [
+      {
+        "id": "1",
+        "speaker": "sailly",
+        "message": "您好，我是Bright Dental的Sailly。有什么可以帮助您的吗？"
+      },
+      {
+        "id": "2",
+        "speaker": "user",
+        "message": "我需要改约明天的预约时间。"
+      },
+      {
+        "id": "3",
+        "speaker": "sailly",
+        "message": "好的。什么时间对您比较方便？"
+      },
+      {
+        "id": "4",
+        "speaker": "user",
+        "message": "下午三点左右有空吗？"
+      },
+      {
+        "id": "5",
+        "speaker": "sailly",
+        "message": "让我查一下... 有的，下午15:15有空。需要我为您预约吗？"
+      },
+      {
+        "id": "6",
+        "speaker": "user",
+        "message": "好的，谢谢，这个时间很好。"
+      },
+      {
+        "id": "7",
+        "speaker": "sailly",
+        "message": "已为您预约好了！明天下午15:15见。"
+      }
+    ]
+  },
+  "industries_eyebrow": "为您的行业优化",
+  "industry_template": {
+    "badges": {
+      "gdpr": "符合GDPR标准",
+      "setup": "4周内上线",
+      "guarantee": "30天保障"
+    },
+    "challenges_badge": "挑战",
+    "solution_badge": "解决方案",
+    "audio_badge": "语音演示",
+    "audio_duration": "0:45 • 中文",
+    "roi": {
+      "badge": "投资回报",
+      "title": "从第一天起即可衡量的成果",
+      "subtitle": "Sailly 在第一个月就能证明其价值。",
+      "metrics": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "客户满意度"
+        },
+        "fewer_calls": {
+          "value": "50%",
+          "label": "团队来电减少"
+        },
+        "availability": {
+          "value": "24/7",
+          "label": "全天候可达"
+        },
+        "implementation": {
+          "value": "4周",
+          "label": "部署周期"
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Sailly 改变了我们的业务。我们不再错过任何来电，团队可以专注于真正重要的事——我们的客户。",
+      "author": "示例客户"
+    },
+    "cta": {
+      "title": "准备好迈出下一步了吗？",
+      "subtitle": "立即开始使用 Sailly，变革您的客户服务。",
+      "primary": "申请免费演示",
+      "secondary": "预约咨询",
+      "guarantee": "30天退款保证"
+    }
+  },
+  "produkt_page": {
+    "badge": "Sailly 语音助手",
+    "hero": {
+      "title_part1": "不仅仅是人工智能。",
+      "title_part2": "真正的团队成员。",
+      "description": "Sailly不是答录机。她听、理解和工作，就像真正的同事一样 - 24/7。",
+      "cta_hire": "立即雇用 Sailly",
+      "cta_demo": "观看演示"
+    },
+    "how_it_works": {
+      "title": "Sailly如何工作",
+      "subtitle": "智能、互联和简单。"
+    },
+    "dashboard_section": {
+      "heading": "她掌握一切",
+      "description": "当Sailly处理通话时，她分析每次对话。你会获得关于客户满意度、常见问题和预订约会的实时见解。",
+      "features": [
+        {
+          "title": "实时分析",
+          "desc": "即时检测情绪和紧迫性。"
+        },
+        {
+          "title": "无缝集成",
+          "desc": "直接与您的CRM连接。"
+        },
+        {
+          "title": "自适应学习",
+          "desc": "每次对话后变得更智能。"
+        }
+      ]
+    },
+    "conversation_section": {
+      "heading": "她说你的语言",
+      "description": "客户通常甚至不知道他们在和人工智能交谈。Sailly 精通闲聊，理解方言，在压力情况下保持友好。",
+      "languages_label": "语言",
+      "response_time_label": "响应时间"
+    },
+    "trust_section": {
+      "heading": "为什么企业信任 Sailly",
+      "trust_cards": [
+        {
+          "title": "全天候可用",
+          "desc": "不再有等待队列或未接来电。"
+        },
+        {
+          "title": "符合GDPR",
+          "desc": "服务器位于德国，最高安全标准。"
+        },
+        {
+          "title": "即刻就绪",
+          "desc": "几分钟内完成设置和训练。"
+        }
+      ]
+    },
+    "cta_section": {
+      "heading": "准备好进阶了吗？",
+      "description": "今天免费试用 Sailly，体验不同。",
+      "cta_start": "现在免费开始",
+      "cta_contact": "联系我们"
+    }
+  },
+  "integrationen_page": {
+    "title": "连接您的所有系统",
+    "subtitle": "500多个现成集成。无缝连接，自动同步。",
+    "cta": "探索集成",
+    "badge": "集成",
+    "heading_part1": "连接",
+    "heading_part2": "您的所有系统",
+    "industry_badge": "行业专用",
+    "industry_title": "适合您行业的集成",
+    "industry_subtitle": "专为酒店业、餐饮业和医疗保健开发",
+    "hotels_title": "酒店业",
+    "hotels_desc": "与酒店管理系统无缝集成。",
+    "restaurants_title": "餐厅",
+    "restaurants_desc": "直接连接预订系统。",
+    "healthcare_title": "医疗保健",
+    "healthcare_desc": "符合GDPR的诊所管理系统集成。",
+    "pos_label": "POS系统、菜单",
+    "praxis_label": "诊所日历、处方",
+    "business_title": "通用商业工具",
+    "crm_title": "CRM与销售",
+    "crm_desc": "连接您的客户管理系统。",
+    "calendar_title": "日历与预约",
+    "calendar_desc": "同步日历并管理预约。",
+    "comm_title": "通信",
+    "comm_desc": "自动通知与通信。",
+    "api_title": "创建自定义集成",
+    "api_subtitle": "使用我们的API文档创建您自己的集成。",
+    "api_docs": "API文档",
+    "cta_title": "准备好连接了吗？",
+    "cta_subtitle": "体验系统集成有多简单。",
+    "cta_demo": "申请演示"
+  },
+  "strategic_partners_page": {
+    "title": "技术堆栈",
+    "partners": "战略合作伙伴",
+    "badge": "技术堆栈",
+    "heading_part1": "战略性",
+    "heading_part2": "合作伙伴",
+    "subtitle": "Sailly 建立在来自领先提供商的经过验证的技术之上。",
+    "stack_title": "我们的技术栈",
+    "stack_subtitle": "经过验证的合作伙伴关系",
+    "ai_section_title": "AI基础合作伙伴",
+    "ai_section_subtitle": "最佳LLM实现自然对话",
+    "voice_section_title": "语音技术合作伙伴",
+    "voice_section_subtitle": "尖端语音技术",
+    "infra_title": "基础设施和电话合作伙伴",
+    "infra_subtitle": "可靠基础设施全天候可用",
+    "compliance_title": "合规性和数据保护",
+    "compliance_subtitle": "所有合作伙伴符合欧盟标准",
+    "ecosystem_title": "集成生态系统",
+    "ecosystem_subtitle": "与现有系统无缝连接",
+    "cta_title": "信赖经过验证的技术",
+    "cta_subtitle": "体验Sailly如何与您的系统协作。",
+    "cta_demo": "集成演示",
+    "cta_all": "所有集成",
+    "main_features": "主要功能：",
+    "use_case_label": "用例：",
+    "privacy_title": "数据隐私保障",
+    "german_servers": "欧盟服务器",
+    "german_servers_desc": "所有数据保留在欧洲",
+    "e2e_enc": "端到端加密",
+    "e2e_enc_desc": "所有数据AES-256加密",
+    "no_sharing": "不共享数据",
+    "no_sharing_desc": "您的数据只属于您",
+    "eu_law": "欧盟数据保护法",
+    "eu_law_desc": "遵守欧洲法律",
+    "speech_title": "语音转文本和文本转语音",
+    "pipeline_title": "语音处理管道"
+  },
+  "languages_page": {
+    "title": "多语言",
+    "subtitle": "Sailly 会说 30 多种语言",
+    "badge": "多语言",
+    "heading_part1": "语言",
+    "heading_part2": "方言",
+    "hero_desc": "Sailly 流利地说 30+ 种语言并理解地方方言。您的国际客户立即感到被理解。",
+    "stats_languages": "支持的语言",
+    "stats_coverage": "全球覆盖",
+    "stats_response": "响应时间",
+    "stats_accuracy": "语音准确性",
+    "grid_title": "支持的语言",
+    "grid_subtitle": "用客户的母语进行自然交流",
+    "available_accents": "可用口音:",
+    "listen_sample": "听样本",
+    "voice_title": "自然语音质量",
+    "voice_subtitle": "尖端人工智能，实现类人对话",
+    "voice_special": "是什么让 Sailly 与众不同？",
+    "feature_dialect": {
+      "title": "方言识别",
+      "desc": "理解区域发音和特征"
+    },
+    "feature_intonation": {
+      "title": "自然语调",
+      "desc": "用适当的强调和情感说话"
+    },
+    "feature_cultural": {
+      "title": "文化适应",
+      "desc": "考虑文化礼貌惯例"
+    },
+    "feature_volume": {
+      "title": "自适应音量",
+      "desc": "自动适应对话情况"
+    },
+    "demo_sample_title": "示例：酒店预订",
+    "demo_hochdeutsch": "中文（普通话）",
+    "demo_hochdeutsch_text": "您好！欢迎来到 Zur Post 酒店。今天我能为您提供什么帮助？",
+    "demo_english": "English (British)",
+    "demo_english_text": "Good afternoon! Welcome to Hotel Zur Post. How may I assist you today?",
+    "demo_french": "Français (Parisien)",
+    "demo_french_text": "Bonjour ! Bienvenue à l'Hôtel Zur Post. Comment puis-je vous aider aujourd'hui ?",
+    "listen_btn": "听",
+    "industry_title": "特定行业术语",
+    "industry_subtitle": "Sailly 了解您行业的技术术语，涵盖所有语言",
+    "industry_hotels": "酒店行业",
+    "industry_restaurants": "餐饮行业",
+    "industry_healthcare": "医疗保健",
+    "dialects_title": "区域方言和口音",
+    "dialects_subtitle": "Sailly 也理解区域变化",
+    "accuracy_label": "准确性",
+    "cta_title": "用客户的语言交流",
+    "cta_subtitle": "用您偏好的语言测试 Sailly 并体验自然对话。",
+    "cta_demo": "多语言演示",
+    "cta_consult": "请求语言咨询"
+  },
+  "data_insights_page": {
+    "title": "数据和洞察",
+    "subtitle": "衡量您业务的具体成果。",
+    "badge": "商业优势",
+    "heading_part1": "数据",
+    "heading_part2": "洞察",
+    "roi_title": "ROI 计算器：Sailly 为您做什么",
+    "roi_subtitle": "用具体数字计算您的投资回报率",
+    "roi_your_numbers": "您的数字自己说话",
+    "impact_title": "可衡量的商业优势",
+    "impact_subtitle": "您将立即感受到的具体改进",
+    "impact_revenue": {
+      "title": "收入增加",
+      "desc": "通过完美的可用性增加更多预订"
+    },
+    "impact_efficiency": {
+      "title": "效率提升",
+      "desc": "每个员工在重要任务上节省的时间"
+    },
+    "impact_satisfaction": {
+      "title": "客户满意度",
+      "desc": "通过即时响应提高满意度"
+    },
+    "impact_savings": {
+      "title": "成本节省",
+      "desc": "每月节省的人员成本"
+    },
+    "stories_title": "我们客户的成功故事",
+    "stories_subtitle": "来自真实公司的真实结果",
+    "comparison_title": "为什么 Sailly 更好",
+    "comparison_subtitle": "与传统解决方案的比较",
+    "traditional_title": "传统呼叫中心",
+    "sailly_title": "Sailly 语音代理",
+    "cta_title": "准备好看到可衡量的结果了吗？",
+    "cta_subtitle": "立即开始，看看 Sailly 如何改变您的业务。",
+    "cta_roi": "请求 ROI 演示",
+    "cta_consult": "预订咨询电话"
+  },
+  "loesungen_page": {
+    "title": "每个行业的解决方案",
+    "subtitle": "无论是诊所、酒店还是律师事务所 – Sailly 都会适应您的需求。",
+    "badge": "行业",
+    "industries": {
+      "hotels": {
+        "title": "酒店",
+        "desc": "预订、客房服务和常见问题。"
+      },
+      "medical": {
+        "title": "医疗实践",
+        "desc": "预约管理和处方。"
+      },
+      "restaurants": {
+        "title": "餐厅",
+        "desc": "餐桌预订和订单。"
+      },
+      "services": {
+        "title": "服务提供商",
+        "desc": "沙龙、工作室等的预约预订。"
+      }
+    }
+  },
+  "demo_page": {
+    "title": "申请演示",
+    "subtitle": "实时体验Sailly。我们将展示如何立即提高您的可用性。",
+    "badge": "免费试用",
+    "firstname": "名字",
+    "lastname": "姓氏",
+    "email": "电子邮件",
+    "company": "公司",
+    "phone": "电话号码",
+    "message": "留言",
+    "submit": "申请演示",
+    "placeholder_firstname": "张",
+    "placeholder_lastname": "伟",
+    "placeholder_company": "公司名称",
+    "phone_label": "电话",
+    "optional_fields": "可选信息"
+  },
+  "technologie_page": {
+    "title": "下一代AI技术",
+    "subtitle": "了解我们的语言模型和集成引擎如何协同工作。",
+    "badge": "技术"
+  },
+  "resources_page": {
+    "badge": "Feature",
+    "title": "resources_page",
+    "subtitle": "Learn more"
+  },
+  "agb_page": {
+    "badge": "Feature",
+    "title": "agb_page",
+    "subtitle": "Learn more"
+  },
+  "datenschutz_page": {
+    "badge": "Feature",
+    "title": "datenschutz_page",
+    "subtitle": "Learn more"
+  },
+  "impressum_page": {
+    "badge": "Feature",
+    "title": "impressum_page",
+    "subtitle": "Learn more"
+  },
+  "use_cases_banking": {
+    "badge": "银行与金融服务",
+    "title": "银行工作流程自动化",
+    "subtitle": "利用人工智能驱动的自动化改变您的银行流程。",
+    "challenges_subtitle": "银行面临来自监管、数字化和客户期望的巨大压力",
+    "c1_title": "合规复杂性",
+    "c1_desc": "不断变化的法规需要持续调整流程。",
+    "c1_stat": "每年监管变化",
+    "c2_title": "手动流程",
+    "c2_desc": "耗时的手动审查和审批流程。",
+    "c2_stat": "平均贷款处理时间",
+    "c3_title": "风险管理",
+    "c3_desc": "需要复杂的风险分析和实时欺诈检测。",
+    "c3_stat": "德国每年欺诈损失",
+    "solutions_subtitle": "专为金融行业开发的工作流程",
+    "s1_title": "自动信用检查",
+    "s1_desc": "AI驱动的信用检查，具有自动文件分析和风险评估。",
+    "s2_title": "合规监控",
+    "s2_desc": "持续监控所有交易的合规性违规情况。",
+    "s3_title": "智能客户服务",
+    "s3_desc": "24/7 AI聊天机器人处理客户咨询，无缝转接给人工顾问。",
+    "workflow_title": "贷款流程工作流",
+    "w1": "自动捕获申请",
+    "w2": "AI驱动的文件审查",
+    "w3": "自动评估信用价值",
+    "w4": "计算风险分数",
+    "w5": "15分钟内决定",
+    "uc_subtitle": "具体使用案例",
+    "uc1_title": "反洗钱",
+    "uc1_desc": "自动检测可疑交易模式并生成SAR。",
+    "uc2_title": "KYC自动化",
+    "uc2_desc": "通过文件检查全自动完成客户身份识别和验证。",
+    "uc3_title": "风险评分",
+    "uc3_desc": "基于AI的信用风险评估，使用500多个数据点。",
+    "uc4_title": "欺诈检测",
+    "uc4_desc": "使用机器学习实时检测欺诈性交易。",
+    "uc5_title": "监管报告",
+    "uc5_desc": "自动创建和提交所有监管报告。",
+    "uc6_title": "客户服务",
+    "uc6_desc": "AI驱动的支持，可访问所有客户数据。",
+    "b1_label": "处理时间减少",
+    "b2_label": "标准流程自动化率",
+    "b3_label": "管理成本节约",
+    "b4_label": "审计合规率",
+    "reg_title": "监管合规",
+    "reg_subtitle": "完全遵守所有相关法规",
+    "reg1_title": "德国监管",
+    "reg2_title": "国际标准",
+    "cta_page_title": "数字化您的银行业务流程",
+    "cta_page_subtitle": "今天开始自动化您的金融流程。",
+    "cta_btn": "银行演示",
+    "cta_contact_btn": "金融科技咨询"
+  },
+  "use_cases_baubranche": {
+    "badge": "建筑行业",
+    "title": "建筑行业AI自动化",
+    "subtitle": "用智能自动化优化建筑流程。",
+    "challenges_subtitle": "建筑行业的数字化和效率",
+    "cta_page_title": "现代化您的建筑流程",
+    "cta_page_subtitle": "开始建筑行业的AI自动化。"
+  },
+  "use_cases_healthcare": {
+    "badge": "医疗保健",
+    "title": "医疗保健AI自动化",
+    "subtitle": "用智能自动化改善患者护理。",
+    "challenges_subtitle": "现代医疗保健面临的挑战",
+    "cta_page_title": "改善患者护理",
+    "cta_page_subtitle": "医疗保健AI自动化。"
+  },
+  "use_cases_legal": {
+    "badge": "法律行业",
+    "title": "律师事务所AI自动化",
+    "subtitle": "用智能AI自动化优化法律流程。",
+    "challenges_subtitle": "现代律师事务所的挑战",
+    "cta_page_title": "优化您的法律流程",
+    "cta_page_subtitle": "律师事务所AI自动化。"
+  },
+  "use_cases_manufacturing": {
+    "badge": "制造业",
+    "title": "制造业AI自动化",
+    "subtitle": "利用AI自动化提升制造效率。",
+    "challenges_subtitle": "现代制造业的挑战",
+    "cta_page_title": "提升您的生产效率",
+    "cta_page_subtitle": "制造业AI自动化。"
+  },
+  "use_cases_public-sector": {
+    "title": "use cases public-sector",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "use_cases_retail": {
+    "badge": "零售与商业",
+    "title": "零售AI自动化",
+    "subtitle": "用智能AI自动化优化零售运营。",
+    "challenges_subtitle": "现代零售业的挑战",
+    "cta_page_title": "优化您的零售运营",
+    "cta_page_subtitle": "零售AI自动化。"
+  },
+  "use_cases_telecom": {
+    "badge": "电信",
+    "title": "电信AI自动化",
+    "subtitle": "用AI自动化革新您的电信服务。",
+    "challenges_subtitle": "电信行业的挑战",
+    "cta_page_title": "革新您的电信服务",
+    "cta_page_subtitle": "电信AI自动化。"
+  },
+  "ai_impacts_customer-service": {
+    "title": "ai impacts customer-service",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_financial-services": {
+    "title": "ai impacts financial-services",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_hr-recruiting": {
+    "title": "ai impacts hr-recruiting",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_it-ops": {
+    "title": "ai impacts it-ops",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_marketing": {
+    "badge": "AI IMPACTS MARKETING",
+    "title": "用AI转型营销",
+    "subtitle": "个性化营销活动并自动化营销工作流程。"
+  },
+  "ai_impacts_sales": {
+    "badge": "AI IMPACTS SALES",
+    "title": "用AI优化销售",
+    "subtitle": "利用智能AI支持提升销售业绩。"
+  },
+  "ai_impacts_secops": {
+    "badge": "AI IMPACTS SECOPS",
+    "title": "AI安全运营",
+    "subtitle": "借助AI支持检测和对抗安全威胁。"
+  },
+  "ai_impacts_support": {
+    "badge": "AI IMPACTS SUPPORT",
+    "title": "带RAG的WhatsApp支持",
+    "subtitle": "用AI驱动的WhatsApp机器人革新您的客户支持。"
+  },
+  "blog_page": {
+    "title": "blog page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "academy_page": {
+    "title": "academy page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "docs_page": {
+    "title": "docs page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "news_page": {
+    "title": "新闻与更新",
+    "subtitle": "了解Sailly的最新动态。",
+    "badge": "新闻",
+    "read_more": "阅读更多",
+    "all_news": "所有新闻"
+  },
+  "community_page": {
+    "title": "community page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "legal_pages": {
+    "agb_title": "条款和条件",
+    "datenschutz_title": "隐私政策",
+    "impressum_title": "法律声明"
+  },
+  "use_cases_common": {
+    "demo_cta": "申请演示",
+    "contact_cta": "联系我们",
+    "benefits_title": "可衡量的业务收益",
+    "roi_title": "ROI与结果",
+    "features_title": "核心功能",
+    "how_title": "工作原理",
+    "steps_title": "3步获得成功",
+    "challenges_title": "挑战",
+    "solutions_title": "Sailly 解决方案",
+    "use_cases_title": "使用案例",
+    "cta_title": "准备好迈出下一步了吗？",
+    "cta_subtitle": "今天开始，体验不同。",
+    "compliance_title": "合规与安全"
+  },
+  "ai_impacts_common": {
+    "demo_cta": "申请演示",
+    "contact_cta": "联系我们",
+    "benefits_title": "可衡量的结果",
+    "features_title": "功能",
+    "how_title": "工作原理",
+    "roi_title": "可衡量的价值",
+    "challenges_title": "当前挑战",
+    "solutions_title": "Sailly AI解决方案",
+    "cta_title": "立即开始",
+    "cta_subtitle": "在您的业务中体验AI的力量。"
+  },
+  "use_cases_public_sector": {
+    "badge": "公共部门",
+    "title": "政府AI自动化",
+    "subtitle": "用智能自动化实现行政流程现代化。",
+    "challenges_subtitle": "公共部门的挑战",
+    "cta_page_title": "现代化您的行政流程",
+    "cta_page_subtitle": "政府机构AI自动化。"
+  },
+  "ai_impacts_it_ops": {
+    "badge": "AI IMPACTS IT OPS",
+    "title": "用AI自动化IT运营",
+    "subtitle": "减少手动IT任务，提高效率。"
+  },
+  "security_compliance_page": {
+    "badge": "安全与合规",
+    "heading_part1": "最大安全性",
+    "heading_part2": "为您的企业",
+    "subtitle": "您的数据在我们这里是安全的。最高安全标准和全面的数据保护。",
+    "cta": "探索安全性",
+    "sec_badge": "安全",
+    "sec_title": "全面的安全功能",
+    "sec_subtitle": "各个层面的多层安全",
+    "f1_title": "加密",
+    "f1_desc": "传输和静态数据的端到端加密。AES-256。",
+    "f2_title": "访问控制",
+    "f2_desc": "细粒度权限和角色管理。SSO、MFA和身份提供商。",
+    "f3_title": "审计日志",
+    "f3_desc": "所有操作的完整审计日志。可追溯性和合规性。",
+    "f4_title": "基础设施",
+    "f4_desc": "安全的云基础设施或本地部署。您的选择。",
+    "f5_title": "威胁防护",
+    "f5_desc": "自动威胁检测。DDoS保护、防火墙。",
+    "f6_title": "备份与恢复",
+    "f6_desc": "自动备份和灾难恢复。有保障的数据可用性。",
+    "comp_title": "认证与合规",
+    "comp_subtitle": "满足所有重要标准和法规",
+    "dp_title": "数据保护",
+    "dp_desc": "完全遵守数据保护法规。",
+    "cert_title": "认证",
+    "cert_desc": "国际认可的安全和质量标准。",
+    "data_ctrl_title": "您的数据，您的控制",
+    "data_ctrl_subtitle": "对您数据的最大控制",
+    "dr_title": "数据驻留",
+    "dr_desc": "选择数据存储位置。欧盟、美国或本地。",
+    "dm_title": "数据最小化",
+    "dm_desc": "我们只收集服务所需的数据。",
+    "del_title": "删除权",
+    "del_desc": "对数据的完全控制。按请求删除。",
+    "cta_title": "您可以信赖的安全",
+    "cta_subtitle": "了解我们的安全措施和合规标准。",
+    "demo_cta": "申请演示",
+    "comp_pill": "合规性",
+    "dp_pill": "数据保护"
+  },
+  "workflow_builder_page": {
+    "badge": "工作流构建器",
+    "heading_part1": "可视化",
+    "heading_part2": "工作流构建器",
+    "subtitle": "使用我们直观的拖放构建器创建复杂的工作流程。无需编程。",
+    "cta": "试用构建器",
+    "features_title": "您需要的一切",
+    "features_subtitle": "用于专业工作流程的强大构建器",
+    "f1_title": "拖放",
+    "f1_desc": "直观的拖放界面。通过简单地拖动组件创建工作流程。",
+    "f2_title": "多种组件",
+    "f2_desc": "数百个现成组件，适用于所有常见任务和集成。",
+    "f3_title": "实时测试",
+    "f3_desc": "直接在构建器中测试您的工作流程。即时反馈和调试。",
+    "f4_title": "代码编辑器",
+    "f4_desc": "内置代码编辑器的高级功能，用于自定义逻辑。",
+    "f5_title": "版本控制",
+    "f5_desc": "所有工作流程的完整版本控制。回滚和比较。",
+    "f6_title": "验证",
+    "f6_desc": "创建过程中的自动验证和错误检查。",
+    "tpl_title": "模板库",
+    "tpl_subtitle": "从现成的工作流程模板开始",
+    "t1_title": "文档处理",
+    "t1_desc": "用于自动文档处理、OCR和分类的模板。",
+    "t2_title": "数据集成",
+    "t2_desc": "连接系统并自动同步数据。",
+    "t3_title": "AI与自动化",
+    "t3_desc": "使用AI进行智能自动化和决策。",
+    "cta_title": "准备好创建了吗？",
+    "cta_subtitle": "今天就开始使用工作流构建器，创建您的第一个自动化流程。",
+    "demo_cta": "申请演示"
+  },
+  "templates_page": {
+    "badge": "模板",
+    "heading_part1": "现成",
+    "heading_part2": "模板",
+    "subtitle": "立即开始使用专业工作流模板。适用于每个行业和使用案例。",
+    "cta": "浏览模板",
+    "all_title": "所有模板",
+    "all_subtitle": "为所有行业随时可用",
+    "use_btn": "使用模板",
+    "cta_title": "没有找到您的模板？",
+    "cta_subtitle": "创建您自己的模板或让我们帮助您。",
+    "demo_cta": "申请演示"
+  },
+  "ki_integration_page": {
+    "badge": "AI集成",
+    "heading_part1": "AI集成",
+    "heading_part2": "为您的业务",
+    "subtitle": "将最强大的AI模型直接集成到您的业务流程中。无需编程知识。",
+    "cta": "试用AI集成",
+    "models_title": "支持的AI模型",
+    "models_subtitle": "适合每个使用案例的最佳模型",
+    "features_title": "集成功能",
+    "cta_title": "准备好AI的力量了吗？",
+    "cta_subtitle": "今天开始，用AI释放您数据的潜力。",
+    "demo_cta": "申请演示"
+  },
+  "preise_page": {
+    "badge": "价格",
+    "title": "简单、公平的价格",
+    "subtitle": "选择适合您业务的计划。",
+    "monthly": "每月",
+    "yearly": "每年",
+    "save": "节省20%",
+    "per_month": "每月",
+    "get_started": "立即开始",
+    "contact_sales": "联系销售",
+    "faq_title": "常见问题",
+    "cta_title": "还有问题？",
+    "cta_subtitle": "我们的团队很乐意为您提供帮助。",
+    "contact_cta": "联系我们"
+  }
+}

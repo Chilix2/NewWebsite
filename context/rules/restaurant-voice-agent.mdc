@@ -1,0 +1,158 @@
+---
+description: >-
+  Canonical master rules — BREAKTHROUGH RULES, voice domain rules, architecture
+  decisions, implementation patterns. Triggered when editing server/brain/ files.
+  Enforcement layer: 01-discipline.mdc and 02-deploy.mdc.
+globs:
+  - server/brain/**
+  - server/barge_in_handler.py
+  - configs/tenants/**
+  - server/validation/**
+alwaysApply: false
+---
+# Restaurant Voice Agent — Cursor Rules (STRICT)
+
+> **This file is law.** Violating it is a failed task — stop, report the violation, do not ship the change.
+> Enforcement: `01-discipline.mdc` (non-negotiable rules + hard stops), `02-deploy.mdc` (deploy gate), `voice-flows.mdc` (FSM flows), `architecture-gate.mdc` (pre-edit gate), `regression-pipeline.mdc` (post-fix).
+> Audit: `_breakthrough_sources.md` (559 hits / 982 JSONL transcripts)
+
+## Core Mission & Principles
+
+Sailly: **German restaurant phone voice agent** — takeaway, delivery, reservations, FAQ. Tenants: `doboo`, `pizzeria_napoli`.
+
+**Foundational principle (immutable):** **LLM for language, code for state.**
+- LLM: `extract_multi`, `_phrase_response` — language + slot values ONLY
+- FSM: `ConversationFSM`, `_phase_committed()` — ALL phase transitions + Category B tools
+- Executor: fires FSM `tool_calls` ONLY — **LLM NEVER fires tools, NEVER decides commits**
+
+**Production path (only):** `v4_pipeline_clean.py` → `ConversationFSM(ctx=ctx)`. `NodeManager.check_forced_commits()` = training-path ONLY — never cite it for production fixes.
+
+## BREAKTHROUGH RULES
+
+Each rule below is **hard law**. Format in responses: `RULE CHECK: [name] — compliant / VIOLATION`.
+
+**BREAKTHROUGH RULE — LLM for Language, Code for State**
+LLM never owns state. FSM never delegates commits to LLM text.
+
+**BREAKTHROUGH RULE — 6-Phase FSM (Apr–May 2026)**
+GREETING → INFO → ORDER/RESERVE → READBACK → COMMITTED → END. No skipping phases.
+
+**BREAKTHROUGH RULE — Category A/B Tool Split (Apr 2026)**
+Category A: read-only tools. Category B: FSM/code ONLY. No exceptions.
+
+**BREAKTHROUGH RULE — Multi-Tenant YAML (May 2026)**
+All tenant values from YAML. Brain code is tenant-agnostic.
+
+**BREAKTHROUGH RULE — Two-Pass Readback (Apr 2026)**
+Exact confirmation token + scorer >0.85. No fuzzy commit.
+
+**BREAKTHROUGH RULE — Redis v7 Persistence**
+Load slots before FSM step; write back after. Missing field = production bug.
+
+**BREAKTHROUGH RULE — Pure LLM Intent, No Keywords (Jun 4–8, 2026)**
+User: "strictly no keywords pure llm" (`24e98ffd` L5190). Adding `_PRICE_KW`, `_FAQ_KW`, intent keyword lists, or regex intent guards = **immediate abort**.
+
+**BREAKTHROUGH RULE — Re-Ask Only, Never Keywords (Jun 6, 2026)**
+Ambiguity → `_phase_clarify_intent()` referencing caller's exact prior words. **Max 2 attempts** → transfer. Forbidden phrase: "Was darf ich für Sie tun?" (`24e98ffd` L3729).
+
+**BREAKTHROUGH RULE — Variable-Dimensions Phrase Matrix (Jun 8, 2026)**
+Intent prompt uses matrix structure — NOT keyword lists, NOT example-memorization patches (`24e98ffd` L5769).
+
+**BREAKTHROUGH RULE — Binary Pass/Fail Confidence (Jun 7, 2026)**
+Above threshold → proceed. Below → re-ask. No low/medium/high tier branching (`24e98ffd` L4311).
+
+**BREAKTHROUGH RULE — State Track Separation (Jun 8, 2026)**
+FSM track (`order_confirmed`) and guardian track (`order_commit_state.confirmed`) are independent. Only FSM track feeds `slots.confirmed`. ORing them is a hardcoded bug, not a safety feature (KI-025).
+
+**BREAKTHROUGH RULE — Null-Clearing Slot Writes (Jun 8, 2026)**
+`_slots_to_state` must write `None` when a slot is cleared by correction. `if slots.X is not None:` is the only valid pattern. `if slots.X:` silently preserves stale data across turns (KI-026).
+
+**BREAKTHROUGH RULE — Grounding Sentinel Pattern (Jun 8, 2026)**
+For any intent requiring a Category A tool result (`handle_faq`, `list_menu`), FSM `step()` sets `grounding_required=True` and `response_text=''`. The pipeline fills `response_text` after tool execution. No static template text may survive into the response for these intents (KI-029).
+
+**BREAKTHROUGH RULE — Commit Force Gate (Jun 8, 2026)**
+`_force_commit_tools_if_missing` fires only when `next_state == ConversationPhase.COMMITTED`. Firing on READBACK with stale confirmation is a Category B safety violation (KI-027).
+
+**BREAKTHROUGH RULE — scenario_based_loop Forbidden (May 2026)**
+No `HaikuFixGenerator`, `FixApplier`, LLM code mutation. Only `turn2_fix_loop.py` + `PatchApplicator` (≤50 LOC).
+
+**BREAKTHROUGH RULE — No Fix Loops (Jun 8, 2026)**
+"Running in circle" (`24e98ffd` L5190) = STOP. One fix → verify → report numbers → await user before next fix.
+
+**BREAKTHROUGH RULE — No Legacy Pre-Extraction Bypass (Jun 13, 2026)**
+FSM is the sole slot collection authority. Any legacy extraction function that runs BEFORE `process_turn_v4()` must check if FSM-driven Tier 1 is active (`expected_slots` set) and skip if so. Dead legacy code that silently masks new solutions = deployment blocker (KI-030).
+
+**BREAKTHROUGH RULE — State Shape Consistency Gate (Jun 14, 2026)**
+Three models name the same concepts differently: `ConversationSlots` (FSM: `phone`/`address`/`name`/`order_type`), `ConversationState` (Redis v7: `phone_number`/`delivery_address`/`customer_name`/`delivery_type`), and `Tier1Slots`/deprecated `OrderSlots`. Cross-model field names (`phone_number`, `delivery_address`, `customer_name`, `delivery_type`) are allowed **only** inside the bridge `_state_to_slots()`/`_slots_to_state()` in `v4_pipeline_clean.py`. Using them anywhere else = the KI-031 bug class (crashed live: `fd8073e`, `da779c8`).
+- After ANY fix touching slots/state: every `slots.<attr>` MUST resolve to a `ConversationSlots` field; every `state.<attr>` MUST resolve to a `ConversationState` field.
+- Adding a slot field requires updating the model + `to_dict()`/`from_dict()` (or `model_dump`/`model_validate`) + the bridge **in the same commit**.
+- `server/tests/test_state_shape_consistency.py` enforces this (introspects model fields, AST-scans `server/brain/`). A red bar here is a deployment blocker — never weaken the test to pass.
+- `ConversationSlots`/`Tier1Slots` are Pydantic with `extra='forbid'`: unknown-field construction AND unknown-attribute writes raise immediately, and unknown reads raise `AttributeError`. Do not add `model_config` overrides that re-enable `extra='allow'`. The 4 leading-underscore fields (`_llm_intent_kinds`, `_llm_intent_confidence`, `_clarify_attempt_count`, `_pending_transactional`) are Pydantic `PrivateAttr` — set them via attribute assignment after construction, never as constructor kwargs.
+
+**BREAKTHROUGH RULE — Strangler Fig Only (Jun 2026)**
+No big-bang deletes. Env-gated incremental replacement.
+
+**BREAKTHROUGH RULE — Delegate to Proven Functions, Never Reimplement (Jun 2026)**
+When creating a new code path (e.g., single-Haiku tool use), the new path's job is **routing** — it receives LLM output, normalizes it, and **delegates** to existing proven functions (`update_state_from_utterance`, `extract_phone`, `_slots_to_state`, `_collect_reservation`, etc.). Never create parallel slot-setting logic with different field names. Never reimplement extraction that a proven function already handles. This is an extension of Strangler Fig: the new path wraps; the proven path performs.
+
+**BREAKTHROUGH RULE — "ja" Is Never a Name (Jun 4, 2026)**
+Confirmation tokens ≠ `customer_name`.
+
+**BREAKTHROUGH RULE — Normalize Bugs Are Systemic (Jun 7, 2026)**
+One `tool` vs `name` bug → grep entire codebase for same pattern before closing task.
+
+## Preferred Architecture & Tech Decisions
+
+| Component | Path | Role |
+|-----------|------|------|
+| FSM | `conversation_fsm.py` | Phase graph, `tool_calls` |
+| State | `conversation_state.py` | Redis v7 slots/flags |
+| DateTime | `temporal_extractor.py` | Unified German date/time parsing (ctparse) |
+| Pipeline | `v4_pipeline_clean.py` | Production entry |
+| Intent | `slot_extractor.py` | `extract_multi` + tenant context |
+| Tenants | `configs/tenants/{id}.yaml` | ALL tenant config |
+| Validation | `turn2_fix_loop.py` | Live WS only |
+
+**Only permitted regex in brain:** `_TRIVIAL_TURN_RE` (sub-ms empty/trivial bypass). **Nothing else** for intent or routing.
+
+**Forbidden forever:** `_UPPER_SNAKE_KW` for intent, `_PRICE_KW`/`_FAQ_KW` routing guards, keyword fallback blocks, `INTENT_COARSE_MAP` in production routing.
+
+## Voice Agent Domain Rules (Restaurant)
+
+**Intent (matrix in prompt, zero keywords in code):**
+- ORDER: "Ich hätte gerne eine Bestellung", named dishes, delivery modifiers
+- FAQ: HOW-questions ("Wie gebe ich..."), hours/price/menu queries
+- RESERVATION: Tisch + party + time
+- MULTI: FSM priority resolution — never drop secondary intent silently
+
+**Clarification (strict):**
+- MUST echo caller's topic ("Sie möchten einen Tisch — für wie viele Personen?")
+- MUST NOT use generic hospitality openers
+- 2 failures → transfer + goodbye script ("Bitte rufen Sie an, wenn Sie sich entschieden haben")
+- Binary confidence only — no tertiary branches
+
+**Tone:** Warm but specific. German formal for reservations. Tenant voice from YAML — never invent menu/hours.
+
+**Order:** `ready_for_order_commit()` gate. `create_order`+`send_sms` paired. No `Ihr Gericht`. No commit without readback when scenario requires it.
+
+**Reservation:** `check_availability` on prior turn. Two-pass readback mandatory.
+
+**Multi-intent:** Check pending intent before `end_call`. Never goodbye with unfinished second intent.
+
+**Slots:** `ja`/`nein`/`ok` = confirmation only. Never names. Date parsing: `voice-flows.mdc`.
+
+## Implementation Patterns & Code Style
+
+**Default edit scope (do not exceed without user approval):**
+- `conversation_state.py`, `node_manager.py`, `conversation_nodes.py`, `conversation_fsm.py`, `v4_pipeline_clean.py`, `slot_extractor.py`
+
+**Required per brain change:**
+1. Rule compliance block (see `01-discipline.mdc`)
+2. Code change (minimal diff)
+3. `python3 -m pytest server/tests/test_conversation_fsm.py` — **65/65 required**
+4. Server restart + `turn2_fix_loop.py --smoke` — **required before claiming progress**
+5. Report: pass rate before → after, or exact pytest output
+
+**Clean replacement:** delete old path entirely. Dual fallbacks = rejected PR.
+
+**Dual-tenant:** every FSM change must not break `doboo` AND `pizzeria_napoli`.

@@ -1,0 +1,40 @@
+---
+description: Master pointer. First rule loaded. Authoritative rules are 01-discipline.mdc, 02-deploy.mdc, and restaurant-voice-agent.mdc. Do not edit brain code without reading all three.
+alwaysApply: true
+---
+# Sailly Voice Agent — Core Index
+
+## Workspaces
+- **Runtime:** `/home/charles2/sailly-browser-demo` (production, systemd unit `sailly-browser-demo`, port 8080)
+- **Dev/this:** `/home/charles2/.ssh/` (rules, skills, plans)
+
+## Immutable Principle
+**LLM for language, code for state.**
+- LLM: `extract_multi`, `_phrase_response` — language + slot values ONLY
+- FSM: `ConversationFSM`, `_phase_committed()` — ALL phase transitions + Category B tools
+- Executor: fires FSM `tool_calls` ONLY — LLM NEVER fires tools, NEVER decides commits
+
+## Production Path (the only path)
+`v4_pipeline_clean.py` → `ConversationFSM(ctx=ctx)`
+`NodeManager.check_forced_commits()` = training-path ONLY — never cite for production fixes.
+
+## Always-Applied Rules (loaded every session)
+| File | Covers |
+|------|--------|
+| `01-discipline.mdc` | Non-negotiable rules, breakthrough rules, hard stops, forbidden patterns |
+| `02-deploy.mdc` | Commit-test-deploy gate, server restart, infrastructure safety, evidence |
+| `restaurant-voice-agent.mdc` | Full breakthrough rules, voice domain rules, implementation patterns, what to reject |
+
+## Agent-Requestable Rules
+| File | Triggered when |
+|------|----------------|
+| `voice-flows.mdc` | `server/brain/**` files in context |
+| `architecture-gate.mdc` | `server/brain/**` files in context |
+| `regression-pipeline.mdc` | `server/brain/**` files in context |
+| `premortem-check.mdc` | `server/brain/**` files in context |
+| `latency-investigation.mdc` | `server/**/*.py` files in context |
+| `permissions.mdc` | Always (permission fix protocol) |
+| `replacement-rule.mdc` | Manual (clean replacement during migrations) |
+
+## Skills
+`date-time-parser` `historical-issue-regression` `live-call-analysis` `livecall-loop` `order-flow-validator` `state-machine-auditor` `tool-executor-checker`

@@ -1,0 +1,54 @@
+---
+description: STRICT FSM flow rules — order/reservation/multi-intent/date
+globs:
+  - server/brain/**
+alwaysApply: false
+---
+
+# Voice Flows — STRICT FSM Rules
+
+> Master: `restaurant-voice-agent.mdc`. Violations = abort change.
+
+## State Machine
+
+- New field → dataclass + `to_dict()` + `from_dict()` **same commit** or do not merge
+- Load slots before `fsm.step()`; persist after — phase reset = critical bug
+- Sticky flags never cleared mid-flow
+
+## Order Flow (strict gates)
+
+- `create_order` ONLY when `ready_for_order_commit()` true AND readback complete (if required)
+- `create_order` + `send_sms` **same response** — always paired
+- NEVER `create_order` if `order_created` already true
+- NEVER `Ihr Gericht` — use `selected_dish` or `Bibimbap` fallback only
+- Atomic replacement on Category B — preserve Category A via `_extract_already_injected()` only
+- Strip `end_call` before forced `create_order` if order incomplete
+
+## Reservation Flow
+
+- `check_availability` MUST exist in `all_tools` from **prior turn** before `create_reservation`
+- NEVER same-turn availability check + reservation commit
+- `send_sms` paired with reservation commit
+
+## Multi-Intent
+
+- NEVER `goodbye`/`end_call` with pending second intent
+- After order: check `reservation_intent` before end
+- After reservation: check `order_intent` before end
+- Negation (`_NEGATE_KW` if present) resets BOTH intents → greeting — but **do not add new keyword lists**
+
+## Tool Chains (violations are production bugs)
+
+```text
+create_reservation → prior check_availability required
+create_order       → send_sms same response required
+send_sms           → create_order OR create_reservation required
+verify_address     → delivery_address OR delivery_address_mentioned required
+```
+
+## Date Parsing
+
+- `übermorgen` before `morgen`
+- `am X.` explicit parser overrides inferred dates
+- Hours 10–23 only; phone afternoon: eins→13, zwei→14, drei→15, vier→16
+- Do not add date keyword lists — extend parsers surgically only

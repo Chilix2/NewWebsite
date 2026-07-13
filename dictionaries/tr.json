@@ -1,0 +1,1239 @@
+{
+  "nav": {
+    "product": {
+      "title": "Ürün",
+      "items": {
+        "voice_agent": "Sailly Voice Agent",
+        "integrations": "Entegrasyonlar",
+        "data_insights": "Veri & Analiz",
+        "security": "Güvenlik & Uyumluluk",
+        "languages": "Diller",
+        "partners": "Stratejik Ortaklar"
+      }
+    },
+    "solutions": {
+      "title": "Çözümler",
+      "items": {
+        "hotels": "Otelcilik",
+        "medical": "Doktor Muayenehaneleri",
+        "restaurants": "Gastronomi",
+        "services": "Hizmet Sağlayıcılar & KOBİ"
+      }
+    },
+    "resources": {
+      "title": "Kaynaklar",
+      "items": {
+        "blog": "Blog",
+        "case_studies": "Başarı Hikayeleri",
+        "faq": "Sıkça Sorulan Sorular",
+        "help": "Yardım Merkezi"
+      }
+    },
+    "company": {
+      "title": "Şirket",
+      "items": {
+        "about": "Hakkımızda",
+        "contact": "İletişim"
+      }
+    },
+    "pricing": "Fiyatlandırma",
+    "demo": "Demo Talep Edin"
+  },
+  "hero": {
+    "eyebrow": "Ekibiniz misafirlerle ilgilensin. Sailly ofis işlerini halleder.",
+    "title": "Ekibinizi rahatlatan dijital asistan.",
+    "subtitle": "Sailly aramaları yanıtlar, randevuları ayarlar ve soruları cevaplar – günün her saati. Çalışanlarınıza asıl önemli olana odaklanma özgürlüğü verin: Müşterileriniz.",
+    "primary_cta": "Demo Talep Edin",
+    "secondary_cta": "Daha Fazla Bilgi",
+    "badges": {
+      "gdpr": "KVKK Uyumlu",
+      "availability": "24/7 Ulaşılabilir",
+      "setup": "4 Haftada Canlı"
+    },
+    "stats": {
+      "title": "İş Ortaklarımızın Sonuçları",
+      "items": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Daha Mutlu Çalışanlar"
+        },
+        "containment": {
+          "value": "90%+",
+          "label": "Otomatik Rutin Sorular"
+        },
+        "reduction": {
+          "value": "24/7",
+          "label": "Müşteriler İçin Ulaşılabilirlik"
+        }
+      }
+    }
+  },
+  "problems": {
+    "badge": "Zorluk",
+    "title": "Telefon işi böldüğünde",
+    "subtitle": "Günlük işlerin yoğunluğunda telefon için zaman kalmaz. Bu hem ekibinizi strese sokar hem de arayanları hayal kırıklığına uğratır.",
+    "cards": {
+      "missed": {
+        "title": "Kaçırılan İş Fırsatları",
+        "desc": "Aramaların %30'u yanıtsız kalıyor çünkü o an kimse açamıyor. Bu kaybedilen gelir demektir."
+      },
+      "stress": {
+        "title": "Stresli Ekip",
+        "desc": "Sürekli çalan telefon, çalışanları konsantrasyondan veya misafirle yüz yüze görüşmeden koparır."
+      },
+      "cost": {
+        "title": "Yüksek İdari Yük",
+        "desc": "Fiyat veya randevu gibi rutin sorular, uzman personelinizin değerli çalışma zamanını alır."
+      }
+    }
+  },
+  "value_props": {
+    "badge": "Neden Sailly",
+    "title": "Bir telesekreterden çok daha fazlası",
+    "subtitle": "Sailly, işletmenize kusursuz şekilde entegre olan akıllı bir ekip arkadaşıdır.",
+    "cards": {
+      "human_like": {
+        "title": "Empatik & Doğal",
+        "desc": "Bir insan gibi konuşur, lehçeleri anlar ve müşterilerinizle keyifli sohbetler yapar."
+      },
+      "always_on": {
+        "title": "Her Zaman Yanınızda",
+        "desc": "Mesai bittiğinde veya herkes meşgulken bile aramaları yanıtlar."
+      },
+      "instant_scale": {
+        "title": "Bekleme Yok",
+        "desc": "Aynı anda yüzlerce aramayı karşılayabilir. Pazartesi sabahı yoğunlukları için mükemmel."
+      },
+      "perfect_memory": {
+        "title": "Güvenilir & Hassas",
+        "desc": "Randevuları doğrudan takviminize kaydeder ve her zaman doğru fiyatları iletir."
+      },
+      "multilingual": {
+        "title": "30'dan Fazla Dil Konuşur",
+        "desc": "Uluslararası misafirleri ana dillerinde karşılar ve iletişim engellerini kaldırır."
+      },
+      "integration": {
+        "title": "Takım Oyuncusu",
+        "desc": "Mevcut sistemlerinizle (takvim, PMS, rezervasyon araçları) sorunsuz çalışır."
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Çözüm",
+    "title": "Sailly telefonu devralır",
+    "subtitle": "Profesyonel müşteri hizmeti için akıllı sesli asistanınız.",
+    "cards": {
+      "availability": {
+        "title": "%100 Ulaşılabilirlik",
+        "desc": "Meşgul sinyali yok, bekleme yok. Sailly anında yanıtlar – gece ve hafta sonu dahil."
+      },
+      "appointments": {
+        "title": "Akıllı Randevu Planlama",
+        "desc": "Müsaitliği anlık kontrol eder, randevu oluşturur ve onay gönderir – tamamen otomatik."
+      },
+      "answers": {
+        "title": "Doğru Yanıtlar",
+        "desc": "Fiyatlar, hizmetler ve müsaitlik hakkındaki karmaşık soruları güncel verilerle yanıtlar."
+      }
+    }
+  },
+  "roi_section": {
+    "badge": "Yatırım Getirisi",
+    "title": "İlk Günden İtibaren Ölçülebilir Değer",
+    "subtitle": "Optimum ulaşılabilirlik sayesinde daha fazla gelir ve daha mutlu çalışanlar.",
+    "benefits": [
+      {
+        "title": "Daha Fazla Gelir",
+        "desc": "Hiçbir arama artık kaçırılmaz. 24/7 ulaşılabilirlik sayesinde %15-25 daha fazla randevu ve rezervasyon.",
+        "icon": "trending-up"
+      },
+      {
+        "title": "Daha Verimli Ekip",
+        "desc": "Uzman personeliniz günde 2-3 saat telefon süresinden tasarruf eder ve müşteriyle ilgilenmeye odaklanabilir.",
+        "icon": "zap"
+      },
+      {
+        "title": "Mutlu Müşteriler",
+        "desc": "Bekleme olmadan anında yanıtlar. Müşterileriniz kendilerini değerli ve iyi bakılan hisseder.",
+        "icon": "heart"
+      },
+      {
+        "title": "Maliyetleri Düşürün",
+        "desc": "Pahalı fazla mesaiden veya harici çağrı merkezlerinden kaçının. Sailly ek maliyet olmadan ölçeklenir.",
+        "icon": "euro"
+      }
+    ]
+  },
+  "security_trust": {
+    "badge": "Güvenlik & Güven",
+    "title": "En Yüksek Standartlar",
+    "subtitle": "Sailly, tüm Avrupa veri koruma yönetmeliklerini karşılar.",
+    "features": [
+      {
+        "title": "KVKK Uyumlu",
+        "desc": "Alman sunucularıyla Genel Veri Koruma Yönetmeliği'ne tam uyum."
+      },
+      {
+        "title": "ISO 27001 Sertifikalı",
+        "desc": "Bilgi yönetim sistemleri için uluslararası güvenlik standartları."
+      },
+      {
+        "title": "Uçtan Uca Şifreleme",
+        "desc": "Tüm görüşmeler ve veriler, aktarım ve depolama sırasında şifrelenir."
+      },
+      {
+        "title": "Alman Sunucuları",
+        "desc": "Tüm veriler Almanya'da kalır ve Alman veri koruma yasasına tabidir."
+      }
+    ]
+  },
+  "industries": {
+    "hotels": {
+      "hero": {
+        "title": "Rahat Bir Resepsiyon İçin Dijital Concierge'iniz.",
+        "subtitle": "Resepsiyon ekibinizi, aramaları yanıtlayan, rezervasyonları yöneten ve misafir sorularını cevaplayan bir yapay zeka asistanıyla destekleyin – 7/24, nazik ve profesyonel.",
+        "cta": "Otel Demosunu İzleyin"
+      },
+      "challenges": {
+        "title": "Resepsiyonunuzu Rahatlatın",
+        "items": [
+          {
+            "title": "Misafire Odaklanın",
+            "desc": "Telefon çaldığında, resepsiyondaki hizmet kalitesi düşer. Sailly, kişisel ilgi için arkanızı kollar."
+          },
+          {
+            "title": "Personel Eksikliğini Giderin",
+            "desc": "İyi personel bulmak zor. Ekibinize rutin sorularda dijital destek sağlayın."
+          },
+          {
+            "title": "Uluslararası Misafirler",
+            "desc": "Dil bariyerlerini ortadan kaldırın. Sailly, misafirlerinize 30'dan fazla dilde akıcı şekilde danışmanlık yapar."
+          }
+        ]
+      },
+      "audio_samples": {
+        "title": "Farkı Duyun",
+        "subtitle": "Sailly ekibinizi bu kadar doğal bir şekilde rahatlatır.",
+        "samples": [
+          {
+            "label": "Oda Rezervasyonu",
+            "desc": "Bekleme süresi olmadan samimi bir rezervasyon."
+          },
+          {
+            "label": "Misafir Sorusu",
+            "desc": "Kahvaltı saatleri ve otopark hakkında bilgi."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Misafirperverlik İçin Daha Fazla Zaman",
+        "items": [
+          {
+            "title": "Doğrudan PMS Entegrasyonu",
+            "desc": "Oracle, Sihot ve diğer sistemlerle sorunsuz bağlanarak otomatik kayıt oluşturur."
+          },
+          {
+            "title": "7/24 Concierge",
+            "desc": "Geç çıkış veya yastık tercihi olsun – Sailly misafirleriniz için her zaman hazır."
+          },
+          {
+            "title": "Ulaşılabilirlik ile Gelir",
+            "desc": "Hat meşgul olduğu için kaçırılan rezervasyon artık yok."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Kaçırılan Rezervasyon Yok. Misafirleriniz Hak Ettikleri İlgiyi Görür."
+    },
+    "restaurants": {
+      "hero": {
+        "title": "Misafirlerinize Daha Fazla Zaman, Telefona Daha Az.",
+        "subtitle": "Siz mükemmel ev sahipliği yaparken Sailly rezervasyonları alsın. Yemek salonunda telefon çalmasın, rezervasyon iptali olmasın.",
+        "cta": "Restoran Demosunu İzleyin"
+      },
+      "challenges": {
+        "title": "Telefon Stresi Olmadan Dolu Salon",
+        "items": [
+          {
+            "title": "Mükemmel Ev Sahipliği",
+            "desc": "Çalan telefon kadar hizmeti bozan bir şey yoktur. Masadaki misafirlerinize tamamen odaklanın."
+          },
+          {
+            "title": "Güvenilir Rezervasyonlar",
+            "desc": "Kağıt karmaşasına ve masa ayırma karışıklıklarına son verin."
+          },
+          {
+            "title": "Gürültü & Telaş",
+            "desc": "Yoğun saatlerde telefon görüşmesi yapmak zordur. Sailly misafirlerinizi her zaman net anlar."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Görünmez Restoran Müdürünüz",
+        "items": [
+          {
+            "title": "Akıllı Rezervasyon",
+            "desc": "OpenTable, Resmio ve diğer sistemlerle bağlanarak otomatik masa rezervasyonu yapar."
+          },
+          {
+            "title": "İptal Oranını Düşürme",
+            "desc": "Hatırlatmalar ve onaylar göndererek rezerve edilen masaların dolu olmasını sağlar."
+          },
+          {
+            "title": "Alerjen & Menü Bilgisi",
+            "desc": "İçerik maddeleri ve günün yemekleri hakkındaki soruları yetkin ve güvenle yanıtlar."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Kaçırılan Rezervasyon Yok. Siz Salonda Kalırsınız."
+    },
+    "medical": {
+      "hero": {
+        "title": "Muayenehaneniz İçin Dijital Asistan.",
+        "subtitle": "Hastalarınız için ulaşılabilirliği güvence altına alın ve sağlık personelinizi rahatlatın. Randevu alma ve reçete talebi – empatik ve veri koruma uyumlu.",
+        "cta": "Muayenehane Demosunu İzleyin"
+      },
+      "challenges": {
+        "title": "Hastalar İçin Daha Fazla Zaman",
+        "items": [
+          {
+            "title": "Tedaviye Odaklanın",
+            "desc": "Asistanlarınız muayenehanedeki hastalar için orada. Telefonu artık Sailly üstleniyor."
+          },
+          {
+            "title": "Meşgul Sinyali Yok",
+            "desc": "Hastalar size her zaman ulaşabilir – randevu, reçete veya acil yönlendirme için."
+          },
+          {
+            "title": "Önce Veri Koruma",
+            "desc": "Hassas sağlık verileri güvende kalır. Alman sunucularında KVKK uyumlu."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Muayenehane Ekibiniz İçin Rahatlama",
+        "items": [
+          {
+            "title": "Akıllı Randevu Planlama",
+            "desc": "Doctolib, Jameda ve muayenehane takvimleriyle bağlanarak doğrudan randevu verir."
+          },
+          {
+            "title": "Reçete Telefonu 2.0",
+            "desc": "Reçete taleplerini yapılandırılmış şekilde alır ve imza için hazırlar."
+          },
+          {
+            "title": "Acil Durum Tespiti",
+            "desc": "Acil talepleri filtreler ve hemen personele yönlendirir."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Kaçırılan Hasta Yok. Ekibiniz Bakıma Odaklanır."
+    },
+    "services": {
+      "hero": {
+        "title": "Usta çalışır, asistan ofisi yönetir.",
+        "subtitle": "İster zanaat, ister stüdyo, ister atölye olsun: Zanaatınıza odaklanın. Sailly randevuları, fiyatları ve müşteri taleplerini halleder.",
+        "cta": "KOBİ Demosunu İzleyin"
+      },
+      "challenges": {
+        "title": "Zanaatınıza Odaklanın",
+        "items": [
+          {
+            "title": "Rahatsız Edilmeden Çalışın",
+            "desc": "Dövme yaparken veya tamir ederken telefona bakamazsınız. Sailly arkanızı kollar."
+          },
+          {
+            "title": "Hiçbir İş Kaçırılmaz",
+            "desc": "Her yanıtsız arama kaybedilen gelir demektir. Meşgulken bile her potansiyel müşteriyi yakalayın."
+          },
+          {
+            "title": "Profesyonel Görünüm",
+            "desc": "Merdivende bile olsanız, anında ulaşılabilirlikle müşterilerinizi etkileyin."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Sanal Resepsiyonunuz",
+        "items": [
+          {
+            "title": "Randevu Koordinasyonu",
+            "desc": "Çekicinizi bırakmanıza gerek kalmadan müşteri randevularını doğrudan takviminize planlar."
+          },
+          {
+            "title": "Fiyat Bilgisi & Danışmanlık",
+            "desc": "Fiyatlar, ulaşım ve hizmetler hakkındaki standart soruları önceden yetkin şekilde yanıtlar."
+          },
+          {
+            "title": "Durum Güncellemeleri",
+            "desc": "Müşterileri tamir veya sipariş durumu hakkında otomatik olarak bilgilendirir."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Kaçırılan İş Yok. Siz İşe Odaklanırsınız."
+    }
+  },
+  "howItWorks": {
+    "badge": "Nasıl Çalışır",
+    "title": "Sailly Nasıl Çalışır",
+    "subtitle": "BT yükü olmadan hızlı kurulum.",
+    "steps": {
+      "answer": {
+        "title": "Yanıtla",
+        "desc": "Sailly aramayı karşılar – nazik ve profesyonel."
+      },
+      "understand": {
+        "title": "Anla",
+        "desc": "Yapay zeka, arayanın talebini kavrar ve ilgili verileri çıkarır."
+      },
+      "execute": {
+        "title": "Uygula",
+        "desc": "Randevu al, bilgi ver veya aramayı yönlendir – Sailly halleder."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Müşteri Görüşleri",
+    "title": "Müşterilerimiz Ne Diyor",
+    "items": [
+      {
+        "quote": "Sailly, rezervasyon yönetimimizde devrim yarattı. %30 daha fazla rezervasyonumuz var ve ekibimiz çok daha rahat.",
+        "author": "Maria Schmidt",
+        "role": "Sahibi, Gasthof Zur Post",
+        "location": "Münih"
+      },
+      {
+        "quote": "Hastalarımız anında ulaşılabilirlikten çok memnun. Asistanlar nihayet tekrar hasta bakımına odaklanabiliyor.",
+        "author": "Dr. Thomas Weber",
+        "role": "Aile Hekimliği Muayenehanesi",
+        "location": "Hamburg"
+      },
+      {
+        "author": "Sandra K.",
+        "role": "Güzellik Stüdyosu Sahibesi",
+        "location": "İstanbul",
+        "quote": "Sailly ile müşterilerime tamamen konsantre oluyorum. Yapay zeka tüm randevu taleplerini ve fiyat sorularını otomatik olarak karşılıyor – basit ve 24/7 ulaşılabilir."
+      }
+    ]
+  },
+  "cta_section": {
+    "title": "Bir Sonraki Adıma Hazır mısınız?",
+    "subtitle": "Sailly ile bugün başlayın ve müşteri hizmetinizi dönüştürün.",
+    "demo": "Ücretsiz Demo Talep Edin",
+    "contact": "Danışmanlık Randevusu Alın",
+    "guarantee": "30 Gün Para İade Garantisi"
+  },
+  "pricing_page": {
+    "badge": "Özel Teklif",
+    "title": "Basit, Şeffaf Fiyatlandırma",
+    "trial_text": "Deneme Süresi: Tüm paketlerde %50 indirimle 30 gün test edin.",
+    "plans": {
+      "standard": {
+        "name": "Standard",
+        "description": "Akıllı özet ile profesyonel çağrı yönlendirme.",
+        "cta": "Hemen Başlayın",
+        "features": [
+          "7/24 Çağrı Karşılama & Yönlendirme",
+          "Yapay Zeka Görüşme Özeti",
+          "Detaylı Görüşme Kayıtları",
+          "Randevu Planlama",
+          "Manuel Yükleme İçin Hazır"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "description": "Mevcut yazılım altyapınızla kusursuz entegrasyon.",
+        "cta": "Gold Seçin",
+        "features": [
+          "Standard Paketteki Her Şey",
+          "Doğrudan Yazılım Entegrasyonu",
+          "Sektöre Özel İş Akışları",
+          "Çok Dilli (12 Dile Kadar)",
+          "Gerçek Zamanlı Veri Senkronizasyonu",
+          "Aramalar İçin Dakika Başı Ücret Hariç"
+        ]
+      },
+      "future": {
+        "name": "Future",
+        "description": "En yüksek beklentiler için özel yapay zeka çözümleri.",
+        "cta": "Satış Ekibiyle İletişime Geçin",
+        "features": [
+          "Gold Paketteki Her Şey",
+          "Özel Yapay Zeka Modeli Eğitimi",
+          "Gelişmiş Konuşma Yapay Zekası",
+          "Karmaşık İş Akışı Otomasyonu",
+          "Özel Çözüm Mimarı"
+        ]
+      }
+    },
+    "meta": {
+      "popular": "En Popüler Paket",
+      "per_month": "/Ay",
+      "starting_at": "Başlangıç",
+      "plus_fees": "+ Dakika başına görüşme ücreti",
+      "per_minute_example": "Ay da 200 aramayla yaklaşık €24 ek ücret (dakikada yaklaşık €0,12)"
+    }
+  },
+  "footer": {
+    "product": "Ürün",
+    "solutions": "Çözümler",
+    "resources": "Kaynaklar",
+    "legal": "Yasal",
+    "imprint": "Künye",
+    "privacy": "Gizlilik Politikası",
+    "agb": "Genel Şartlar",
+    "copyright": "© 2026 Sailly. Tüm hakları saklıdır.",
+    "tagline": "Alman KOBİ'leri için yapay zeka telefon santrali. Aramaları yanıtlar, randevuları ayarlar ve ekibinizi rahatlatır – 7/24.",
+    "links": {
+      "overview": "Genel Bakış",
+      "technology": "Teknoloji",
+      "pricing": "Fiyatlandırma",
+      "demo": "Demo",
+      "hotels": "Otelcilik",
+      "medical": "Doktor Muayenehaneleri",
+      "restaurants": "Gastronomi",
+      "services": "Hizmet Sağlayıcılar"
+    },
+    "made_in_germany": "Made in Germany 🇩🇪"
+  },
+  "audio_demo": {
+    "badge": "Ses Demosu",
+    "title": "Farkı Duyun",
+    "subtitle": "Sailly telefonda bu kadar doğal ve insancıl konuşur.",
+    "language_label": "Türkçe",
+    "samples": [
+      {
+        "label": "Restoran – Masa Rezervasyonu",
+        "desc": "Personelin misafir ağırlandığı sırada otomatik rezervasyon."
+      },
+      {
+        "label": "Otel – Oda Soruşturması",
+        "desc": "Müşterinin mevcudiyet ve özel istekleri hakkında yanıtlar."
+      }
+    ]
+  },
+  "dashboard_preview": {
+    "title": "Canlı Genel Bakış",
+    "today": "Bugün,",
+    "systemActive": "Sistem Aktif",
+    "calls": "Aramalar",
+    "timeSaved": "Tasarruf Edilen Zaman",
+    "vsYesterday": "dün ile karşılaştırılarak",
+    "callVolume": "Çağrı Hacmi",
+    "callsUnit": "arama",
+    "lastActivity": "Son Aktiviteler",
+    "liveAgent": "Canlı Ajan",
+    "activities": [
+      "Yarın için randevu onaylandı",
+      "Müşteri sorusu yanıtlandı",
+      "Bilgi tabanı güncellendi"
+    ]
+  },
+  "conversation_preview": {
+    "speaking": "Konuşuyor...",
+    "listening": "Dinliyor...",
+    "customerLabel": "Müşteri",
+    "saillyLabel": "Sailly",
+    "messages": [
+      {
+        "id": "1",
+        "speaker": "sailly",
+        "message": "Merhaba, Bright Dental'den Sailly. Size nasıl yardımcı olabilirim?"
+      },
+      {
+        "id": "2",
+        "speaker": "user",
+        "message": "Yarın için randevumu ertelemeye ihtiyacım var."
+      },
+      {
+        "id": "3",
+        "speaker": "sailly",
+        "message": "Tabii ki. Sizin için hangi saat uygun olur?"
+      },
+      {
+        "id": "4",
+        "speaker": "user",
+        "message": "Öğleden sonra saat 15:00 civarında bir şeyiniz var mı?"
+      },
+      {
+        "id": "5",
+        "speaker": "sailly",
+        "message": "Kontrol ediyorum... Evet, 15:15'te hala boş yer var. Randevu alalım mı?"
+      },
+      {
+        "id": "6",
+        "speaker": "user",
+        "message": "Evet lütfen, bu mükemmel."
+      },
+      {
+        "id": "7",
+        "speaker": "sailly",
+        "message": "Tamam! Yarın saat 15:15'te görüşürüz."
+      }
+    ]
+  },
+  "industries_eyebrow": "Sektörünüz İçin Optimize Edildi",
+  "industry_template": {
+    "badges": {
+      "gdpr": "KVKK Uyumlu",
+      "setup": "4 Haftada Canlı",
+      "guarantee": "30 Gün Garanti"
+    },
+    "challenges_badge": "Zorluk",
+    "solution_badge": "Çözüm",
+    "audio_badge": "Ses Demosu",
+    "audio_duration": "0:45 • Türkçe",
+    "roi": {
+      "badge": "Yatırım Getirisi",
+      "title": "İlk Günden İtibaren Ölçülebilir Sonuçlar",
+      "subtitle": "Sailly ilk ayda kendini amorti eder.",
+      "metrics": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Müşteri Memnuniyeti"
+        },
+        "fewer_calls": {
+          "value": "50%",
+          "label": "Ekibiniz İçin Daha Az Arama"
+        },
+        "availability": {
+          "value": "24/7",
+          "label": "Ulaşılabilirlik"
+        },
+        "implementation": {
+          "value": "4 Hafta",
+          "label": "Uygulamaya Kadar"
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Sailly işimizi dönüştürdü. Artık hiçbir aramayı kaçırmıyoruz ve ekibimiz gerçekten önemli olana odaklanabiliyor – müşterilerimize.",
+      "author": "Örnek Müşteri"
+    },
+    "cta": {
+      "title": "Bir Sonraki Adıma Hazır mısınız?",
+      "subtitle": "Sailly ile şimdi başlayın ve müşteri hizmetinizi dönüştürün.",
+      "primary": "Ücretsiz Demo Talep Edin",
+      "secondary": "Danışmanlık Randevusu Alın",
+      "guarantee": "30 Gün Para İade Garantisi"
+    }
+  },
+  "produkt_page": {
+    "badge": "Sailly Ses Asistanı",
+    "hero": {
+      "title_part1": "Sadece Yapay Zeka Değil.",
+      "title_part2": "Gerçek Bir Takım Üyesi.",
+      "description": "Sailly bir cevaplama makinesi değildir. Dinler, anlar ve insan bir meslektaş gibi çalışır - 7/24.",
+      "cta_hire": "Sailly'i Şimdi İşe Alın",
+      "cta_demo": "Demoyu İzle"
+    },
+    "how_it_works": {
+      "title": "Sailly Nasıl Çalışır",
+      "subtitle": "Zeki, bağlantılı ve basit."
+    },
+    "dashboard_section": {
+      "heading": "Her Şeyin Üzerinde Durur",
+      "description": "Sailly aramalarıyla ilgilenir, her konuşmayı analiz eder. Müşteri memnuniyeti, sık sorulan sorular ve rezerve edilen randevular hakkında gerçek zamanlı içgörüler alırsınız.",
+      "features": [
+        {
+          "title": "Gerçek Zamanlı Analiz",
+          "desc": "Ruh halini ve aciliyeti anında algılar."
+        },
+        {
+          "title": "Sorunsuz Entegrasyon",
+          "desc": "Doğrudan CRM'inize bağlanır."
+        },
+        {
+          "title": "Uyarlanabilir Öğrenme",
+          "desc": "Her konuşmayla daha akıllı hale gelir."
+        }
+      ]
+    },
+    "conversation_section": {
+      "heading": "Sizin Dilinizi Konuşur",
+      "description": "Müşteriler genellikle yapay zeka ile konuştuklarını fark etmezler. Sailly sohbeti ustalıkla yapabilir, lehçeleri anlar ve stresli durumlarda dostça kalır.",
+      "languages_label": "Diller",
+      "response_time_label": "Tepki Süresi"
+    },
+    "trust_section": {
+      "heading": "İşletmeler Neden Sailly'e Güveniyor",
+      "trust_cards": [
+        {
+          "title": "7/24 Erişilebilir",
+          "desc": "Artık bekleme sıraları veya kaçırılan aramalar yok."
+        },
+        {
+          "title": "GDPR Uyumlu",
+          "desc": "Almanya'daki sunucular, en yüksek güvenlik standartları."
+        },
+        {
+          "title": "Anında Hazır",
+          "desc": "Dakikalar içinde kurulup eğitilir."
+        }
+      ]
+    },
+    "cta_section": {
+      "heading": "Sonraki Seviye İçin Hazır Mısınız?",
+      "description": "Sailly'i bugün ücretsiz deneyin ve farkı yaşayın.",
+      "cta_start": "Şimdi Ücretsiz Başla",
+      "cta_contact": "İletişime Geçin"
+    }
+  },
+  "integrationen_page": {
+    "title": "Tüm Sistemlerinizi Bağlayın",
+    "subtitle": "500'den fazla hazır entegrasyon. Sorunsuzca bağlanın, otomatik senkronize edin.",
+    "cta": "Entegrasyonları keşfedin",
+    "badge": "ENTEGRASYONLAR",
+    "heading_part1": "Tüm sistemlerinizi",
+    "heading_part2": "bağlayın",
+    "industry_badge": "Endüstriye özgü",
+    "industry_title": "Endüstrinize özel entegrasyonlar",
+    "industry_subtitle": "Otelcilik, restoranlar ve sağlık için özel",
+    "hotels_title": "Otelcilik",
+    "hotels_desc": "Otel yönetim sistemleriyle sorunsuz entegrasyon.",
+    "restaurants_title": "Restoranlar",
+    "restaurants_desc": "Rezervasyon sistemlerine doğrudan bağlantı.",
+    "healthcare_title": "Sağlık",
+    "healthcare_desc": "GDPR uyumlu pratik yönetim sistemi entegrasyonu.",
+    "pos_label": "POS sistemleri, menüler",
+    "praxis_label": "Pratik takvim, reçeteler",
+    "business_title": "Genel İş Araçları",
+    "crm_title": "CRM ve Satış",
+    "crm_desc": "Müşteri yönetim sistemlerinize bağlanın.",
+    "calendar_title": "Takvim ve Randevular",
+    "calendar_desc": "Takvimleri senkronize edin ve randevuları yönetin.",
+    "comm_title": "İletişim",
+    "comm_desc": "Otomatik bildirimler ve iletişim.",
+    "api_title": "Özel entegrasyonlar oluşturun",
+    "api_subtitle": "Kendi entegrasyonlarınızı oluşturmak için API belgelerimizi kullanın.",
+    "api_docs": "API Belgeleri",
+    "cta_title": "Bağlanmaya hazır mısınız?",
+    "cta_subtitle": "Sistem entegrasyonunun ne kadar kolay olabileceğini deneyimleyin.",
+    "cta_demo": "Demo isteyin"
+  },
+  "strategic_partners_page": {
+    "title": "Teknoloji Yığını",
+    "partners": "Stratejik Ortaklar",
+    "badge": "Teknoloji Yığını",
+    "heading_part1": "Stratejik",
+    "heading_part2": "Ortaklar",
+    "subtitle": "Sailly, önde gelen sağlayıcıların kanıtlanmış teknolojileri üzerine inşa edilmiştir.",
+    "stack_title": "Teknoloji Yığınımız",
+    "stack_subtitle": "Maksimum güvenilirlik için kanıtlanmış ortaklıklar",
+    "ai_section_title": "YZ Temel Ortaklar",
+    "ai_section_subtitle": "Doğal konuşmalar için en iyi LLM'ler",
+    "voice_section_title": "Ses Teknolojisi Ortakları",
+    "voice_section_subtitle": "Son teknoloji ses teknolojisi",
+    "infra_title": "Altyapı ve Telefon Ortakları",
+    "infra_subtitle": "7/24 erişilebilirlik için güvenilir altyapı",
+    "compliance_title": "Uyumluluk ve Veri Koruma",
+    "compliance_subtitle": "Tüm ortaklar AB veri koruma standartlarını karşılar",
+    "ecosystem_title": "Entegrasyon Ekosistemi",
+    "ecosystem_subtitle": "Mevcut sistemlerinize sorunsuz bağlantı",
+    "cta_title": "Kanıtlanmış teknolojiye güvenin",
+    "cta_subtitle": "Sailly'nin sistemlerinizle nasıl çalıştığını deneyimleyin.",
+    "cta_demo": "Entegrasyon Demosu",
+    "cta_all": "Tüm Entegrasyonlar",
+    "main_features": "Ana özellikler:",
+    "use_case_label": "Kullanım alanı:",
+    "privacy_title": "Veri Gizliliği Garantileri",
+    "german_servers": "AB Sunucuları",
+    "german_servers_desc": "Tüm veriler Avrupa'da kalır",
+    "e2e_enc": "Uçtan uca şifreleme",
+    "e2e_enc_desc": "Tüm veriler için AES-256",
+    "no_sharing": "Veri paylaşımı yok",
+    "no_sharing_desc": "Verileriniz yalnızca size ait",
+    "eu_law": "AB Veri Koruma Hukuku",
+    "eu_law_desc": "Avrupa hukukuna tabidir",
+    "speech_title": "Konuşmadan Metne ve Metinden Konuşmaya",
+    "pipeline_title": "Ses İşleme Hattı"
+  },
+  "languages_page": {
+    "title": "Çok Dilli",
+    "subtitle": "Sailly 30+ dil konuşuyor",
+    "badge": "Çok Dilli",
+    "heading_part1": "Diller",
+    "heading_part2": "Lehçeler",
+    "hero_desc": "Sailly 30+ dili akıcı bir şekilde konuşur ve bölgesel lehçeleri anlar. Uluslararası müşterileriniz hemen anlaşıldığını hissederler.",
+    "stats_languages": "Desteklenen Diller",
+    "stats_coverage": "Küresel Kapsam",
+    "stats_response": "Yanıt Süresi",
+    "stats_accuracy": "Konuşma Doğruluğu",
+    "grid_title": "Desteklenen Diller",
+    "grid_subtitle": "Müşterilerinizin ana dilinde doğal konuşma",
+    "available_accents": "Mevcut aksanlar:",
+    "listen_sample": "Örneği dinle",
+    "voice_title": "Doğal Konuşma Kalitesi",
+    "voice_subtitle": "İnsan benzeri konuşmalar için son teknoloji AI",
+    "voice_special": "Sailly'yi özel kılan nedir?",
+    "feature_dialect": {
+      "title": "Lehçe Tanıma",
+      "desc": "Bölgesel telaffuzları ve özellikleri anlar"
+    },
+    "feature_intonation": {
+      "title": "Doğal Tonlama",
+      "desc": "Doğru vurgu ve duygusal ifade ile konuşur"
+    },
+    "feature_cultural": {
+      "title": "Kültürel Uyum",
+      "desc": "Kültürel nezaket kurallarını göz önünde bulundurur"
+    },
+    "feature_volume": {
+      "title": "Uyarlanabilir Ses",
+      "desc": "Konuşma durumuna otomatik olarak uyum sağlar"
+    },
+    "demo_sample_title": "Örnek: Otel Rezervasyonu",
+    "demo_hochdeutsch": "Türkçe (Standart)",
+    "demo_hochdeutsch_text": "Merhaba! Hotel Zur Post'a hoş geldiniz. Bugün size nasıl yardımcı olabilirim?",
+    "demo_english": "English (British)",
+    "demo_english_text": "Good afternoon! Welcome to Hotel Zur Post. How may I assist you today?",
+    "demo_french": "Français (Parisien)",
+    "demo_french_text": "Bonjour ! Bienvenue à l'Hôtel Zur Post. Comment puis-je vous aider aujourd'hui ?",
+    "listen_btn": "Dinle",
+    "industry_title": "Sektöre Özgü Terminoloji",
+    "industry_subtitle": "Sailly, her dilde endüstriyinizin teknik terimlerini bilir",
+    "industry_hotels": "Otelcilik",
+    "industry_restaurants": "Gastronomi",
+    "industry_healthcare": "Sağlık Hizmetleri",
+    "dialects_title": "Bölgesel Lehçeler ve Aksanlar",
+    "dialects_subtitle": "Sailly bölgesel varyasyonları da anlar",
+    "accuracy_label": "Doğruluk",
+    "cta_title": "Müşterilerinizin Dilini Konuşun",
+    "cta_subtitle": "Sailly'i tercih ettiğiniz dilde test edin ve doğal konuşmaları yaşayın.",
+    "cta_demo": "Çok Dilli Demo",
+    "cta_consult": "Dil Danışmanlığı İsteyin"
+  },
+  "data_insights_page": {
+    "title": "Veri ve İçgörüler",
+    "subtitle": "İşiniz için ölçülebilir sonuçlar.",
+    "badge": "İş Yararları",
+    "heading_part1": "Veri",
+    "heading_part2": "İçgörüler",
+    "roi_title": "ROI Hesaplayıcı: Sailly sizin için ne yapar",
+    "roi_subtitle": "Somut rakamlarla yatırım getirinizi hesaplayın",
+    "roi_your_numbers": "Sizin rakamlarınız konuşuyor",
+    "impact_title": "Ölçülebilir iş yararları",
+    "impact_subtitle": "Hemen hissedeceksiniz somut iyileştirmeler",
+    "impact_revenue": {
+      "title": "Gelir artışı",
+      "desc": "Mükemmel uygunluk sayesinde daha fazla rezervasyon"
+    },
+    "impact_efficiency": {
+      "title": "Verimlilik kazancı",
+      "desc": "Önemli görevler için çalışan başına tasarruf edilen zaman"
+    },
+    "impact_satisfaction": {
+      "title": "Müşteri memnuniyeti",
+      "desc": "Anlık cevaplar sayesinde daha yüksek memnuniyet"
+    },
+    "impact_savings": {
+      "title": "Maliyet tasarrufu",
+      "desc": "Aylık olarak tasarruf edilen personel maliyetleri"
+    },
+    "stories_title": "Müşterilerimizin başarı hikayeleri",
+    "stories_subtitle": "Gerçek şirketlerden gerçek sonuçlar",
+    "comparison_title": "Sailly neden daha iyi",
+    "comparison_subtitle": "Geleneksel çözümlerle karşılaştırma",
+    "traditional_title": "Geleneksel çağrı merkezleri",
+    "sailly_title": "Sailly Voice Agent",
+    "cta_title": "Ölçülebilir sonuçlar için hazır mısınız?",
+    "cta_subtitle": "Bugün başlayın ve Sailly'nin işinizi nasıl dönüştürdüğünü görün.",
+    "cta_roi": "ROI Demosı İsteyin",
+    "cta_consult": "Danışma Görüşmesi Rezervasyonu"
+  },
+  "loesungen_page": {
+    "title": "Her Endüstri için Çözümler",
+    "subtitle": "Klinik, otel veya hukuk ofisi olsun – Sailly, özel ihtiyaçlarınıza uyum sağlar.",
+    "badge": "Endüstriler",
+    "industries": {
+      "hotels": {
+        "title": "Otelcilik",
+        "desc": "Rezervasyonlar, oda servisi ve SSS."
+      },
+      "medical": {
+        "title": "Tıbbi Uygulamalar",
+        "desc": "Randevu yönetimi ve reçeteler."
+      },
+      "restaurants": {
+        "title": "Restoranlar",
+        "desc": "Masa rezervasyonları ve siparişler."
+      },
+      "services": {
+        "title": "Hizmet Sağlayıcıları",
+        "desc": "Kuaför, atölyeler için randevu."
+      }
+    }
+  },
+  "demo_page": {
+    "title": "Demo Talep Et",
+    "subtitle": "Sailly'yi canlı deneyimleyin. Erişilebilirliğinizi nasıl artıracağınızı göstereceğiz.",
+    "badge": "Ücretsiz Deneme",
+    "firstname": "Ad",
+    "lastname": "Soyad",
+    "email": "E-Posta",
+    "company": "Şirket",
+    "phone": "Telefon numarası",
+    "message": "Mesaj",
+    "submit": "Demo talep et",
+    "placeholder_firstname": "Ahmet",
+    "placeholder_lastname": "Yılmaz",
+    "placeholder_company": "Şirket A.Ş.",
+    "phone_label": "Telefon",
+    "optional_fields": "Opsiyonel Bilgiler"
+  },
+  "technologie_page": {
+    "title": "Yeni Nesil YZ Teknolojisi",
+    "subtitle": "Dil modellerimizin ve entegrasyon motorlarımızın nasıl çalıştığını öğrenin.",
+    "badge": "Teknoloji"
+  },
+  "resources_page": {
+    "badge": "Feature",
+    "title": "resources_page",
+    "subtitle": "Learn more"
+  },
+  "agb_page": {
+    "badge": "Feature",
+    "title": "agb_page",
+    "subtitle": "Learn more"
+  },
+  "datenschutz_page": {
+    "badge": "Feature",
+    "title": "datenschutz_page",
+    "subtitle": "Learn more"
+  },
+  "impressum_page": {
+    "badge": "Feature",
+    "title": "impressum_page",
+    "subtitle": "Learn more"
+  },
+  "use_cases_banking": {
+    "badge": "BANKACILIK VE FİNANSAL HİZMETLER",
+    "title": "Bankalar için İş Akışı Otomasyonu",
+    "subtitle": "YZ destekli otomasyon ile bankacılık süreçlerinizi dönüştürün.",
+    "challenges_subtitle": "Bankalar düzenleme, dijitalleşme ve müşteri beklentilerinden büyük baskı altında",
+    "c1_title": "Uyumluluk Karmaşıklığı",
+    "c1_desc": "Sürekli değişen düzenlemeler sürekli süreç ayarlamaları gerektirir.",
+    "c1_stat": "Yılda düzenleyici değişiklikler",
+    "c2_title": "Manuel Süreçler",
+    "c2_desc": "Zaman alıcı manuel incelemeler ve onay süreçleri.",
+    "c2_stat": "Ortalama kredi işleme süresi",
+    "c3_title": "Risk Yönetimi",
+    "c3_desc": "Karmaşık risk analizleri ve gerçek zamanlı dolandırıcılık tespiti gereklidir.",
+    "c3_stat": "Almanya'daki yıllık dolandırıcılık kayıpları",
+    "solutions_subtitle": "Finans sektörü için özel olarak geliştirilen iş akışları",
+    "s1_title": "Otomatik Kredi Kontrolü",
+    "s1_desc": "Otomatik belge analizi ve risk değerlendirmesiyle YZ destekli kredi kontrolü.",
+    "s2_title": "Uyumluluk İzleme",
+    "s2_desc": "Uyumluluk ihlalleri için tüm işlemlerin sürekli izlenmesi.",
+    "s3_title": "Akıllı Müşteri Hizmetleri",
+    "s3_desc": "Müşteri sorguları için 7/24 YZ sohbet botları, insan danışmanlara sorunsuz yönlendirme.",
+    "workflow_title": "Kredi Süreci İş Akışı",
+    "w1": "Başvuruyu otomatik yakala",
+    "w2": "Belgeleri YZ destekli inceleyin",
+    "w3": "Kredi değerliliğini otomatik değerlendir",
+    "w4": "Risk puanını hesapla",
+    "w5": "15 dakikada karar",
+    "uc_subtitle": "Özel Kullanım Senaryoları",
+    "uc1_title": "Kara Para Aklamayı Önleme",
+    "uc1_desc": "Şüpheli işlem kalıplarının otomatik tespiti ve SAR oluşturma.",
+    "uc2_title": "KYC Otomasyonu",
+    "uc2_desc": "Belge kontrolüyle tam otomatik müşteri tanımlama ve doğrulama.",
+    "uc3_title": "Risk Puanlama",
+    "uc3_desc": "500'den fazla veri noktasıyla YZ tabanlı kredi riski değerlendirmesi.",
+    "uc4_title": "Dolandırıcılık Tespiti",
+    "uc4_desc": "Machine learning ile gerçek zamanlı sahte işlem tespiti.",
+    "uc5_title": "Düzenleyici Raporlama",
+    "uc5_desc": "Tüm düzenleyici raporların otomatik olarak oluşturulması ve gönderilmesi.",
+    "uc6_title": "Müşteri Hizmetleri",
+    "uc6_desc": "Tüm müşteri verilerine erişimle YZ destekli destek.",
+    "b1_label": "İşlem süresinde azalma",
+    "b2_label": "Standart süreçlerde otomasyon oranı",
+    "b3_label": "Yönetimde maliyet tasarrufu",
+    "b4_label": "Denetimlerde uyumluluk oranı",
+    "reg_title": "Düzenleyici Uyumluluk",
+    "reg_subtitle": "Tüm ilgili düzenlemelere tam uyumluluk",
+    "reg1_title": "Alman Düzenlemesi",
+    "reg2_title": "Uluslararası Standartlar",
+    "cta_page_title": "Bankacılık süreçlerinizi dijitalleştirin",
+    "cta_page_subtitle": "Bugün finansal süreçlerinizi otomatize etmeye başlayın.",
+    "cta_btn": "Bankacılık Demosu",
+    "cta_contact_btn": "Fintech Danışmanlığı"
+  },
+  "use_cases_baubranche": {
+    "badge": "İNŞAAT SEKTÖRÜ",
+    "title": "İnşaat Sektörü için YZ Otomasyonu",
+    "subtitle": "Akıllı otomasyon ile inşaat süreçlerini optimize edin.",
+    "challenges_subtitle": "İnşaat sektöründe dijitalleşme ve verimlilik",
+    "cta_page_title": "İnşaat süreçlerinizi modernize edin",
+    "cta_page_subtitle": "İnşaat sektörü için YZ otomasyonuna başlayın."
+  },
+  "use_cases_healthcare": {
+    "badge": "SAĞLIK HİZMETLERİ",
+    "title": "Sağlık Hizmetleri için YZ Otomasyonu",
+    "subtitle": "Akıllı otomasyon ile hasta bakımını iyileştirin.",
+    "challenges_subtitle": "Modern sağlık hizmetlerindeki zorluklar",
+    "cta_page_title": "Hasta bakımını iyileştirin",
+    "cta_page_subtitle": "Sağlık hizmetleri için YZ otomasyonu."
+  },
+  "use_cases_legal": {
+    "badge": "HUKUK SEKTÖRÜ",
+    "title": "Hukuk Büroları için YZ Otomasyonu",
+    "subtitle": "Akıllı YZ otomasyonu ile hukuki süreçleri optimize edin.",
+    "challenges_subtitle": "Modern hukuk bürolarının zorlukları",
+    "cta_page_title": "Hukuki süreçlerinizi optimize edin",
+    "cta_page_subtitle": "Hukuk büroları için YZ otomasyonu."
+  },
+  "use_cases_manufacturing": {
+    "badge": "ÜRETİM",
+    "title": "Üretim için YZ Otomasyonu",
+    "subtitle": "YZ otomasyonu ile üretim verimliliğinizi artırın.",
+    "challenges_subtitle": "Modern üretimdeki zorluklar",
+    "cta_page_title": "Üretim verimliliğinizi artırın",
+    "cta_page_subtitle": "Üretim için YZ otomasyonu."
+  },
+  "use_cases_public-sector": {
+    "title": "use cases public-sector",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "use_cases_retail": {
+    "badge": "PERAKENDE VE TİCARET",
+    "title": "Perakende için YZ Otomasyonu",
+    "subtitle": "Akıllı YZ otomasyonu ile perakende operasyonlarını optimize edin.",
+    "challenges_subtitle": "Modern perakendedeki zorluklar",
+    "cta_page_title": "Perakende operasyonlarınızı optimize edin",
+    "cta_page_subtitle": "Perakende için YZ otomasyonu."
+  },
+  "use_cases_telecom": {
+    "badge": "TELEKOMÜNİKASYON",
+    "title": "Telekomünikasyon için YZ Otomasyonu",
+    "subtitle": "YZ otomasyonu ile telekomünikasyon hizmetlerinizde devrim yapın.",
+    "challenges_subtitle": "Telekomünikasyondaki zorluklar",
+    "cta_page_title": "Telekomünikasyonunuzda devrim yapın",
+    "cta_page_subtitle": "Telekomünikasyon için YZ otomasyonu."
+  },
+  "ai_impacts_customer-service": {
+    "title": "ai impacts customer-service",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_financial-services": {
+    "title": "ai impacts financial-services",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_hr-recruiting": {
+    "title": "ai impacts hr-recruiting",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_it-ops": {
+    "title": "ai impacts it-ops",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_marketing": {
+    "badge": "AI IMPACTS MARKETING",
+    "title": "YZ ile Pazarlamayı Dönüştürün",
+    "subtitle": "Kampanyaları kişiselleştirin ve pazarlama iş akışlarını otomatize edin."
+  },
+  "ai_impacts_sales": {
+    "badge": "AI IMPACTS SALES",
+    "title": "YZ ile Satışları Optimize Edin",
+    "subtitle": "Akıllı YZ desteği ile satış sonuçlarınızı artırın."
+  },
+  "ai_impacts_secops": {
+    "badge": "AI IMPACTS SECOPS",
+    "title": "YZ ile Güvenlik Operasyonları",
+    "subtitle": "YZ desteği ile güvenlik tehditlerini tespit edin ve mücadele edin."
+  },
+  "ai_impacts_support": {
+    "badge": "AI IMPACTS SUPPORT",
+    "title": "RAG ile WhatsApp Desteği",
+    "subtitle": "YZ destekli WhatsApp botlarıyla müşteri desteğinizde devrim yapın."
+  },
+  "blog_page": {
+    "title": "blog page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "academy_page": {
+    "title": "academy page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "docs_page": {
+    "title": "docs page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "news_page": {
+    "title": "Haberler ve Güncellemeler",
+    "subtitle": "Sailly'deki en son gelişmeleri takip edin.",
+    "badge": "Haberler",
+    "read_more": "Daha fazla oku",
+    "all_news": "Tüm haberler"
+  },
+  "community_page": {
+    "title": "community page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "legal_pages": {
+    "agb_title": "Genel Hüküm ve Koşullar",
+    "datenschutz_title": "Gizlilik Politikası",
+    "impressum_title": "Hukuki Bildirim"
+  },
+  "use_cases_common": {
+    "demo_cta": "Demo isteyin",
+    "contact_cta": "İletişime geçin",
+    "benefits_title": "Ölçülebilir İş Avantajları",
+    "roi_title": "ROI ve Sonuçlar",
+    "features_title": "Temel Özellikler",
+    "how_title": "Nasıl çalışır",
+    "steps_title": "3 adımda başarı",
+    "challenges_title": "Zorluklar",
+    "solutions_title": "Sailly Çözümleri",
+    "use_cases_title": "Kullanım Senaryoları",
+    "cta_title": "Bir sonraki adıma hazır mısınız?",
+    "cta_subtitle": "Bugün başlayın ve farkı deneyimleyin.",
+    "compliance_title": "Uyumluluk ve Güvenlik"
+  },
+  "ai_impacts_common": {
+    "demo_cta": "Demo isteyin",
+    "contact_cta": "İletişime geçin",
+    "benefits_title": "Ölçülebilir Sonuçlar",
+    "features_title": "Özellikler",
+    "how_title": "Nasıl çalışır",
+    "roi_title": "Ölçülebilir değer",
+    "challenges_title": "Mevcut Zorluklar",
+    "solutions_title": "Sailly YZ Çözümleri",
+    "cta_title": "Şimdi başlayın",
+    "cta_subtitle": "İşinizde YZ'nin gücünü deneyimleyin."
+  },
+  "use_cases_public_sector": {
+    "badge": "KAMU SEKTÖRÜ",
+    "title": "Kamu Kurumları için YZ Otomasyonu",
+    "subtitle": "Akıllı otomasyon ile idari süreçleri modernize edin.",
+    "challenges_subtitle": "Kamu sektöründeki zorluklar",
+    "cta_page_title": "İdari süreçlerinizi modernize edin",
+    "cta_page_subtitle": "Kamu kurumları için YZ otomasyonu."
+  },
+  "ai_impacts_it_ops": {
+    "badge": "AI IMPACTS IT OPS",
+    "title": "YZ ile IT Operasyonlarını Otomatize Edin",
+    "subtitle": "Manuel IT görevlerini azaltın ve verimliliği artırın."
+  },
+  "security_compliance_page": {
+    "badge": "GÜVENLİK VE UYUMLULUK",
+    "heading_part1": "Maksimum Güvenlik",
+    "heading_part2": "işletmeniz için",
+    "subtitle": "Verileriniz bizimle güvende. En yüksek güvenlik standartları ve kapsamlı veri koruma.",
+    "cta": "Güvenliği keşfedin",
+    "sec_badge": "Güvenlik",
+    "sec_title": "Kapsamlı Güvenlik Özellikleri",
+    "sec_subtitle": "Tüm seviyelerde çok katmanlı güvenlik",
+    "f1_title": "Şifreleme",
+    "f1_desc": "Transit ve bekleme halindeki veriler için uçtan uca şifreleme. AES-256.",
+    "f2_title": "Erişim Kontrolü",
+    "f2_desc": "Ayrıntılı izinler ve rol yönetimi. SSO, MFA ve Kimlik Sağlayıcı.",
+    "f3_title": "Denetim Günlüğü",
+    "f3_desc": "Tüm eylemler için eksiksiz denetim günlükleri. İzlenebilirlik ve uyumluluk.",
+    "f4_title": "Altyapı",
+    "f4_desc": "Güvenli bulut altyapısı veya şirket içi dağıtım. Sizin seçiminiz.",
+    "f5_title": "Tehdit Koruması",
+    "f5_desc": "Otomatik tehdit tespiti. DDoS koruması, güvenlik duvarı.",
+    "f6_title": "Yedekleme ve Kurtarma",
+    "f6_desc": "Otomatik yedeklemeler ve felaket kurtarma. Garantili veri kullanılabilirliği.",
+    "comp_title": "Sertifikasyonlar ve Uyumluluk",
+    "comp_subtitle": "Tüm önemli standartları ve düzenlemeleri karşılama",
+    "dp_title": "Veri Koruma",
+    "dp_desc": "Veri koruma düzenlemelerine tam uyumluluk.",
+    "cert_title": "Sertifikasyonlar",
+    "cert_desc": "Uluslararası alanda tanınan güvenlik ve kalite standartları.",
+    "data_ctrl_title": "Verileriniz, Sizin Kontrolünüz",
+    "data_ctrl_subtitle": "Verileriniz üzerinde maksimum kontrol",
+    "dr_title": "Veri İkameti",
+    "dr_desc": "Verilerinizin nerede depolanacağını seçin. AB, ABD veya şirket içi.",
+    "dm_title": "Veri Minimizasyonu",
+    "dm_desc": "Yalnızca hizmet için gerekli verileri topluyoruz.",
+    "del_title": "Silme Hakkı",
+    "del_desc": "Verileriniz üzerinde tam kontrol. Talep üzerine silme.",
+    "cta_title": "Güvenebileceğiniz güvenlik",
+    "cta_subtitle": "Güvenlik önlemlerimiz ve uyumluluk standartlarımız hakkında daha fazla bilgi edinin.",
+    "demo_cta": "Demo isteyin",
+    "comp_pill": "Uyumluluğu",
+    "dp_pill": "Veri Koruma"
+  },
+  "workflow_builder_page": {
+    "badge": "İŞ AKIŞI OLUŞTURUCU",
+    "heading_part1": "Görsel",
+    "heading_part2": "İş Akışı Oluşturucu",
+    "subtitle": "Sezgisel sürükle-bırak oluşturucumuzla karmaşık iş akışları oluşturun. Programlama gerekmez.",
+    "cta": "Oluşturucuyu dene",
+    "features_title": "İhtiyacınız olan her şey",
+    "features_subtitle": "Profesyonel iş akışları için güçlü bir oluşturucu",
+    "f1_title": "Sürükle & Bırak",
+    "f1_desc": "Sezgisel sürükle-bırak arayüzü. Bileşenleri sürükleyerek iş akışları oluşturun.",
+    "f2_title": "Çok Sayıda Bileşen",
+    "f2_desc": "Tüm yaygın görevler ve entegrasyonlar için yüzlerce hazır bileşen.",
+    "f3_title": "Canlı Test",
+    "f3_desc": "Iş akışlarınızı doğrudan oluşturucu içinde test edin. Anında geri bildirim ve hata ayıklama.",
+    "f4_title": "Kod Düzenleyici",
+    "f4_desc": "Özel mantık için yerleşik kod düzenleyiciyle gelişmiş işlevsellik.",
+    "f5_title": "Sürüm Kontrolü",
+    "f5_desc": "Tüm iş akışları için tam sürüm kontrolü. Geri alma ve karşılaştırma.",
+    "f6_title": "Doğrulama",
+    "f6_desc": "Oluşturma sırasında otomatik doğrulama ve hata kontrolü.",
+    "tpl_title": "Şablon Kütüphanesi",
+    "tpl_subtitle": "Hazır iş akışı şablonlarıyla başlayın",
+    "t1_title": "Belge İşleme",
+    "t1_desc": "Otomatik belge işleme, OCR ve sınıflandırma şablonları.",
+    "t2_title": "Veri Entegrasyonu",
+    "t2_desc": "Sistemleri bağlayın ve verileri otomatik olarak senkronize edin.",
+    "t3_title": "YZ & Otomasyon",
+    "t3_desc": "Akıllı otomasyon ve kararlar için YZ kullanın.",
+    "cta_title": "Oluşturmaya hazır mısınız?",
+    "cta_subtitle": "Bugün İş Akışı Oluşturucu ile başlayın ve ilk otomatik süreçlerinizi oluşturun.",
+    "demo_cta": "Demo isteyin"
+  },
+  "templates_page": {
+    "badge": "ŞABLONLAR",
+    "heading_part1": "Hazır",
+    "heading_part2": "Şablonlar",
+    "subtitle": "Profesyonel iş akışı şablonlarıyla hemen başlayın. Her endüstri ve kullanım senaryosu için.",
+    "cta": "Şablonlara göz at",
+    "all_title": "Tüm Şablonlar",
+    "all_subtitle": "Tüm endüstriler için hemen kullanılabilir",
+    "use_btn": "Şablonu kullan",
+    "cta_title": "Şablonunuz burada değil mi?",
+    "cta_subtitle": "Kendi şablonunuzu oluşturun veya bize yardım etmemize izin verin.",
+    "demo_cta": "Demo isteyin"
+  },
+  "ki_integration_page": {
+    "badge": "YZ ENTEGRASYONU",
+    "heading_part1": "YZ Entegrasyonu",
+    "heading_part2": "işletmeniz için",
+    "subtitle": "En güçlü YZ modellerini doğrudan iş süreçlerinize entegre edin. Programlama bilgisi gerekmez.",
+    "cta": "YZ entegrasyonunu dene",
+    "models_title": "Desteklenen YZ Modelleri",
+    "models_subtitle": "Her kullanım senaryosu için en iyi modeller",
+    "features_title": "Entegrasyon Özellikleri",
+    "cta_title": "YZ gücüne hazır mısınız?",
+    "cta_subtitle": "Bugün başlayın ve YZ ile verilerinizin potansiyelini serbest bırakın.",
+    "demo_cta": "Demo isteyin"
+  },
+  "preise_page": {
+    "badge": "Fiyatlar",
+    "title": "Basit, adil fiyatlar",
+    "subtitle": "İşletmenize uyan planı seçin.",
+    "monthly": "Aylık",
+    "yearly": "Yıllık",
+    "save": "%20 tasarruf",
+    "per_month": "aylık",
+    "get_started": "Başla",
+    "contact_sales": "Satış ile iletişim",
+    "faq_title": "Sık Sorulan Sorular",
+    "cta_title": "Hâlâ sorunuz var mı?",
+    "cta_subtitle": "Ekibimiz size yardımcı olmaktan memnuniyet duyacaktır.",
+    "contact_cta": "İletişime geçin"
+  }
+}

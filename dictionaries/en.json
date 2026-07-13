@@ -1,0 +1,1606 @@
+{
+  "nav": {
+    "product": {
+      "title": "Product",
+      "items": {
+        "voice_agent": "Sailly Voice Agent",
+        "integrations": "Integrations",
+        "data_insights": "Data & Insights",
+        "security": "Security & Compliance",
+        "languages": "Languages",
+        "partners": "Strategic Partners"
+      }
+    },
+    "solutions": {
+      "title": "Solutions",
+      "items": {
+        "hotels": "Hotels & Hospitality",
+        "medical": "Medical Practices & Clinics",
+        "restaurants": "Restaurants & Cafés",
+        "services": "Service Providers",
+        "legal": "Legal & Tax Advisory"
+      }
+    },
+    "resources": {
+      "title": "Resources",
+      "items": {
+        "blog": "Blog",
+        "case_studies": "Case Studies",
+        "faq": "FAQ",
+        "help": "Help Center"
+      }
+    },
+    "pricing": "Pricing",
+    "demo": "Request Demo",
+    "company": {
+      "title": "Company",
+      "items": {
+        "about": "About Us",
+        "contact": "Contact"
+      }
+    }
+  },
+  "hero": {
+    "title_line1": "You handle your business.",
+    "title_line2": "Sailly the calls.",
+    "primary_cta": "Request Demo",
+    "chat": {
+      "agent_label": "Sailly",
+      "guest_name": "Call · Guest",
+      "agent_name": "Sailly",
+      "guest": "Good evening! Do you still have a room for two nights this Friday?",
+      "agent": "Of course! A double room overlooking the garden is available. Shall I reserve it for you?",
+      "widget_title": "Booking confirmed",
+      "widget_detail": "Double room · Fri–Sun · 2 guests",
+      "scenarios": [
+        {
+          "id": "hotel",
+          "guestName": "Thomas",
+          "guestAvatar": "/images/avatars/guest-hotel.jpg",
+          "guest": "Good evening! Do you still have a room for two nights this Friday?",
+          "agentGreeting": "Good evening! How can I help you today?",
+          "agent": "Of course! A double room with a garden view is available. Shall I reserve it for you?",
+          "widget": {
+            "type": "booking",
+            "title": "Booking confirmed",
+            "detail": "Double room · Fri–Sun · 2 guests"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
+          "guest": "Do you have a table for four on Saturday at 7 pm?",
+          "agent": "Yes, we still have seats available. Shall I reserve the table for you?",
+          "widget": {
+            "type": "slots",
+            "date": "Sat, Jul 12",
+            "times": ["6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM"],
+            "selected": "7:00 PM",
+            "confirmed": "Table reserved"
+          }
+        },
+        {
+          "id": "praxis",
+          "guestName": "Sabine",
+          "guestAvatar": "/images/avatars/guest-praxis.jpg",
+          "guest": "Can we come to the doctor tomorrow morning?",
+          "agent": "Yes, there are still appointments available tomorrow morning. What time works for you?",
+          "widget": {
+            "type": "slots",
+            "date": "Fri, Jul 11",
+            "times": ["8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM"],
+            "selected": "8:30 AM",
+            "confirmed": "Appointment booked"
+          }
+        }
+      ]
+    },
+    "badges": {
+      "gdpr": "GDPR Compliant",
+      "availability": "24/7 Available",
+      "setup": "Live in 4 Weeks"
+    },
+    "stats": {
+      "title": "Results from our Partners",
+      "items": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "More Satisfied Employees"
+        },
+        "containment": {
+          "value": "90%+",
+          "label": "Automated Routine Requests"
+        },
+        "reduction": {
+          "value": "24/7",
+          "label": "Availability for Customers"
+        }
+      }
+    }
+  },
+  "problems": {
+    "badge": "Challenges",
+    "title": "Missed Calls Mean Lost Revenue",
+    "subtitle": "Phone ringing disrupts operations and ties up valuable resources.",
+    "cards": {
+      "missed": {
+        "title": "Unreachability",
+        "desc": "30% of all calls go unanswered or end up in voicemail."
+      },
+      "stress": {
+        "title": "Employee Burden",
+        "desc": "Constant phone ringing interrupts work and stresses the team."
+      },
+      "cost": {
+        "title": "High Costs",
+        "desc": "Staff for the call center is expensive and hard to find."
+      }
+    }
+  },
+  "value_props": {
+    "badge": "Why Sailly",
+    "title_line1": "More than just",
+    "title_line2": "an answering machine",
+    "subtitle": "Sailly picks up calls, books appointments and keeps your team out of phone stress.",
+    "cards": {
+      "always_on": {
+        "title": "No call goes unanswered",
+        "desc": "Guests reach you — evenings, weekends and during rush hour."
+      },
+      "instant_scale": {
+        "title": "Appointments land in your system",
+        "desc": "Reservations and bookings are entered directly — no notes, no callbacks."
+      },
+      "multilingual": {
+        "title": "One assistant, every channel",
+        "desc": "Phone, email and messaging — one conversation history, one team overview."
+      },
+      "integration": {
+        "title": "Guests stay happy",
+        "desc": "No hold music, clear answers — and bookings that actually arrive."
+      }
+    },
+    "tags": [
+      { "label": "#24/7", "desc": "Nights and Sundays included" },
+      { "label": "#30Languages", "desc": "International guests welcome" },
+      { "label": "#GDPR", "desc": "Hosted in Germany" },
+      { "label": "#NoHoldMusic", "desc": "Picked up immediately" },
+      { "label": "#PMSIntegration", "desc": "Calendar & reservations" },
+      { "label": "#4WeeksLive", "desc": "Up and running fast" }
+    ]
+  },
+  "solutions": {
+    "badge": "Solution",
+    "title": "Sailly Takes Over the Phone",
+    "subtitle": "Your intelligent voice assistant for professional customer service.",
+    "cards": {
+      "availability": {
+        "title": "Always Available",
+        "desc": "No busy signal, no waiting queue. Sailly picks up immediately."
+      },
+      "appointments": {
+        "title": "Appointment Booking",
+        "desc": "Direct integration with your calendar for automatic scheduling."
+      },
+      "answers": {
+        "title": "Smart Answers",
+        "desc": "Answers questions about opening hours, prices and services precisely."
+      }
+    }
+  },
+  "roi_section": {
+    "badge": "Return on Investment",
+    "title": "Measurable Value from Day 1",
+    "subtitle": "More revenue and happier employees through optimal accessibility.",
+    "benefits": [
+      {
+        "title": "More Revenue",
+        "desc": "No call goes unanswered. 15-25% more appointments and bookings through 24/7 availability.",
+        "icon": "trending-up"
+      },
+      {
+        "title": "More Efficient Team",
+        "desc": "Your specialists save 2-3 hours of phone time daily and can focus on customer work.",
+        "icon": "zap"
+      },
+      {
+        "title": "Happy Customers",
+        "desc": "Immediate answers without waiting queues. Your customers feel valued and well cared for.",
+        "icon": "heart"
+      },
+      {
+        "title": "Reduce Costs",
+        "desc": "Avoid expensive overtime or external call centers. Sailly scales without additional costs.",
+        "icon": "euro"
+      }
+    ]
+  },
+  "security_trust": {
+    "badge": "Security & Trust",
+    "title": "Trust and reliability",
+    "subtitle": "Sailly is designed with the highest commitment to trust, security, and compliance."
+  },
+  "testimonials": {
+    "badge": "Customer Reviews",
+    "title": "What Our Customers Say",
+    "items": [
+      {
+        "quote": "We used to simply stop answering the phone after seven in the evening. Now no call goes unanswered — and my team is at the tables, not at the phone.",
+        "author": "Maria Schmidt",
+        "role": "Owner, Gasthof Zur Post",
+        "location": "Munich"
+      },
+      {
+        "quote": "Monday mornings were chaos: three lines ringing, a full waiting room. Sailly takes the appointment requests, and my assistants have time for the people at the desk again.",
+        "author": "Dr. Thomas Weber",
+        "role": "Family Practice",
+        "location": "Hamburg"
+      },
+      {
+        "author": "Sandra K.",
+        "role": "Beauty Studio Owner",
+        "location": "Munich",
+        "quote": "I'm with clients all day and could never pick up the phone. Now Sailly books the appointments — in the evening I just see a full calendar."
+      },
+      {
+        "quote": "Client calls used to hit three lines at once. Sailly handles initial consultations and appointment requests — my assistant can focus on the files again.",
+        "author": "Dr. Martin Hoffmann",
+        "role": "Tax Advisor",
+        "location": "Frankfurt"
+      }
+    ]
+  },
+  "howItWorks": {
+    "badge": "How It Works",
+    "title": "How Sailly Works",
+    "subtitle": "From ring to booking — in one conversation, no hold queue.",
+    "steps": {
+      "answer": {
+        "title": "Answer the call",
+        "desc": "Sailly picks up every call instantly — friendly, professional, in 30+ languages."
+      },
+      "understand": {
+        "title": "Understand & act",
+        "desc": "Book appointments, take orders, answer questions — directly in your system."
+      },
+      "execute": {
+        "title": "Keep your team informed",
+        "desc": "Every booking and order lands exactly where it's needed. No notes, no callbacks."
+      }
+    },
+    "try_title": "Try it yourself",
+    "try_subtitle": "See what a real conversation with Sailly looks like."
+  },
+  "pricing_page": {
+    "badge": "Special Offer",
+    "title": "Simple, Transparent Pricing",
+    "trial_text": "Trial: Get 50% off for the first 30 days on all plans.",
+    "plans": {
+      "standard": {
+        "name": "Standard",
+        "description": "Professional voice forwarding with intelligent call summarization.",
+        "cta": "Get Started",
+        "features": [
+          "24/7 Voice Forwarding",
+          "AI Call Summarization",
+          "Detailed Call Protocols",
+          "Appointment Booking",
+          "Manual System Upload Ready"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "description": "Seamless integration with your existing software ecosystem.",
+        "cta": "Choose Gold",
+        "features": [
+          "Everything in Standard",
+          "Direct Software Integration",
+          "Industry-Specific Workflows",
+          "Multi-language Support (up to 12)",
+          "Real-time Data Sync",
+          "Pay-per-minute usage model"
+        ]
+      },
+      "future": {
+        "name": "Future",
+        "description": "Tailor-made AI solutions for highest demands.",
+        "cta": "Contact Sales",
+        "features": [
+          "Everything in Gold",
+          "Custom AI Model Training",
+          "Advanced Conversational AI",
+          "Complex Workflow Automation",
+          "Dedicated Solution Architect"
+        ]
+      }
+    },
+    "meta": {
+      "popular": "Most Popular",
+      "per_month": "/month",
+      "starting_at": "",
+      "plus_fees": "+ call fees per minute",
+      "per_minute_example": "With 200 calls/month approximately €24 additional (approx. €0.12 per minute)"
+    }
+  },
+  "cta_section": {
+    "title": "Your next standard call is already answered.",
+    "subtitle": "Sailly takes over your phone — your team gets its time back. Live in four weeks.",
+    "demo": "Request Free Demo",
+    "contact": "Get in Touch",
+    "guarantee": "30-day money-back guarantee"
+  },
+  "industries": {
+    "hotels": {
+      "hero": {
+        "title": "Your Digital Concierge for a Relaxed Reception.",
+        "subtitle": "Support your reception team with an AI assistant that takes calls, manages reservations and answers guest questions – 24/7, friendly and professional.",
+        "cta": "View Hotel Demo"
+      },
+      "agent_line": "Your room is booked. We look forward to seeing you.",
+      "challenges": {
+        "title": "Relief for Your Reception",
+        "items": [
+          {
+            "title": "Focus on the Guest",
+            "desc": "When the phone rings, counter service suffers. Sailly keeps your back free for personal care."
+          },
+          {
+            "title": "Bridge Staff Shortages",
+            "desc": "Good staff is rare. Give your team digital support for routine inquiries."
+          },
+          {
+            "title": "International Guests",
+            "desc": "Eliminate language barriers. Sailly advises your guests fluently in over 30 languages."
+          }
+        ]
+      },
+      "audio_samples": {
+        "title": "Hear the Difference",
+        "subtitle": "This is how naturally Sailly relieves your team.",
+        "samples": [
+          {
+            "label": "Room Booking",
+            "desc": "A friendly reservation without waiting time."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "More Time for Hospitality",
+        "items": [
+          {
+            "title": "Direct PMS Integration",
+            "desc": "Connects seamlessly with Oracle, Sihot and other systems for automatic entries."
+          },
+          {
+            "title": "24/7 Concierge",
+            "desc": "Whether late check-out or pillow request – Sailly is always there for your guests."
+          },
+          {
+            "title": "Revenue through Accessibility",
+            "desc": "No more missed bookings because the line was busy."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in real hotel scenarios",
+        "subtitle": "Listen to Sailly guide guests through reservations, check-in and service requests.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "booking",
+            "title": "Book a room",
+            "desc": "A guest calls to book a weekend stay — Sailly checks availability and confirms.",
+            "guestName": "Thomas",
+            "guest": "Good evening! Do you have a room for two nights this Friday?",
+            "agentGreeting": "Good evening! How can I help you?",
+            "agent": "Of course! A double room with garden view is available. Shall I reserve it for you?",
+            "widget": { "type": "booking", "title": "Booking confirmed", "detail": "Double room · Fri–Sun · 2 guests" }
+          },
+          {
+            "id": "checkout",
+            "title": "Late check-out",
+            "desc": "A guest asks for late check-out before an evening flight.",
+            "guestName": "Julia",
+            "guest": "Can we stay in the room until 2 pm tomorrow? Our flight is in the evening.",
+            "agent": "Yes, late check-out until 2 pm is available. I'll add that for you right away.",
+            "widget": { "type": "info", "title": "Late check-out confirmed", "detail": "Room 412 · until 2:00 pm" }
+          },
+          {
+            "id": "breakfast",
+            "title": "Breakfast & service",
+            "desc": "A guest asks about breakfast hours and extra towels — Sailly answers instantly.",
+            "guestName": "Michael",
+            "guest": "What time is breakfast? And could we get two extra towels, please?",
+            "agent": "Breakfast is from 7 to 10:30 am. Housekeeping will bring the towels shortly.",
+            "widget": { "type": "status", "label": "Service request forwarded", "detail": "Housekeeping · 2 towels · Room 218" }
+          },
+          {
+            "id": "parking",
+            "title": "Parking & arrival",
+            "desc": "A guest plans their arrival and needs parking and check-in info.",
+            "guestName": "Sandra",
+            "guest": "Is there parking? And can we check in at 11 am?",
+            "agent": "Yes, underground parking is €18 per night. Early check-in at 11 am is available today.",
+            "widget": { "type": "info", "title": "Arrival noted", "detail": "Parking reserved · Check-in 11:00" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – No Missed Bookings. Your Guests Get the Attention They Deserve."
+    },
+    "restaurants": {
+      "hero": {
+        "title": "More Time for Your Guests, Less on the Phone.",
+        "subtitle": "Let Sailly take reservations while you're the perfect host. No ringing in the dining room, no no-shows.",
+        "cta": "View Restaurant Demo"
+      },
+      "agent_line": "Your table for four is reserved — Saturday at 7 pm.",
+      "challenges": {
+        "title": "Full House Without Phone Stress",
+        "items": [
+          {
+            "title": "The Perfect Host",
+            "desc": "Nothing disrupts service more than a ringing phone. Stay completely with your guests at the table."
+          },
+          {
+            "title": "Reliable Reservations",
+            "desc": "End the paper chaos and misunderstandings in table allocation."
+          },
+          {
+            "title": "Noise & Hectic",
+            "desc": "In full operation, telephoning is difficult. Sailly always understands your guests crystal clear."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Your Invisible Restaurant Manager",
+        "items": [
+          {
+            "title": "Smart Reservations",
+            "desc": "Connects with OpenTable, Resmio and other systems for automatic table bookings."
+          },
+          {
+            "title": "No-Show Reduction",
+            "desc": "Sends reminders and confirmations so reserved tables are actually occupied."
+          },
+          {
+            "title": "Allergen & Menu Information",
+            "desc": "Answers questions about ingredients and daily specials competently and safely."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in real restaurant scenarios",
+        "subtitle": "Listen to Sailly handle reservations, menu questions and takeaway orders.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "reservation",
+            "title": "Reserve a table",
+            "desc": "A guest books a table for four while the dining room is full.",
+            "guestName": "Anna",
+            "guest": "Do you have a table for four this Saturday at 7 pm?",
+            "agent": "Yes, we still have availability. Shall I reserve the table for you?",
+            "widget": { "type": "slots", "date": "Sat, Jul 12", "times": ["6:30 pm", "7:00 pm", "7:30 pm", "8:00 pm"], "selected": "7:00 pm", "confirmed": "Table reserved" }
+          },
+          {
+            "id": "allergens",
+            "title": "Allergens & menu",
+            "desc": "A guest asks about gluten-free options before booking.",
+            "guestName": "Lukas",
+            "guest": "My partner is gluten-free — what would you recommend?",
+            "agent": "We have several gluten-free dishes, including today's special. Shall I note that with your reservation?",
+            "widget": { "type": "info", "title": "Note saved", "detail": "Gluten-free · Sat 7:00 pm" }
+          },
+          {
+            "id": "hours",
+            "title": "Opening hours",
+            "desc": "A caller wants to know if kitchen and bar are open today.",
+            "guestName": "Petra",
+            "guest": "Are you open for lunch today? And how long does the kitchen serve?",
+            "agent": "Yes, we open at 11:30 am. Kitchen serves until 2:30 pm and again until 10 pm.",
+            "widget": { "type": "status", "label": "Info provided", "detail": "Lunch 11:30–2:30 · Dinner until 10:00" }
+          },
+          {
+            "id": "takeaway",
+            "title": "Takeaway order",
+            "desc": "A regular orders two pasta dishes for pickup at 6:30 pm.",
+            "guestName": "Markus",
+            "guest": "Can I order two pasta dishes for pickup at half past six?",
+            "agent": "Sure! Tagliatelle and pesto pasta — pickup at 6:30 pm. Does that work?",
+            "widget": { "type": "booking", "title": "Order taken", "detail": "2× pasta · Pickup 6:30 pm" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – No Missed Reservations. You Stay in the Dining Room."
+    },
+    "medical": {
+      "hero": {
+        "title": "The Digital Medical Assistant for Your Practice.",
+        "subtitle": "Ensure accessibility for your patients and relieve your medical staff. Appointment scheduling and prescription ordering – empathetic and data protection compliant.",
+        "cta": "View Practice Demo"
+      },
+      "agent_line": "Your appointment on Tuesday at 9:30 am is confirmed.",
+      "challenges": {
+        "title": "More Time for Patients",
+        "items": [
+          {
+            "title": "Focus on Treatment",
+            "desc": "Your medical assistants are there for the people in the practice. Sailly now takes over the phone."
+          },
+          {
+            "title": "No Busy Signal",
+            "desc": "Patients always reach you – for appointments, prescriptions or emergency triage."
+          },
+          {
+            "title": "Privacy First",
+            "desc": "Sensitive health data remains secure. GDPR compliant on German servers."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Relief for Your Practice Team",
+        "items": [
+          {
+            "title": "Smart Appointment Booking",
+            "desc": "Connects with Doctolib, Jameda and practice calendars for direct appointment allocation."
+          },
+          {
+            "title": "Prescription Phone 2.0",
+            "desc": "Takes prescription requests in a structured way and prepares them for signature."
+          },
+          {
+            "title": "Emergency Recognition",
+            "desc": "Filters urgent concerns and forwards them immediately to staff."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in real practice scenarios",
+        "subtitle": "Listen to Sailly guide patients through appointments, prescriptions and office hours.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "appointment",
+            "title": "Book an appointment",
+            "desc": "A patient needs an appointment — lines are busy, Sailly picks up.",
+            "guestName": "Sabine",
+            "guest": "Can we come in tomorrow morning to see the doctor?",
+            "agentGreeting": "Good morning, Dr. Weber's practice. How can I help?",
+            "agent": "Yes, there are slots tomorrow morning. Does 8:30 or 9:00 am work?",
+            "widget": { "type": "slots", "date": "Fri, Jul 11", "times": ["8:00 am", "8:30 am", "9:00 am", "9:30 am"], "selected": "8:30 am", "confirmed": "Appointment booked" }
+          },
+          {
+            "id": "prescription",
+            "title": "Order a prescription",
+            "desc": "A patient requests a repeat prescription — Sailly captures it structured.",
+            "guestName": "Klaus",
+            "guest": "I'd like a repeat prescription for my blood pressure medication, please.",
+            "agent": "Of course. I've noted Ramipril 5 mg. Pickup available from 10 am tomorrow.",
+            "widget": { "type": "info", "title": "Prescription request logged", "detail": "Ramipril 5 mg · Pickup from 10:00" }
+          },
+          {
+            "id": "hours",
+            "title": "Office hours",
+            "desc": "A caller asks about hours and whether the practice is open today.",
+            "guestName": "Elena",
+            "guest": "What are your hours today? I need to stop by briefly.",
+            "agent": "Today until 6 pm. Morning 8–12, afternoon 2–6 for prescriptions without appointment.",
+            "widget": { "type": "status", "label": "Info provided", "detail": "Prescriptions today until 6:00 · walk-in" }
+          },
+          {
+            "id": "urgent",
+            "title": "Urgent case",
+            "desc": "Sailly recognizes urgency and forwards to the practice team.",
+            "guestName": "Frank",
+            "guest": "My child has had a high fever since yesterday — can we come in today?",
+            "agent": "That sounds urgent. I'll connect you with the practice assistant right away.",
+            "widget": { "type": "status", "label": "Forwarded", "detail": "Urgent · Assistant notified" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – No Missed Patients. Your Team Stays Focused on Care."
+    },
+    "legal": {
+      "hero": {
+        "title": "Your Digital Front Office for Law and Tax Practices.",
+        "subtitle": "Ensure accessibility for clients and relieve your team. Initial consultations, appointments and callbacks — confidential, structured and GDPR compliant.",
+        "cta": "View Legal Demo"
+      },
+      "agent_line": "Your initial consultation is scheduled for Thursday at 2 pm.",
+      "challenges": {
+        "title": "More Time for Client Work",
+        "items": [
+          {
+            "title": "Focus on Advisory",
+            "desc": "When the phone rings, it interrupts case work. Sailly takes inquiries while you focus on your clients."
+          },
+          {
+            "title": "No Client Gets Lost",
+            "desc": "Initial consultations and callback requests are captured in a structured way — even outside office hours."
+          },
+          {
+            "title": "Confidentiality & Compliance",
+            "desc": "Sensitive client data stays protected. GDPR compliant on German servers, with clear processes for professional secrecy."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Relief for Law and Tax Offices",
+        "items": [
+          {
+            "title": "Smart Appointment Scheduling",
+            "desc": "Books initial consultations and client meetings directly in your calendar — without phone tag."
+          },
+          {
+            "title": "Client Intake",
+            "desc": "Captures concerns, urgency and contact details in a structured way so your team can act immediately."
+          },
+          {
+            "title": "Prioritization & Routing",
+            "desc": "Filters urgent matters and forwards them to the right person — deadlines and clients stay in view."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in real law firm scenarios",
+        "subtitle": "Listen to Sailly guide clients through initial consultations, appointments and callbacks.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "consultation",
+            "title": "Book initial consultation",
+            "desc": "A client wants to schedule an initial tax advisory meeting.",
+            "guestName": "Mr. Berger",
+            "guest": "I'd like an initial consultation about forming a GmbH. When is something available?",
+            "agentGreeting": "Hoffmann & Partners, good afternoon.",
+            "agent": "Happy to help. Thursday at 2 or 4 pm is available. Which works better?",
+            "widget": { "type": "slots", "date": "Thu, Jul 17", "times": ["2:00 pm", "4:00 pm", "5:30 pm"], "selected": "2:00 pm", "confirmed": "Consultation booked" }
+          },
+          {
+            "id": "callback",
+            "title": "Schedule a callback",
+            "desc": "A client requests a callback — Sailly captures concern and urgency.",
+            "guestName": "Ms. Klein",
+            "guest": "Could you call me back? It's about a tax assessment notice.",
+            "agent": "Of course. I'll note your request — callback today before 5 pm.",
+            "widget": { "type": "info", "title": "Callback scheduled", "detail": "Tax notice · today by 5:00 pm" }
+          },
+          {
+            "id": "documents",
+            "title": "Request documents",
+            "desc": "A client asks what to bring to the initial consultation.",
+            "guestName": "Daniel",
+            "guest": "What should I bring to the first meeting? I already have the articles of association.",
+            "agent": "Please bring ID, articles of association and your latest tax documents.",
+            "widget": { "type": "status", "label": "Checklist sent", "detail": "ID · Articles · Tax records" }
+          },
+          {
+            "id": "reschedule",
+            "title": "Reschedule appointment",
+            "desc": "A client moves an appointment — Sailly updates the calendar.",
+            "guestName": "Lisa",
+            "guest": "Can we move Thursday's appointment to Friday morning?",
+            "agent": "Yes, Friday at 10 am is free. I'll update that for you.",
+            "widget": { "type": "booking", "title": "Appointment rescheduled", "detail": "Fri, 10:00 am · Initial consultation" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – No Missed Clients. Your Team Stays Focused on Advisory."
+    },
+    "services": {
+      "hero": {
+        "title": "The Master Works, the Assistant Handles the Office.",
+        "subtitle": "Whether crafts, studio or workshop: Focus on your craft. Sailly takes care of appointments, prices and customer inquiries.",
+        "cta": "View SME Demo"
+      },
+      "agent_line": "Your appointment is noted — we'll call you as soon as it's ready.",
+      "challenges": {
+        "title": "Focus on Your Craft",
+        "items": [
+          {
+            "title": "Work Undisturbed",
+            "desc": "You can't answer the phone when you're tattooing or repairing. Sailly keeps your back free."
+          },
+          {
+            "title": "No Order Gets Lost",
+            "desc": "Every missed call is lost revenue. Secure every lead, even when you're busy."
+          },
+          {
+            "title": "Professional Appearance",
+            "desc": "Delight customers with immediate accessibility, even when you're up on the ladder."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Your Virtual Reception",
+        "items": [
+          {
+            "title": "Appointment Coordination",
+            "desc": "Schedules customer appointments directly in your calendar without you having to put down the hammer."
+          },
+          {
+            "title": "Price Information & Consulting",
+            "desc": "Answers standard questions about prices, travel and services competently in advance."
+          },
+          {
+            "title": "Status Updates",
+            "desc": "Automatically informs customers about the status of repairs or orders."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in real business scenarios",
+        "subtitle": "Listen to Sailly take appointments, price inquiries and customer requests while you work.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "appointment",
+            "title": "Book appointment",
+            "desc": "A customer calls while the technician is on site.",
+            "guestName": "Stefan",
+            "guest": "Can you schedule a heating maintenance appointment next week?",
+            "agentGreeting": "Müller Workshop, good morning!",
+            "agent": "Happy to. Tuesday or Wednesday morning is free. Which works better?",
+            "widget": { "type": "slots", "date": "Tue, Jul 15", "times": ["9:00 am", "10:30 am", "2:00 pm"], "selected": "10:30 am", "confirmed": "Appointment noted" }
+          },
+          {
+            "id": "quote",
+            "title": "Price inquiry",
+            "desc": "A customer asks about cost for a standard service.",
+            "guestName": "Nina",
+            "guest": "What does a full air conditioning cleaning cost with you?",
+            "agent": "A full cleaning is €89. Shall I book an appointment for you right away?",
+            "widget": { "type": "info", "title": "Quote provided", "detail": "AC cleaning · approx. €89" }
+          },
+          {
+            "id": "status",
+            "title": "Job status",
+            "desc": "A customer asks if their repair is ready.",
+            "guestName": "Oliver",
+            "guest": "Is my bike ready? I dropped it off on Monday.",
+            "agent": "Yes, the repair is complete. You can pick it up today until 6 pm.",
+            "widget": { "type": "status", "label": "Ready for pickup", "detail": "Bike · today until 6:00 pm" }
+          },
+          {
+            "id": "directions",
+            "title": "Directions & hours",
+            "desc": "A new customer asks about location and opening hours.",
+            "guestName": "Tim",
+            "guest": "Where exactly are you? And are you open on Saturdays?",
+            "agent": "Main Street 12, parking in the back. Saturdays 9 am–1 pm, otherwise Mon–Fri 8 am–6 pm.",
+            "widget": { "type": "info", "title": "Info provided", "detail": "Main St. 12 · Sat 9 am–1 pm" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – No Missed Jobs. You Focus on the Work."
+    }
+  },
+  "footer": {
+    "product": "Product",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "agb": "Terms",
+    "copyright": "© 2026 Sailly. All rights reserved.",
+    "tagline": "The AI phone system for businesses. Answers calls, schedules appointments and relieves your team – 24/7.",
+    "links": {
+      "overview": "Overview",
+      "technology": "Technology",
+      "pricing": "Pricing",
+      "demo": "Demo",
+      "hotels": "Hotels & Hospitality",
+      "medical": "Medical Practices",
+      "restaurants": "Restaurants",
+      "services": "Service Providers",
+      "legal": "Legal & Tax Advisory"
+    },
+    "made_in_germany": "Made in Germany 🇩🇪"
+  },
+  "audio_demo": {
+    "badge": "Audio Demo",
+    "title": "Hear the Difference",
+    "subtitle": "This is how naturally Sailly sounds on the phone.",
+    "language_label": "English",
+    "samples": [
+      {
+        "label": "Restaurant – Table Reservation",
+        "desc": "Automatic booking while your team attends to guests."
+      },
+      {
+        "label": "Hotel – Room Inquiry",
+        "desc": "Expert answers about availability and special requests."
+      }
+    ]
+  },
+  "dashboard_preview": {
+    "title": "Live Overview",
+    "today": "Today,",
+    "systemActive": "Online",
+    "calls": "Calls",
+    "timeSaved": "Time Saved",
+    "vsYesterday": "vs yesterday",
+    "callVolume": "Call Volume",
+    "callsUnit": "calls",
+    "lastActivity": "Recent Activity",
+    "activities": [
+      "Table for 4 — Saturday 7:00 PM",
+      "Room inquiry: double room Fri–Sun",
+      "Appointment booked — Fri 8:30 AM"
+    ]
+  },
+  "conversation_preview": {
+    "speaking": "Speaking...",
+    "listening": "Listening...",
+    "customerLabel": "Customer",
+    "saillyLabel": "Sailly",
+    "messages": [
+      {
+        "id": "1",
+        "speaker": "sailly",
+        "message": "Hello, this is Sailly from Bright Dental. How can I help you?"
+      },
+      {
+        "id": "2",
+        "speaker": "user",
+        "message": "I need to reschedule my appointment for tomorrow."
+      },
+      {
+        "id": "3",
+        "speaker": "sailly",
+        "message": "Of course. What time would work better for you?"
+      },
+      {
+        "id": "4",
+        "speaker": "user",
+        "message": "Do you have anything in the afternoon around 3 PM?"
+      },
+      {
+        "id": "5",
+        "speaker": "sailly",
+        "message": "Let me check... Yes, 3:15 PM is still available. Should I book that?"
+      },
+      {
+        "id": "6",
+        "speaker": "user",
+        "message": "Yes please, that's perfect."
+      },
+      {
+        "id": "7",
+        "speaker": "sailly",
+        "message": "Done! See you tomorrow at 3:15 PM."
+      }
+    ]
+  },
+  "industries_eyebrow": "Optimized for Your Industry",
+  "industries_section_title": "For businesses where the phone never stops ringing.",
+  "industries_more_label": "Also for trades, studios and other service providers",
+  "platform_os": {
+    "title": "Sailly OS",
+    "subtitle": "One surface for calls, appointments and insights — for hospitality, healthcare, law firms and tax offices.",
+    "group_overview": "Overview",
+    "group_manage": "Manage",
+    "nav_overview": "Overview",
+    "nav_calls": "Calls",
+    "nav_appointments": "Appointments",
+    "nav_insights": "Insights",
+    "nav_setup": "Setup",
+    "nav_settings": "Settings",
+    "stat_bookings": "Bookings",
+    "voice_pill": "Voice Agent",
+    "voice_title": "Calls",
+    "voice_lead": "Answered, booked, forwarded — no hold music.",
+    "voice_points": [
+      "Every call is picked up right away",
+      "Reservations go straight into your system",
+      "Guests are helped in their language"
+    ],
+    "insights_pill": "Data & Insights",
+    "insights_title": "Reporting",
+    "insights_lead": "What came in today — without spreadsheets or follow-up calls.",
+    "insights_points": [
+      "Call volume and common requests",
+      "Booked appointments at a glance",
+      "Hosted in Germany, GDPR-compliant"
+    ],
+    "integrations_pill": "Integrations",
+    "integrations_title": "Connections",
+    "integrations_lead": "Linked to your phone system and the tools you already use.",
+    "integrations_points": [
+      "Calendar, PMS and reservation systems",
+      "Bookings land in your daily workflow",
+      "No manual re-entry"
+    ]
+  },
+  "industry_template": {
+    "badges": {
+      "gdpr": "GDPR Compliant",
+      "setup": "Live in 4 Weeks",
+      "guarantee": "30-Day Guarantee"
+    },
+    "challenges_badge": "Challenges",
+    "solution_badge": "Solution",
+    "audio_badge": "Audio Demo",
+    "audio_duration": "0:45 • English",
+    "roi": {
+      "badge": "Return on Investment",
+      "title": "Measurable Results from Day 1",
+      "subtitle": "Sailly pays for itself in the first month.",
+      "metrics": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Customer Satisfaction"
+        },
+        "fewer_calls": {
+          "value": "50%",
+          "label": "Fewer Calls for Your Team"
+        },
+        "availability": {
+          "value": "24/7",
+          "label": "Availability"
+        },
+        "implementation": {
+          "value": "4 Weeks",
+          "label": "To Implementation"
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Sailly has transformed our business. We never miss a call and our team can focus on what really matters – our customers.",
+      "author": "Example Customer"
+    },
+    "cta": {
+      "title": "Ready for the Next Step?",
+      "subtitle": "Start with Sailly now and transform your customer service.",
+      "primary": "Request Free Demo",
+      "secondary": "Schedule Consultation",
+      "guarantee": "30-day money-back guarantee"
+    }
+  },
+  "produkt_page": {
+    "badge": "Sailly Voice Agent",
+    "hero": {
+      "eyebrow": "Sailly Voice Agent",
+      "title_line1": "Answer every call.",
+      "title_line2": "Book every appointment.",
+      "description": "Sailly picks up every call, answers questions and enters bookings directly in your system — friendly, reliable, around the clock.",
+      "cta_primary": "Request a demo",
+      "cta_secondary": "View pricing"
+    },
+    "how_it_works": {
+      "title": "How Sailly works",
+      "subtitle": "From ring to booking — in one conversation, no hold queue.",
+      "steps": [
+        {
+          "title": "Answer the call",
+          "desc": "Sailly picks up every call instantly — friendly, professional, in 30+ languages."
+        },
+        {
+          "title": "Understand & act",
+          "desc": "Book appointments, take orders, answer questions — directly in your system."
+        },
+        {
+          "title": "Keep your team informed",
+          "desc": "Every booking and order lands exactly where it's needed. No notes, no callbacks."
+        }
+      ]
+    },
+    "dashboard_section": {
+      "heading": "She Stays on Top of Everything",
+      "description": "While Sailly handles calls, she analyzes every conversation. You get real-time insights into customer satisfaction, common questions, and booked appointments.",
+      "features": [
+        {
+          "title": "Real-time Analysis",
+          "desc": "Detects mood and urgency instantly."
+        },
+        {
+          "title": "Seamless Integration",
+          "desc": "Connects directly with your CRM."
+        },
+        {
+          "title": "Adaptive Learning",
+          "desc": "Gets smarter with every conversation."
+        }
+      ]
+    },
+    "conversation_section": {
+      "heading": "Clear in every language",
+      "description": "Whether dialect, foreign language or a hectic service rush — Sailly stays clear, friendly and professional on the phone.",
+      "languages_label": "Languages",
+      "availability_label": "Availability",
+      "response_time_label": "Response time"
+    },
+    "trust_section": {
+      "heading": "Why Businesses Trust Sailly",
+      "trust_cards": [
+        {
+          "title": "24/7 Available",
+          "desc": "No more hold queues or missed calls."
+        },
+        {
+          "title": "GDPR Compliant",
+          "desc": "Servers in Germany, highest security standards."
+        },
+        {
+          "title": "Ready Instantly",
+          "desc": "Set up and trained in minutes."
+        }
+      ]
+    },
+    "cta_section": {
+      "heading": "Ready for the next step?",
+      "description": "Sailly takes over your phone — your team gets its time back. Live in four weeks.",
+      "cta_start": "Request a demo",
+      "cta_contact": "Book a consultation"
+    }
+  },
+  "integrationen_page": {
+    "title": "Connect All Your Systems",
+    "subtitle": "500+ ready-made integrations. Seamlessly connect, automatically sync.",
+    "cta": "Explore integrations",
+    "badge": "INTEGRATIONS",
+    "heading_part1": "Connect",
+    "heading_part2": "all your systems",
+    "industry_badge": "Industry-specific",
+    "industry_title": "Integrations for your industry",
+    "industry_subtitle": "Built for hospitality, restaurants, healthcare and legal & tax offices",
+    "legal_title": "Legal & Tax Advisory",
+    "legal_desc": "GDPR-compliant integration with practice and client management.",
+    "legal_label": "Client files, initial consultations",
+    "hotels_title": "Hotels",
+    "hotels_desc": "Seamless integration with hotel management systems.",
+    "restaurants_title": "Restaurants",
+    "restaurants_desc": "Direct connection to reservation systems.",
+    "healthcare_title": "Healthcare",
+    "healthcare_desc": "GDPR-compliant integration with practice management systems.",
+    "pos_label": "POS systems, menus",
+    "praxis_label": "Practice calendar, prescriptions",
+    "business_title": "General Business Tools",
+    "crm_title": "CRM & Sales",
+    "crm_desc": "Connect to your customer management systems.",
+    "calendar_title": "Calendar & Appointments",
+    "calendar_desc": "Sync calendars and manage appointments.",
+    "comm_title": "Communication",
+    "comm_desc": "Automated notifications and communication.",
+    "api_title": "Build custom integrations",
+    "api_subtitle": "Use our API documentation to build your own integrations.",
+    "api_docs": "API Documentation",
+    "cta_title": "Ready to connect?",
+    "cta_subtitle": "Experience how easy system integration can be.",
+    "cta_demo": "Request demo"
+  },
+  "strategic_partners_page": {
+    "title": "Technology Stack",
+    "partners": "Strategic Partners",
+    "badge": "Technology Stack",
+    "heading_part1": "Strategic",
+    "heading_part2": "Partners",
+    "subtitle": "Sailly is built on proven technologies from leading providers.",
+    "stack_title": "Our Technology Stack",
+    "stack_subtitle": "Proven partnerships for maximum reliability",
+    "ai_section_title": "AI Foundation Partners",
+    "ai_section_subtitle": "Best LLMs for natural conversations",
+    "voice_section_title": "Voice Technology Partners",
+    "voice_section_subtitle": "Cutting-edge voice technology",
+    "infra_title": "Infrastructure & Telephony Partners",
+    "infra_subtitle": "Reliable infrastructure for 24/7 availability",
+    "compliance_title": "Compliance & Data Protection",
+    "compliance_subtitle": "All partners meet EU data protection standards",
+    "ecosystem_title": "Integration Ecosystem",
+    "ecosystem_subtitle": "Seamless connection to your existing systems",
+    "cta_title": "Trust proven technology",
+    "cta_subtitle": "Experience how Sailly works with your systems.",
+    "cta_demo": "Integration Demo",
+    "cta_all": "All Integrations",
+    "main_features": "Key features:",
+    "use_case_label": "Use case:",
+    "privacy_title": "Data Privacy Guarantees",
+    "german_servers": "EU Servers",
+    "german_servers_desc": "All data stays in Europe",
+    "e2e_enc": "End-to-end encryption",
+    "e2e_enc_desc": "AES-256 for all data",
+    "no_sharing": "No data sharing",
+    "no_sharing_desc": "Your data belongs only to you",
+    "eu_law": "EU Data Protection Law",
+    "eu_law_desc": "Subject to European law",
+    "speech_title": "Speech-to-Text & Text-to-Speech",
+    "pipeline_title": "Voice Processing Pipeline"
+  },
+  "languages_page": {
+    "title": "Multilingual",
+    "subtitle": "Sailly speaks 30+ languages",
+    "badge": "Multilingual",
+    "heading_part1": "Languages",
+    "heading_part2": "Dialects",
+    "hero_desc": "Sailly speaks 30+ languages fluently and understands regional dialects. Your international customers feel understood immediately.",
+    "stats_languages": "Supported Languages",
+    "stats_coverage": "Global Coverage",
+    "stats_response": "Response Time",
+    "stats_accuracy": "Speech Accuracy",
+    "grid_title": "Supported Languages",
+    "grid_subtitle": "Natural conversation in your customers' native language",
+    "available_accents": "Available accents:",
+    "listen_sample": "Listen to sample",
+    "voice_title": "Natural Speech Quality",
+    "voice_subtitle": "Cutting-edge AI for human-like conversations",
+    "voice_special": "What makes Sailly special?",
+    "feature_dialect": {
+      "title": "Dialect Recognition",
+      "desc": "Understands regional pronunciations and characteristics"
+    },
+    "feature_intonation": {
+      "title": "Natural Intonation",
+      "desc": "Speaks with the right emphasis and emotion"
+    },
+    "feature_cultural": {
+      "title": "Cultural Adaptation",
+      "desc": "Considers cultural politeness conventions"
+    },
+    "feature_volume": {
+      "title": "Adaptive Volume",
+      "desc": "Automatically adapts to the conversation situation"
+    },
+    "demo_sample_title": "Sample: Hotel Reservation",
+    "demo_hochdeutsch": "German (Standard)",
+    "demo_hochdeutsch_text": "Good day! Welcome to Hotel Zur Post. How can I help you today?",
+    "demo_english": "English (British)",
+    "demo_english_text": "Good afternoon! Welcome to Hotel Zur Post. How may I assist you today?",
+    "demo_french": "French (Parisian)",
+    "demo_french_text": "Good day! Welcome to Hotel Zur Post. How can I help you today?",
+    "listen_btn": "Listen",
+    "industry_title": "Industry-Specific Terminology",
+    "industry_subtitle": "Sailly knows the technical terms of your industry in every language",
+    "industry_hotels": "Hospitality",
+    "industry_restaurants": "Gastronomy",
+    "industry_healthcare": "Healthcare",
+    "industry_legal": "Legal & Tax Advisory",
+    "dialects_title": "Regional Dialects & Accents",
+    "dialects_subtitle": "Sailly also understands regional variations",
+    "accuracy_label": "Accuracy",
+    "cta_title": "Speak Your Customers' Language",
+    "cta_subtitle": "Test Sailly in your preferred language and experience natural conversations.",
+    "cta_demo": "Multilingual Demo",
+    "cta_consult": "Request Language Consultation"
+  },
+  "data_insights_page": {
+    "title": "Data & Insights",
+    "subtitle": "Measurable results for your business.",
+    "badge": "Business Benefits",
+    "heading_part1": "Data",
+    "heading_part2": "Insights",
+    "roi_title": "ROI Calculator: What Sailly does for you",
+    "roi_subtitle": "Calculate your return on investment with concrete figures",
+    "roi_your_numbers": "Your numbers speak for themselves",
+    "impact_title": "Measurable Business Benefits",
+    "impact_subtitle": "Concrete improvements you'll feel immediately",
+    "impact_revenue": {
+      "title": "Revenue Increase",
+      "desc": "More bookings through perfect availability"
+    },
+    "impact_efficiency": {
+      "title": "Efficiency Gain",
+      "desc": "Time saved per employee for important tasks"
+    },
+    "impact_satisfaction": {
+      "title": "Customer Satisfaction",
+      "desc": "Higher satisfaction through immediate responses"
+    },
+    "impact_savings": {
+      "title": "Cost Savings",
+      "desc": "Monthly personnel costs saved"
+    },
+    "stories_title": "Our Customers' Success Stories",
+    "stories_subtitle": "Real results from real companies",
+    "comparison_title": "Why Sailly is Better",
+    "comparison_subtitle": "Comparison with traditional solutions",
+    "traditional_title": "Traditional Call Centers",
+    "sailly_title": "Sailly Voice Agent",
+    "cta_title": "Ready for measurable results?",
+    "cta_subtitle": "Start today and experience how Sailly transforms your business.",
+    "cta_roi": "Request ROI Demo",
+    "cta_consult": "Book Consultation Call"
+  },
+  "loesungen_page": {
+    "title": "Solutions for Every Industry",
+    "subtitle": "Whether clinic, hotel or law firm – Sailly adapts to your specific needs.",
+    "badge": "Industries",
+    "industries": {
+      "hotels": {
+        "title": "Hotels",
+        "desc": "Reservations, room service & FAQs."
+      },
+      "medical": {
+        "title": "Medical Practices",
+        "desc": "Appointment management & prescriptions."
+      },
+      "restaurants": {
+        "title": "Restaurants",
+        "desc": "Table reservations & orders."
+      },
+      "services": {
+        "title": "Service Providers",
+        "desc": "Appointment booking for salons, workshops & more."
+      },
+      "legal": {
+        "title": "Legal & Tax Advisory",
+        "desc": "Client intake, appointments & callbacks."
+      }
+    }
+  },
+  "demo_page": {
+    "title": "Request a Demo",
+    "subtitle": "Experience Sailly live. We'll show you how to improve your availability immediately.",
+    "badge": "Free Trial",
+    "firstname": "First name",
+    "lastname": "Last name",
+    "email": "Email",
+    "company": "Company",
+    "phone": "Phone number",
+    "message": "Message",
+    "submit": "Request demo",
+    "placeholder_firstname": "John",
+    "placeholder_lastname": "Doe",
+    "placeholder_company": "Acme Inc.",
+    "phone_label": "Phone",
+    "optional_fields": "Optional Information"
+  },
+  "technologie_page": {
+    "title": "Next-Generation AI Technology",
+    "subtitle": "Learn how our language models and integration engines work together.",
+    "badge": "Technology"
+  },
+  "resources_page": {
+    "badge": "Feature",
+    "title": "resources_page",
+    "subtitle": "Learn more"
+  },
+  "agb_page": {
+    "badge": "Feature",
+    "title": "agb_page",
+    "subtitle": "Learn more"
+  },
+  "datenschutz_page": {
+    "badge": "Feature",
+    "title": "datenschutz_page",
+    "subtitle": "Learn more"
+  },
+  "impressum_page": {
+    "badge": "Feature",
+    "title": "impressum_page",
+    "subtitle": "Learn more"
+  },
+  "use_cases_banking": {
+    "badge": "BANKING & FINANCIAL SERVICES",
+    "title": "Workflow Automation for Banks",
+    "subtitle": "Transform your banking processes with AI-powered automation.",
+    "challenges_subtitle": "Banks face enormous pressure from regulation, digitalization and customer expectations",
+    "c1_title": "Compliance Complexity",
+    "c1_desc": "Constantly changing regulations require continuous process adjustments.",
+    "c1_stat": "Regulatory changes per year",
+    "c2_title": "Manual Processes",
+    "c2_desc": "Time-consuming manual reviews and approval processes.",
+    "c2_stat": "Average loan processing time",
+    "c3_title": "Risk Management",
+    "c3_desc": "Complex risk analyses and real-time fraud detection required.",
+    "c3_stat": "Annual fraud losses in Germany",
+    "solutions_subtitle": "Specially developed workflows for the financial industry",
+    "s1_title": "Automated Credit Check",
+    "s1_desc": "AI-powered credit check with automatic document analysis and risk assessment.",
+    "s2_title": "Compliance Monitoring",
+    "s2_desc": "Continuous monitoring of all transactions for compliance violations.",
+    "s3_title": "Intelligent Customer Service",
+    "s3_desc": "24/7 AI chatbots for customer inquiries with seamless handoff to human advisors.",
+    "workflow_title": "Loan Process Workflow",
+    "w1": "Automatically capture application",
+    "w2": "AI-powered document review",
+    "w3": "Automatically assess creditworthiness",
+    "w4": "Calculate risk score",
+    "w5": "Decision in 15 minutes",
+    "uc_subtitle": "Specific Use Cases",
+    "uc1_title": "Anti-Money Laundering",
+    "uc1_desc": "Automatic detection of suspicious transaction patterns and SAR generation.",
+    "uc2_title": "KYC Automation",
+    "uc2_desc": "Fully automated customer identification and verification with document checking.",
+    "uc3_title": "Risk Scoring",
+    "uc3_desc": "AI-based credit risk assessment with over 500 data points.",
+    "uc4_title": "Fraud Detection",
+    "uc4_desc": "Real-time detection of fraudulent transactions with machine learning.",
+    "uc5_title": "Regulatory Reporting",
+    "uc5_desc": "Automatic creation and submission of all regulatory reports.",
+    "uc6_title": "Customer Service",
+    "uc6_desc": "AI-powered support with access to all customer data.",
+    "b1_label": "Reduction in processing time",
+    "b2_label": "Automation rate for standard processes",
+    "b3_label": "Cost savings in administration",
+    "b4_label": "Compliance rate at audits",
+    "reg_title": "Regulatory Compliance",
+    "reg_subtitle": "Full compliance with all relevant regulations",
+    "reg1_title": "German Regulation",
+    "reg2_title": "International Standards",
+    "cta_page_title": "Digitize your banking processes",
+    "cta_page_subtitle": "Start automating your financial processes today.",
+    "cta_btn": "Banking Demo",
+    "cta_contact_btn": "Fintech Consulting"
+  },
+  "use_cases_baubranche": {
+    "badge": "CONSTRUCTION INDUSTRY",
+    "title": "AI Automation for Construction",
+    "subtitle": "Optimize construction processes with intelligent automation.",
+    "challenges_subtitle": "Digitalization and efficiency in the construction industry",
+    "cta_page_title": "Modernize your construction processes",
+    "cta_page_subtitle": "Start with AI automation for the construction industry."
+  },
+  "use_cases_healthcare": {
+    "badge": "HEALTHCARE",
+    "title": "AI Automation for Healthcare",
+    "subtitle": "Improve patient care with intelligent automation.",
+    "challenges_subtitle": "Challenges in modern healthcare",
+    "cta_page_title": "Improve patient care",
+    "cta_page_subtitle": "AI automation for healthcare."
+  },
+  "use_cases_legal": {
+    "badge": "LEGAL INDUSTRY",
+    "title": "AI Automation for Law Firms",
+    "subtitle": "Optimize legal processes with intelligent AI automation.",
+    "challenges_subtitle": "Challenges of modern law firms",
+    "cta_page_title": "Optimize your legal processes",
+    "cta_page_subtitle": "AI automation for law firms."
+  },
+  "use_cases_manufacturing": {
+    "badge": "MANUFACTURING",
+    "title": "AI Automation for Manufacturing",
+    "subtitle": "Boost your manufacturing efficiency with AI automation.",
+    "challenges_subtitle": "Challenges in modern manufacturing",
+    "cta_page_title": "Boost your production efficiency",
+    "cta_page_subtitle": "AI automation for manufacturing."
+  },
+  "use_cases_public-sector": {
+    "title": "use cases public-sector",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "use_cases_retail": {
+    "badge": "RETAIL & COMMERCE",
+    "title": "AI Automation for Retail",
+    "subtitle": "Optimize retail operations with intelligent AI automation.",
+    "challenges_subtitle": "Challenges in modern retail",
+    "cta_page_title": "Optimize your retail operations",
+    "cta_page_subtitle": "AI automation for retail."
+  },
+  "use_cases_telecom": {
+    "badge": "TELECOMMUNICATIONS",
+    "title": "AI Automation for Telecommunications",
+    "subtitle": "Revolutionize your telecom services with AI automation.",
+    "challenges_subtitle": "Challenges in telecommunications",
+    "cta_page_title": "Revolutionize your telecommunications",
+    "cta_page_subtitle": "AI automation for telecommunications."
+  },
+  "ai_impacts_customer-service": {
+    "title": "ai impacts customer-service",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_financial-services": {
+    "title": "ai impacts financial-services",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_hr-recruiting": {
+    "title": "ai impacts hr-recruiting",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_it-ops": {
+    "title": "ai impacts it-ops",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_marketing": {
+    "badge": "AI IMPACTS MARKETING",
+    "title": "Transform Marketing with AI",
+    "subtitle": "Personalize campaigns and automate marketing workflows."
+  },
+  "ai_impacts_sales": {
+    "badge": "AI IMPACTS SALES",
+    "title": "Optimize Sales with AI",
+    "subtitle": "Boost your sales results with intelligent AI support."
+  },
+  "ai_impacts_secops": {
+    "badge": "AI IMPACTS SECOPS",
+    "title": "Security Operations with AI",
+    "subtitle": "Detect and combat security threats with AI support."
+  },
+  "ai_impacts_support": {
+    "badge": "AI IMPACTS SUPPORT",
+    "title": "WhatsApp Support with RAG",
+    "subtitle": "Revolutionize your customer support with AI-powered WhatsApp bots."
+  },
+  "blog_page": {
+    "title": "blog page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "academy_page": {
+    "title": "academy page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "docs_page": {
+    "title": "docs page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "news_page": {
+    "title": "News & Updates",
+    "subtitle": "Stay up to date on the latest developments at Sailly.",
+    "badge": "News",
+    "read_more": "Read more",
+    "all_news": "All news"
+  },
+  "community_page": {
+    "title": "community page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "legal_pages": {
+    "agb_title": "Terms and Conditions",
+    "datenschutz_title": "Privacy Policy",
+    "impressum_title": "Legal Notice"
+  },
+  "use_cases_common": {
+    "demo_cta": "Request demo",
+    "contact_cta": "Contact us",
+    "benefits_title": "Measurable Business Benefits",
+    "roi_title": "ROI & Results",
+    "features_title": "Core Features",
+    "how_title": "How it works",
+    "steps_title": "Success in 3 steps",
+    "challenges_title": "Challenges",
+    "solutions_title": "Sailly Solutions",
+    "use_cases_title": "Use Cases",
+    "cta_title": "Ready for the next step?",
+    "cta_subtitle": "Start today and experience the difference.",
+    "compliance_title": "Compliance & Security"
+  },
+  "ai_impacts_common": {
+    "demo_cta": "Request demo",
+    "contact_cta": "Contact us",
+    "benefits_title": "Measurable Results",
+    "features_title": "Features",
+    "how_title": "How it works",
+    "roi_title": "Measurable value",
+    "challenges_title": "Current Challenges",
+    "solutions_title": "Sailly AI Solutions",
+    "cta_title": "Get started now",
+    "cta_subtitle": "Experience the power of AI in your business."
+  },
+  "use_cases_public_sector": {
+    "badge": "PUBLIC SECTOR",
+    "title": "AI Automation for Government",
+    "subtitle": "Modernize administrative processes with intelligent automation.",
+    "challenges_subtitle": "Challenges in the public sector",
+    "cta_page_title": "Modernize your administrative processes",
+    "cta_page_subtitle": "AI automation for government agencies."
+  },
+  "ai_impacts_it_ops": {
+    "badge": "AI IMPACTS IT OPS",
+    "title": "Automate IT Operations with AI",
+    "subtitle": "Reduce manual IT tasks and increase efficiency."
+  },
+  "security_compliance_page": {
+    "badge": "SECURITY & COMPLIANCE",
+    "heading_part1": "Maximum Security",
+    "heading_part2": "for your business",
+    "subtitle": "Your data is safe with us. Highest security standards and comprehensive data protection.",
+    "cta": "Explore security",
+    "sec_badge": "Security",
+    "sec_title": "Comprehensive Security Features",
+    "sec_subtitle": "Multi-layered security at all levels",
+    "f1_title": "Encryption",
+    "f1_desc": "End-to-end encryption for data in transit and at rest. AES-256.",
+    "f2_title": "Access Control",
+    "f2_desc": "Granular permissions and role management. SSO, MFA and Identity Provider.",
+    "f3_title": "Audit Logging",
+    "f3_desc": "Complete audit logs for all actions. Traceability and compliance.",
+    "f4_title": "Infrastructure",
+    "f4_desc": "Secure cloud infrastructure or on-premise deployment. Your choice.",
+    "f5_title": "Threat Protection",
+    "f5_desc": "Automatic threat detection. DDoS protection, firewall.",
+    "f6_title": "Backup & Recovery",
+    "f6_desc": "Automatic backups and disaster recovery. Guaranteed data availability.",
+    "comp_title": "Certifications & Compliance",
+    "comp_subtitle": "Meeting all important standards and regulations",
+    "dp_title": "Data Protection",
+    "dp_desc": "Full compliance with data protection regulations.",
+    "cert_title": "Certifications",
+    "cert_desc": "Internationally recognized security and quality standards.",
+    "data_ctrl_title": "Your Data, Your Control",
+    "data_ctrl_subtitle": "Maximum control over your data",
+    "dr_title": "Data Residency",
+    "dr_desc": "Choose where your data is stored. EU, USA or on-premise.",
+    "dm_title": "Data Minimization",
+    "dm_desc": "We only collect the data necessary for the service.",
+    "del_title": "Right to Erasure",
+    "del_desc": "Full control over your data. Deletion on request.",
+    "cta_title": "Security you can trust",
+    "cta_subtitle": "Learn more about our security measures and compliance standards.",
+    "demo_cta": "Request demo",
+    "comp_pill": "Compliance",
+    "dp_pill": "Data Protection"
+  },
+  "workflow_builder_page": {
+    "badge": "WORKFLOW BUILDER",
+    "heading_part1": "Visual",
+    "heading_part2": "Workflow Builder",
+    "subtitle": "Create complex workflows with our intuitive drag-and-drop builder. No programming required.",
+    "cta": "Try the builder",
+    "features_title": "Everything you need",
+    "features_subtitle": "A powerful builder for professional workflows",
+    "f1_title": "Drag & Drop",
+    "f1_desc": "Intuitive drag-and-drop interface. Create workflows by simply dragging components.",
+    "f2_title": "Many Components",
+    "f2_desc": "Hundreds of ready-made components for all common tasks and integrations.",
+    "f3_title": "Live Testing",
+    "f3_desc": "Test your workflows directly in the builder. Instant feedback and debugging.",
+    "f4_title": "Code Editor",
+    "f4_desc": "Advanced functionality with built-in code editor for custom logic.",
+    "f5_title": "Versioning",
+    "f5_desc": "Full version control for all workflows. Rollback and comparison.",
+    "f6_title": "Validation",
+    "f6_desc": "Automatic validation and error checking during creation.",
+    "tpl_title": "Template Library",
+    "tpl_subtitle": "Start with ready-made workflow templates",
+    "t1_title": "Document Processing",
+    "t1_desc": "Templates for automatic document processing, OCR and classification.",
+    "t2_title": "Data Integration",
+    "t2_desc": "Connect systems and synchronize data automatically.",
+    "t3_title": "AI & Automation",
+    "t3_desc": "Use AI for intelligent automation and decisions.",
+    "cta_title": "Ready to create?",
+    "cta_subtitle": "Start today with the Workflow Builder and create your first automated processes.",
+    "demo_cta": "Request demo"
+  },
+  "templates_page": {
+    "badge": "TEMPLATES",
+    "heading_part1": "Ready-made",
+    "heading_part2": "Templates",
+    "subtitle": "Start immediately with professional workflow templates. For every industry and use case.",
+    "cta": "Browse templates",
+    "all_title": "All Templates",
+    "all_subtitle": "Ready to use for all industries",
+    "use_btn": "Use template",
+    "cta_title": "Don't see your template?",
+    "cta_subtitle": "Create your own template or let us help you.",
+    "demo_cta": "Request demo"
+  },
+  "ki_integration_page": {
+    "badge": "AI INTEGRATION",
+    "heading_part1": "AI Integration",
+    "heading_part2": "for your business",
+    "subtitle": "Integrate the most powerful AI models directly into your business processes. Without programming knowledge.",
+    "cta": "Try AI integration",
+    "models_title": "Supported AI Models",
+    "models_subtitle": "The best models for every use case",
+    "features_title": "Integration Features",
+    "cta_title": "Ready for AI power?",
+    "cta_subtitle": "Start today and unleash the potential of your data with AI.",
+    "demo_cta": "Request demo"
+  },
+  "preise_page": {
+    "badge": "Pricing",
+    "title": "Simple, fair pricing",
+    "subtitle": "Choose the plan that fits your business.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save": "Save 20%",
+    "per_month": "per month",
+    "get_started": "Get started",
+    "contact_sales": "Contact sales",
+    "faq_title": "Frequently Asked Questions",
+    "cta_title": "Still have questions?",
+    "cta_subtitle": "Our team is happy to help.",
+    "contact_cta": "Contact us"
+  }
+}

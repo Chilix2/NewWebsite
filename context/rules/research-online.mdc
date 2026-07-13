@@ -1,0 +1,135 @@
+---
+description: Research-online enforcement. Prevents agent from self-deciding research is not applicable. Forces online research before proposing solutions requiring external knowledge. Must be always applied.
+alwaysApply: true
+---
+# Research-Online Enforcement (STRICT)
+
+> **Authority:** This rule prevents the agent from self-deciding that research is "not applicable" or "not useful."
+> **Master:** `restaurant-voice-agent.mdc`. Violating this rule = failed task.
+
+## Mandatory Online Research
+
+### When to Research
+
+The agent MUST research online (WebSearch + WebFetch) BEFORE proposing any solution when:
+1. The solution involves a library, framework, or API the agent does not have **100% certainty** about
+2. The solution involves implementation patterns that might have changed since training
+3. The solution involves integrating external systems (OPA, Redis, Postgres, etc.)
+4. The solution involves optimization techniques (latency, caching, token reduction)
+5. The user asks "how to implement X" or "research how X works"
+6. The agent is about to suggest a simplification or "alternative approach" instead of following research findings
+7. **ANY research finding from a subagent is available** — the agent MUST apply it, not decide it's irrelevant
+
+### Research Protocol
+
+```
+STEP 1: IDENTIFY the knowledge gap
+  - What specific technology/methodology/pattern do I need to understand?
+  - What version/year is the most current?
+  - Write the gap explicitly: "I don't know how [X] works in [Y] context"
+
+STEP 2: SEARCH online (WebSearch)
+  - Use current year in search terms (today: July 2026)
+  - Minimum 3 distinct search queries per topic
+  - Capture URLs of relevant results
+
+STEP 3: FETCH and READ (WebFetch)
+  - Open at least 2 distinct sources per topic
+  - Read the full content, not just summaries
+  - Extract: exact code patterns, version numbers, gotchas, alternatives
+
+STEP 4: SYNTHESIZE findings
+  - Write a structured summary with:
+    - What: the technology/methodology
+    - How: exact implementation steps for our system
+    - Why: why this approach, not alternatives
+    - Sources: URLs consulted
+  - Show this synthesis in-chat before proceeding
+
+STEP 5: APPLY
+  - Map research findings to concrete implementation steps
+  - If research contradicts the plan → UPDATE THE PLAN, don't silently drop findings
+  - If research suggests a better approach → PRESENT IT, don't hide it
+```
+
+## Hard Stops — Research Violations
+
+| Action | Verdict |
+|---|---|
+| Proposing a solution without searching online first | **BLOCKED** — cite Research Protocol |
+| Self-deciding that subagent research findings are "not relevant" | **BLOCKED** — ALL findings must be evaluated explicitly |
+| Cherry-picking only comfortable findings, dropping challenging ones | **BLOCKED** — cite "Apply all applicable research" |
+| Simplifying or skipping a research-based approach without explicit user approval | **BLOCKED** — show the research, let the user decide |
+| Saying "this is too complex" or "this is overkill" without user confirmation | **BLOCKED** — cite "Never self-decide applicability" |
+| Not updating the plan when research reveals new information | **BLOCKED** — plan must reflect current research state |
+
+## Subagent Research Application Rule
+
+When a subagent returns research findings, the parent agent MUST:
+
+1. **Read ALL findings** — never stop at the first result
+2. **Evaluate each finding** against the current plan using this matrix:
+
+| Finding | Applicable? | Why/Why Not? | Action |
+|---|---|---|---|
+| [Finding 1] | YES/NO/PARTIAL | [Concrete reason] | [Implement / Adapt / Defer / Reject with user approval] |
+
+3. **Apply everything applicable** — the agent's job is to IMPLEMENT, not to JUDGE
+4. **If uncertain, ask the user** — never silently drop a finding when unsure
+5. **Show the evaluation matrix in-chat** — transparency over efficiency
+
+## Example: What NOT to Do
+
+```
+SUBAGENT FINDING: "PEP/PDP interception pattern can block unauthorized tool calls at the framework level
+with 0.1ms latency using OPA/Rego"
+
+WRONG: "This seems complex for our setup. We'll skip this."
+CORRECT: "Researching OPA/Rego integration with Python FastAPI for our tool authorization layer.
+  Found: opa-python-client library, 0.1ms evaluation time, 100% compliance.
+  This IS applicable to our Category B tool authorization. Adding to plan."
+```
+
+## Context-Specific Mandatory Online Research
+
+### Category B Tool Changes
+If ANY proposed change touches Category B tools (`create_order`, `send_sms`, `create_reservation`, `end_call`, `transfer_to_human`):
+- Research: OPA/Rego policy enforcement patterns (current year)
+- Research: ABC (Agent Behavioral Contracts) arXiv 2602.22302
+- Show: full contract PRE/INV/GOV/REC for the affected tool
+
+### Intent Extraction Changes
+If ANY proposed change touches `extract_multi()` or intent prompts:
+- Research: current LLM intent classification best practices
+- Research: Negative Knowledge Memory Layer for intent failures
+- Show: before/after intent accuracy target with evidence
+
+### State/Slot Changes
+If ANY proposed change adds or modifies ConversationSlots or ConversationState fields:
+- Research: Hypothesis property-based testing for data models
+- Research: current best practices for slot-persistence bridges
+- Show: property test for the new field
+
+### Performance Changes
+If ANY proposed change targets latency or performance:
+- Research: current voice agent latency optimization techniques
+- Research: Gemini TTS configuration options (current year)
+- Show: before/after latency benchmarks with P50/P95/P99
+
+## Mandatory WORM Log Entry
+
+Every research session MUST append to `docs/ai/09-knowledge-matrix.yaml` a research record:
+
+```yaml
+- id: "research-042"
+  timestamp: "2026-07-06T02:30:00Z"
+  topic: "OPA/Rego Python integration for tool authorization"
+  sources: ["https://www.openpolicyagent.org/docs/latest/integration/", "https://..."]
+  findings: "opa-python-client v1.0.0 available via pip. Evaluation time ~0.1ms per call."
+  applicability: "APPLIED — implementing PEP/PDP for Category B tool authorization"
+  implemented_in: "docs/ai/12-behavioral-contracts.md"
+```
+
+## Cursor Skill Integration
+
+The `research-online` flag is set when this rule triggers. All other skills (order-flow-validator, state-machine-auditor, tool-executor-checker) must wait until research is complete and applied.

@@ -1,0 +1,73 @@
+---
+description: Mandatory regression pipeline — run after every implementation fix or new feature. Triggered when editing server/brain/ files.
+globs:
+  - server/brain/**
+  - server/tests/**
+alwaysApply: false
+---
+
+# Historical Issue Regression Pipeline (STRICT)
+
+> Authority: `historical-issue-regression` skill (`/home/charles2/.ssh/.cursor/skills/historical-issue-regression/SKILL.md`)
+> Master: `restaurant-voice-agent.mdc`. **Skipping any step invalidates the fix.**
+
+## Protocol
+
+After every implementation fix or new feature — after DEPLOY VERIFICATION and before claiming success — the agent MUST run the `historical-issue-regression` skill checks in order and produce the REGRESSION REPORT block.
+
+### Mandatory Checks (in order)
+
+| # | Check | Gate |
+|---|-------|------|
+| 1 | Clear stale `__pycache__` | Zero dirs remaining |
+| 2 | Semantic search for past-bug pattern recurrence (5 queries) | No past-bug class detected |
+| 3 | State shape consistency (`test_state_shape_consistency.py`) | All tests pass |
+| 4 | FSM unit tests (`test_conversation_fsm.py`) | 65/65 both tenants |
+| 5 | Dead code / cleanliness sweep | No `__pycache__`, no keyword/regex, no stale callers |
+| 6 | Environment compatibility | `v4_pipeline_clean.py` >1000 lines, FSM import OK, health OK |
+| 7 | Past transcript cross-reference (SemanticSearch) | No regressing issue detected |
+
+See the skill file for exact commands, PASS/FAIL criteria, and per-check ACTION items.
+
+### REGRESSION REPORT (mandatory block)
+
+At the end of every implementation response, after DEPLOY VERIFICATION, the agent MUST output:
+
+```
+REGRESSION REPORT
+- SemSearch (past-bug patterns): [PASS / FAIL]
+- State shape consistency:       [PASS / FAIL]
+- FSM unit tests:                [PASS X/Y / FAIL]
+- Dead code / cleanliness:       [PASS / FAIL]
+  - __pycache__ cleared:         [YES / NO]
+  - Keyword/regex violations:    [NONE / FOUND]
+  - Deleted-method callers:      [NONE / FOUND]
+- Environment compatibility:     [PASS / FAIL]
+  - v4_pipeline_clean lines:     [count]
+  - FSM import:                  [OK / FAIL]
+  - Health endpoint:             [OK / FAIL]
+- Transcript cross-reference:    [PASS / FAIL]
+- OVERALL:                       [PASS / FAIL]
+```
+
+**If OVERALL is FAIL, the agent MUST fix the failing checks before claiming the change is complete.**
+
+## Hard Stops
+
+| Condition | Verdict |
+|-----------|---------|
+| State shape consistency fails | **BLOCKER** — fix field name, never weaken test (KI-031 class) |
+| FSM unit tests <65/65 | **BLOCKER** — FSM is core authority, no regression allowed |
+| Keyword/regex intent code found in `server/brain/` | **BLOCKER** — cite Pure LLM Intent rule, remove immediately |
+| `v4_pipeline_clean.py` empty or <1000 lines | **BLOCKER** — production pipeline is broken |
+| Health endpoint fails after restart | **BLOCKER** — server is not serving, check `journalctl` |
+| Semantic search detects past-bug pattern recurrence | **BLOCKER** — cite BREAKTHROUGH RULE, revert or fix |
+| Remaining callers of deleted method | **BLOCKER** — stale references cause runtime crashes |
+| Transcript cross-reference finds known regressing issue | **BLOCKER** — revisit past resolution before proceeding |
+| OVERALL is FAIL | **BLOCKER** — do not claim success, enumerate failures |
+
+## Interaction with Other Rules
+
+- **before** this pipeline: `restaurant-voice-agent.mdc` RULE COMPLIANCE CHECK + DEPLOY VERIFICATION
+- **after** this pipeline: `02-deploy.mdc` VALIDATION EVIDENCE block (only if OVERALL is PASS)
+- This pipeline runs **LAST** before the final success claim — it is the final gate.

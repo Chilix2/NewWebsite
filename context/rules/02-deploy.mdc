@@ -1,0 +1,167 @@
+---
+description: Commit-Test-Deploy gate, server restart protocol, infrastructure safety guards, evidence requirements, validation targets. Must follow after every non-doc commit.
+alwaysApply: true
+---
+# Commit → Test → Deploy Gate & Infrastructure Safety
+
+## Commit → Test → Deploy Gate (MANDATORY — three steps, no skipping)
+
+**A committed-but-undeployed fix does not exist. Committing without deploying = not fixed.**
+
+```
+STEP 1: CODE → write the fix
+STEP 2: TEST → pytest 65/65 (blocking — do not commit if red)
+STEP 3: DEPLOY → sudo systemctl restart sailly-browser-demo
+  verify lstart > commit timestamp
+  curl health → OK
+  show DEPLOY VERIFICATION block
+```
+
+The `post-commit` git hook handles Step 3 automatically when `server/brain/**`, `server/core/**`, `server/tools/**`, or `server/*.py` change. If suppressed (`SAILLY_SKIP_AUTODEPLOY=1`), run the manual deploy below.
+
+## Server Restart (MANDATORY — not optional)
+
+No restart = stale code test = void result.
+
+> The server is managed by `systemd` (unit `sailly-browser-demo.service`, port 8080, runs from `venv/`).
+> Do NOT use `pkill`/`nohup uvicorn > /tmp/server.log` — that spawns a second unmanaged process and redirects tracebacks to a dead socket. Crashes become invisible. Always restart via `systemctl` and read logs via `journalctl`.
+
+```bash
+# Restart (clears stale __pycache__, then lets systemd respawn the unit)
+find /home/charles2/sailly-browser-demo/server -name "__pycache__" -type d -exec rm -rf {} + 2>/dev/null || true
+sudo systemctl restart sailly-browser-demo
+# Wait for health
+for i in $(seq 1 15); do
+  curl -sf http://127.0.0.1:8080/health >/dev/null && break
+  sleep 1
+done
+# Verify fresh start (lstart MUST be today/now)
+systemctl show sailly-browser-demo.service -p MainPID -p ExecMainStartTimestamp --value
+```
+
+`ExecMainStartTimestamp` MUST be today's date/time and AFTER your last commit. If not → do not validate.
+
+### Reading server logs (tracebacks live here, NOT /tmp/server.log)
+
+```bash
+sudo journalctl -u sailly-browser-demo -f            # Live tail
+sudo journalctl -u sailly-browser-demo -n 200 --no-pager  # Last N lines
+sudo journalctl -u sailly-browser-demo --since "10 min ago" --no-pager
+```
+
+## Infrastructure Safety Guards
+
+### Guard 1 — NEVER `sudo` write into `.next/` directories
+
+Next.js build does `recursiveDelete()` on `.next/standalone/` before repopulating. Root-owned files inside cause `EACCES: permission denied, unlink` → build dies → dashboard 500.
+
+```bash
+# BAD
+sudo cp icon.svg .next/standalone/public/
+# GOOD — fix ownership first, then write as normal user
+sudo chown -R $(whoami):$(id -gn) .next/
+cp icon.svg .next/standalone/public/
+```
+
+### Guard 2 — Verify `npm run build` exit code before service restart
+
+```bash
+npm run build 2>&1 | tee /tmp/dashboard-build.log
+if [ ${PIPESTATUS[0]} -ne 0 ]; then
+  echo "BUILD FAILED — aborting restart" && exit 1
+fi
+sudo systemctl restart sailly-dashboard
+```
+
+### Guard 3 — Clean stale `demo_availability.json` on service start
+
+`/tmp/validation_runs/demo_availability.json` blocks demo calls during validation. If validation crashes without cleanup, demo calls are permanently blocked.
+
+```bash
+python3 -c "
+import json
+from datetime import datetime, timezone
+with open('/tmp/validation_runs/demo_availability.json', 'w') as f:
+  json.dump({'validation_running': False, 'updated_at': datetime.now(timezone.utc).isoformat()}, f)
+" 2>/dev/null || true
+```
+
+### Guard 4 — No sudo writes to workspace directories
+
+All workspace directories must be writable without `sudo`. If `npm`, `git`, or file writes fail with `EACCES`:
+1. `sudo chown -R charles2_hotmail_de:charles2 /path/to/repo`
+2. Retry as normal user
+3. NEVER work around with `sudo <write_command>`
+
+## DEPLOY VERIFICATION (required after every non-doc commit)
+
+```
+DEPLOY VERIFICATION
+- Last non-doc commit: [SHA] at [timestamp]
+- Server PID: [pid]
+- Server lstart: [timestamp]
+- lstart > commit: YES / NO ← if NO → STOP, restart again
+- Health: OK / FAIL ← if FAIL → STOP, check journalctl
+```
+
+### Falsifiable-Contract Prediction (required for every brain fix)
+
+Before deploying any `server/brain/` change, write a pre-deployment prediction:
+
+```
+PREDICTION CONTRACT
+- What this fix targets (scenarios / stage / KI):
+  [e.g. Fixes KI-004: menu item exact-match fallback for Stage B slot extraction]
+- Expected pass-rate delta:
+  [e.g. Smoke: 5/6 → 6/6, Committed: 2/4 → 4/4]
+- Behaviors that MUST NOT regress (negative assertion):
+  [e.g. Greeting phase must stay at 6/6, committed tier must not drop]
+- Failure stage prediction (H3 attribution):
+  [e.g. Stage B failures → 0 after fix. No new Stage A/C/D/E failures expected.]
+```
+
+After validation, verify the prediction against observed deltas. If prediction is wrong (unexpected regression or fix didn't land), roll back and reassess before claiming success.
+
+### Latency Baseline Tracking
+
+Before claiming a deploy successful, compare P50/P95 latency against baseline:
+
+```
+LATENCY BASELINE
+- Smoke tier  P50: [value]ms  P95: [value]ms  (baseline: [previous or N/A])
+- Selective   P50: [value]ms  P95: [value]ms  (baseline: [previous or N/A])
+- Regressions: [NONE / list outliers]
+```
+
+Any P95 increase >50% over baseline = deployment sensitivity regression, investigate before proceeding.
+
+## Evidence Required to Claim Success
+
+Report ALL of these or do not say "fixed":
+
+```
+VALIDATION EVIDENCE
+- Server PID / ExecMainStartTimestamp: [value]
+- pytest FSM: [65/65 or FAIL]
+- State shape audit: [test_state_shape_consistency PASS or FAIL]
+- Stage health: [EARLIEST_BROKEN_STAGE = NONE|A|B|C|D|E]
+- Smoke: [X/6 before] → [Y/6 after]
+- Committed tier: [X/Y before] → [Y/Y after] (create_order/send_sms must fire)
+- Full (if run): [X/62 before] → [Y/62 after]
+- Latency P50 / P95: [value]ms / [value]ms
+- Failure stage breakdown: [e.g. A=0, B=0, C=0, D=0, E=0]
+- Regression: [canary pool: no regressions / list failures]
+```
+
+## Validation Targets
+
+| Gate | Required |
+|---|----|
+| Unit FSM tests | 65/65 — blocking |
+| Smoke | 6/6 before declaring any brain fix done |
+| Selective | ≥90% for release quality |
+| Full | ≥90% for production |
+
+## Post-Fix Regression Pipeline
+
+After DEPLOY VERIFICATION and before claiming success, run the `historical-issue-regression` skill checks and produce the REGRESSION REPORT block. See `regression-pipeline.mdc` for full protocol.

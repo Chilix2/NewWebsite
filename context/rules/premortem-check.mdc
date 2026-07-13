@@ -1,0 +1,41 @@
+---
+description: Mandatory pre-fix checklist for brain edits. Run before claiming any fix is complete. Covers gate-release, state-flags, tool-firing, response-text, slot-bridge checks.
+globs:
+  - server/brain/**
+  - server/barge_in_handler.py
+alwaysApply: false
+---
+# PRE-MORTEM CHECK (mandatory before claiming a fix is complete)
+
+> Answer **every** item out loud before declaring a brain fix done. If any item is
+> unclear, re-read the matching stage in `agent-vault/failure-catalog.md` before
+> proceeding. Line numbers referenced anywhere are HEAD-relative — verify against the
+> current HEAD, not from memory.
+
+## 1. Gate-Release Check
+- [ ] After my fix, when `_all_slots_filled=True`, what is `state.fsm_phase`?
+- [ ] Which FSM handler runs next? Could it re-classify intent from the user utterance?
+- [ ] Could `_phase_greeting` or `_phase_info` produce `handle_faq` / `clarify_intent` with full slots?
+
+## 2. State-Flag Check
+- [ ] Does my fix set all related flags with their parent field? (`phone_confirmed`, `delivery_intended`, etc.)
+- [ ] Could any flag be stale on the next turn because `_slots_to_state` didn't write it?
+- [ ] Does the commit gate (`ready_for_commit`) still work after my change?
+
+## 3. Tool-Firing Check
+- [ ] Could `send_sms` be blocked because the `committed` flag is missing?
+- [ ] Could `create_reservation` fire without all required slots?
+- [ ] Are there dead code paths in the tool executor that my change exposes?
+
+## 4. Response-Text Check
+- [ ] Could the haiku response override FSM readback text at gate-release turns?
+- [ ] Could TTS tags or phrasing templates leak into spoken output?
+- [ ] Is `response_text` empty for any Category A grounding intents?
+
+## 5. Slot-Bridge Check
+- [ ] Do all `slots.<attr>` references resolve to `ConversationSlots` fields?
+- [ ] Do all `state.<attr>` references resolve to `ConversationState` fields?
+- [ ] Does `test_state_shape_consistency` pass?
+
+---
+**If ANY item is unclear, re-read the Failure Catalog for that stage before proceeding.**

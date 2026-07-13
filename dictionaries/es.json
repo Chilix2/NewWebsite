@@ -1,0 +1,1239 @@
+{
+  "nav": {
+    "product": {
+      "title": "Producto",
+      "items": {
+        "voice_agent": "Sailly Voice Agent",
+        "integrations": "Integraciones",
+        "data_insights": "Datos y Análisis",
+        "security": "Seguridad y Cumplimiento",
+        "languages": "Idiomas",
+        "partners": "Socios Estratégicos"
+      }
+    },
+    "solutions": {
+      "title": "Soluciones",
+      "items": {
+        "hotels": "Hotelería",
+        "medical": "Consultorios Médicos",
+        "restaurants": "Gastronomía",
+        "services": "Proveedores de Servicios y Pymes"
+      }
+    },
+    "resources": {
+      "title": "Recursos",
+      "items": {
+        "blog": "Blog",
+        "case_studies": "Casos de Éxito",
+        "faq": "Preguntas Frecuentes",
+        "help": "Centro de Ayuda"
+      }
+    },
+    "company": {
+      "title": "Empresa",
+      "items": {
+        "about": "Sobre Nosotros",
+        "contact": "Contacto"
+      }
+    },
+    "pricing": "Precios",
+    "demo": "Solicitar Demo"
+  },
+  "hero": {
+    "eyebrow": "Su equipo atiende al huésped. Sailly se encarga de la oficina.",
+    "title": "El asistente digital que libera a su equipo.",
+    "subtitle": "Sailly responde llamadas, programa citas y responde preguntas – las 24 horas. Dé a sus empleados la libertad de concentrarse en lo que realmente importa: sus clientes.",
+    "primary_cta": "Solicitar Demo",
+    "secondary_cta": "Más Información",
+    "badges": {
+      "gdpr": "Conforme al RGPD",
+      "availability": "Disponible 24/7",
+      "setup": "Listo en 4 Semanas"
+    },
+    "stats": {
+      "title": "Resultados de Nuestros Socios",
+      "items": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Empleados Más Satisfechos"
+        },
+        "containment": {
+          "value": "90%+",
+          "label": "Consultas Rutinarias Automatizadas"
+        },
+        "reduction": {
+          "value": "24/7",
+          "label": "Disponibilidad para Clientes"
+        }
+      }
+    }
+  },
+  "problems": {
+    "badge": "Desafío",
+    "title": "Cuando el teléfono interrumpe el trabajo",
+    "subtitle": "En el día a día no queda tiempo para el teléfono. Esto estresa a su equipo y frustra a quienes llaman.",
+    "cards": {
+      "missed": {
+        "title": "Oportunidades Perdidas",
+        "desc": "El 30% de las llamadas quedan sin respuesta porque nadie puede atender en ese momento. Eso es facturación perdida."
+      },
+      "stress": {
+        "title": "Equipo Estresado",
+        "desc": "El teléfono sonando constantemente saca a los empleados de su concentración o de la atención presencial al cliente."
+      },
+      "cost": {
+        "title": "Alta Carga Administrativa",
+        "desc": "Las consultas rutinarias sobre precios o citas consumen el valioso tiempo de trabajo de su personal cualificado."
+      }
+    }
+  },
+  "value_props": {
+    "badge": "Por qué Sailly",
+    "title": "Mucho más que un contestador automático",
+    "subtitle": "Sailly es un compañero de equipo inteligente que se integra perfectamente en su negocio.",
+    "cards": {
+      "human_like": {
+        "title": "Empático y Natural",
+        "desc": "Suena como una persona real, comprende acentos y mantiene conversaciones agradables con sus clientes."
+      },
+      "always_on": {
+        "title": "Siempre a Su Disposición",
+        "desc": "Atiende llamadas incluso fuera del horario laboral o cuando todos están ocupados."
+      },
+      "instant_scale": {
+        "title": "Sin Esperas",
+        "desc": "Puede atender cientos de llamadas simultáneamente. Perfecto para las horas punta del lunes por la mañana."
+      },
+      "perfect_memory": {
+        "title": "Fiable y Preciso",
+        "desc": "Registra citas directamente en su calendario y siempre comunica los precios correctos."
+      },
+      "multilingual": {
+        "title": "Habla Más de 30 Idiomas",
+        "desc": "Recibe a los huéspedes internacionales en su idioma materno y elimina las barreras lingüísticas."
+      },
+      "integration": {
+        "title": "Trabajo en Equipo",
+        "desc": "Funciona con sus sistemas existentes (calendario, PMS, herramientas de reserva)."
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Solución",
+    "title": "Sailly se encarga del teléfono",
+    "subtitle": "Su asistente de voz inteligente para un servicio al cliente profesional.",
+    "cards": {
+      "availability": {
+        "title": "100% Disponibilidad",
+        "desc": "Sin señal de ocupado, sin esperas. Sailly contesta inmediatamente – también por las noches y los fines de semana."
+      },
+      "appointments": {
+        "title": "Programación Inteligente de Citas",
+        "desc": "Comprueba la disponibilidad en tiempo real, agenda citas y envía confirmaciones – todo automático."
+      },
+      "answers": {
+        "title": "Respuestas Precisas",
+        "desc": "Responde preguntas complejas sobre precios, servicios y disponibilidad con datos actualizados."
+      }
+    }
+  },
+  "roi_section": {
+    "badge": "Retorno de Inversión",
+    "title": "Valor Medible Desde el Primer Día",
+    "subtitle": "Más ingresos y empleados más felices gracias a una disponibilidad óptima.",
+    "benefits": [
+      {
+        "title": "Más Ingresos",
+        "desc": "Ninguna llamada se pierde. Un 15-25% más de citas y reservas gracias a la disponibilidad 24/7.",
+        "icon": "trending-up"
+      },
+      {
+        "title": "Equipo Más Eficiente",
+        "desc": "Su personal cualificado ahorra 2-3 horas diarias de teléfono y puede concentrarse en la atención al cliente.",
+        "icon": "zap"
+      },
+      {
+        "title": "Clientes Satisfechos",
+        "desc": "Respuestas inmediatas sin esperas. Sus clientes se sienten valorados y bien atendidos.",
+        "icon": "heart"
+      },
+      {
+        "title": "Reducción de Costes",
+        "desc": "Evite las costosas horas extra o los centros de llamadas externos. Sailly escala sin costes adicionales.",
+        "icon": "euro"
+      }
+    ]
+  },
+  "security_trust": {
+    "badge": "Seguridad y Confianza",
+    "title": "Los Más Altos Estándares",
+    "subtitle": "Sailly cumple con todas las normativas europeas de protección de datos.",
+    "features": [
+      {
+        "title": "Conforme al RGPD",
+        "desc": "Cumplimiento total del Reglamento General de Protección de Datos con servidores alemanes."
+      },
+      {
+        "title": "Certificado ISO 27001",
+        "desc": "Estándares internacionales de seguridad para sistemas de gestión de la información."
+      },
+      {
+        "title": "Cifrado de Extremo a Extremo",
+        "desc": "Todas las conversaciones y datos están cifrados durante la transmisión y el almacenamiento."
+      },
+      {
+        "title": "Servidores en Alemania",
+        "desc": "Todos los datos permanecen en Alemania y están sujetos a la legislación alemana de protección de datos."
+      }
+    ]
+  },
+  "industries": {
+    "hotels": {
+      "hero": {
+        "title": "Su Conserje Digital para una Recepción Relajada.",
+        "subtitle": "Apoye a su equipo de recepción con un asistente de IA que atiende llamadas, gestiona reservas y responde a las preguntas de los huéspedes – 24/7, amable y profesional.",
+        "cta": "Ver Demo para Hoteles"
+      },
+      "challenges": {
+        "title": "Alivie la Carga de Su Recepción",
+        "items": [
+          {
+            "title": "Enfoque en el Huésped",
+            "desc": "Cuando suena el teléfono, el servicio en el mostrador se resiente. Sailly le cubre las espaldas para la atención personalizada."
+          },
+          {
+            "title": "Superar la Falta de Personal",
+            "desc": "El buen personal escasea. Brinde a su equipo soporte digital para las consultas rutinarias."
+          },
+          {
+            "title": "Huéspedes Internacionales",
+            "desc": "Elimine las barreras lingüísticas. Sailly asesora a sus huéspedes con fluidez en más de 30 idiomas."
+          }
+        ]
+      },
+      "audio_samples": {
+        "title": "Escuche la Diferencia",
+        "subtitle": "Así de natural es cómo Sailly alivia a su equipo.",
+        "samples": [
+          {
+            "label": "Reserva de Habitación",
+            "desc": "Una reserva amable sin tiempo de espera."
+          },
+          {
+            "label": "Consulta de Huésped",
+            "desc": "Información sobre horarios de desayuno y aparcamiento."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Más Tiempo para la Hospitalidad",
+        "items": [
+          {
+            "title": "Integración Directa con PMS",
+            "desc": "Se conecta perfectamente con Oracle, Sihot y otros sistemas para registros automáticos."
+          },
+          {
+            "title": "Conserje 24/7",
+            "desc": "Ya sea check-out tardío o preferencia de almohadas – Sailly siempre está disponible para sus huéspedes."
+          },
+          {
+            "title": "Ingresos por Disponibilidad",
+            "desc": "Nunca más una reserva perdida porque la línea estaba ocupada."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Sin Reservas Perdidas. Sus Huéspedes Reciben la Atención que Merecen."
+    },
+    "restaurants": {
+      "hero": {
+        "title": "Más Tiempo para Sus Comensales, Menos al Teléfono.",
+        "subtitle": "Deje que Sailly tome las reservas mientras usted es el anfitrión perfecto. Sin teléfonos sonando en el comedor, sin ausencias.",
+        "cta": "Ver Demo para Restaurantes"
+      },
+      "challenges": {
+        "title": "Sala Llena Sin Estrés Telefónico",
+        "items": [
+          {
+            "title": "El Anfitrión Perfecto",
+            "desc": "Nada perturba más el servicio que un teléfono sonando. Dedíquese por completo a sus comensales en la mesa."
+          },
+          {
+            "title": "Reservas Fiables",
+            "desc": "Acabe con el caos de los papeles y los malentendidos en la asignación de mesas."
+          },
+          {
+            "title": "Ruido y Ajetreo",
+            "desc": "En horas punta, hablar por teléfono es difícil. Sailly siempre entiende a sus comensales con claridad."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Su Gerente de Restaurante Invisible",
+        "items": [
+          {
+            "title": "Reserva Inteligente",
+            "desc": "Se conecta con OpenTable, Resmio y otros sistemas para reservas de mesa automáticas."
+          },
+          {
+            "title": "Reducción de Ausencias",
+            "desc": "Envía recordatorios y confirmaciones para que las mesas reservadas estén ocupadas."
+          },
+          {
+            "title": "Información de Alérgenos y Menú",
+            "desc": "Responde preguntas sobre ingredientes y platos del día con competencia y seguridad."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Sin Reservas Perdidas. Usted Permanece en el Comedor."
+    },
+    "medical": {
+      "hero": {
+        "title": "La Asistente Digital para Su Consulta.",
+        "subtitle": "Asegure la disponibilidad para sus pacientes y alivie la carga de su personal médico. Programación de citas y pedidos de recetas – con empatía y conforme a la protección de datos.",
+        "cta": "Ver Demo para Consultas"
+      },
+      "challenges": {
+        "title": "Más Tiempo para los Pacientes",
+        "items": [
+          {
+            "title": "Enfoque en el Tratamiento",
+            "desc": "Sus asistentes están para las personas en la consulta. El teléfono ahora lo atiende Sailly."
+          },
+          {
+            "title": "Sin Señal de Ocupado",
+            "desc": "Los pacientes siempre le contactan – para citas, recetas o triaje de urgencias."
+          },
+          {
+            "title": "Protección de Datos Primero",
+            "desc": "Los datos de salud sensibles permanecen seguros. Conforme al RGPD en servidores alemanes."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Alivio para Su Equipo de Consulta",
+        "items": [
+          {
+            "title": "Programación Inteligente de Citas",
+            "desc": "Se conecta con Doctolib, Jameda y calendarios de consultas para citas directas."
+          },
+          {
+            "title": "Teléfono de Recetas 2.0",
+            "desc": "Recoge las solicitudes de recetas de forma estructurada y las prepara para la firma."
+          },
+          {
+            "title": "Detección de Urgencias",
+            "desc": "Filtra las consultas urgentes y las redirige inmediatamente al personal."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Sin Pacientes Perdidos. Su Equipo Se Mantiene Enfocado en la Atención."
+    },
+    "services": {
+      "hero": {
+        "title": "El maestro trabaja, la asistente gestiona la oficina.",
+        "subtitle": "Ya sea artesanía, estudio o taller: concéntrese en su oficio. Sailly se encarga de citas, precios y consultas de clientes.",
+        "cta": "Ver Demo para Pymes"
+      },
+      "challenges": {
+        "title": "Concéntrese en Su Oficio",
+        "items": [
+          {
+            "title": "Trabaje Sin Interrupciones",
+            "desc": "No puede atender el teléfono mientras tatúa o repara. Sailly le cubre las espaldas."
+          },
+          {
+            "title": "Ningún Encargo Se Pierde",
+            "desc": "Cada llamada perdida es facturación perdida. Asegure cada cliente potencial, incluso cuando esté ocupado."
+          },
+          {
+            "title": "Imagen Profesional",
+            "desc": "Impresione a sus clientes con disponibilidad inmediata, incluso cuando esté subido a una escalera."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Su Recepción Virtual",
+        "items": [
+          {
+            "title": "Coordinación de Citas",
+            "desc": "Programa citas de clientes directamente en su calendario, sin que tenga que soltar el martillo."
+          },
+          {
+            "title": "Información de Precios y Asesoría",
+            "desc": "Responde previamente a las preguntas estándar sobre precios, ubicación y servicios de forma competente."
+          },
+          {
+            "title": "Actualizaciones de Estado",
+            "desc": "Informa automáticamente a los clientes sobre el estado de reparaciones o pedidos."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Sin Trabajos Perdidos. Usted Se Enfoca en el Trabajo."
+    }
+  },
+  "howItWorks": {
+    "badge": "Funcionamiento",
+    "title": "Cómo Funciona Sailly",
+    "subtitle": "Implementación rápida sin esfuerzo tecnológico de su parte.",
+    "steps": {
+      "answer": {
+        "title": "Atender",
+        "desc": "Sailly atiende la llamada – amable y profesionalmente."
+      },
+      "understand": {
+        "title": "Comprender",
+        "desc": "La IA identifica la solicitud del llamante y extrae los datos relevantes."
+      },
+      "execute": {
+        "title": "Ejecutar",
+        "desc": "Programar cita, dar información o transferir la llamada – Sailly lo resuelve."
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Opiniones de Clientes",
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "items": [
+      {
+        "quote": "Sailly ha revolucionado nuestra gestión de reservas. Tenemos un 30% más de reservas y nuestro equipo está mucho más relajado.",
+        "author": "Maria Schmidt",
+        "role": "Propietaria, Gasthof Zur Post",
+        "location": "Múnich"
+      },
+      {
+        "quote": "Nuestros pacientes están encantados con la disponibilidad inmediata. Las asistentes por fin pueden volver a concentrarse en la atención al paciente.",
+        "author": "Dr. Thomas Weber",
+        "role": "Consulta de Medicina General",
+        "location": "Hamburgo"
+      },
+      {
+        "author": "Sandra K.",
+        "role": "Dueña de Salón de Belleza",
+        "location": "Barcelona",
+        "quote": "Con Sailly, me enfoco completamente en mis clientas. La IA maneja todos los pedidos de citas e inquietudes de precios automáticamente – simple y disponible 24/7."
+      }
+    ]
+  },
+  "cta_section": {
+    "title": "¿Listo para el Siguiente Paso?",
+    "subtitle": "Comience hoy con Sailly y transforme su servicio al cliente.",
+    "demo": "Solicitar Demo Gratuita",
+    "contact": "Concertar Cita de Asesoría",
+    "guarantee": "Garantía de Devolución de 30 Días"
+  },
+  "pricing_page": {
+    "badge": "Oferta Especial",
+    "title": "Precios Simples y Transparentes",
+    "trial_text": "Período de Prueba: Pruebe 30 días con 50% de descuento en todos los planes.",
+    "plans": {
+      "standard": {
+        "name": "Standard",
+        "description": "Transferencia profesional de llamadas con resumen inteligente.",
+        "cta": "Comenzar Ahora",
+        "features": [
+          "Atención y Transferencia de Llamadas 24/7",
+          "Resumen de Conversaciones con IA",
+          "Registros Detallados de Conversaciones",
+          "Programación de Citas",
+          "Listo para Carga Manual"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "description": "Integración perfecta con su infraestructura de software existente.",
+        "cta": "Elegir Gold",
+        "features": [
+          "Todo lo del Plan Standard",
+          "Integración Directa de Software",
+          "Flujos de Trabajo Específicos del Sector",
+          "Multilingüe (Hasta 12 Idiomas)",
+          "Sincronización de Datos en Tiempo Real",
+          "Más Tarifas por Minuto de Llamada"
+        ]
+      },
+      "future": {
+        "name": "Future",
+        "description": "Soluciones de IA a medida para las más altas exigencias.",
+        "cta": "Contactar con Ventas",
+        "features": [
+          "Todo lo del Plan Gold",
+          "Entrenamiento de Modelos de IA Propios",
+          "IA Conversacional Avanzada",
+          "Automatización de Flujos de Trabajo Complejos",
+          "Arquitecto de Soluciones Dedicado"
+        ]
+      }
+    },
+    "meta": {
+      "popular": "Plan Más Popular",
+      "per_month": "/Mes",
+      "starting_at": "Desde",
+      "plus_fees": "+ Tarifas de llamada por minuto",
+      "per_minute_example": "Con 200 llamadas/mes aproximadamente €24 adicionales (aprox. €0,12 por minuto)"
+    }
+  },
+  "footer": {
+    "product": "Producto",
+    "solutions": "Soluciones",
+    "resources": "Recursos",
+    "legal": "Legal",
+    "imprint": "Aviso Legal",
+    "privacy": "Protección de Datos",
+    "agb": "Condiciones Generales",
+    "copyright": "© 2026 Sailly. Todos los derechos reservados.",
+    "tagline": "La centralita telefónica con IA para la empresa mediana alemana. Atiende llamadas, programa citas y alivia la carga de su equipo – 24/7.",
+    "links": {
+      "overview": "Descripción General",
+      "technology": "Tecnología",
+      "pricing": "Precios",
+      "demo": "Demo",
+      "hotels": "Hotelería",
+      "medical": "Consultorios Médicos",
+      "restaurants": "Gastronomía",
+      "services": "Proveedores de Servicios"
+    },
+    "made_in_germany": "Made in Germany 🇩🇪"
+  },
+  "audio_demo": {
+    "badge": "Demo de Audio",
+    "title": "Escuche la Diferencia",
+    "subtitle": "Así de natural y humano suena Sailly al teléfono.",
+    "language_label": "Español",
+    "samples": [
+      {
+        "label": "Restaurante – Reserva de Mesa",
+        "desc": "Reserva automática mientras tu equipo atiende a los clientes."
+      },
+      {
+        "label": "Hotel – Consulta de Habitaciones",
+        "desc": "Respuestas expertas sobre disponibilidad y solicitudes especiales."
+      }
+    ]
+  },
+  "dashboard_preview": {
+    "title": "Vista General en Vivo",
+    "today": "Hoy,",
+    "systemActive": "Sistema Activo",
+    "calls": "Llamadas",
+    "timeSaved": "Tiempo Ahorrado",
+    "vsYesterday": "vs ayer",
+    "callVolume": "Volumen de Llamadas",
+    "callsUnit": "llamadas",
+    "lastActivity": "Actividad Reciente",
+    "liveAgent": "Agente en Vivo",
+    "activities": [
+      "Cita confirmada para mañana",
+      "Consulta de cliente respondida",
+      "Base de conocimientos actualizada"
+    ]
+  },
+  "conversation_preview": {
+    "speaking": "Hablando...",
+    "listening": "Escuchando...",
+    "customerLabel": "Cliente",
+    "saillyLabel": "Sailly",
+    "messages": [
+      {
+        "id": "1",
+        "speaker": "sailly",
+        "message": "Hola, habla Sailly de Bright Dental. ¿Cómo puedo ayudarte?"
+      },
+      {
+        "id": "2",
+        "speaker": "user",
+        "message": "Necesito reprogramar mi cita para mañana."
+      },
+      {
+        "id": "3",
+        "speaker": "sailly",
+        "message": "Claro. ¿Qué hora te vendría mejor?"
+      },
+      {
+        "id": "4",
+        "speaker": "user",
+        "message": "¿Hay disponibilidad por la tarde alrededor de las 15:00?"
+      },
+      {
+        "id": "5",
+        "speaker": "sailly",
+        "message": "Déjame verificar... Sí, a las 15:15 hay disponibilidad. ¿Te la reservo?"
+      },
+      {
+        "id": "6",
+        "speaker": "user",
+        "message": "Sí por favor, está perfecto."
+      },
+      {
+        "id": "7",
+        "speaker": "sailly",
+        "message": "¡Listo! Te vemos mañana a las 15:15."
+      }
+    ]
+  },
+  "industries_eyebrow": "Optimizado para Su Sector",
+  "industry_template": {
+    "badges": {
+      "gdpr": "Conforme al RGPD",
+      "setup": "Listo en 4 Semanas",
+      "guarantee": "Garantía de 30 Días"
+    },
+    "challenges_badge": "Desafío",
+    "solution_badge": "Solución",
+    "audio_badge": "Demo de Audio",
+    "audio_duration": "0:45 • Español",
+    "roi": {
+      "badge": "Retorno de Inversión",
+      "title": "Resultados Medibles Desde el Primer Día",
+      "subtitle": "Sailly se amortiza desde el primer mes.",
+      "metrics": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Satisfacción del Cliente"
+        },
+        "fewer_calls": {
+          "value": "50%",
+          "label": "Menos Llamadas para Su Equipo"
+        },
+        "availability": {
+          "value": "24/7",
+          "label": "Disponibilidad"
+        },
+        "implementation": {
+          "value": "4 Semanas",
+          "label": "Hasta la Implementación"
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Sailly ha transformado nuestro negocio. Ya no perdemos ninguna llamada y nuestro equipo puede concentrarse en lo que realmente importa – nuestros clientes.",
+      "author": "Cliente de Ejemplo"
+    },
+    "cta": {
+      "title": "¿Listo para el Siguiente Paso?",
+      "subtitle": "Comience ahora con Sailly y transforme su servicio al cliente.",
+      "primary": "Solicitar Demo Gratuita",
+      "secondary": "Concertar Cita de Asesoría",
+      "guarantee": "Garantía de Devolución de 30 Días"
+    }
+  },
+  "produkt_page": {
+    "badge": "Sailly Agente de Voz",
+    "hero": {
+      "title_part1": "Más que solo IA.",
+      "title_part2": "Un Verdadero Miembro del Equipo.",
+      "description": "Sailly no es un contestador automático. Escucha, entiende y trabaja como una colega humana - 24/7.",
+      "cta_hire": "Contrata Sailly Ahora",
+      "cta_demo": "Ver Demo"
+    },
+    "how_it_works": {
+      "title": "Cómo Funciona Sailly",
+      "subtitle": "Inteligente, conectado y simple."
+    },
+    "dashboard_section": {
+      "heading": "Se Mantiene al Día de Todo",
+      "description": "Mientras Sailly atiende las llamadas, analiza cada conversación. Obtienes información en tiempo real sobre la satisfacción del cliente, preguntas frecuentes y citas reservadas.",
+      "features": [
+        {
+          "title": "Análisis en Tiempo Real",
+          "desc": "Detecta el estado de ánimo y urgencia al instante."
+        },
+        {
+          "title": "Integración Perfecta",
+          "desc": "Se conecta directamente con tu CRM."
+        },
+        {
+          "title": "Aprendizaje Adaptativo",
+          "desc": "Se vuelve más inteligente con cada conversación."
+        }
+      ]
+    },
+    "conversation_section": {
+      "heading": "Habla Tu Idioma",
+      "description": "Los clientes a menudo ni se dan cuenta de que están hablando con IA. Sailly domina la charla intrascendente, entiende dialectos y se mantiene amable en situaciones estresantes.",
+      "languages_label": "Idiomas",
+      "response_time_label": "Tiempo de Respuesta"
+    },
+    "trust_section": {
+      "heading": "Por Qué las Empresas Confían en Sailly",
+      "trust_cards": [
+        {
+          "title": "Disponible 24/7",
+          "desc": "Sin más colas de espera ni llamadas perdidas."
+        },
+        {
+          "title": "Conforme con GDPR",
+          "desc": "Servidores en Alemania, los más altos estándares de seguridad."
+        },
+        {
+          "title": "Listo al Instante",
+          "desc": "Configurado y entrenado en minutos."
+        }
+      ]
+    },
+    "cta_section": {
+      "heading": "¿Listo para el Siguiente Nivel?",
+      "description": "Prueba Sailly gratis hoy y experimenta la diferencia.",
+      "cta_start": "Comienza Gratis Ahora",
+      "cta_contact": "Ponte en Contacto"
+    }
+  },
+  "integrationen_page": {
+    "title": "Conecta Todos Tus Sistemas",
+    "subtitle": "Más de 500 integraciones listas. Conéctate sin problemas, sincroniza automáticamente.",
+    "cta": "Explorar integraciones",
+    "badge": "INTEGRACIONES",
+    "heading_part1": "Conecta",
+    "heading_part2": "todos tus sistemas",
+    "industry_badge": "Específico del sector",
+    "industry_title": "Integraciones para tu sector",
+    "industry_subtitle": "Desarrollado para hostelería, restaurantes y salud",
+    "hotels_title": "Hotelería",
+    "hotels_desc": "Integración perfecta con sistemas de gestión hotelera.",
+    "restaurants_title": "Restaurantes",
+    "restaurants_desc": "Conexión directa con sistemas de reservas.",
+    "healthcare_title": "Salud",
+    "healthcare_desc": "Integración conforme al RGPD con sistemas de gestión de consultas.",
+    "pos_label": "Sistemas POS, menús",
+    "praxis_label": "Agenda de consulta, recetas",
+    "business_title": "Herramientas de negocio generales",
+    "crm_title": "CRM y Ventas",
+    "crm_desc": "Conéctate a tus sistemas de gestión de clientes.",
+    "calendar_title": "Calendario y Citas",
+    "calendar_desc": "Sincroniza calendarios y gestiona citas.",
+    "comm_title": "Comunicación",
+    "comm_desc": "Notificaciones automáticas y comunicación.",
+    "api_title": "Crea integraciones personalizadas",
+    "api_subtitle": "Utiliza nuestra documentación de API para crear tus propias integraciones.",
+    "api_docs": "Documentación de API",
+    "cta_title": "Listo para conectar?",
+    "cta_subtitle": "Experimenta lo fácil que puede ser la integración de sistemas.",
+    "cta_demo": "Solicitar demo"
+  },
+  "strategic_partners_page": {
+    "title": "Pila Tecnológica",
+    "partners": "Socios Estratégicos",
+    "badge": "Pila Tecnológica",
+    "heading_part1": "Estratégicos",
+    "heading_part2": "Socios",
+    "subtitle": "Sailly se basa en tecnologías probadas de proveedores líderes.",
+    "stack_title": "Nuestro stack tecnológico",
+    "stack_subtitle": "Asociaciones probadas para máxima fiabilidad",
+    "ai_section_title": "Socios fundación IA",
+    "ai_section_subtitle": "Los mejores LLMs para conversaciones naturales",
+    "voice_section_title": "Socios tecnología vocal",
+    "voice_section_subtitle": "Tecnología de voz de vanguardia",
+    "infra_title": "Socios infraestructura y telefonía",
+    "infra_subtitle": "Infraestructura confiable para disponibilidad 24/7",
+    "compliance_title": "Cumplimiento y protección de datos",
+    "compliance_subtitle": "Todos los socios cumplen estándares UE",
+    "ecosystem_title": "Ecosistema de integración",
+    "ecosystem_subtitle": "Conexión perfecta con sus sistemas existentes",
+    "cta_title": "Confíe en tecnología probada",
+    "cta_subtitle": "Experimente cómo Sailly trabaja con sus sistemas.",
+    "cta_demo": "Demo de integración",
+    "cta_all": "Todas las integraciones",
+    "main_features": "Características principales:",
+    "use_case_label": "Caso de uso:",
+    "privacy_title": "Garantías de privacidad",
+    "german_servers": "Servidores UE",
+    "german_servers_desc": "Todos los datos permanecen en Europa",
+    "e2e_enc": "Cifrado extremo a extremo",
+    "e2e_enc_desc": "AES-256 para todos los datos",
+    "no_sharing": "Sin compartir datos",
+    "no_sharing_desc": "Sus datos le pertenecen solo a usted",
+    "eu_law": "Ley UE de protección de datos",
+    "eu_law_desc": "Sujeto a la ley europea",
+    "speech_title": "Voz a texto y texto a voz",
+    "pipeline_title": "Canal de procesamiento vocal"
+  },
+  "languages_page": {
+    "title": "Multilingüe",
+    "subtitle": "Sailly habla más de 30 idiomas",
+    "badge": "Multilingüe",
+    "heading_part1": "Idiomas",
+    "heading_part2": "Dialectos",
+    "hero_desc": "Sailly habla con fluidez más de 30 idiomas y entiende dialectos regionales. Sus clientes internacionales se sienten comprendidos inmediatamente.",
+    "stats_languages": "Idiomas soportados",
+    "stats_coverage": "Cobertura global",
+    "stats_response": "Tiempo de respuesta",
+    "stats_accuracy": "Precisión de voz",
+    "grid_title": "Idiomas soportados",
+    "grid_subtitle": "Conversación natural en el idioma materno de sus clientes",
+    "available_accents": "Acentos disponibles:",
+    "listen_sample": "Escuchar muestra",
+    "voice_title": "Calidad de voz natural",
+    "voice_subtitle": "IA de vanguardia para conversaciones naturales",
+    "voice_special": "¿Qué hace que Sailly sea especial?",
+    "feature_dialect": {
+      "title": "Reconocimiento de acento",
+      "desc": "Entiende pronunciaciones y características regionales"
+    },
+    "feature_intonation": {
+      "title": "Entonación natural",
+      "desc": "Habla con el énfasis y emoción apropiados"
+    },
+    "feature_cultural": {
+      "title": "Adaptación cultural",
+      "desc": "Considera convenciones de cortesía cultural"
+    },
+    "feature_volume": {
+      "title": "Volumen adaptativo",
+      "desc": "Se adapta automáticamente a la situación de conversación"
+    },
+    "demo_sample_title": "Muestra: Reserva de hotel",
+    "demo_hochdeutsch": "Español (Castellano)",
+    "demo_hochdeutsch_text": "¡Buen día! Bienvenido al Hotel Zur Post. ¿Cómo puedo ayudarle hoy?",
+    "demo_english": "English (British)",
+    "demo_english_text": "Good afternoon! Welcome to Hotel Zur Post. How may I assist you today?",
+    "demo_french": "Français (Parisien)",
+    "demo_french_text": "Bonjour ! Bienvenue à l'Hôtel Zur Post. Comment puis-je vous aider aujourd'hui ?",
+    "listen_btn": "Escuchar",
+    "industry_title": "Terminología específica del sector",
+    "industry_subtitle": "Sailly conoce los términos técnicos de su industria en todos los idiomas",
+    "industry_hotels": "Hotelería",
+    "industry_restaurants": "Gastronomía",
+    "industry_healthcare": "Cuidados de la salud",
+    "dialects_title": "Dialectos regionales y acentos",
+    "dialects_subtitle": "Sailly también entiende variaciones regionales",
+    "accuracy_label": "Precisión",
+    "cta_title": "Hable el idioma de sus clientes",
+    "cta_subtitle": "Pruebe Sailly en su idioma preferido y experimente conversaciones naturales.",
+    "cta_demo": "Demo multilingüe",
+    "cta_consult": "Solicitar consulta de idioma"
+  },
+  "data_insights_page": {
+    "title": "Datos e Insights",
+    "subtitle": "Resultados medibles para su negocio.",
+    "badge": "Beneficios empresariales",
+    "heading_part1": "Datos",
+    "heading_part2": "Insights",
+    "roi_title": "Calculadora ROI: Lo que Sailly hace por usted",
+    "roi_subtitle": "Calcule su retorno sobre inversión con cifras concretas",
+    "roi_your_numbers": "Sus números hablan por sí solos",
+    "impact_title": "Beneficios empresariales medibles",
+    "impact_subtitle": "Mejoras concretas que sentirá inmediatamente",
+    "impact_revenue": {
+      "title": "Aumento de ingresos",
+      "desc": "Más reservas gracias a disponibilidad perfecta"
+    },
+    "impact_efficiency": {
+      "title": "Ganancia de eficiencia",
+      "desc": "Tiempo ahorrado por empleado para tareas importantes"
+    },
+    "impact_satisfaction": {
+      "title": "Satisfacción del cliente",
+      "desc": "Mayor satisfacción gracias a respuestas inmediatas"
+    },
+    "impact_savings": {
+      "title": "Ahorro de costos",
+      "desc": "Costos de personal ahorrados mensualmente"
+    },
+    "stories_title": "Historias de éxito de nuestros clientes",
+    "stories_subtitle": "Resultados reales de empresas reales",
+    "comparison_title": "Por qué Sailly es mejor",
+    "comparison_subtitle": "Comparación con soluciones tradicionales",
+    "traditional_title": "Centros de llamadas tradicionales",
+    "sailly_title": "Sailly Voice Agent",
+    "cta_title": "¿Listo para resultados medibles?",
+    "cta_subtitle": "Comience hoy y vea cómo Sailly transforma su negocio.",
+    "cta_roi": "Solicitar demo de ROI",
+    "cta_consult": "Reservar llamada de consultoría"
+  },
+  "loesungen_page": {
+    "title": "Soluciones para Cada Industria",
+    "subtitle": "Ya sea clínica, hotel o bufete de abogados – Sailly se adapta a tus necesidades.",
+    "badge": "Industrias",
+    "industries": {
+      "hotels": {
+        "title": "Hotelería",
+        "desc": "Reservas, servicio de habitaciones y FAQ."
+      },
+      "medical": {
+        "title": "Prácticas Médicas",
+        "desc": "Gestión de citas y recetas."
+      },
+      "restaurants": {
+        "title": "Restaurantes",
+        "desc": "Reservas de mesas y pedidos."
+      },
+      "services": {
+        "title": "Proveedores de Servicios",
+        "desc": "Reserva de citas para salones y talleres."
+      }
+    }
+  },
+  "demo_page": {
+    "title": "Solicitar Demo",
+    "subtitle": "Experimenta Sailly en vivo. Te mostraremos cómo mejorar tu disponibilidad de inmediato.",
+    "badge": "Prueba Gratuita",
+    "firstname": "Nombre",
+    "lastname": "Apellido",
+    "email": "Correo electrónico",
+    "company": "Empresa",
+    "phone": "Teléfono",
+    "message": "Mensaje",
+    "submit": "Solicitar demo",
+    "placeholder_firstname": "Juan",
+    "placeholder_lastname": "García",
+    "placeholder_company": "Empresa S.L.",
+    "phone_label": "Teléfono",
+    "optional_fields": "Información Opcional"
+  },
+  "technologie_page": {
+    "title": "Tecnología de IA de próxima generación",
+    "subtitle": "Descubre cómo trabajan juntos nuestros modelos de lenguaje y motores de integración.",
+    "badge": "Tecnología"
+  },
+  "resources_page": {
+    "badge": "Feature",
+    "title": "resources_page",
+    "subtitle": "Learn more"
+  },
+  "agb_page": {
+    "badge": "Feature",
+    "title": "agb_page",
+    "subtitle": "Learn more"
+  },
+  "datenschutz_page": {
+    "badge": "Feature",
+    "title": "datenschutz_page",
+    "subtitle": "Learn more"
+  },
+  "impressum_page": {
+    "badge": "Feature",
+    "title": "impressum_page",
+    "subtitle": "Learn more"
+  },
+  "use_cases_banking": {
+    "badge": "BANCA Y SERVICIOS FINANCIEROS",
+    "title": "Automatización de flujos de trabajo para bancos",
+    "subtitle": "Transforma tus procesos bancarios con automatización impulsada por IA.",
+    "challenges_subtitle": "Los bancos enfrentan una enorme presión por la regulación, digitalización y expectativas de clientes",
+    "c1_title": "Complejidad regulatoria",
+    "c1_desc": "Las regulaciones en constante cambio requieren ajustes continuos.",
+    "c1_stat": "Cambios regulatorios por año",
+    "c2_title": "Procesos manuales",
+    "c2_desc": "Revisiones manuales y procesos de aprobación que consumen mucho tiempo.",
+    "c2_stat": "Tiempo promedio de procesamiento de préstamos",
+    "c3_title": "Gestión de riesgos",
+    "c3_desc": "Se requieren análisis de riesgo complejos y detección de fraudes en tiempo real.",
+    "c3_stat": "Pérdidas anuales por fraude en Alemania",
+    "solutions_subtitle": "Flujos de trabajo especialmente desarrollados para la industria financiera",
+    "s1_title": "Verificación de crédito automatizada",
+    "s1_desc": "Verificación de crédito con IA con análisis automático de documentos y evaluación de riesgos.",
+    "s2_title": "Monitoreo de cumplimiento",
+    "s2_desc": "Monitoreo continuo de todas las transacciones para detectar infracciones de cumplimiento.",
+    "s3_title": "Servicio al cliente inteligente",
+    "s3_desc": "Chatbots de IA 24/7 para consultas de clientes con transferencia perfecta a asesores humanos.",
+    "workflow_title": "Flujo de trabajo del proceso crediticio",
+    "w1": "Capturar solicitud automáticamente",
+    "w2": "Revisar documentos con IA",
+    "w3": "Evaluar automáticamente la solvencia",
+    "w4": "Calcular puntuación de riesgo",
+    "w5": "Decisión en 15 minutos",
+    "uc_subtitle": "Casos de uso específicos",
+    "uc1_title": "Prevención de lavado de dinero",
+    "uc1_desc": "Detección automática de patrones de transacciones sospechosas y generación de SAR.",
+    "uc2_title": "Automatización KYC",
+    "uc2_desc": "Identificación y verificación de clientes totalmente automatizadas con verificación de documentos.",
+    "uc3_title": "Puntuación de riesgo",
+    "uc3_desc": "Evaluación de riesgos crediticios basada en IA con más de 500 puntos de datos.",
+    "uc4_title": "Detección de fraudes",
+    "uc4_desc": "Detección en tiempo real de transacciones fraudulentas con aprendizaje automático.",
+    "uc5_title": "Informes regulatorios",
+    "uc5_desc": "Creación y envío automáticos de todos los informes regulatorios.",
+    "uc6_title": "Servicio al cliente",
+    "uc6_desc": "Soporte con IA con acceso a todos los datos de clientes.",
+    "b1_label": "Reducción en el tiempo de procesamiento",
+    "b2_label": "Tasa de automatización para procesos estándar",
+    "b3_label": "Ahorro de costos en administración",
+    "b4_label": "Tasa de cumplimiento en auditorías",
+    "reg_title": "Cumplimiento regulatorio",
+    "reg_subtitle": "Cumplimiento completo de todas las regulaciones relevantes",
+    "reg1_title": "Regulación alemana",
+    "reg2_title": "Estándares internacionales",
+    "cta_page_title": "Digitaliza tus procesos bancarios",
+    "cta_page_subtitle": "Empieza a automatizar tus procesos financieros hoy.",
+    "cta_btn": "Demo bancaria",
+    "cta_contact_btn": "Consultoría Fintech"
+  },
+  "use_cases_baubranche": {
+    "badge": "INDUSTRIA DE LA CONSTRUCCIÓN",
+    "title": "Automatización IA para construcción",
+    "subtitle": "Optimiza los procesos de construcción con automatización inteligente.",
+    "challenges_subtitle": "Digitalización y eficiencia en la industria de la construcción",
+    "cta_page_title": "Moderniza tus procesos de construcción",
+    "cta_page_subtitle": "Comienza con la automatización IA para la construcción."
+  },
+  "use_cases_healthcare": {
+    "badge": "SANIDAD",
+    "title": "Automatización IA para sanidad",
+    "subtitle": "Mejora la atención al paciente con automatización inteligente.",
+    "challenges_subtitle": "Desafíos en la sanidad moderna",
+    "cta_page_title": "Mejora la atención al paciente",
+    "cta_page_subtitle": "Automatización IA para la sanidad."
+  },
+  "use_cases_legal": {
+    "badge": "SECTOR LEGAL",
+    "title": "Automatización IA para bufetes de abogados",
+    "subtitle": "Optimiza los procesos legales con automatización IA inteligente.",
+    "challenges_subtitle": "Desafíos de los bufetes modernos",
+    "cta_page_title": "Optimiza tus procesos legales",
+    "cta_page_subtitle": "Automatización IA para bufetes de abogados."
+  },
+  "use_cases_manufacturing": {
+    "badge": "FABRICACIÓN",
+    "title": "Automatización IA para fabricación",
+    "subtitle": "Aumenta tu eficiencia de fabricación con automatización IA.",
+    "challenges_subtitle": "Desafíos en la fabricación moderna",
+    "cta_page_title": "Aumenta tu eficiencia de producción",
+    "cta_page_subtitle": "Automatización IA para fabricación."
+  },
+  "use_cases_public-sector": {
+    "title": "use cases public-sector",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "use_cases_retail": {
+    "badge": "COMERCIO Y RETAIL",
+    "title": "Automatización IA para retail",
+    "subtitle": "Optimiza las operaciones de retail con automatización IA inteligente.",
+    "challenges_subtitle": "Desafíos del comercio moderno",
+    "cta_page_title": "Optimiza tus operaciones de retail",
+    "cta_page_subtitle": "Automatización IA para retail."
+  },
+  "use_cases_telecom": {
+    "badge": "TELECOMUNICACIONES",
+    "title": "Automatización IA para telecomunicaciones",
+    "subtitle": "Revoluciona tus servicios de telecomunicaciones con automatización IA.",
+    "challenges_subtitle": "Desafíos en telecomunicaciones",
+    "cta_page_title": "Revoluciona tus telecomunicaciones",
+    "cta_page_subtitle": "Automatización IA para telecomunicaciones."
+  },
+  "ai_impacts_customer-service": {
+    "title": "ai impacts customer-service",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_financial-services": {
+    "title": "ai impacts financial-services",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_hr-recruiting": {
+    "title": "ai impacts hr-recruiting",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_it-ops": {
+    "title": "ai impacts it-ops",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_marketing": {
+    "badge": "AI IMPACTS MARKETING",
+    "title": "Transformar el marketing con IA",
+    "subtitle": "Personaliza campañas y automatiza flujos de trabajo de marketing."
+  },
+  "ai_impacts_sales": {
+    "badge": "AI IMPACTS SALES",
+    "title": "Optimizar ventas con IA",
+    "subtitle": "Aumenta tus resultados de ventas con soporte IA inteligente."
+  },
+  "ai_impacts_secops": {
+    "badge": "AI IMPACTS SECOPS",
+    "title": "Operaciones de seguridad con IA",
+    "subtitle": "Detecta y combate amenazas de seguridad con soporte IA."
+  },
+  "ai_impacts_support": {
+    "badge": "AI IMPACTS SUPPORT",
+    "title": "Soporte WhatsApp con RAG",
+    "subtitle": "Revoluciona tu soporte al cliente con bots WhatsApp impulsados por IA."
+  },
+  "blog_page": {
+    "title": "blog page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "academy_page": {
+    "title": "academy page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "docs_page": {
+    "title": "docs page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "news_page": {
+    "title": "Noticias y actualizaciones",
+    "subtitle": "Mantente al día con los últimos desarrollos en Sailly.",
+    "badge": "Noticias",
+    "read_more": "Leer más",
+    "all_news": "Todas las noticias"
+  },
+  "community_page": {
+    "title": "community page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "legal_pages": {
+    "agb_title": "Términos y Condiciones",
+    "datenschutz_title": "Política de Privacidad",
+    "impressum_title": "Aviso Legal"
+  },
+  "use_cases_common": {
+    "demo_cta": "Solicitar demo",
+    "contact_cta": "Contáctenos",
+    "benefits_title": "Beneficios empresariales medibles",
+    "roi_title": "ROI y resultados",
+    "features_title": "Funciones principales",
+    "how_title": "Cómo funciona",
+    "steps_title": "Éxito en 3 pasos",
+    "challenges_title": "Desafíos",
+    "solutions_title": "Soluciones Sailly",
+    "use_cases_title": "Casos de uso",
+    "cta_title": "¿Listo para el siguiente paso?",
+    "cta_subtitle": "Empieza hoy y experimenta la diferencia.",
+    "compliance_title": "Cumplimiento y seguridad"
+  },
+  "ai_impacts_common": {
+    "demo_cta": "Solicitar demo",
+    "contact_cta": "Contáctenos",
+    "benefits_title": "Resultados medibles",
+    "features_title": "Funciones",
+    "how_title": "Cómo funciona",
+    "roi_title": "Valor medible",
+    "challenges_title": "Desafíos actuales",
+    "solutions_title": "Soluciones IA Sailly",
+    "cta_title": "Empieza ahora",
+    "cta_subtitle": "Experimenta el poder de la IA en tu negocio."
+  },
+  "use_cases_public_sector": {
+    "badge": "SECTOR PÚBLICO",
+    "title": "Automatización IA para organismos públicos",
+    "subtitle": "Moderniza los procesos administrativos con automatización inteligente.",
+    "challenges_subtitle": "Desafíos del sector público",
+    "cta_page_title": "Moderniza tus procesos administrativos",
+    "cta_page_subtitle": "Automatización IA para organismos públicos."
+  },
+  "ai_impacts_it_ops": {
+    "badge": "AI IMPACTS IT OPS",
+    "title": "Automatizar operaciones IT con IA",
+    "subtitle": "Reduce las tareas manuales de IT y aumenta la eficiencia."
+  },
+  "security_compliance_page": {
+    "badge": "SEGURIDAD Y CUMPLIMIENTO",
+    "heading_part1": "Máxima seguridad",
+    "heading_part2": "para su empresa",
+    "subtitle": "Sus datos están seguros con nosotros. Los más altos estándares de seguridad y protección de datos.",
+    "cta": "Explorar seguridad",
+    "sec_badge": "Seguridad",
+    "sec_title": "Funciones de seguridad integrales",
+    "sec_subtitle": "Seguridad multicapa en todos los niveles",
+    "f1_title": "Cifrado",
+    "f1_desc": "Cifrado de extremo a extremo para datos en tránsito y en reposo. AES-256.",
+    "f2_title": "Control de acceso",
+    "f2_desc": "Permisos granulares y gestión de roles. SSO, MFA y proveedor de identidad.",
+    "f3_title": "Registro de auditoría",
+    "f3_desc": "Registros de auditoría completos para todas las acciones. Trazabilidad y cumplimiento.",
+    "f4_title": "Infraestructura",
+    "f4_desc": "Infraestructura en la nube segura o implementación local. Su elección.",
+    "f5_title": "Protección contra amenazas",
+    "f5_desc": "Detección automática de amenazas. Protección DDoS, firewall.",
+    "f6_title": "Copia de seguridad y recuperación",
+    "f6_desc": "Copias de seguridad automáticas y recuperación ante desastres. Disponibilidad de datos garantizada.",
+    "comp_title": "Certificaciones y cumplimiento",
+    "comp_subtitle": "Cumplimiento de todos los estándares y regulaciones importantes",
+    "dp_title": "Protección de datos",
+    "dp_desc": "Cumplimiento total de las regulaciones de protección de datos.",
+    "cert_title": "Certificaciones",
+    "cert_desc": "Estándares de seguridad y calidad reconocidos internacionalmente.",
+    "data_ctrl_title": "Sus datos, su control",
+    "data_ctrl_subtitle": "Control máximo sobre sus datos",
+    "dr_title": "Residencia de datos",
+    "dr_desc": "Elija dónde se almacenan sus datos. UE, EE.UU. o local.",
+    "dm_title": "Minimización de datos",
+    "dm_desc": "Solo recopilamos los datos necesarios para el servicio.",
+    "del_title": "Derecho al olvido",
+    "del_desc": "Control total sobre sus datos. Eliminación bajo petición.",
+    "cta_title": "Seguridad en la que puede confiar",
+    "cta_subtitle": "Obtenga más información sobre nuestras medidas de seguridad y estándares de cumplimiento.",
+    "demo_cta": "Solicitar demo",
+    "comp_pill": "Cumplimiento",
+    "dp_pill": "Protección de datos"
+  },
+  "workflow_builder_page": {
+    "badge": "CONSTRUCTOR DE FLUJOS",
+    "heading_part1": "Constructor visual de",
+    "heading_part2": "flujos de trabajo",
+    "subtitle": "Crea flujos de trabajo complejos con nuestro intuitivo constructor de arrastrar y soltar. No se requiere programación.",
+    "cta": "Probar el constructor",
+    "features_title": "Todo lo que necesitas",
+    "features_subtitle": "Un poderoso constructor para flujos de trabajo profesionales",
+    "f1_title": "Arrastrar y soltar",
+    "f1_desc": "Interfaz intuitiva de arrastrar y soltar. Crea flujos de trabajo arrastrando componentes.",
+    "f2_title": "Muchos componentes",
+    "f2_desc": "Cientos de componentes listos para usar para todas las tareas e integraciones comunes.",
+    "f3_title": "Pruebas en vivo",
+    "f3_desc": "Prueba tus flujos de trabajo directamente en el constructor. Retroalimentación instantánea y depuración.",
+    "f4_title": "Editor de código",
+    "f4_desc": "Funcionalidad avanzada con editor de código incorporado para lógica personalizada.",
+    "f5_title": "Versionado",
+    "f5_desc": "Control de versiones completo para todos los flujos. Reversión y comparación.",
+    "f6_title": "Validación",
+    "f6_desc": "Validación automática y comprobación de errores durante la creación.",
+    "tpl_title": "Biblioteca de plantillas",
+    "tpl_subtitle": "Comience con plantillas de flujo de trabajo listas para usar",
+    "t1_title": "Procesamiento de documentos",
+    "t1_desc": "Plantillas para procesamiento automático de documentos, OCR y clasificación.",
+    "t2_title": "Integración de datos",
+    "t2_desc": "Conecte sistemas y sincronice datos automáticamente.",
+    "t3_title": "IA y automatización",
+    "t3_desc": "Usa IA para automatización inteligente y toma de decisiones.",
+    "cta_title": "¿Listo para crear?",
+    "cta_subtitle": "Empieza hoy con el Constructor de Flujos y crea tus primeros procesos automatizados.",
+    "demo_cta": "Solicitar demo"
+  },
+  "templates_page": {
+    "badge": "PLANTILLAS",
+    "heading_part1": "Plantillas",
+    "heading_part2": "predefinidas",
+    "subtitle": "Comience inmediatamente con plantillas de flujo de trabajo profesionales. Para cada industria y caso de uso.",
+    "cta": "Explorar plantillas",
+    "all_title": "Todas las plantillas",
+    "all_subtitle": "Listo para usar en todas las industrias",
+    "use_btn": "Usar plantilla",
+    "cta_title": "¿No encuentras tu plantilla?",
+    "cta_subtitle": "Crea tu propia plantilla o déjanos ayudarte.",
+    "demo_cta": "Solicitar demo"
+  },
+  "ki_integration_page": {
+    "badge": "INTEGRACIÓN IA",
+    "heading_part1": "Integración de IA",
+    "heading_part2": "para su negocio",
+    "subtitle": "Integra los modelos de IA más potentes directamente en tus procesos empresariales. Sin conocimientos de programación.",
+    "cta": "Probar integración IA",
+    "models_title": "Modelos de IA soportados",
+    "models_subtitle": "Los mejores modelos para cada caso de uso",
+    "features_title": "Características de integración",
+    "cta_title": "¿Listo para el poder de la IA?",
+    "cta_subtitle": "Empieza hoy y desata el potencial de tus datos con IA.",
+    "demo_cta": "Solicitar demo"
+  },
+  "preise_page": {
+    "badge": "Precios",
+    "title": "Precios simples y justos",
+    "subtitle": "Elige el plan que se adapta a tu negocio.",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "save": "Ahorra 20%",
+    "per_month": "por mes",
+    "get_started": "Empezar",
+    "contact_sales": "Contactar ventas",
+    "faq_title": "Preguntas frecuentes",
+    "cta_title": "¿Aún tienes preguntas?",
+    "cta_subtitle": "Nuestro equipo está encantado de ayudarle.",
+    "contact_cta": "Contáctenos"
+  }
+}

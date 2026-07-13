@@ -1,0 +1,93 @@
+---
+description: Non-negotiable rules, breakthrough rules condensed, hard stops, forbidden patterns, plan mode compliance. Do not edit brain code without reading this file.
+alwaysApply: true
+---
+# Fix Discipline & Non-Negotiable Rules
+
+> Authority: `restaurant-voice-agent.mdc` breakthrough rules. This is the enforcement layer.
+
+## Non-Negotiable Rules (any violation = abort)
+
+1. **ZERO keyword/regex intent routing** — not primary, not fallback, not "edge case helper". `extract_multi` is the sole intent authority.
+2. **ZERO `[TOOL:...]` text parsing in production** — FSM emits structured `tool_calls`; executor fires them.
+3. **ZERO tenant strings in `server/brain/`** — `if tenant == "doboo"` and similar are forbidden.
+4. **ZERO new `ConversationState` fields without `to_dict()` + `from_dict()` in the same commit.**
+5. **ZERO LLM-driven Category B** — `create_order`, `create_reservation`, `end_call`, `send_sms`, `transfer_to_human` are FSM-only.
+6. **ZERO validation gaming** — never change `expect_intent`, scenarios, or thresholds to make failures pass.
+7. **ZERO validation on stale server** — restart uvicorn + verify fresh `lstart` BEFORE every run (see `02-deploy.mdc`).
+8. **ONE scoped fix per task** — no drive-by refactors, no multi-file unrelated edits.
+9. **ZERO silent legacy fallback** — FSM failure must raise unless `SAILLY_FSM_EMERGENCY_FALLBACK` is explicitly set.
+10. **ZERO claiming success without evidence** — must cite before/after pass rate OR pytest result + fresh server PID.
+11. **ZERO live testing without DEPLOY VERIFICATION** — after any non-doc commit, agent MUST restart server, produce DEPLOY VERIFICATION block, and show it before any live call.
+12. **When replacing old methods: DELETE the old one completely.** After implementing a new method that replaces an old one: delete the entire old method, verify no code references the old method name (grep), clear Python cache, verify tests pass with new method only. Never leave dual implementations side-by-side.
+13. **ZERO Chirp3 HD Kore in production code.** The voice name "Chirp3" (any casing) must never appear in `server/brain/`, `server/*.py`, or any TTS configuration. The only valid TTS voice name in production is `de-DE-Gemini3.1-Flash-Kore`.
+
+## Fix Discipline
+
+- **ONE fix per iteration** — no batching unrelated changes
+- **≤50 LOC** per `PatchApplicator` patch
+- **FORBIDDEN:** `HaikuFixGenerator`, `FixApplier`, `scenario_based_loop`
+- **FORBIDDEN:** claiming fix before smoke completes
+- **FORBIDDEN:** second fix before first fix verified with numbers
+
+## Breakthrough Rules (authority in `restaurant-voice-agent.mdc`)
+
+| Rule | Summary |
+|------|---------|
+| LLM for Language, Code for State | LLM never owns state. FSM never delegates commits to LLM text. |
+| 6-Phase FSM | GREETING → INFO → ORDER/RESERVE → READBACK → COMMITTED → END. No skipping. |
+| Category A/B Tool Split | Category A: read-only. Category B: FSM/code ONLY. |
+| Pure LLM Intent, No Keywords | Adding keyword lists or regex intent guards = immediate abort. |
+| Re-Ask Only, Never Keywords | Ambiguity → `_phase_clarify_intent()`. Max 2 attempts → transfer. Forbidden: "Was darf ich für Sie tun?" |
+| Binary Pass/Fail Confidence | Above threshold → proceed. Below → re-ask. No low/medium/high tier branching. |
+| State Track Separation | FSM track (`order_confirmed`) and guardian track (`order_commit_state.confirmed`) are independent. ORing them = hardcoded bug (KI-025). |
+| Null-Clearing Slot Writes | `_slots_to_state` must write `None` when slot cleared. `if slots.X is not None:` only valid pattern (KI-026). |
+| Grounding Sentinel Pattern | For Category A intents, FSM `step()` sets `grounding_required=True` and `response_text=''` (KI-029). |
+| Commit Force Gate | `_force_commit_tools_if_missing` fires only when `next_state == COMMITTED` (KI-027). |
+| State Shape Consistency Gate | Every `slots.<attr>` must resolve to ConversationSlots field; every `state.<attr>` to ConversationState field (KI-031). |
+| No Legacy Pre-Extraction Bypass | Legacy extraction functions must skip if FSM-driven Tier 1 is active (KI-030). |
+| "ja" Is Never a Name | Confirmation tokens ≠ `customer_name`. |
+
+## What to Always Reject
+
+- Any keyword/regex intent solution (including "just a few helpers")
+- `[TOOL:...]` production parsing
+- Tenant hardcodes in brain
+- Broad catch-all fallbacks masking missing state
+- Reverting improved pass rate without user order
+- Suggesting hybrid keyword+LLM
+- Adding prompt examples instead of fixing root LLM/FSM bug
+- Multiple "fixes" in one turn without verification between them
+- Adding "Chirp3" voice name to any production file
+- Trusting a subagent's "unable to access file" claim at Linux paths without parent verifying directly
+
+## Plan Mode Compliance (mandatory before editing brain)
+
+Before any edit to `server/brain/`: output the RULE COMPLIANCE CHECK block:
+
+```
+RULE COMPLIANCE CHECK
+- Rules read: restaurant-voice-agent.mdc + ARCHITECTURE_GATE.md [yes/no]
+- Applicable rule(s) quoted: "[verbatim quote]"
+- Production path confirmed: v4_pipeline_clean → ConversationFSM [yes/no]
+- Keyword/regex added: NO [if YES → STOP, do not edit]
+- Category B via LLM: NO [if YES → STOP]
+- Validation gaming: NO [if YES → STOP]
+- Files to touch: [list]
+- Server restarted + lstart verified AFTER last commit: [YES / NO — if NO, STOP]
+```
+
+## Hard Stops Table
+
+| Action | Verdict |
+|-----|---|
+| Add keyword/regex for intent | ABORT — cite Pure LLM Intent rule |
+| Add keyword "helper" for failing scenarios | ABORT — cite Jun 8 user directive |
+| Patch validation assertion only | ABORT — cite Non-Negotiable #6 |
+| LLM prompt emits Category B tool | ABORT — cite Category A/B |
+| Skip server restart before validation | ABORT — see `02-deploy.mdc` |
+| Revert without user saying so | ABORT — cite No Fix Loops |
+| Skip Regression Pipeline after fix | BLOCKER — cite evidence rule, run `historical-issue-regression` skill |
+| Edit >3 files for one bug | STOP — justify each file or split tasks |
+| Claim "should work" without numbers | FORBIDDEN — run smoke minimum |
+| Fix production failure without running incident playbook | STOP — check `docs/incident-runbook.md` |

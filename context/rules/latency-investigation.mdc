@@ -1,0 +1,66 @@
+---
+description: Latency investigation protocol for voice agent pipeline. Measure-first discipline, baseline reference table, optimization priority list.
+globs:
+  - server/**/*.py
+alwaysApply: false
+---
+# Latency Investigation Rules (STRICT)
+
+> Authority: `restaurant-voice-agent.mdc`. This file supplements, does not override.
+
+## Investigation Protocol
+
+When investigating a latency concern, follow this protocol in order:
+
+### 1. Measure First, Conclude Second
+- Query the Supabase calls table for per-turn latency data
+- Compare identical question types (FAQ, order, reservation) across time periods
+- DO NOT rely on manual observation or "feels slower" — use numbers
+
+### 2. Compare Like-with-Like
+- Same intent type (FAQ vs FAQ, order vs order)
+- Same turn position (Turn 1 cold-start vs Turn 2+ warm)
+- Account for conversation length changes (more turns = longer total, not per-turn regression)
+
+### 3. Check for Confounding Factors
+- Longer conversations (more re-asks = more turns) inflate total call time
+- Safety net activations (re-asks instead of dumps) add turns
+- GCP-side variance (LLM API response time jitter)
+- Any recently deployed changes touching max_tokens, timeouts, or phrasing
+
+### 4. Verify Existing Optimizations Are Active
+- Prompt caching (`cache_control` blocks) — check for `cache_creation`/`cache_read` in logs
+- max_tokens limits — verify no unexpected increase
+- Timeout settings — verify `SAILLY_PHRASING_TIMEOUT` and `SAILLY_GROUNDING_TIMEOUT`
+
+### 5. Baseline Reference (as of Jun 21, 2026)
+
+| Metric | Value |
+|--------|-------|
+| FAQ per-turn (P50) | 3.8s |
+| FAQ per-turn (P95) | 5.0s |
+| Order per-turn (P50) | 2.2s |
+| Non-FAQ per-turn (avg) | 2.4s |
+| Turn 1 cold-start | 2.0-3.7s |
+| Turn 2+ warm | 0.1-0.25s (FSM-only) / 2.0-4.5s (LLM) |
+| Industry target (P50 e2e) | <800ms |
+| Sailly target (P95 FAQ) | <3.0s |
+
+## Optimization Priority (in order)
+
+| # | Optimization | Est. gain | Effort |
+|---|-------------|-----------|--------|
+| TTS-4 | Pre-render static phrases (greetings, confirmations, farewells) | 300-800ms cold-start | ~30 LOC + S3 bucket |
+| TTS-3 | WebSocket pre-warm at call start | 100-400ms per call | ~15 LOC |
+| TTS-7 | Switch to OGG_OPUS output format | 30-100ms | 1 config line |
+| TTS-8 | Disable proxy buffering on TTS endpoint | 50-200ms | 3 nginx lines |
+| TTS-2 | Sentence-boundary LLM->TTS streaming | 200-500ms perceived | ~200 LOC refactor |
+
+## Hard Stops
+
+| Condition | Verdict |
+|-----------|---------|
+| Claiming latency increase without DB query | **BLOCKED** — measure first |
+| Optimizing without verifying current optimizations active | **BLOCKED** — check cache/timeout/max_tokens first |
+| Comparing different intent types | **BLOCKED** — compare like-with-like |
+| Attributing to code regression without evidence | **BLOCKED** — GCP-side variance is common |

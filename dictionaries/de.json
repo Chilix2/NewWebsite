@@ -1,0 +1,1605 @@
+{
+  "nav": {
+    "product": {
+      "title": "Produkt",
+      "items": {
+        "voice_agent": "Sailly Voice Agent",
+        "integrations": "Integrationen",
+        "data_insights": "Daten & Insights",
+        "security": "Sicherheit & Compliance",
+        "languages": "Sprachen",
+        "partners": "Strategische Partner"
+      }
+    },
+    "solutions": {
+      "title": "Lösungen",
+      "items": {
+        "hotels": "Hotellerie",
+        "medical": "Arztpraxen",
+        "restaurants": "Gastronomie",
+        "services": "Dienstleister & KMU",
+        "legal": "Kanzleien & Steuerberatung"
+      }
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "items": {
+        "blog": "Blog",
+        "case_studies": "Case Studies",
+        "faq": "Häufige Fragen",
+        "help": "Hilfe Center"
+      }
+    },
+    "company": {
+      "title": "Unternehmen",
+      "items": {
+        "about": "Über uns",
+        "contact": "Kontakt"
+      }
+    },
+    "pricing": "Preise",
+    "demo": "Demo anfragen"
+  },
+  "hero": {
+    "title_line1": "You handle your business.",
+    "title_line2": "Sailly the calls.",
+    "primary_cta": "Demo anfragen",
+    "chat": {
+      "agent_label": "Sailly",
+      "guest_name": "Anruf · Gast",
+      "agent_name": "Sailly",
+      "guest": "Guten Abend! Haben Sie am Freitag noch ein Zimmer für zwei Nächte frei?",
+      "agent": "Gerne! Ein Doppelzimmer mit Blick zum Garten ist frei. Soll ich es für Sie reservieren?",
+      "widget_title": "Buchung bestätigt",
+      "widget_detail": "Doppelzimmer · Fr–So · 2 Gäste",
+      "scenarios": [
+        {
+          "id": "hotel",
+          "guestName": "Thomas",
+          "guestAvatar": "/images/avatars/guest-hotel.jpg",
+          "guest": "Guten Abend! Haben Sie am Freitag noch ein Zimmer für zwei Nächte frei?",
+          "agentGreeting": "Guten Abend! Wie kann ich Ihnen helfen?",
+          "agent": "Gerne! Ein Doppelzimmer mit Gartenblick ist frei. Soll ich es für Sie reservieren?",
+          "widget": {
+            "type": "booking",
+            "title": "Buchung bestätigt",
+            "detail": "Doppelzimmer · Fr–So · 2 Gäste"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
+          "guest": "Haben Sie am Samstag um 19 Uhr noch einen Tisch für vier?",
+          "agent": "Ja, wir haben noch Plätze frei. Soll ich den Tisch für Sie reservieren?",
+          "widget": {
+            "type": "slots",
+            "date": "Sa, 12. Jul",
+            "times": ["18:30", "19:00", "19:30", "20:00"],
+            "selected": "19:00",
+            "confirmed": "Tisch reserviert"
+          }
+        },
+        {
+          "id": "praxis",
+          "guestName": "Sabine",
+          "guestAvatar": "/images/avatars/guest-praxis.jpg",
+          "guest": "Können wir morgen früh zum Arzt kommen?",
+          "agent": "Ja, morgen früh sind noch Termine frei. Welche Uhrzeit passt Ihnen?",
+          "widget": {
+            "type": "slots",
+            "date": "Fr, 11. Jul",
+            "times": ["08:00", "08:30", "09:00", "09:30"],
+            "selected": "08:30",
+            "confirmed": "Termin eingetragen"
+          }
+        }
+      ]
+    },
+    "badges": {
+      "gdpr": "DSGVO-konform",
+      "availability": "24/7 Erreichbar",
+      "setup": "4 Wochen bis Live"
+    },
+    "stats": {
+      "title": "Ergebnisse unserer Partner",
+      "items": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Zufriedenere Mitarbeiter"
+        },
+        "containment": {
+          "value": "90%+",
+          "label": "Automatisierte Routineanfragen"
+        },
+        "reduction": {
+          "value": "24/7",
+          "label": "Erreichbarkeit für Kunden"
+        }
+      }
+    }
+  },
+  "problems": {
+    "badge": "Herausforderung",
+    "title": "Wenn das Telefon die Arbeit unterbricht",
+    "subtitle": "Im Tagesgeschäft bleibt oft keine Zeit für das Telefon. Das stresst Ihr Team und frustriert Anrufer.",
+    "cards": {
+      "missed": {
+        "title": "Verlorene Aufträge",
+        "desc": "30% aller Anrufe gehen ins Leere, weil gerade niemand abnehmen kann. Das ist verschenkter Umsatz."
+      },
+      "stress": {
+        "title": "Gestresstes Team",
+        "desc": "Ständiges Klingeln reißt Mitarbeiter aus der Konzentration oder dem Kundengespräch vor Ort."
+      },
+      "cost": {
+        "title": "Hoher Admin-Aufwand",
+        "desc": "Routinefragen nach Preisen oder Terminen binden wertvolle Arbeitszeit Ihrer Fachkräfte."
+      }
+    }
+  },
+  "value_props": {
+    "badge": "Warum Sailly",
+    "title_line1": "Mehr als nur",
+    "title_line2": "ein Anrufbeantworter",
+    "subtitle": "Sailly nimmt Anrufe an, bucht Termine und hält Ihr Team aus dem Telefonstress raus.",
+    "cards": {
+      "always_on": {
+        "title": "Kein Anruf geht verloren",
+        "desc": "Gäste erreichen Sie — auch abends, am Wochenende und in Stoßzeiten."
+      },
+      "instant_scale": {
+        "title": "Termine landen im System",
+        "desc": "Reservierungen und Termine werden direkt eingetragen — kein Zettel, kein Rückruf."
+      },
+      "multilingual": {
+        "title": "Ein Assistent, alle Kanäle",
+        "desc": "Telefon, E-Mail und Messaging — ein Gesprächsverlauf, ein Team-Überblick."
+      },
+      "integration": {
+        "title": "Gäste bleiben zufrieden",
+        "desc": "Keine Warteschleife, klare Antworten — und Buchungen, die wirklich ankommen."
+      }
+    },
+    "tags": [
+      { "label": "#24/7", "desc": "Auch nachts und am Sonntag" },
+      { "label": "#30Sprachen", "desc": "Internationale Gäste willkommen" },
+      { "label": "#DSGVO", "desc": "Gehostet in Deutschland" },
+      { "label": "#KeineWarteschleife", "desc": "Sofortige Annahme" },
+      { "label": "#PMS-Anbindung", "desc": "Kalender & Reservierung" },
+      { "label": "#4WochenLive", "desc": "Schnell einsatzbereit" }
+    ]
+  },
+  "solutions": {
+    "badge": "Lösung",
+    "title": "Sailly übernimmt das Telefon",
+    "subtitle": "Ihr intelligenter Sprachassistent für professionellen Kundenservice.",
+    "cards": {
+      "availability": {
+        "title": "100% Erreichbarkeit",
+        "desc": "Kein Besetztzeichen, keine Warteschleife. Sailly geht sofort ran – auch nachts und am Wochenende."
+      },
+      "appointments": {
+        "title": "Intelligente Terminbuchung",
+        "desc": "Prüft Verfügbarkeiten in Echtzeit, bucht Termine und sendet Bestätigungen – vollautomatisch."
+      },
+      "answers": {
+        "title": "Präzise Antworten",
+        "desc": "Beantwortet komplexe Fragen zu Preisen, Leistungen und Verfügbarkeiten mit aktuellen Daten."
+      }
+    }
+  },
+  "roi_section": {
+    "badge": "Return on Investment",
+    "title": "Messbarer Mehrwert ab Tag 1",
+    "subtitle": "Mehr Umsatz und glücklichere Mitarbeiter durch optimale Erreichbarkeit.",
+    "benefits": [
+      {
+        "title": "Mehr Umsatz",
+        "desc": "Kein Anruf geht mehr verloren. 15-25% mehr Termine und Buchungen durch 24/7 Erreichbarkeit.",
+        "icon": "trending-up"
+      },
+      {
+        "title": "Effizienteres Team",
+        "desc": "Ihr Fachpersonal spart 2-3 Stunden Telefonzeit täglich und kann sich auf die Arbeit am Kunden konzentrieren.",
+        "icon": "zap"
+      },
+      {
+        "title": "Glückliche Kunden",
+        "desc": "Sofortige Antworten ohne Warteschleife. Ihre Kunden fühlen sich wertgeschätzt und gut betreut.",
+        "icon": "heart"
+      },
+      {
+        "title": "Kosten senken",
+        "desc": "Vermeiden Sie teure Überstunden oder externe Call-Center. Sailly skaliert ohne Zusatzkosten.",
+        "icon": "euro"
+      }
+    ]
+  },
+  "security_trust": {
+    "badge": "Sicherheit & Vertrauen",
+    "title": "Höchste Standards für deutsche Unternehmen",
+    "subtitle": "Sailly wurde mit höchstem Anspruch an Vertrauen, Sicherheit und Compliance entwickelt."
+  },
+  "industries": {
+    "hotels": {
+      "hero": {
+        "title": "Ihr Digitaler Concierge für einen entspannten Empfang.",
+        "subtitle": "Unterstützen Sie Ihr Rezeptionsteam mit einem KI-Assistenten, der Anrufe annimmt, Reservierungen managt und Gästefragen beantwortet – 24/7, freundlich und professionell.",
+        "cta": "Hotel-Demo ansehen"
+      },
+      "agent_line": "Ihr Zimmer ist reserviert. Wir freuen uns auf Sie.",
+      "challenges": {
+        "title": "Entlastung für Ihre Rezeption",
+        "items": [
+          {
+            "title": "Fokus auf den Gast",
+            "desc": "Wenn das Telefon klingelt, leidet der Service am Counter. Sailly hält den Rücken frei für persönliche Betreuung."
+          },
+          {
+            "title": "Personalmangel überbrücken",
+            "desc": "Gutes Personal ist rar. Geben Sie Ihrem Team digitale Unterstützung für Routineanfragen."
+          },
+          {
+            "title": "Internationale Gäste",
+            "desc": "Beseitigen Sie Sprachbarrieren. Sailly berät Ihre Gäste fließend in über 30 Sprachen."
+          }
+        ]
+      },
+      "audio_samples": {
+        "title": "Hören Sie den Unterschied",
+        "subtitle": "So natürlich entlastet Sailly Ihr Team.",
+        "samples": [
+          {
+            "label": "Zimmerbuchung",
+            "desc": "Eine freundliche Reservierung ohne Wartezeit."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Mehr Zeit für Gastfreundschaft",
+        "items": [
+          {
+            "title": "Direkte PMS-Integration",
+            "desc": "Verbindet sich nahtlos mit Oracle, Sihot und anderen Systemen für automatische Einträge."
+          },
+          {
+            "title": "24/7 Concierge",
+            "desc": "Ob Late Check-out oder Kissenwunsch – Sailly ist immer für Ihre Gäste da."
+          },
+          {
+            "title": "Umsatz durch Erreichbarkeit",
+            "desc": "Keine verpasste Buchung mehr, weil die Leitung belegt war."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in echten Hotelsituationen",
+        "subtitle": "So führt Sailly Gäste durch Reservierung, Check-in und Serviceanfragen.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "booking",
+            "title": "Zimmer reservieren",
+            "desc": "Ein Gast ruft an, um ein Wochenende zu buchen — Sailly prüft Verfügbarkeit und bestätigt.",
+            "guestName": "Thomas",
+            "guest": "Guten Abend! Haben Sie am Freitag noch ein Zimmer für zwei Nächte frei?",
+            "agentGreeting": "Guten Abend! Wie kann ich Ihnen helfen?",
+            "agent": "Gerne! Ein Doppelzimmer mit Gartenblick ist frei. Soll ich es für Sie reservieren?",
+            "widget": { "type": "booking", "title": "Buchung bestätigt", "detail": "Doppelzimmer · Fr–So · 2 Gäste" }
+          },
+          {
+            "id": "checkout",
+            "title": "Später Check-out",
+            "desc": "Ein Gast möchte auschecken und fragt nach Late Check-out vor dem Abendflug.",
+            "guestName": "Julia",
+            "guest": "Können wir morgen bis 14 Uhr im Zimmer bleiben? Unser Flug geht erst abends.",
+            "agent": "Ja, Late Check-out bis 14 Uhr ist möglich. Ich trage das direkt für Sie ein.",
+            "widget": { "type": "info", "title": "Late Check-out bestätigt", "detail": "Zimmer 412 · bis 14:00 Uhr" }
+          },
+          {
+            "id": "breakfast",
+            "title": "Frühstück & Service",
+            "desc": "Ein Gast fragt nach Frühstückszeiten und extra Handtüchern — Sailly antwortet sofort.",
+            "guestName": "Michael",
+            "guest": "Wann gibt es Frühstück? Und könnten wir bitte zwei zusätzliche Handtücher bekommen?",
+            "agent": "Frühstück ist von 7 bis 10:30 Uhr. Die Handtücher bringt der Housekeeping-Service gleich vorbei.",
+            "widget": { "type": "status", "label": "Serviceanfrage weitergeleitet", "detail": "Housekeeping · 2 Handtücher · Zimmer 218" }
+          },
+          {
+            "id": "parking",
+            "title": "Parkplatz & Anreise",
+            "desc": "Ein Gast plant die Anreise und braucht Infos zu Parken und Check-in.",
+            "guestName": "Sandra",
+            "guest": "Gibt es einen Parkplatz? Und können wir schon um 11 Uhr einchecken?",
+            "agent": "Ja, Tiefgarage für 18 € pro Nacht. Early Check-in ab 11 Uhr ist heute verfügbar.",
+            "widget": { "type": "info", "title": "Anreise notiert", "detail": "Parkplatz reserviert · Check-in 11:00" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – Keine verpassten Buchungen. Ihre Gäste bekommen die Aufmerksamkeit, die sie verdienen."
+    },
+    "restaurants": {
+      "hero": {
+        "title": "Mehr Zeit für Ihre Gäste, weniger am Telefon.",
+        "subtitle": "Lassen Sie Sailly die Reservierungen annehmen, während Sie der perfekte Gastgeber sind. Kein Klingeln im Gastraum, keine No-Shows.",
+        "cta": "Restaurant-Demo ansehen"
+      },
+      "agent_line": "Ihr Tisch für vier ist reserviert — Samstag um 19 Uhr.",
+      "challenges": {
+        "title": "Volles Haus ohne Telefonstress",
+        "items": [
+          {
+            "title": "Der perfekte Gastgeber",
+            "desc": "Nichts stört den Service mehr als ein klingelndes Telefon. Bleiben Sie ganz bei Ihren Gästen am Tisch."
+          },
+          {
+            "title": "Verlässliche Reservierungen",
+            "desc": "Schluss mit Zettelwirtschaft und Missverständnissen bei der Tischvergabe."
+          },
+          {
+            "title": "Lärm & Hektik",
+            "desc": "Im vollen Betrieb ist Telefonieren schwierig. Sailly versteht Ihre Gäste immer glasklar."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Ihr unsichtbarer Restaurant-Manager",
+        "items": [
+          {
+            "title": "Smarte Reservierung",
+            "desc": "Verbindet sich mit OpenTable, Resmio und anderen Systemen für automatische Tischbuchungen."
+          },
+          {
+            "title": "No-Show Reduzierung",
+            "desc": "Sendet Erinnerungen und Bestätigungen, damit reservierte Tische auch besetzt werden."
+          },
+          {
+            "title": "Allergen- & Menü-Auskunft",
+            "desc": "Beantwortet Fragen zu Inhaltsstoffen und Tagesgerichten kompetent und sicher."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in echten Restaurantsituationen",
+        "subtitle": "So nimmt Sailly Reservierungen, Menüfragen und Bestellungen am Telefon entgegen.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "reservation",
+            "title": "Tisch reservieren",
+            "desc": "Eine Gästin bucht einen Tisch für vier — während im Gastraum voll besetzt ist.",
+            "guestName": "Anna",
+            "guest": "Haben Sie am Samstag um 19 Uhr noch einen Tisch für vier Personen?",
+            "agent": "Ja, wir haben noch Plätze frei. Soll ich den Tisch für Sie reservieren?",
+            "widget": { "type": "slots", "date": "Sa, 12. Jul", "times": ["18:30", "19:00", "19:30", "20:00"], "selected": "19:00", "confirmed": "Tisch reserviert" }
+          },
+          {
+            "id": "allergens",
+            "title": "Allergene & Menü",
+            "desc": "Ein Gast fragt nach glutenfreien Optionen vor der Reservierung.",
+            "guestName": "Lukas",
+            "guest": "Meine Partnerin ist glutenfrei — was könnt ihr empfehlen?",
+            "agent": "Wir haben mehrere glutenfreie Gerichte, auch als Tagesmenü. Soll ich das bei der Reservierung vermerken?",
+            "widget": { "type": "info", "title": "Hinweis gespeichert", "detail": "Glutenfrei · Reservierung Sa 19:00" }
+          },
+          {
+            "id": "hours",
+            "title": "Öffnungszeiten",
+            "desc": "Ein Anrufer möchte wissen, ob heute Küche und Bar geöffnet sind.",
+            "guestName": "Petra",
+            "guest": "Habt ihr heute auch mittags geöffnet? Und wie lange ist die Küche da?",
+            "agent": "Ja, wir öffnen um 11:30 Uhr. Die Küche bedient bis 14:30 und abends bis 22:00 Uhr.",
+            "widget": { "type": "status", "label": "Auskunft gegeben", "detail": "Mittag 11:30–14:30 · Abend bis 22:00" }
+          },
+          {
+            "id": "takeaway",
+            "title": "To-go Bestellung",
+            "desc": "Ein Stammgast bestellt zwei Gerichte zum Mitnehmen für 18:30 Uhr.",
+            "guestName": "Markus",
+            "guest": "Kann ich zwei Pasta-Gerichte um halb sieben zum Abholen bestellen?",
+            "agent": "Klar! Tagliatelle und Pesto-Pasta — Abholung um 18:30 Uhr. Passt das?",
+            "widget": { "type": "booking", "title": "Bestellung aufgenommen", "detail": "2× Pasta · Abholung 18:30" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – Keine verpassten Reservierungen. Sie bleiben im Gastraum."
+    },
+    "medical": {
+      "hero": {
+        "title": "Die Digitale MFA für Ihre Praxis.",
+        "subtitle": "Sichern Sie die Erreichbarkeit für Ihre Patienten und entlasten Sie Ihr medizinisches Personal. Terminvereinbarung und Rezeptbestellung – empathisch und datenschutzkonform.",
+        "cta": "Praxis-Demo ansehen"
+      },
+      "agent_line": "Ihr Termin am Dienstag um 9:30 Uhr ist eingetragen.",
+      "challenges": {
+        "title": "Mehr Zeit für Patienten",
+        "items": [
+          {
+            "title": "Fokus auf Behandlung",
+            "desc": "Ihre MFAs sind für die Menschen in der Praxis da. Das Telefon übernimmt jetzt Sailly."
+          },
+          {
+            "title": "Kein Besetztzeichen",
+            "desc": "Patienten erreichen Sie immer – für Termine, Rezepte oder Notfall-Triage."
+          },
+          {
+            "title": "Datenschutz First",
+            "desc": "Sensible Gesundheitsdaten bleiben sicher. DSGVO-konform auf deutschen Servern."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Entlastung für Ihr Praxisteam",
+        "items": [
+          {
+            "title": "Smarte Terminbuchung",
+            "desc": "Verbindet sich mit Doctolib, Jameda und Praxis-Kalendern für direkte Terminvergabe."
+          },
+          {
+            "title": "Rezept-Telefon 2.0",
+            "desc": "Nimmt Rezeptwünsche strukturiert auf und bereitet sie für die Signatur vor."
+          },
+          {
+            "title": "Notfall-Erkennung",
+            "desc": "Filtert dringende Anliegen und leitet sie sofort an das Personal weiter."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in echten Praxissituationen",
+        "subtitle": "So führt Sailly Patienten durch Terminbuchung, Rezeptwünsche und Sprechzeiten.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "appointment",
+            "title": "Termin vereinbaren",
+            "desc": "Eine Patientin braucht einen Termin — die Leitung ist belegt, Sailly nimmt an.",
+            "guestName": "Sabine",
+            "guest": "Können wir morgen früh zum Arzt kommen?",
+            "agentGreeting": "Guten Tag, Praxis Dr. Weber. Wie kann ich helfen?",
+            "agent": "Ja, morgen früh sind noch Termine frei. Passt 8:30 oder 9:00 Uhr?",
+            "widget": { "type": "slots", "date": "Fr, 11. Jul", "times": ["08:00", "08:30", "09:00", "09:30"], "selected": "08:30", "confirmed": "Termin eingetragen" }
+          },
+          {
+            "id": "prescription",
+            "title": "Rezept bestellen",
+            "desc": "Ein Patient bestellt ein Folgerezept — Sailly erfasst alles strukturiert.",
+            "guestName": "Klaus",
+            "guest": "Ich bräuchte ein Folgerezept für mein Blutdruckmittel, bitte.",
+            "agent": "Gerne. Ich nehme das auf: Ramipril 5 mg. Abholung morgen ab 10 Uhr möglich.",
+            "widget": { "type": "info", "title": "Rezeptwunsch erfasst", "detail": "Ramipril 5 mg · Abholung ab 10:00" }
+          },
+          {
+            "id": "hours",
+            "title": "Sprechzeiten",
+            "desc": "Ein Anrufer fragt nach Sprechzeiten und ob heute noch geöffnet ist.",
+            "guestName": "Elena",
+            "guest": "Wann hat die Praxis heute geöffnet? Ich müsste kurz vorbeikommen.",
+            "agent": "Heute bis 18 Uhr. Vormittag 8–12 Uhr, nachmittags 14–18 Uhr ohne Termin für Rezepte.",
+            "widget": { "type": "status", "label": "Auskunft gegeben", "detail": "Rezepte heute bis 18:00 · ohne Termin" }
+          },
+          {
+            "id": "urgent",
+            "title": "Dringender Fall",
+            "desc": "Sailly erkennt Dringlichkeit und leitet an das Praxisteam weiter.",
+            "guestName": "Frank",
+            "guest": "Mein Kind hat seit gestern hohes Fieber — können wir heute noch rein?",
+            "agent": "Das klingt dringend. Ich verbinde Sie sofort mit der Sprechstundenhilfe.",
+            "widget": { "type": "status", "label": "Weitergeleitet", "detail": "Dringend · MFA informiert" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – Keine verpassten Patienten. Ihr Team bleibt auf die Versorgung fokussiert."
+    },
+    "legal": {
+      "hero": {
+        "title": "Ihr digitales Sekretariat für Kanzlei und Steuerbüro.",
+        "subtitle": "Sichern Sie die Erreichbarkeit für Mandanten und entlasten Sie Ihr Team. Erstgespräche, Terminvereinbarungen und Rückrufe — vertraulich, strukturiert und DSGVO-konform.",
+        "cta": "Kanzlei-Demo ansehen"
+      },
+      "agent_line": "Ihr Erstberatungstermin ist am Donnerstag um 14 Uhr eingetragen.",
+      "challenges": {
+        "title": "Mehr Zeit für Mandantenarbeit",
+        "items": [
+          {
+            "title": "Fokus auf Beratung",
+            "desc": "Wenn das Telefon klingelt, unterbricht es die Aktenarbeit. Sailly nimmt Anfragen auf, während Sie sich auf Ihre Mandanten konzentrieren."
+          },
+          {
+            "title": "Kein Mandant geht verloren",
+            "desc": "Erstgespräche und Rückrufwünsche werden strukturiert erfasst — auch außerhalb der Bürozeiten."
+          },
+          {
+            "title": "Vertraulichkeit & Compliance",
+            "desc": "Sensible Mandantendaten bleiben geschützt. DSGVO-konform auf deutschen Servern, mit klaren Prozessen für Schweigepflicht."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Entlastung für Kanzlei und Steuerbüro",
+        "items": [
+          {
+            "title": "Intelligente Terminvergabe",
+            "desc": "Bucht Erstberatungen und Mandantentermine direkt in Ihren Kalender — ohne Ping-Pong am Telefon."
+          },
+          {
+            "title": "Mandanten-Intake",
+            "desc": "Erfasst Anliegen, Dringlichkeit und Kontaktdaten strukturiert, damit Ihr Team sofort weiterarbeiten kann."
+          },
+          {
+            "title": "Priorisierung & Weiterleitung",
+            "desc": "Filtert dringende Fälle und leitet sie an die zuständige Person weiter — Fristen und Mandanten bleiben im Blick."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in echten Kanzleisituationen",
+        "subtitle": "So führt Sailly Mandanten durch Erstgespräche, Termine und Rückrufe.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "consultation",
+            "title": "Erstberatung buchen",
+            "desc": "Ein Mandant möchte ein Erstgespräch zum Steuerrecht vereinbaren.",
+            "guestName": "Herr Berger",
+            "guest": "Ich bräuchte ein Erstgespräch wegen einer GmbH-Gründung. Wann wäre etwas frei?",
+            "agentGreeting": "Kanzlei Hoffmann & Partner, guten Tag.",
+            "agent": "Gerne. Donnerstag um 14 oder 16 Uhr wäre möglich. Was passt Ihnen besser?",
+            "widget": { "type": "slots", "date": "Do, 17. Jul", "times": ["14:00", "16:00", "17:30"], "selected": "14:00", "confirmed": "Erstberatung eingetragen" }
+          },
+          {
+            "id": "callback",
+            "title": "Rückruf vereinbaren",
+            "desc": "Ein Mandant bittet um Rückruf — Sailly erfasst Anliegen und Dringlichkeit.",
+            "guestName": "Frau Klein",
+            "guest": "Können Sie mich bitte zurückrufen? Es geht um eine Steuerbescheid-Frage.",
+            "agent": "Selbstverständlich. Ich notiere Ihr Anliegen — Rückruf heute noch vor 17 Uhr.",
+            "widget": { "type": "info", "title": "Rückruf geplant", "detail": "Steuerbescheid · heute bis 17:00" }
+          },
+          {
+            "id": "documents",
+            "title": "Unterlagen anfordern",
+            "desc": "Ein Mandant fragt, welche Unterlagen er zur Erstberatung mitbringen soll.",
+            "guestName": "Daniel",
+            "guest": "Was soll ich zur Erstberatung mitbringen? Ich habe schon einen Gesellschaftsvertrag.",
+            "agent": "Bitte Personalausweis, Gesellschaftsvertrag und letzte Steuerunterlagen mitbringen.",
+            "widget": { "type": "status", "label": "Checkliste gesendet", "detail": "Ausweis · Vertrag · Steuerunterlagen" }
+          },
+          {
+            "id": "reschedule",
+            "title": "Termin verschieben",
+            "desc": "Ein Mandant verschiebt einen Termin — Sailly aktualisiert den Kalender.",
+            "guestName": "Lisa",
+            "guest": "Können wir den Termin am Donnerstag auf Freitag vormittag legen?",
+            "agent": "Ja, Freitag 10 Uhr ist frei. Ich trage das für Sie um.",
+            "widget": { "type": "booking", "title": "Termin verschoben", "detail": "Fr, 10:00 Uhr · Erstberatung" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – Keine verpassten Mandanten. Ihr Team bleibt auf die Beratung fokussiert."
+    },
+    "services": {
+      "hero": {
+        "title": "Der Meister arbeitet, die Assistentin macht das Büro.",
+        "subtitle": "Ob Handwerk, Studio oder Werkstatt: Konzentrieren Sie sich auf Ihr Handwerk. Sailly kümmert sich um Termine, Preise und Kundenanfragen.",
+        "cta": "KMU-Demo ansehen"
+      },
+      "agent_line": "Ihr Termin ist notiert — wir melden uns, sobald alles fertig ist.",
+      "challenges": {
+        "title": "Fokus auf Ihr Handwerk",
+        "items": [
+          {
+            "title": "Ungestört arbeiten",
+            "desc": "Sie können nicht ans Telefon gehen, wenn Sie tätowieren oder reparieren. Sailly hält Ihnen den Rücken frei."
+          },
+          {
+            "title": "Kein Auftrag geht verloren",
+            "desc": "Jeder verpasste Anruf ist verschenkter Umsatz. Sichern Sie sich jeden Lead, auch wenn Sie beschäftigt sind."
+          },
+          {
+            "title": "Professioneller Auftritt",
+            "desc": "Begeistern Sie Kunden mit sofortiger Erreichbarkeit, auch wenn Sie gerade auf der Leiter stehen."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Ihr virtuelles Vorzimmer",
+        "items": [
+          {
+            "title": "Termin-Koordination",
+            "desc": "Plant Kundentermine direkt in Ihren Kalender ein, ohne dass Sie den Hammer weglegen müssen."
+          },
+          {
+            "title": "Preisauskunft & Beratung",
+            "desc": "Beantwortet Standardfragen zu Preisen, Anfahrt und Leistungen kompetent vorab."
+          },
+          {
+            "title": "Status-Updates",
+            "desc": "Informiert Kunden automatisch über den Status von Reparaturen oder Bestellungen."
+          }
+        ]
+      },
+      "scenarios": {
+        "title": "Sailly in echten Betriebssituationen",
+        "subtitle": "So nimmt Sailly Termine, Preisanfragen und Kundenanliegen entgegen — während Sie arbeiten.",
+        "agent_label": "Sailly",
+        "items": [
+          {
+            "id": "appointment",
+            "title": "Termin buchen",
+            "desc": "Ein Kunde ruft an, während der Meister auf der Baustelle ist.",
+            "guestName": "Stefan",
+            "guest": "Können Sie nächste Woche einen Termin für eine Heizungswartung machen?",
+            "agentGreeting": "Werkstatt Müller, guten Tag!",
+            "agent": "Gerne. Dienstag oder Mittwoch vormittags wäre frei. Was passt besser?",
+            "widget": { "type": "slots", "date": "Di, 15. Jul", "times": ["09:00", "10:30", "14:00"], "selected": "10:30", "confirmed": "Termin notiert" }
+          },
+          {
+            "id": "quote",
+            "title": "Preisauskunft",
+            "desc": "Ein Kunde fragt nach Kosten für eine Standardleistung.",
+            "guestName": "Nina",
+            "guest": "Was kostet bei Ihnen ungefähr eine Komplettreinigung der Klimaanlage?",
+            "agent": "Die Komplettreinigung liegt bei 89 €. Soll ich direkt einen Termin für Sie eintragen?",
+            "widget": { "type": "info", "title": "Auskunft gegeben", "detail": "Klimaanlage · ca. 89 €" }
+          },
+          {
+            "id": "status",
+            "title": "Auftragsstatus",
+            "desc": "Ein Kunde fragt, ob seine Reparatur fertig ist.",
+            "guestName": "Oliver",
+            "guest": "Ist mein Fahrrad schon fertig? Ich hatte es Montag abgegeben.",
+            "agent": "Ja, die Reparatur ist abgeschlossen. Sie können es heute bis 18 Uhr abholen.",
+            "widget": { "type": "status", "label": "Bereit zur Abholung", "detail": "Fahrrad · heute bis 18:00" }
+          },
+          {
+            "id": "directions",
+            "title": "Anfahrt & Öffnungszeiten",
+            "desc": "Ein Neukunde fragt nach Standort und Öffnungszeiten.",
+            "guestName": "Tim",
+            "guest": "Wo genau seid ihr? Und habt ihr samstags geöffnet?",
+            "agent": "Hauptstraße 12, Parkplatz hinten. Samstags 9–13 Uhr, sonst Mo–Fr 8–18 Uhr.",
+            "widget": { "type": "info", "title": "Infos weitergegeben", "detail": "Hauptstr. 12 · Sa 9–13 Uhr" }
+          }
+        ]
+      },
+      "tab_title": "Sailly – Keine verpassten Aufträge. Sie konzentrieren sich auf die Arbeit."
+    }
+  },
+  "howItWorks": {
+    "badge": "Funktionsweise",
+    "title": "Wie Sailly funktioniert",
+    "subtitle": "Vom Klingeln bis zur Buchung — in einem Gespräch, ohne Warteschleife.",
+    "steps": {
+      "answer": {
+        "title": "Anruf annehmen",
+        "desc": "Sailly nimmt jeden Anruf sofort entgegen — freundlich, professionell, in über 30 Sprachen."
+      },
+      "understand": {
+        "title": "Verstehen & handeln",
+        "desc": "Termine buchen, Bestellungen aufnehmen, Fragen beantworten — direkt in Ihrem System."
+      },
+      "execute": {
+        "title": "Ihr Team informieren",
+        "desc": "Jede Buchung und Bestellung landet direkt dort, wo sie gebraucht wird. Kein Zettel, kein Rückruf."
+      }
+    },
+    "try_title": "Probieren Sie es aus",
+    "try_subtitle": "Sehen Sie, wie ein echtes Gespräch mit Sailly aussieht."
+  },
+  "testimonials": {
+    "badge": "Kundenstimmen",
+    "title": "Das sagen unsere Kunden",
+    "items": [
+      {
+        "quote": "Früher haben wir ab sieben Uhr abends schlicht nicht mehr abgenommen. Heute geht kein Anruf mehr verloren — und mein Team steht am Tisch statt am Telefon.",
+        "author": "Maria Schmidt",
+        "role": "Inhaberin, Gasthof Zur Post",
+        "location": "München"
+      },
+      {
+        "quote": "Montagmorgen war bei uns Ausnahmezustand: drei Leitungen, volles Wartezimmer. Sailly nimmt die Terminanfragen ab, und meine MFAs haben wieder Zeit für die Menschen am Tresen.",
+        "author": "Dr. Thomas Weber",
+        "role": "Hausarztpraxis",
+        "location": "Hamburg"
+      },
+      {
+        "author": "Sandra K.",
+        "role": "Inhaberin, Kosmetikstudio",
+        "location": "München",
+        "quote": "Ich stehe den ganzen Tag in der Kabine und konnte nie ans Telefon. Inzwischen bucht Sailly die Termine — ich sehe abends nur noch den vollen Kalender."
+      },
+      {
+        "quote": "Anrufe von Mandanten liefen früher über drei Leitungen gleichzeitig. Sailly nimmt Erstgespräche und Terminanfragen auf — meine Assistentin kann sich auf die Akten konzentrieren.",
+        "author": "Dr. Martin Hoffmann",
+        "role": "Steuerberater",
+        "location": "Frankfurt"
+      }
+    ]
+  },
+  "cta_section": {
+    "title": "Bereit für den nächsten Schritt?",
+    "subtitle": "Sailly übernimmt Ihr Telefon — Ihr Team gewinnt Zeit. In vier Wochen einsatzbereit.",
+    "demo": "Kostenlose Demo anfragen",
+    "contact": "Beratungstermin vereinbaren",
+    "guarantee": "30 Tage Geld-zurück-Garantie"
+  },
+  "pricing_page": {
+    "badge": "Spezialangebot",
+    "title": "Einfache, transparente Preise",
+    "trial_text": "Testphase: 30 Tage testen mit 50% Rabatt auf alle Pakete.",
+    "plans": {
+      "standard": {
+        "name": "Standard",
+        "description": "Professionelle Anrufweiterleitung mit intelligenter Zusammenfassung.",
+        "cta": "Jetzt starten",
+        "features": [
+          "24/7 Anrufannahme & Weiterleitung",
+          "KI-Gesprächszusammenfassung",
+          "Detaillierte Gesprächsprotokolle",
+          "Terminbuchung",
+          "Bereit für manuellen Upload"
+        ]
+      },
+      "gold": {
+        "name": "Gold",
+        "description": "Nahtlose Integration in Ihre bestehende Software-Landschaft.",
+        "cta": "Gold wählen",
+        "features": [
+          "Alles im Standard-Paket",
+          "Direkte Software-Integration",
+          "Branchenspezifische Workflows",
+          "Mehrsprachig (bis zu 12 Sprachen)",
+          "Echtzeit-Datensynchronisation",
+          "Zzgl. Minutenpreise für Anrufe"
+        ]
+      },
+      "future": {
+        "name": "Future",
+        "description": "Maßgeschneiderte KI-Lösungen für höchste Ansprüche.",
+        "cta": "Vertrieb kontaktieren",
+        "features": [
+          "Alles im Gold-Paket",
+          "Training eigener KI-Modelle",
+          "Fortgeschrittene Konversations-KI",
+          "Komplexe Workflow-Automatisierung",
+          "Dedizierter Solution Architect"
+        ]
+      }
+    },
+    "meta": {
+      "popular": "Beliebtestes Paket",
+      "per_month": "/Monat",
+      "starting_at": "Ab",
+      "plus_fees": "+ Gesprächsgebühren pro Minute",
+      "per_minute_example": "Bei 200 Anrufen/Monat ca. €24 zusätzlich (ca. 0,12€ pro Minute)"
+    }
+  },
+  "footer": {
+    "product": "Produkt",
+    "solutions": "Lösungen",
+    "resources": "Ressourcen",
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "agb": "AGB",
+    "copyright": "© 2026 Sailly. Alle Rechte vorbehalten.",
+    "tagline": "Die KI-Telefonzentrale für den deutschen Mittelstand. Beantwortet Anrufe, vereinbart Termine und entlastet Ihr Team – 24/7.",
+    "links": {
+      "overview": "Übersicht",
+      "technology": "Technologie",
+      "pricing": "Preise",
+      "demo": "Demo",
+      "hotels": "Hotellerie",
+      "medical": "Arztpraxen",
+      "restaurants": "Gastronomie",
+      "services": "Dienstleister",
+      "legal": "Kanzleien & Steuerberatung"
+    },
+    "made_in_germany": "Made in Germany 🇩🇪"
+  },
+  "audio_demo": {
+    "badge": "Audio Demo",
+    "title": "Hören Sie den Unterschied",
+    "subtitle": "So natürlich und menschlich klingt Sailly am Telefon.",
+    "language_label": "Deutsch",
+    "samples": [
+      {
+        "label": "Restaurant – Tischreservierung",
+        "desc": "Automatische Reservierungsbuchung während die Kellner servieren."
+      },
+      {
+        "label": "Hotel – Zimmeranfrage",
+        "desc": "Kompetente Antwort auf Verfügbarkeit und Zusatzwünsche."
+      }
+    ]
+  },
+  "dashboard_preview": {
+    "title": "Live Übersicht",
+    "today": "Heute,",
+    "systemActive": "Online",
+    "calls": "Anrufe",
+    "timeSaved": "Gesparte Zeit",
+    "vsYesterday": "vs gestern",
+    "callVolume": "Anrufvolumen",
+    "callsUnit": "Anrufe",
+    "lastActivity": "Letzte Aktivitäten",
+    "activities": [
+      "Tisch für 4 Personen — Samstag 19:00",
+      "Zimmeranfrage: Doppelzimmer Fr–So",
+      "Termin eingetragen — Fr 08:30"
+    ]
+  },
+  "conversation_preview": {
+    "speaking": "Spricht...",
+    "listening": "Hört zu...",
+    "customerLabel": "Kunde",
+    "saillyLabel": "Sailly",
+    "messages": [
+      {
+        "id": "1",
+        "speaker": "sailly",
+        "message": "Hallo, hier ist Sailly von Bright Dental. Wie kann ich Ihnen helfen?"
+      },
+      {
+        "id": "2",
+        "speaker": "user",
+        "message": "Ich muss meinen Termin für morgen verschieben."
+      },
+      {
+        "id": "3",
+        "speaker": "sailly",
+        "message": "Gerne. Welche Uhrzeit passt Ihnen stattdessen?"
+      },
+      {
+        "id": "4",
+        "speaker": "user",
+        "message": "Haben Sie etwas am Nachmittag gegen 15 Uhr?"
+      },
+      {
+        "id": "5",
+        "speaker": "sailly",
+        "message": "Ich schaue nach... Ja, um 15:15 Uhr ist noch etwas frei. Soll ich das buchen?"
+      },
+      {
+        "id": "6",
+        "speaker": "user",
+        "message": "Ja bitte, das ist perfekt."
+      },
+      {
+        "id": "7",
+        "speaker": "sailly",
+        "message": "Erledigt! Wir sehen uns morgen um 15:15 Uhr."
+      }
+    ]
+  },
+  "industries_eyebrow": "Optimiert für Ihre Branche",
+  "industries_section_title": "Für Betriebe, in denen das Telefon nie stillsteht.",
+  "industries_more_label": "Auch für Handwerk, Studios und weitere Dienstleister",
+  "platform_os": {
+    "title": "Sailly OS",
+    "subtitle": "Eine Oberfläche für Anrufe, Termine und Auswertungen — für Gastronomie, Hotellerie, Praxen und Kanzleien.",
+    "group_overview": "Überblick",
+    "group_manage": "Verwalten",
+    "nav_overview": "Übersicht",
+    "nav_calls": "Anrufe",
+    "nav_appointments": "Termine",
+    "nav_insights": "Auswertungen",
+    "nav_setup": "Einrichtung",
+    "nav_settings": "Einstellungen",
+    "stat_bookings": "Buchungen",
+    "voice_pill": "Voice Agent",
+    "voice_title": "Anrufe",
+    "voice_lead": "Angenommen, gebucht, weitergeleitet — ohne Warteschleife.",
+    "voice_points": [
+      "Jeder Anruf wird sofort beantwortet",
+      "Reservierungen landen in Ihrem System",
+      "Gäste werden in ihrer Sprache bedient"
+    ],
+    "insights_pill": "Daten & Insights",
+    "insights_title": "Auswertungen",
+    "insights_lead": "Was heute reingekommen ist — ohne Excel und ohne Rückfragen.",
+    "insights_points": [
+      "Anrufvolumen und häufigste Anliegen",
+      "Gebuchte Termine auf einen Blick",
+      "Gehostet in Deutschland, DSGVO-konform"
+    ],
+    "integrations_pill": "Integrationen",
+    "integrations_title": "Anbindung",
+    "integrations_lead": "Verbunden mit der Telefonanlage und den Tools, die Sie schon nutzen.",
+    "integrations_points": [
+      "Kalender, PMS und Reservierungssysteme",
+      "Buchungen direkt im Tagesgeschäft",
+      "Kein manuelles Nachpflegen"
+    ]
+  },
+  "industry_template": {
+    "badges": {
+      "gdpr": "DSGVO-konform",
+      "setup": "4 Wochen bis Live",
+      "guarantee": "30 Tage Garantie"
+    },
+    "challenges_badge": "Herausforderung",
+    "solution_badge": "Lösung",
+    "audio_badge": "Audio Demo",
+    "audio_duration": "0:45 • Deutsch",
+    "roi": {
+      "badge": "Return on Investment",
+      "title": "Messbare Ergebnisse ab Tag 1",
+      "subtitle": "Sailly zahlt sich bereits im ersten Monat aus.",
+      "metrics": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Kundenzufriedenheit"
+        },
+        "fewer_calls": {
+          "value": "50%",
+          "label": "Weniger Anrufe für Ihr Team"
+        },
+        "availability": {
+          "value": "24/7",
+          "label": "Erreichbarkeit"
+        },
+        "implementation": {
+          "value": "4 Wochen",
+          "label": "Bis zur Implementierung"
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Sailly hat unser Geschäft transformiert. Wir verpassen keinen Anruf mehr und unser Team kann sich auf das konzentrieren, was wirklich wichtig ist – unsere Kunden.",
+      "author": "Beispiel-Kunde"
+    },
+    "cta": {
+      "title": "Bereit für den nächsten Schritt?",
+      "subtitle": "Sailly übernimmt Ihr Telefon — Ihr Team gewinnt Zeit. In vier Wochen einsatzbereit.",
+      "primary": "Kostenlose Demo anfragen",
+      "secondary": "Beratungstermin vereinbaren",
+      "guarantee": "30 Tage Geld-zurück-Garantie"
+    }
+  },
+  "produkt_page": {
+    "badge": "Sailly Voice Agent",
+    "hero": {
+      "eyebrow": "Sailly Voice Agent",
+      "title_line1": "Anrufe beantworten.",
+      "title_line2": "Termine eintragen.",
+      "description": "Sailly nimmt jeden Anruf an, beantwortet Fragen und trägt Buchungen direkt in Ihr System ein — freundlich, zuverlässig, rund um die Uhr.",
+      "cta_primary": "Demo anfragen",
+      "cta_secondary": "Preise ansehen"
+    },
+    "how_it_works": {
+      "title": "Wie Sailly funktioniert",
+      "subtitle": "Vom Klingeln bis zur Buchung — in einem Gespräch, ohne Warteschleife.",
+      "steps": [
+        {
+          "title": "Anruf annehmen",
+          "desc": "Sailly nimmt jeden Anruf sofort entgegen — freundlich, professionell, in über 30 Sprachen."
+        },
+        {
+          "title": "Verstehen & handeln",
+          "desc": "Termine buchen, Bestellungen aufnehmen, Fragen beantworten — direkt in Ihrem System."
+        },
+        {
+          "title": "Ihr Team informieren",
+          "desc": "Jede Buchung und Bestellung landet direkt dort, wo sie gebraucht wird. Kein Zettel, kein Rückruf."
+        }
+      ]
+    },
+    "dashboard_section": {
+      "heading": "Sie behält den Überblick",
+      "description": "Während Sailly telefoniert, analysiert sie jedes Gespräch. Sie erhalten Live-Einblicke in die Kundenzufriedenheit, häufige Fragen und gebuchte Termine.",
+      "features": [
+        {
+          "title": "Echtzeit-Analyse",
+          "desc": "Erkennt Stimmung und Dringlichkeit sofort."
+        },
+        {
+          "title": "Nahtlose Integration",
+          "desc": "Verbindet sich direkt mit Ihrem CRM."
+        },
+        {
+          "title": "Lernfähig",
+          "desc": "Wird mit jedem Gespräch intelligenter."
+        }
+      ]
+    },
+    "conversation_section": {
+      "heading": "In jeder Sprache verständlich",
+      "description": "Ob Dialekt, Fremdsprache oder hektischer Service — Sailly bleibt klar, freundlich und professionell am Telefon.",
+      "languages_label": "Sprachen",
+      "availability_label": "Erreichbarkeit",
+      "response_time_label": "Reaktionszeit"
+    },
+    "trust_section": {
+      "heading": "Warum Unternehmen Sailly vertrauen",
+      "trust_cards": [
+        {
+          "title": "24/7 Erreichbar",
+          "desc": "Keine Warteschleifen, keine verpassten Anrufe mehr."
+        },
+        {
+          "title": "DSGVO Konform",
+          "desc": "Server in Deutschland, höchste Sicherheitsstandards."
+        },
+        {
+          "title": "Sofort Einsatzbereit",
+          "desc": "In wenigen Minuten eingerichtet und trainiert."
+        }
+      ]
+    },
+    "cta_section": {
+      "heading": "Bereit für den nächsten Schritt?",
+      "description": "Sailly übernimmt Ihr Telefon — Ihr Team gewinnt Zeit. In vier Wochen einsatzbereit.",
+      "cta_start": "Demo anfragen",
+      "cta_contact": "Beratungstermin vereinbaren"
+    }
+  },
+  "integrationen_page": {
+    "title": "Verbinden Sie alle Ihre Systeme",
+    "subtitle": "Über 500+ vorgefertigte Integrationen. Nahtlos verbinden, automatisch synchronisieren.",
+    "cta": "Integrationen erkunden",
+    "badge": "INTEGRATIONEN",
+    "heading_part1": "Verbinden Sie",
+    "heading_part2": "alle Ihre Systeme",
+    "industry_badge": "Branchenspezifisch",
+    "industry_title": "Integrationen für Ihre Branche",
+    "industry_subtitle": "Speziell für Hotellerie, Gastronomie, Gesundheitswesen und Kanzleien",
+    "legal_title": "Kanzleien & Steuerberatung",
+    "legal_desc": "DSGVO-konforme Anbindung an Kanzlei- und Terminverwaltung.",
+    "legal_label": "Mandantenakte, Erstgespräche",
+    "hotels_title": "Hotellerie",
+    "hotels_desc": "Nahtlose Integration in Hotel-Management-Systeme.",
+    "restaurants_title": "Gastronomie",
+    "restaurants_desc": "Direkte Anbindung an Reservierungssysteme.",
+    "healthcare_title": "Gesundheitswesen",
+    "healthcare_desc": "DSGVO-konforme Integration in Praxisverwaltungssysteme.",
+    "pos_label": "POS-Systeme, Menükarten",
+    "praxis_label": "Praxiskalender, Rezepte",
+    "business_title": "Allgemeine Business-Tools",
+    "crm_title": "CRM & Sales",
+    "crm_desc": "Verbindung zu Ihren Kundenmanagement-Systemen.",
+    "calendar_title": "Kalender & Termine",
+    "calendar_desc": "Synchronisieren Sie Kalender und verwalten Sie Termine.",
+    "comm_title": "Kommunikation",
+    "comm_desc": "Automatisierte Benachrichtigungen und Kommunikation.",
+    "api_title": "Eigene Integrationen erstellen",
+    "api_subtitle": "Nutzen Sie unsere API-Dokumentation für eigene Integrationen.",
+    "api_docs": "API-Dokumentation",
+    "cta_title": "Bereit zum Verbinden?",
+    "cta_subtitle": "Erleben Sie, wie einfach Systemintegration sein kann.",
+    "cta_demo": "Demo anfordern"
+  },
+  "strategic_partners_page": {
+    "title": "Technologie-Stack",
+    "partners": "Strategische Partner",
+    "badge": "Technology Stack",
+    "heading_part1": "Strategische",
+    "heading_part2": "Partner",
+    "subtitle": "Sailly basiert auf bewährten Technologien führender Anbieter.",
+    "stack_title": "Unser Technologie-Stack",
+    "stack_subtitle": "Bewährte Partnerschaften für maximale Zuverlässigkeit",
+    "ai_section_title": "KI-Foundation Partner",
+    "ai_section_subtitle": "Die besten LLMs für natürliche Konversationen",
+    "voice_section_title": "Voice Technology Partner",
+    "voice_section_subtitle": "Modernste Sprachtechnologie",
+    "infra_title": "Infrastructure & Telefonie Partner",
+    "infra_subtitle": "Zuverlässige Infrastruktur für 24/7 Verfügbarkeit",
+    "compliance_title": "Deutsche Compliance & Datenschutz",
+    "compliance_subtitle": "Alle Partner erfüllen EU-Datenschutzstandards",
+    "ecosystem_title": "Integration Ecosystem",
+    "ecosystem_subtitle": "Nahtlose Verbindung zu Ihren bestehenden Systemen",
+    "cta_title": "Vertrauen Sie auf bewährte Technologie",
+    "cta_subtitle": "Erleben Sie, wie Sailly mit Ihren Systemen zusammenarbeitet.",
+    "cta_demo": "Integration Demo",
+    "cta_all": "Alle Integrationen",
+    "main_features": "Hauptfeatures:",
+    "use_case_label": "Einsatzbereich:",
+    "privacy_title": "Datenschutz-Garantien",
+    "german_servers": "Deutsche Server",
+    "german_servers_desc": "Alle Daten bleiben in Deutschland",
+    "e2e_enc": "Ende-zu-Ende Verschlüsselung",
+    "e2e_enc_desc": "AES-256 für alle Daten",
+    "no_sharing": "Keine Datenweitergabe",
+    "no_sharing_desc": "Ihre Daten gehören nur Ihnen",
+    "eu_law": "EU-Datenschutzrecht",
+    "eu_law_desc": "Unterliegt deutschem Recht",
+    "speech_title": "Speech-to-Text & Text-to-Speech",
+    "pipeline_title": "Voice Processing Pipeline"
+  },
+  "languages_page": {
+    "title": "Multilingual",
+    "subtitle": "Sailly spricht über 30 Sprachen",
+    "badge": "Multilingual",
+    "heading_part1": "Sprachen",
+    "heading_part2": "Dialekte",
+    "hero_desc": "Sailly spricht über 30 Sprachen fließend und versteht regionale Dialekte. Ihre internationalen Kunden fühlen sich sofort verstanden.",
+    "stats_languages": "Unterstützte Sprachen",
+    "stats_coverage": "Weltweite Abdeckung",
+    "stats_response": "Reaktionszeit",
+    "stats_accuracy": "Sprachgenauigkeit",
+    "grid_title": "Unterstützte Sprachen",
+    "grid_subtitle": "Natürliche Konversation in der Muttersprache Ihrer Kunden",
+    "available_accents": "Verfügbare Akzente:",
+    "listen_sample": "Sprachprobe anhören",
+    "voice_title": "Natürliche Sprachqualität",
+    "voice_subtitle": "Modernste KI für menschlich klingende Gespräche",
+    "voice_special": "Was macht Sailly besonders?",
+    "feature_dialect": {
+      "title": "Dialekt-Erkennung",
+      "desc": "Versteht regionale Aussprachen und Besonderheiten"
+    },
+    "feature_intonation": {
+      "title": "Natürliche Intonation",
+      "desc": "Spricht mit der richtigen Betonung und Emotion"
+    },
+    "feature_cultural": {
+      "title": "Kulturelle Anpassung",
+      "desc": "Berücksichtigt kulturelle Höflichkeitsformen"
+    },
+    "feature_volume": {
+      "title": "Adaptive Lautstärke",
+      "desc": "Passt sich automatisch an die Gesprächssituation an"
+    },
+    "demo_sample_title": "Sprachprobe: Hotel-Reservierung",
+    "demo_hochdeutsch": "Deutsch (Hochdeutsch)",
+    "demo_hochdeutsch_text": "Guten Tag! Herzlich willkommen im Hotel Zur Post. Wie kann ich Ihnen heute helfen?",
+    "demo_english": "English (British)",
+    "demo_english_text": "Good afternoon! Welcome to Hotel Zur Post. How may I assist you today?",
+    "demo_french": "Français (Parisien)",
+    "demo_french_text": "Bonjour ! Bienvenue à l'Hôtel Zur Post. Comment puis-je vous aider aujourd'hui ?",
+    "listen_btn": "Anhören",
+    "industry_title": "Branchenspezifische Terminologie",
+    "industry_subtitle": "Sailly kennt die Fachbegriffe Ihrer Branche in jeder Sprache",
+    "industry_hotels": "Hotellerie",
+    "industry_restaurants": "Gastronomie",
+    "industry_healthcare": "Gesundheitswesen",
+    "dialects_title": "Deutsche Dialekte & Akzente",
+    "dialects_subtitle": "Sailly versteht auch regionale Besonderheiten",
+    "accuracy_label": "Genauigkeit",
+    "cta_title": "Sprechen Sie die Sprache Ihrer Kunden",
+    "cta_subtitle": "Testen Sie Sailly in Ihrer bevorzugten Sprache und erleben Sie natürliche Konversationen.",
+    "cta_demo": "Mehrsprachige Demo",
+    "cta_consult": "Sprachberatung anfragen"
+  },
+  "data_insights_page": {
+    "title": "Daten & Insights",
+    "subtitle": "Messbare Ergebnisse für Ihr Business.",
+    "badge": "Business Benefits",
+    "heading_part1": "Daten",
+    "heading_part2": "Insights",
+    "roi_title": "ROI-Rechner: Was Sailly für Sie leistet",
+    "roi_subtitle": "Berechnen Sie Ihren Return on Investment mit konkreten Zahlen",
+    "roi_your_numbers": "Ihre Zahlen sprechen für sich",
+    "impact_title": "Messbare Geschäftsvorteile",
+    "impact_subtitle": "Konkrete Verbesserungen, die Sie sofort spüren werden",
+    "impact_revenue": {
+      "title": "Umsatzsteigerung",
+      "desc": "Mehr Buchungen durch perfekte Erreichbarkeit"
+    },
+    "impact_efficiency": {
+      "title": "Effizienzgewinn",
+      "desc": "Gesparte Zeit pro Mitarbeiter für wichtige Aufgaben"
+    },
+    "impact_satisfaction": {
+      "title": "Kundenzufriedenheit",
+      "desc": "Höhere Zufriedenheit durch sofortige Antworten"
+    },
+    "impact_savings": {
+      "title": "Kosteneinsparung",
+      "desc": "Monatlich gesparte Personalkosten"
+    },
+    "stories_title": "Erfolgsgeschichten unserer Kunden",
+    "stories_subtitle": "Echte Ergebnisse von echten Unternehmen",
+    "comparison_title": "Warum Sailly besser ist",
+    "comparison_subtitle": "Der Vergleich zu herkömmlichen Lösungen",
+    "traditional_title": "Traditionelle Call Center",
+    "sailly_title": "Sailly Voice Agent",
+    "cta_title": "Bereit für messbare Ergebnisse?",
+    "cta_subtitle": "Starten Sie noch heute und erleben Sie, wie Sailly Ihr Business transformiert.",
+    "cta_roi": "ROI-Demo anfordern",
+    "cta_consult": "Beratungsgespräch buchen"
+  },
+  "loesungen_page": {
+    "title": "Lösungen für jede Branche",
+    "subtitle": "Egal ob Praxis, Hotel oder Kanzlei – Sailly passt sich Ihren spezifischen Anforderungen an.",
+    "badge": "Branchen",
+    "industries": {
+      "hotels": {
+        "title": "Hotellerie",
+        "desc": "Reservierungen, Zimmerservice & FAQs."
+      },
+      "medical": {
+        "title": "Arztpraxen",
+        "desc": "Terminmanagement & Rezeptbestellung."
+      },
+      "restaurants": {
+        "title": "Gastronomie",
+        "desc": "Tischreservierungen & Bestellungen."
+      },
+      "services": {
+        "title": "Dienstleister",
+        "desc": "Terminbuchung für Friseure, Werkstätten & mehr."
+      },
+      "legal": {
+        "title": "Kanzleien & Steuerberatung",
+        "desc": "Mandantenanfragen, Termine & Rückrufe."
+      }
+    }
+  },
+  "demo_page": {
+    "title": "Demo anfragen",
+    "subtitle": "Erleben Sie Sailly live. Wir zeigen Ihnen, wie Sie Ihre Erreichbarkeit sofort verbessern.",
+    "badge": "Kostenlos Testen",
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "email": "E-Mail",
+    "company": "Unternehmen",
+    "phone": "Telefonnummer",
+    "message": "Nachricht",
+    "submit": "Demo anfragen",
+    "placeholder_firstname": "Max",
+    "placeholder_lastname": "Mustermann",
+    "placeholder_company": "Muster GmbH",
+    "phone_label": "Telefon",
+    "optional_fields": "Optionale Angaben"
+  },
+  "technologie_page": {
+    "title": "KI-Technologie der nächsten Generation",
+    "subtitle": "Erfahren Sie, wie unsere Sprachmodelle und Integrations-Engines zusammenarbeiten.",
+    "badge": "Technologie"
+  },
+  "resources_page": {
+    "badge": "Feature",
+    "title": "resources_page",
+    "subtitle": "Learn more"
+  },
+  "agb_page": {
+    "badge": "Feature",
+    "title": "agb_page",
+    "subtitle": "Learn more"
+  },
+  "datenschutz_page": {
+    "badge": "Feature",
+    "title": "datenschutz_page",
+    "subtitle": "Learn more"
+  },
+  "impressum_page": {
+    "badge": "Feature",
+    "title": "impressum_page",
+    "subtitle": "Learn more"
+  },
+  "use_cases_banking": {
+    "badge": "BANKING & FINANZDIENSTLEISTUNGEN",
+    "title": "Workflow-Automatisierung für Banken",
+    "subtitle": "Transformieren Sie Ihre Bankprozesse mit KI-gestützter Automatisierung.",
+    "challenges_subtitle": "Banken stehen unter enormem Druck durch Regulierung, Digitalisierung und Kundenerwartungen",
+    "c1_title": "Compliance-Komplexität",
+    "c1_desc": "Ständig wechselnde Regulierungen erfordern kontinuierliche Anpassungen.",
+    "c1_stat": "Regulatorische Änderungen pro Jahr",
+    "c2_title": "Manuelle Prozesse",
+    "c2_desc": "Zeitaufwändige manuelle Prüfungen und Genehmigungsverfahren.",
+    "c2_stat": "Durchschnittliche Kreditbearbeitungszeit",
+    "c3_title": "Risikomanagement",
+    "c3_desc": "Komplexe Risikoanalysen und Fraud-Detection in Echtzeit erforderlich.",
+    "c3_stat": "Jährliche Betrugsschäden in Deutschland",
+    "solutions_subtitle": "Speziell entwickelte Workflows für die Finanzbranche",
+    "s1_title": "Automatisierte Kreditprüfung",
+    "s1_desc": "KI-gestützte Bonitätsprüfung mit automatischer Dokumentenanalyse und Risikobewertung.",
+    "s2_title": "Compliance-Monitoring",
+    "s2_desc": "Kontinuierliche Überwachung aller Transaktionen auf Compliance-Verstöße.",
+    "s3_title": "Intelligente Kundenbetreuung",
+    "s3_desc": "24/7 KI-Chatbots für Kundenanfragen mit nahtloser Weiterleitung an menschliche Berater.",
+    "workflow_title": "Kreditprozess-Workflow",
+    "w1": "Antrag automatisch erfassen",
+    "w2": "Dokumente KI-gestützt prüfen",
+    "w3": "Bonität automatisch bewerten",
+    "w4": "Risiko-Score berechnen",
+    "w5": "Entscheidung in 15 Minuten",
+    "uc_subtitle": "Spezifische Anwendungsfälle",
+    "uc1_title": "Anti-Money Laundering",
+    "uc1_desc": "Automatische Erkennung verdächtiger Transaktionsmuster und SAR-Generierung.",
+    "uc2_title": "KYC-Automatisierung",
+    "uc2_desc": "Vollautomatische Kundenidentifikation und -verifizierung mit Dokumentenprüfung.",
+    "uc3_title": "Risiko-Scoring",
+    "uc3_desc": "KI-basierte Bewertung von Kreditrisiken mit über 500 Datenpunkten.",
+    "uc4_title": "Fraud Detection",
+    "uc4_desc": "Echtzeit-Erkennung betrügerischer Transaktionen mit Machine Learning.",
+    "uc5_title": "Regulatory Reporting",
+    "uc5_desc": "Automatische Erstellung und Übermittlung aller regulatorischen Berichte.",
+    "uc6_title": "Kundenservice",
+    "uc6_desc": "KI-gestützter Support mit Zugriff auf alle Kundendaten.",
+    "b1_label": "Reduzierung der Bearbeitungszeit",
+    "b2_label": "Automatisierungsgrad bei Standardprozessen",
+    "b3_label": "Kosteneinsparung in der Verwaltung",
+    "b4_label": "Compliance-Rate bei Audits",
+    "reg_title": "Regulatorische Compliance",
+    "reg_subtitle": "Vollständige Einhaltung aller relevanten Regulierungen",
+    "reg1_title": "Deutsche Regulierung",
+    "reg2_title": "Internationale Standards",
+    "cta_page_title": "Digitalisieren Sie Ihre Bankprozesse",
+    "cta_page_subtitle": "Starten Sie noch heute mit der Automatisierung Ihrer Finanzprozesse.",
+    "cta_btn": "Banking Demo",
+    "cta_contact_btn": "Fintech Beratung"
+  },
+  "use_cases_baubranche": {
+    "badge": "BAUBRANCHE",
+    "title": "KI-Automatisierung für die Baubranche",
+    "subtitle": "Optimieren Sie Bauprozesse mit intelligenter Automatisierung.",
+    "challenges_subtitle": "Digitalisierung und Effizienz in der Baubranche",
+    "cta_page_title": "Modernisieren Sie Ihre Bauprozesse",
+    "cta_page_subtitle": "Starten Sie mit der KI-Automatisierung für die Baubranche."
+  },
+  "use_cases_healthcare": {
+    "badge": "GESUNDHEITSWESEN",
+    "title": "KI-Automatisierung für das Gesundheitswesen",
+    "subtitle": "Verbessern Sie die Patientenversorgung mit intelligenter Automatisierung.",
+    "challenges_subtitle": "Herausforderungen im modernen Gesundheitswesen",
+    "cta_page_title": "Verbessern Sie die Patientenversorgung",
+    "cta_page_subtitle": "KI-Automatisierung für das Gesundheitswesen."
+  },
+  "use_cases_legal": {
+    "badge": "RECHTSBRANCHE",
+    "title": "KI-Automatisierung für Anwaltskanzleien",
+    "subtitle": "Optimieren Sie Rechtsprozesse mit intelligenter KI-Automatisierung.",
+    "challenges_subtitle": "Herausforderungen moderner Anwaltskanzleien",
+    "cta_page_title": "Optimieren Sie Ihre Rechtsprozesse",
+    "cta_page_subtitle": "KI-Automatisierung für Anwaltskanzleien."
+  },
+  "use_cases_manufacturing": {
+    "badge": "PRODUKTION & FERTIGUNG",
+    "title": "KI-Automatisierung für die Fertigung",
+    "subtitle": "Steigern Sie Ihre Produktionseffizienz mit KI-Automatisierung.",
+    "challenges_subtitle": "Herausforderungen in der modernen Fertigung",
+    "cta_page_title": "Steigern Sie Ihre Produktionseffizienz",
+    "cta_page_subtitle": "KI-Automatisierung für die Fertigung."
+  },
+  "use_cases_public-sector": {
+    "title": "use cases public-sector",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "use_cases_retail": {
+    "badge": "HANDEL & RETAIL",
+    "title": "KI-Automatisierung für den Handel",
+    "subtitle": "Optimieren Sie Handelsabläufe mit intelligenter KI-Automatisierung.",
+    "challenges_subtitle": "Herausforderungen im modernen Handel",
+    "cta_page_title": "Optimieren Sie Ihren Handel",
+    "cta_page_subtitle": "KI-Automatisierung für den Handel."
+  },
+  "use_cases_telecom": {
+    "badge": "TELEKOMMUNIKATION",
+    "title": "KI-Automatisierung für Telekommunikation",
+    "subtitle": "Revolutionieren Sie Ihre Telekommunikationsdienste mit KI-Automatisierung.",
+    "challenges_subtitle": "Herausforderungen in der Telekommunikation",
+    "cta_page_title": "Revolutionieren Sie Ihre Telekommunikation",
+    "cta_page_subtitle": "KI-Automatisierung für Telekommunikation."
+  },
+  "ai_impacts_customer-service": {
+    "title": "ai impacts customer-service",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_financial-services": {
+    "title": "ai impacts financial-services",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_hr-recruiting": {
+    "title": "ai impacts hr-recruiting",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_it-ops": {
+    "title": "ai impacts it-ops",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "ai_impacts_marketing": {
+    "badge": "AI IMPACTS MARKETING",
+    "title": "Marketing mit KI transformieren",
+    "subtitle": "Personalisieren Sie Kampagnen und automatisieren Sie Marketing-Workflows."
+  },
+  "ai_impacts_sales": {
+    "badge": "AI IMPACTS SALES",
+    "title": "Vertrieb mit KI optimieren",
+    "subtitle": "Steigern Sie Ihre Verkaufsergebnisse mit intelligenter KI-Unterstützung."
+  },
+  "ai_impacts_secops": {
+    "badge": "AI IMPACTS SECOPS",
+    "title": "Security Operations mit KI",
+    "subtitle": "Erkennen und bekämpfen Sie Sicherheitsbedrohungen mit KI-Unterstützung."
+  },
+  "ai_impacts_support": {
+    "badge": "AI IMPACTS SUPPORT",
+    "title": "WhatsApp Support mit RAG",
+    "subtitle": "Revolutionieren Sie Ihren Kundensupport mit KI-gestützten WhatsApp-Bots."
+  },
+  "blog_page": {
+    "title": "blog page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "academy_page": {
+    "title": "academy page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "docs_page": {
+    "title": "docs page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "news_page": {
+    "title": "Neuigkeiten & Updates",
+    "subtitle": "Bleiben Sie auf dem Laufenden über die neuesten Entwicklungen bei Sailly.",
+    "badge": "Aktuelles",
+    "read_more": "Mehr lesen",
+    "all_news": "Alle Neuigkeiten"
+  },
+  "community_page": {
+    "title": "community page",
+    "subtitle": "Content here",
+    "badge": "Feature"
+  },
+  "legal_pages": {
+    "agb_title": "Allgemeine Geschäftsbedingungen",
+    "datenschutz_title": "Datenschutzerklärung",
+    "impressum_title": "Impressum"
+  },
+  "use_cases_common": {
+    "demo_cta": "Demo anfordern",
+    "contact_cta": "Kontakt aufnehmen",
+    "benefits_title": "Messbare Geschäftsvorteile",
+    "roi_title": "ROI & Ergebnisse",
+    "features_title": "Kernfunktionen",
+    "how_title": "So funktioniert es",
+    "steps_title": "In 3 Schritten zum Erfolg",
+    "challenges_title": "Herausforderungen",
+    "solutions_title": "Sailly Lösungen",
+    "use_cases_title": "Anwendungsfälle",
+    "cta_title": "Bereit für den nächsten Schritt?",
+    "cta_subtitle": "Starten Sie noch heute und erleben Sie den Unterschied.",
+    "compliance_title": "Compliance & Sicherheit"
+  },
+  "ai_impacts_common": {
+    "demo_cta": "Demo anfordern",
+    "contact_cta": "Kontakt aufnehmen",
+    "benefits_title": "Messbare Ergebnisse",
+    "features_title": "Funktionen",
+    "how_title": "So funktioniert es",
+    "roi_title": "Messbarer Mehrwert",
+    "challenges_title": "Aktuelle Herausforderungen",
+    "solutions_title": "Sailly KI-Lösungen",
+    "cta_title": "Jetzt starten",
+    "cta_subtitle": "Erleben Sie die Kraft der KI in Ihrem Business."
+  },
+  "use_cases_public_sector": {
+    "badge": "ÖFFENTLICHER SEKTOR",
+    "title": "KI-Automatisierung für Behörden",
+    "subtitle": "Modernisieren Sie Verwaltungsprozesse mit intelligenter Automatisierung.",
+    "challenges_subtitle": "Herausforderungen im öffentlichen Sektor",
+    "cta_page_title": "Modernisieren Sie Ihre Verwaltungsprozesse",
+    "cta_page_subtitle": "KI-Automatisierung für Behörden."
+  },
+  "ai_impacts_it_ops": {
+    "badge": "AI IMPACTS IT OPS",
+    "title": "IT-Operations mit KI automatisieren",
+    "subtitle": "Reduzieren Sie manuelle IT-Aufgaben und steigern Sie die Effizienz."
+  },
+  "security_compliance_page": {
+    "badge": "SECURITY & COMPLIANCE",
+    "heading_part1": "Maximale Sicherheit",
+    "heading_part2": "für Ihr Unternehmen",
+    "subtitle": "Ihre Daten sind sicher bei uns. Höchste Sicherheitsstandards und umfassender Datenschutz.",
+    "cta": "Sicherheit erkunden",
+    "sec_badge": "Sicherheit",
+    "sec_title": "Umfassende Sicherheitsfeatures",
+    "sec_subtitle": "Mehrschichtige Sicherheit auf allen Ebenen",
+    "f1_title": "Verschlüsselung",
+    "f1_desc": "End-to-End Verschlüsselung für Daten in Transit und at Rest. AES-256.",
+    "f2_title": "Access Control",
+    "f2_desc": "Granulare Berechtigungen und Rollenverwaltung. SSO, MFA und Identity Provider.",
+    "f3_title": "Audit Logging",
+    "f3_desc": "Vollständige Audit-Logs für alle Aktionen. Nachvollziehbarkeit und Compliance.",
+    "f4_title": "Infrastruktur",
+    "f4_desc": "Sichere Cloud-Infrastruktur oder On-Premise Deployment. Ihre Wahl.",
+    "f5_title": "Threat Protection",
+    "f5_desc": "Automatische Bedrohungserkennung. DDoS-Schutz, Firewall.",
+    "f6_title": "Backup & Recovery",
+    "f6_desc": "Automatische Backups und Disaster Recovery. Garantierte Datenverfügbarkeit.",
+    "comp_title": "Zertifizierungen & Compliance",
+    "comp_subtitle": "Erfüllung aller wichtigen Standards und Vorschriften",
+    "dp_title": "Datenschutz",
+    "dp_desc": "Vollständige Einhaltung der Datenschutzbestimmungen.",
+    "cert_title": "Zertifizierungen",
+    "cert_desc": "International anerkannte Sicherheits- und Qualitätsstandards.",
+    "data_ctrl_title": "Ihre Daten, Ihre Kontrolle",
+    "data_ctrl_subtitle": "Maximale Kontrolle über Ihre Daten",
+    "dr_title": "Datenresidenz",
+    "dr_desc": "Wählen Sie, wo Ihre Daten gespeichert werden. EU, USA oder On-Premise.",
+    "dm_title": "Datenminimierung",
+    "dm_desc": "Wir sammeln nur die Daten, die für den Service notwendig sind.",
+    "del_title": "Recht auf Löschung",
+    "del_desc": "Vollständige Kontrolle über Ihre Daten. Löschung auf Anfrage.",
+    "cta_title": "Sicherheit, die Sie vertrauen können",
+    "cta_subtitle": "Erfahren Sie mehr über unsere Sicherheitsmaßnahmen und Compliance-Standards.",
+    "demo_cta": "Demo anfordern",
+    "comp_pill": "Compliance",
+    "dp_pill": "Datenschutz"
+  },
+  "workflow_builder_page": {
+    "badge": "WORKFLOW BUILDER",
+    "heading_part1": "Visueller",
+    "heading_part2": "Workflow-Builder",
+    "subtitle": "Erstellen Sie komplexe Workflows mit unserem intuitiven Drag-and-Drop Builder. Keine Programmierung erforderlich.",
+    "cta": "Builder testen",
+    "features_title": "Alles was Sie brauchen",
+    "features_subtitle": "Ein leistungsstarker Builder für professionelle Workflows",
+    "f1_title": "Drag & Drop",
+    "f1_desc": "Intuitives Drag-and-Drop Interface. Erstellen Sie Workflows durch einfaches Ziehen von Komponenten.",
+    "f2_title": "Viele Komponenten",
+    "f2_desc": "Hunderte von vorgefertigten Komponenten für alle gängigen Aufgaben und Integrationen.",
+    "f3_title": "Live-Testing",
+    "f3_desc": "Testen Sie Ihre Workflows direkt im Builder. Sofortiges Feedback und Debugging.",
+    "f4_title": "Code-Editor",
+    "f4_desc": "Erweiterte Funktionalität mit eingebautem Code-Editor für benutzerdefinierte Logik.",
+    "f5_title": "Versionierung",
+    "f5_desc": "Vollständige Versionskontrolle für alle Workflows. Rollback und Vergleich.",
+    "f6_title": "Validierung",
+    "f6_desc": "Automatische Validierung und Fehlerprüfung während der Erstellung.",
+    "tpl_title": "Template-Bibliothek",
+    "tpl_subtitle": "Starten Sie mit vorgefertigten Workflow-Templates",
+    "t1_title": "Dokumentenverarbeitung",
+    "t1_desc": "Templates für automatische Dokumentenverarbeitung, OCR und Klassifizierung.",
+    "t2_title": "Datenintegration",
+    "t2_desc": "Verbinden Sie Systeme und synchronisieren Sie Daten automatisch.",
+    "t3_title": "KI & Automatisierung",
+    "t3_desc": "Nutzen Sie KI für intelligente Automatisierung und Entscheidungen.",
+    "cta_title": "Bereit zum Erstellen?",
+    "cta_subtitle": "Starten Sie noch heute mit dem Workflow-Builder und erstellen Sie Ihre ersten automatisierten Prozesse.",
+    "demo_cta": "Demo anfordern"
+  },
+  "templates_page": {
+    "badge": "TEMPLATES",
+    "heading_part1": "Vorgefertigte",
+    "heading_part2": "Templates",
+    "subtitle": "Starten Sie sofort mit professionellen Workflow-Templates. Für jede Branche und jeden Anwendungsfall.",
+    "cta": "Templates durchsuchen",
+    "all_title": "Alle Templates",
+    "all_subtitle": "Sofort einsatzbereit für alle Branchen",
+    "use_btn": "Template verwenden",
+    "cta_title": "Ihr Template nicht dabei?",
+    "cta_subtitle": "Erstellen Sie Ihr eigenes Template oder lassen Sie sich von uns helfen.",
+    "demo_cta": "Demo anfordern"
+  },
+  "ki_integration_page": {
+    "badge": "KI INTEGRATION",
+    "heading_part1": "KI-Integration",
+    "heading_part2": "für Ihr Business",
+    "subtitle": "Integrieren Sie die mächtigsten KI-Modelle direkt in Ihre Geschäftsprozesse. Ohne Programmierkenntnisse.",
+    "cta": "KI-Integration testen",
+    "models_title": "Unterstützte KI-Modelle",
+    "models_subtitle": "Die besten Modelle für jeden Anwendungsfall",
+    "features_title": "Integration Features",
+    "cta_title": "Bereit für KI-Power?",
+    "cta_subtitle": "Starten Sie noch heute und entfesseln Sie das Potenzial Ihrer Daten mit KI.",
+    "demo_cta": "Demo anfordern"
+  },
+  "preise_page": {
+    "badge": "Preise",
+    "title": "Einfache, faire Preise",
+    "subtitle": "Wählen Sie den Plan, der zu Ihrem Business passt.",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "save": "20% sparen",
+    "per_month": "pro Monat",
+    "get_started": "Jetzt starten",
+    "contact_sales": "Vertrieb kontaktieren",
+    "faq_title": "Häufige Fragen",
+    "cta_title": "Noch Fragen?",
+    "cta_subtitle": "Unser Team hilft Ihnen gerne weiter.",
+    "contact_cta": "Kontakt aufnehmen"
+  }
+}

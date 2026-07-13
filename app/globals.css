@@ -1,0 +1,371 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Sailly Image-Inspired Brand Colors */
+  --color-brand-primary: 255 155 138; /* Soft coral from Sailly character */
+  --color-brand-secondary: 255 200 185; /* Lighter peach tone */
+  --color-brand-accent: 168 230 207; /* Mint green from icons */
+  --color-brand-yellow: 252 211 77; /* Golden yellow from logo gradient */
+  --color-brand-orange: 255 190 140; /* Warm orange from gradient */
+  --color-brand-pink: 255 182 203; /* Soft pink accent */
+  
+  /* Base Colors - Warm and welcoming */
+  --background: 0 0% 99%; /* Very light warm white */
+  --foreground: 222 47% 11%; /* Dark text for contrast */
+  
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  
+  --primary: 255 155 138; /* Sailly coral */
+  --primary-foreground: 255 255 255;
+  
+  --secondary: 45 97% 65%; /* Golden yellow from logo gradient */
+  --secondary-foreground: 15 23 42;
+  
+  --muted: 250 248 245; /* Warm neutral */
+  --muted-foreground: 100 116 139;
+  
+  --accent: 168 230 207; /* Mint green */
+  --accent-foreground: 15 23 42;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 255 155 138; /* Sailly coral */
+  
+  --radius: 0.75rem;
+  
+  /* Sidebar/Panel colors */
+  --sidebar: 255 255 255;
+  --sidebar-foreground: 240 5.9% 10%;
+  --sidebar-primary: 255 155 138; /* Sailly coral */
+  --sidebar-primary-foreground: 255 255 255;
+  --sidebar-accent: 250 248 245; /* Warm neutral */
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 255 155 138; /* Sailly coral */
+}
+
+.dark {
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+  
+  --card: 222 47% 11%;
+  --card-foreground: 210 40% 98%;
+  
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 98%;
+  
+  --primary: 255 175 158; /* Brighter coral for dark mode */
+  --primary-foreground: 222 47% 11%;
+  
+  --secondary: 45 80% 25%; /* Dark amber for dark mode */
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 217 19% 27%;
+  --muted-foreground: 215 20.2% 65.1%;
+  
+  --accent: 148 210 187; /* Softer mint for dark mode */
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 217 19% 27%;
+  --input: 217 19% 27%;
+  --ring: 255 175 158; /* Brighter coral */
+  
+  --sidebar: 222 47% 11%;
+  --sidebar-foreground: 240 4.8% 95.9%;
+  --sidebar-primary: 255 175 158; /* Brighter coral */
+  --sidebar-primary-foreground: 222 47% 11%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 255 175 158; /* Brighter coral */
+}
+
+@font-face {
+  font-family: 'Sys Falso';
+  src: url('/fonts/SysFalso-Italic.eot');
+  src: url('/fonts/SysFalso-Italic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/SysFalso-Italic.woff2') format('woff2'),
+       url('/fonts/SysFalso-Italic.woff') format('woff'),
+       url('/fonts/SysFalso-Italic.ttf') format('truetype'),
+       url('/fonts/SysFalso-Italic.svg#SysFalso') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: rgb(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: rgb(var(--ring));
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  --color-sidebar: hsl(var(--sidebar));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+  /* Fluid typography utilities for mobile-first design */
+  --text-hero: clamp(2.25rem, 5vw + 1rem, 4.5rem);
+  --text-h2: clamp(1.875rem, 3vw + 1rem, 3rem);
+  --text-h3: clamp(1.5rem, 2vw + 0.875rem, 2.25rem);
+  --text-subtitle: clamp(1.125rem, 1.5vw + 0.5rem, 1.5rem);
+  --text-body: clamp(0.875rem, 1vw + 0.5rem, 1.125rem);
+}
+
+.font-logo {
+  font-family: 'Sys Falso', cursive !important;
+  font-style: italic;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  /* Accessibility: Focus styles */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+  
+  body {
+    @apply text-foreground bg-background;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Mobile and touch-friendly utilities */
+@layer utilities {
+  button, a, [role="button"] {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* dvh with fallback */
+  .min-h-dvh {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* Fluid type utilities */
+  .text-fluid-hero { font-size: var(--text-hero); }
+  .text-fluid-h2 { font-size: var(--text-h2); }
+  .text-fluid-h3 { font-size: var(--text-h3); }
+  .text-fluid-subtitle { font-size: var(--text-subtitle); }
+  .text-fluid-body { font-size: var(--text-body); }
+
+  /* Performance */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  /* Minimum touch target size (48px) */
+  .touch-target {
+    @apply min-h-12 min-w-12;
+  }
+  
+  /* Safe area support for notched devices */
+  .safe-area-top {
+    padding-top: max(env(safe-area-inset-top), 0.5rem);
+  }
+  
+  .safe-area-bottom {
+    padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
+  }
+  
+  /* Touch-only device optimizations — scoped so inline text links keep
+     their natural size; interactive controls opt in via .touch-target */
+  @media (hover: none) and (pointer: coarse) {
+    nav button,
+    nav a,
+    header button,
+    .touch-target {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+}
+
+@keyframes soundwave {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(3); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Blob drift animations — GPU-accelerated via CSS compositor */
+@keyframes blob-drift-1 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(50px, 30px, 0) scale(1.1); }
+}
+
+@keyframes blob-drift-2 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-30px, 50px, 0) scale(1.2); }
+}
+
+@keyframes blob-drift-3 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(40px, -40px, 0) scale(1.15); }
+}
+
+@keyframes blob-drift-4 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(20px, 20px, 0) scale(1.1); }
+}
+
+/* Orb pulse animation */
+@keyframes orb-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+/* Sailly Image-Inspired Custom Utilities */
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, rgb(255, 155, 138) 0%, rgb(255, 190, 140) 50%, rgb(255, 182, 203) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-sailly {
+  background: linear-gradient(135deg, 
+    rgba(255, 190, 140, 0.6) 0%,    /* Warm orange */
+    rgba(255, 155, 138, 0.5) 25%,   /* Coral */
+    rgba(255, 182, 203, 0.4) 50%,   /* Soft pink */
+    rgba(252, 211, 77, 0.5) 75%,    /* Golden yellow */
+    rgba(168, 230, 207, 0.3) 100%   /* Light mint */
+  );
+}
+
+.bg-gradient-soft {
+  background: linear-gradient(135deg, 
+    rgba(255, 200, 185, 0.3) 0%,    /* Light peach */
+    rgba(250, 248, 245, 0.5) 50%,   /* Warm neutral */
+    rgba(252, 211, 77, 0.2) 100%    /* Golden yellow */
+  );
+}
+
+.shadow-sailly {
+  box-shadow: 0 10px 40px -10px rgba(255, 155, 138, 0.3);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.45); opacity: 0.55; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+/* Hero slogan clip reveal */
+@keyframes clip-horizontal {
+  0% { clip-path: inset(0 100% 0 0); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes clip-horizontal-out {
+  0% { clip-path: inset(0 0 0 0); }
+  100% { clip-path: inset(0 100% 0 0); }
+}
+
+@keyframes logo-pop {
+  0% { opacity: 0; transform: scale(0.7) translateY(20px); }
+  60% { transform: scale(1.05) translateY(-4px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.hero-clip-text {
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
+}
+
+.hero-clip-in {
+  animation: clip-horizontal 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-clip-out {
+  animation: clip-horizontal-out 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-logo-reveal {
+  animation: logo-pop 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* MCP workflow flow lines */
+@keyframes mcp-dash-flow {
+  0% { stroke-dashoffset: 24; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes mcp-hub-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.06); opacity: 0.92; }
+}
+
+.mcp-dash-active {
+  animation: mcp-dash-flow 1.2s ease-in-out forwards;
+}
+
+.mcp-hub-active {
+  animation: mcp-hub-pulse 1.2s ease-in-out;
+}

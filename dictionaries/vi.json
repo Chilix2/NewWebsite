@@ -1,0 +1,1239 @@
+{
+  "nav": {
+    "product": {
+      "title": "Sản phẩm",
+      "items": {
+        "voice_agent": "Sailly Tác nhân giọng nói",
+        "integrations": "Tích hợp",
+        "data_insights": "Dữ liệu & Thông tin chi tiết",
+        "security": "Bảo mật & Tuân thủ",
+        "languages": "Ngôn ngữ",
+        "partners": "Đối tác chiến lược"
+      }
+    },
+    "solutions": {
+      "title": "Giải pháp",
+      "items": {
+        "hotels": "Khách sạn & Khách sạn",
+        "medical": "Phòng khám & Thực hành Y tế",
+        "restaurants": "Nhà hàng & Quán cà phê",
+        "services": "Nhà cung cấp dịch vụ"
+      }
+    },
+    "resources": {
+      "title": "Tài nguyên",
+      "items": {
+        "blog": "Blog",
+        "case_studies": "Nghiên cứu điển hình",
+        "faq": "Câu hỏi thường gặp",
+        "help": "Trung tâm trợ giúp"
+      }
+    },
+    "pricing": "giá cả",
+    "demo": "Yêu cầu bản demo",
+    "company": {
+      "title": "Công ty",
+      "items": {
+        "about": "Về chúng tôi",
+        "contact": "Liên hệ"
+      }
+    }
+  },
+  "hero": {
+    "eyebrow": "Nhóm của bạn phục vụ khách. Sailly Xử lý phần còn lại.",
+    "title": "Trợ lý kỹ thuật số, giúp nhóm của bạn nhẹ nhõm hơn.",
+    "subtitle": "Sailly nhận cuộc gọi, lên lịch cuộc hẹn và trả lời câu hỏi – suốt ngày đêm. Cho nhân viên của bạn quyền tự do tập trung vào điều quan trọng nhất: khách hàng của bạn.",
+    "primary_cta": "Yêu cầu bản demo",
+    "secondary_cta": "Tìm hiểu thêm",
+    "badges": {
+      "gdpr": "GDPR Tuân thủ",
+      "availability": "Có sẵn 24/7",
+      "setup": "Sống trong 4 tuần"
+    },
+    "stats": {
+      "title": "Kết quả từ Đối tác của chúng tôi",
+      "items": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Nhân viên hài lòng hơn"
+        },
+        "containment": {
+          "value": "90%+",
+          "label": "Yêu cầu định kỳ tự động"
+        },
+        "reduction": {
+          "value": "24/7",
+          "label": "Sẵn có cho khách hàng"
+        }
+      }
+    }
+  },
+  "problems": {
+    "badge": "Thử thách",
+    "title": "Cuộc gọi nhỡ có nghĩa là doanh thu bị mất",
+    "subtitle": "Chuông điện thoại làm gián đoạn hoạt động và làm cạn kiệt các nguồn tài nguyên có giá trị.",
+    "cards": {
+      "missed": {
+        "title": "Không thể truy cập",
+        "desc": "30% tất cả các cuộc gọi không được trả lời hoặc kết thúc bằng thư thoại."
+      },
+      "stress": {
+        "title": "Gánh nặng nhân viên",
+        "desc": "Chuông điện thoại liên tục làm gián đoạn công việc và gây căng thẳng cho cả nhóm."
+      },
+      "cost": {
+        "title": "Chi phí cao",
+        "desc": "Nhân viên cho trung tâm cuộc gọi rất tốn kém và khó tìm."
+      }
+    }
+  },
+  "value_props": {
+    "badge": "Tại sao Sailly",
+    "title": "Không chỉ là một máy trả lời",
+    "subtitle": "Sailly là thành viên nhóm thông minh có thể tích hợp liền mạch vào doanh nghiệp của bạn.",
+    "cards": {
+      "human_like": {
+        "title": "Đồng cảm và tự nhiên",
+        "desc": "Nghe giống tiếng người, hiểu tiếng địa phương và thực hiện những cuộc trò chuyện thú vị với khách hàng của bạn."
+      },
+      "always_on": {
+        "title": "Luôn ở bên bạn",
+        "desc": "Nhận cuộc gọi ngay cả khi bạn không làm nhiệm vụ hoặc đang bận rộn với các nhiệm vụ khác."
+      },
+      "instant_scale": {
+        "title": "Không có hàng đợi",
+        "desc": "Có thể xử lý hàng trăm cuộc gọi cùng lúc. Hoàn hảo cho những buổi sáng thứ Hai bận rộn."
+      },
+      "perfect_memory": {
+        "title": "Đáng tin cậy và chính xác",
+        "desc": "Ghi lại các cuộc hẹn trực tiếp vào lịch của bạn và luôn cung cấp thông tin giá cả chính xác."
+      },
+      "multilingual": {
+        "title": "Nói được hơn 30 ngôn ngữ",
+        "desc": "Chào đón khách quốc tế bằng ngôn ngữ mẹ đẻ của họ và phá bỏ rào cản."
+      },
+      "integration": {
+        "title": "Người chơi đội",
+        "desc": "Hoạt động liền mạch với các hệ thống hiện có của bạn (lịch, PMS, công cụ đặt chỗ)."
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Giải pháp",
+    "title": "Sailly Kiểm soát điện thoại",
+    "subtitle": "Trợ lý giọng nói thông minh của bạn dành cho dịch vụ khách hàng chuyên nghiệp.",
+    "cards": {
+      "availability": {
+        "title": "Luôn có sẵn",
+        "desc": "Không có tín hiệu bận, không có hàng đợi. Sailly nhấc máy ngay lập tức."
+      },
+      "appointments": {
+        "title": "Đặt lịch hẹn",
+        "desc": "Tích hợp trực tiếp với lịch của bạn để lập lịch tự động."
+      },
+      "answers": {
+        "title": "Câu trả lời thông minh",
+        "desc": "Giải đáp thắc mắc về giờ mở cửa, giá cả và dịch vụ một cách chính xác."
+      }
+    }
+  },
+  "roi_section": {
+    "badge": "Lợi tức đầu tư",
+    "title": "Giá trị có thể đo lường được từ ngày 1",
+    "subtitle": "Tăng doanh thu và nhân viên hạnh phúc hơn nhờ khả năng tiếp cận tối ưu.",
+    "benefits": [
+      {
+        "title": "Thêm doanh thu",
+        "desc": "Không có cuộc gọi nào không được trả lời. Tăng thêm 15-25% số cuộc hẹn và đặt chỗ thông qua tính khả dụng 24/7.",
+        "icon": "có xu hướng lên"
+      },
+      {
+        "title": "Nhóm hiệu quả hơn",
+        "desc": "Các chuyên gia của bạn tiết kiệm được 2-3 giờ gọi điện mỗi ngày và có thể tập trung vào công việc của khách hàng.",
+        "icon": "cú đánh"
+      },
+      {
+        "title": "Khách hàng hạnh phúc",
+        "desc": "Câu trả lời ngay lập tức mà không cần xếp hàng chờ đợi. Khách hàng của bạn cảm thấy có giá trị và được chăm sóc tốt.",
+        "icon": "trái tim"
+      },
+      {
+        "title": "Giảm chi phí",
+        "desc": "Tránh làm thêm giờ tốn kém hoặc các trung tâm cuộc gọi bên ngoài. Sailly cân mà không phải trả thêm phí.",
+        "icon": "euro"
+      }
+    ]
+  },
+  "security_trust": {
+    "badge": "Bảo mật & Tin cậy",
+    "title": "Tiêu chuẩn cao nhất dành cho doanh nghiệp",
+    "subtitle": "Sailly đáp ứng mọi yêu cầu bảo vệ dữ liệu và tiêu chuẩn bảo mật.",
+    "features": [
+      {
+        "title": "GDPR Tuân thủ",
+        "desc": "Tuân thủ đầy đủ các quy định bảo vệ dữ liệu với các máy chủ an toàn."
+      },
+      {
+        "title": "ISO 27001 Được chứng nhận",
+        "desc": "Tiêu chuẩn bảo mật quốc tế cho hệ thống quản lý thông tin."
+      },
+      {
+        "title": "Mã hóa đầu cuối",
+        "desc": "Tất cả các cuộc hội thoại và dữ liệu đều được mã hóa trong quá trình truyền và lưu trữ."
+      },
+      {
+        "title": "Máy chủ an toàn",
+        "desc": "Tất cả dữ liệu vẫn được bảo mật và tuân theo luật bảo vệ dữ liệu nghiêm ngặt."
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Đánh giá của khách hàng",
+    "title": "Khách hàng của chúng tôi nói gì",
+    "items": [
+      {
+        "quote": "Sailly đã cách mạng hóa việc quản lý đặt chỗ của chúng tôi. Chúng tôi có thêm 30% lượt đặt chỗ và nhóm của chúng tôi thoải mái hơn nhiều.",
+        "author": "Maria Schmidt",
+        "role": "Chủ sở hữu, Gasthof Zur Post",
+        "location": "München"
+      },
+      {
+        "quote": "Bệnh nhân của chúng tôi rất vui mừng với khả năng tiếp cận ngay lập tức. Các nhân viên cuối cùng cũng có thể tập trung trở lại vào việc chăm sóc bệnh nhân.",
+        "author": "Tiến sĩ Thomas Weber",
+        "role": "Thực hành gia đình",
+        "location": "Hamburg"
+      },
+      {
+        "author": "Sandra K.",
+        "role": "Chủ studio làm đẹp",
+        "location": "München",
+        "quote": "Với Sailly, tôi tập trung hoàn toàn vào khách hàng của mình. AI xử lý tất cả các yêu cầu cuộc hẹn và yêu cầu về giá một cách tự động – không phức tạp và sẵn sàng 24/7."
+      }
+    ]
+  },
+  "howItWorks": {
+    "badge": "Nó hoạt động như thế nào",
+    "title": "Sailly hoạt động như thế nào",
+    "subtitle": "Triển khai nhanh chóng mà không cần nỗ lực từ phía CNTT.",
+    "steps": {
+      "answer": {
+        "title": "Trả lời",
+        "desc": "Sailly trả lời cuộc gọi – thân thiện và chuyên nghiệp."
+      },
+      "understand": {
+        "title": "Hiểu",
+        "desc": "AI hiểu yêu cầu của người gọi và trích xuất dữ liệu liên quan."
+      },
+      "execute": {
+        "title": "Thực hiện",
+        "desc": "Đặt cuộc hẹn, cung cấp thông tin hoặc chuyển tiếp cuộc gọi – Sailly xử lý việc đó."
+      }
+    }
+  },
+  "pricing_page": {
+    "badge": "Ưu đãi đặc biệt",
+    "title": "Đơn giản, minh bạch",
+    "trial_text": "Dùng thử: Được giảm giá 50% trong 30 ngày đầu tiên cho tất cả các gói.",
+    "plans": {
+      "standard": {
+        "name": "Tiêu chuẩn",
+        "description": "Chuyển tiếp giọng nói chuyên nghiệp với tính năng tóm tắt cuộc gọi thông minh.",
+        "cta": "Bắt đầu",
+        "features": [
+          "Chuyển tiếp giọng nói 24/7",
+          "Tóm tắt cuộc gọi AI",
+          "Giao thức cuộc gọi chi tiết",
+          "Đặt lịch hẹn",
+          "Sẵn sàng tải lên hệ thống thủ công"
+        ]
+      },
+      "gold": {
+        "name": "Vàng",
+        "description": "Tích hợp liền mạch với hệ sinh thái phần mềm hiện có của bạn.",
+        "cta": "Chọn vàng",
+        "features": [
+          "Mọi thứ đều đạt tiêu chuẩn",
+          "Tích hợp phần mềm trực tiếp",
+          "Quy trình công việc cụ thể theo ngành",
+          "Hỗ trợ đa ngôn ngữ (tối đa 12)",
+          "Đồng bộ hóa dữ liệu thời gian thực",
+          "Mô hình sử dụng trả tiền mỗi phút"
+        ]
+      },
+      "future": {
+        "name": "Tương lai",
+        "description": "Các giải pháp AI được thiết kế riêng cho nhu cầu cao nhất.",
+        "cta": "Liên hệ bán hàng",
+        "features": [
+          "Mọi thứ đều bằng vàng",
+          "Đào tạo mô hình AI tùy chỉnh",
+          "AI đàm thoại nâng cao",
+          "Tự động hóa quy trình làm việc phức tạp",
+          "Kiến trúc sư giải pháp chuyên dụng"
+        ]
+      }
+    },
+    "meta": {
+      "popular": "Phổ biến nhất",
+      "per_month": "/tháng",
+      "starting_at": "",
+      "plus_fees": "+ cước gọi mỗi phút",
+      "per_minute_example": "Với 200 cuộc gọi/tháng bổ sung khoảng €24 (khoảng €0,12 mỗi phút)"
+    }
+  },
+  "cta_section": {
+    "title": "Cuộc gọi tiêu chuẩn tiếp theo của bạn đã được trả lời.",
+    "subtitle": "Hãy thử nghiệm Sailly và trải nghiệm tương lai của dịch vụ khách hàng.",
+    "demo": "Yêu cầu bản demo miễn phí",
+    "contact": "Liên hệ",
+    "guarantee": "Đảm bảo hoàn tiền trong 30 ngày"
+  },
+  "industries": {
+    "hotels": {
+      "hero": {
+        "title": "Nhân viên hướng dẫn kỹ thuật số của bạn để tiếp đón thoải mái.",
+        "subtitle": "Hỗ trợ đội ngũ lễ tân của bạn với trợ lý AI nhận cuộc gọi, quản lý đặt chỗ và trả lời các câu hỏi của khách – 24/7, thân thiện và chuyên nghiệp.",
+        "cta": "Xem bản demo khách sạn"
+      },
+      "challenges": {
+        "title": "Sự nhẹ nhõm cho sự tiếp nhận của bạn",
+        "items": [
+          {
+            "title": "Tập trung vào khách",
+            "desc": "Khi điện thoại đổ chuông, dịch vụ truy cập bị ảnh hưởng. Sailly giúp bạn thoải mái khi chăm sóc cá nhân."
+          },
+          {
+            "title": "Cầu thiếu hụt nhân viên",
+            "desc": "Nhân viên tốt là rất hiếm. Cung cấp cho nhóm của bạn sự hỗ trợ kỹ thuật số cho các yêu cầu thông thường."
+          },
+          {
+            "title": "Khách quốc tế",
+            "desc": "Loại bỏ rào cản ngôn ngữ. Sailly tư vấn cho khách của bạn một cách trôi chảy bằng hơn 30 ngôn ngữ."
+          }
+        ]
+      },
+      "audio_samples": {
+        "title": "Nghe sự khác biệt",
+        "subtitle": "Đây là cách Sailly xoa dịu nhóm của bạn một cách tự nhiên.",
+        "samples": [
+          {
+            "label": "Đặt phòng",
+            "desc": "Đặt phòng thân thiện mà không mất thời gian chờ đợi."
+          },
+          {
+            "label": "Yêu cầu của khách",
+            "desc": "Thông tin về thời gian ăn sáng và bãi đậu xe."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Thêm thời gian cho khách sạn",
+        "items": [
+          {
+            "title": "Tích hợp trực tiếp PMS",
+            "desc": "Kết nối liền mạch với Oracle, Sihot và các hệ thống khác để nhập tự động."
+          },
+          {
+            "title": "Nhân viên hướng dẫn 24/7",
+            "desc": "Cho dù trả phòng trễ hay yêu cầu gối – Sailly luôn sẵn sàng phục vụ khách hàng của bạn."
+          },
+          {
+            "title": "Doanh thu thông qua khả năng tiếp cận",
+            "desc": "Không còn lỡ đặt chỗ vì đường dây bận."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Không có lượt đặt chỗ nào bị bỏ lỡ. Khách hàng của bạn nhận được sự chú ý mà họ xứng đáng nhận được."
+    },
+    "restaurants": {
+      "hero": {
+        "title": "Nhiều thời gian hơn cho khách hàng, ít nói chuyện điện thoại hơn.",
+        "subtitle": "Hãy để Sailly nhận đặt chỗ khi bạn là chủ nhà hoàn hảo. Không đổ chuông trong phòng ăn, không vắng mặt.",
+        "cta": "Xem bản demo nhà hàng"
+      },
+      "challenges": {
+        "title": "Ngôi Nhà Hạnh Phúc Không Căng Thẳng Điện Thoại",
+        "items": [
+          {
+            "title": "Máy chủ hoàn hảo",
+            "desc": "Không có gì làm gián đoạn dịch vụ hơn một chiếc điện thoại đổ chuông. Ở lại hoàn toàn với khách của bạn tại bàn."
+          },
+          {
+            "title": "Đặt chỗ đáng tin cậy",
+            "desc": "Chấm dứt tình trạng lộn xộn giấy tờ và hiểu lầm trong việc phân bổ bảng."
+          },
+          {
+            "title": "Tiếng ồn & náo nhiệt",
+            "desc": "Khi hoạt động hoàn toàn, việc gọi điện thoại rất khó khăn. Sailly luôn thấu hiểu khách hàng của bạn một cách rõ ràng."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Quản lý nhà hàng vô hình của bạn",
+        "items": [
+          {
+            "title": "Đặt chỗ thông minh",
+            "desc": "Kết nối với OpenTable, Resmio và các hệ thống khác để đặt bàn tự động."
+          },
+          {
+            "title": "Giảm tình trạng vắng mặt",
+            "desc": "Gửi lời nhắc và xác nhận để các bàn đặt trước thực sự có người ngồi."
+          },
+          {
+            "title": "Thông tin về chất gây dị ứng & thực đơn",
+            "desc": "Trả lời các câu hỏi về thành phần và các món đặc biệt hàng ngày một cách thành thạo và an toàn."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Không bỏ lỡ đặt chỗ nào. Bạn ở trong phòng ăn."
+    },
+    "medical": {
+      "hero": {
+        "title": "Trợ lý y tế kỹ thuật số cho phòng khám của bạn.",
+        "subtitle": "Đảm bảo khả năng tiếp cận cho bệnh nhân của bạn và giảm bớt gánh nặng cho nhân viên y tế của bạn. Lên lịch cuộc hẹn và đặt hàng theo toa - tuân thủ sự đồng cảm và bảo vệ dữ liệu.",
+        "cta": "Xem bản demo thực hành"
+      },
+      "challenges": {
+        "title": "Thêm thời gian cho bệnh nhân",
+        "items": [
+          {
+            "title": "Tập trung vào điều trị",
+            "desc": "Các trợ lý y tế của bạn luôn sẵn sàng hỗ trợ những người đang thực hành. Sailly bây giờ tiếp quản điện thoại."
+          },
+          {
+            "title": "Không có tín hiệu bận",
+            "desc": "Bệnh nhân luôn liên hệ với bạn - để đặt lịch hẹn, kê đơn thuốc hoặc phân loại trường hợp khẩn cấp."
+          },
+          {
+            "title": "Quyền riêng tư đầu tiên",
+            "desc": "Dữ liệu sức khỏe nhạy cảm vẫn được bảo mật. GDPR tuân thủ trên các máy chủ của Đức."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Cứu trợ cho nhóm thực hành của bạn",
+        "items": [
+          {
+            "title": "Đặt lịch hẹn thông minh",
+            "desc": "Kết nối với Doctolib, Jameda và lịch thực hành để phân bổ cuộc hẹn trực tiếp."
+          },
+          {
+            "title": "Điện thoại kê đơn 2.0",
+            "desc": "Tiếp nhận các yêu cầu kê đơn theo cách có cấu trúc và chuẩn bị cho chữ ký."
+          },
+          {
+            "title": "Nhận biết trường hợp khẩn cấp",
+            "desc": "Lọc các mối quan tâm khẩn cấp và chuyển tiếp chúng ngay lập tức đến nhân viên."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Không có bệnh nhân nào bị bỏ sót. Nhóm của bạn luôn tập trung vào việc chăm sóc."
+    },
+    "services": {
+      "hero": {
+        "title": "Bậc thầy làm việc, Trợ lý xử lý văn phòng.",
+        "subtitle": "Dù là đồ thủ công, xưởng vẽ hay xưởng: Hãy tập trung vào nghề của bạn. Sailly phụ trách các cuộc hẹn, giá cả và các thắc mắc của khách hàng.",
+        "cta": "Xem bản demo SME"
+      },
+      "challenges": {
+        "title": "Tập trung vào nghề của bạn",
+        "items": [
+          {
+            "title": "Làm việc không bị quấy rầy",
+            "desc": "Bạn không thể trả lời điện thoại khi đang xăm mình hoặc sửa chữa. Sailly giữ cho lưng bạn được tự do."
+          },
+          {
+            "title": "Không có đơn hàng nào bị thất lạc",
+            "desc": "Mỗi cuộc gọi nhỡ đều bị mất doanh thu. Bảo mật mọi khách hàng tiềm năng, ngay cả khi bạn bận rộn."
+          },
+          {
+            "title": "Ngoại hình chuyên nghiệp",
+            "desc": "Làm hài lòng khách hàng nhờ khả năng tiếp cận ngay lập tức, ngay cả khi bạn đang ở vị trí cao hơn."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Lễ tân ảo của bạn",
+        "items": [
+          {
+            "title": "Điều phối cuộc hẹn",
+            "desc": "Lên lịch các cuộc hẹn với khách hàng trực tiếp trong lịch của bạn mà không cần phải đặt búa xuống."
+          },
+          {
+            "title": "Thông tin & Tư vấn Giá",
+            "desc": "Trả lời trước các câu hỏi tiêu chuẩn về giá cả, du lịch và dịch vụ một cách thành thạo."
+          },
+          {
+            "title": "Cập nhật trạng thái",
+            "desc": "Tự động thông báo cho khách hàng về tình trạng sửa chữa hoặc đơn hàng."
+          }
+        ]
+      },
+      "tab_title": "Sailly – Không có công việc nào bị bỏ lỡ. Bạn tập trung vào công việc."
+    }
+  },
+  "footer": {
+    "product": "Sản phẩm",
+    "solutions": "Giải pháp",
+    "resources": "Tài nguyên",
+    "legal": "Hợp pháp",
+    "imprint": "dấu ấn",
+    "privacy": "Sự riêng tư",
+    "agb": "Điều khoản",
+    "copyright": "© 2026 Sailly. Mọi quyền được bảo lưu.",
+    "tagline": "Hệ thống điện thoại AI dành cho doanh nghiệp. Trả lời cuộc gọi, lên lịch cuộc hẹn và hỗ trợ nhóm của bạn – 24/7.",
+    "links": {
+      "overview": "Tổng quan",
+      "technology": "Công nghệ",
+      "pricing": "giá cả",
+      "demo": "Thử nghiệm",
+      "hotels": "Khách sạn & Khách sạn",
+      "medical": "Thực hành y tế",
+      "restaurants": "Nhà hàng",
+      "services": "Nhà cung cấp dịch vụ"
+    },
+    "made_in_germany": "Sản xuất tại Đức 🇩🇪"
+  },
+  "audio_demo": {
+    "badge": "Bản trình diễn âm thanh",
+    "title": "Nghe sự khác biệt",
+    "subtitle": "Đây là cách Sailly phát ra âm thanh tự nhiên trên điện thoại.",
+    "language_label": "Tiếng Anh",
+    "samples": [
+      {
+        "label": "Nhà hàng – Đặt bàn",
+        "desc": "Tự động đặt phòng trong khi nhóm của bạn tham dự với khách."
+      },
+      {
+        "label": "Khách sạn – Hỏi đáp phòng",
+        "desc": "Câu trả lời của chuyên gia về tình trạng sẵn có và các yêu cầu đặc biệt."
+      }
+    ]
+  },
+  "dashboard_preview": {
+    "title": "Tổng quan trực tiếp",
+    "today": "Hôm nay,",
+    "systemActive": "Hệ thống đang hoạt động",
+    "calls": "Cuộc gọi",
+    "timeSaved": "Thời gian đã lưu",
+    "vsYesterday": "vs ngày hôm qua",
+    "callVolume": "Số lượng cuộc gọi",
+    "callsUnit": "cuộc gọi",
+    "lastActivity": "Hoạt động gần đây",
+    "liveAgent": "Đại lý trực tiếp",
+    "activities": [
+      "Cuộc hẹn đã được xác nhận vào ngày mai",
+      "Câu hỏi của khách hàng đã được trả lời",
+      "Cơ sở kiến ​​thức được cập nhật"
+    ]
+  },
+  "conversation_preview": {
+    "speaking": "Đang nói...",
+    "listening": "Đang nghe...",
+    "customerLabel": "Khách hàng",
+    "saillyLabel": "Sailly",
+    "messages": [
+      {
+        "id": "1",
+        "speaker": "đi thuyền buồm",
+        "message": "Xin chào, đây là Sailly từ Bright Dental. Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "id": "2",
+        "speaker": "người dùng",
+        "message": "Tôi cần phải dời lại cuộc hẹn vào ngày mai."
+      },
+      {
+        "id": "3",
+        "speaker": "đi thuyền buồm",
+        "message": "Tất nhiên rồi. Thời gian nào sẽ tốt hơn cho bạn?"
+      },
+      {
+        "id": "4",
+        "speaker": "người dùng",
+        "message": "Bạn có việc gì vào khoảng 3 giờ chiều không?"
+      },
+      {
+        "id": "5",
+        "speaker": "đi thuyền buồm",
+        "message": "Để tôi kiểm tra... Có, 3:15 chiều vẫn còn trống. Tôi có nên đặt chỗ đó không?"
+      },
+      {
+        "id": "6",
+        "speaker": "người dùng",
+        "message": "Vâng, làm ơn, điều đó thật hoàn hảo."
+      },
+      {
+        "id": "7",
+        "speaker": "đi thuyền buồm",
+        "message": "Xong! Hẹn gặp các bạn vào ngày mai lúc 3:15 chiều."
+      }
+    ]
+  },
+  "industries_eyebrow": "Tối ưu hóa cho ngành của bạn",
+  "industry_template": {
+    "badges": {
+      "gdpr": "GDPR Tuân thủ",
+      "setup": "Sống trong 4 tuần",
+      "guarantee": "Đảm bảo 30 ngày"
+    },
+    "challenges_badge": "Thử thách",
+    "solution_badge": "Giải pháp",
+    "audio_badge": "Bản trình diễn âm thanh",
+    "audio_duration": "0:45 • Tiếng Anh",
+    "roi": {
+      "badge": "Lợi tức đầu tư",
+      "title": "Kết quả có thể đo lường được từ ngày 1",
+      "subtitle": "Sailly tự trả tiền trong tháng đầu tiên.",
+      "metrics": {
+        "satisfaction": {
+          "value": "85%+",
+          "label": "Sự hài lòng của khách hàng"
+        },
+        "fewer_calls": {
+          "value": "50%",
+          "label": "Ít cuộc gọi hơn cho nhóm của bạn"
+        },
+        "availability": {
+          "value": "24/7",
+          "label": "sẵn có"
+        },
+        "implementation": {
+          "value": "4 tuần",
+          "label": "Để thực hiện"
+        }
+      }
+    },
+    "testimonial": {
+      "quote": "Sailly đã chuyển đổi hoạt động kinh doanh của chúng tôi. Chúng tôi không bao giờ bỏ lỡ cuộc gọi và nhóm của chúng tôi có thể tập trung vào điều thực sự quan trọng – khách hàng của chúng tôi.",
+      "author": "Khách hàng mẫu"
+    },
+    "cta": {
+      "title": "Sẵn sàng cho Bước tiếp theo?",
+      "subtitle": "Hãy bắt đầu với Sailly ngay bây giờ và chuyển đổi dịch vụ khách hàng của bạn.",
+      "primary": "Yêu cầu bản demo miễn phí",
+      "secondary": "Đặt lịch tư vấn",
+      "guarantee": "Đảm bảo hoàn tiền trong 30 ngày"
+    }
+  },
+  "produkt_page": {
+    "badge": "Sailly Tác nhân giọng nói",
+    "hero": {
+      "title_part1": "Không chỉ là AI.",
+      "title_part2": "Một thành viên nhóm thực sự.",
+      "description": "Sailly không phải là máy trả lời tự động. Cô ấy lắng nghe, thấu hiểu và làm việc như một đồng nghiệp – 24/7.",
+      "cta_hire": "Thuê Sailly ngay",
+      "cta_demo": "Xem bản demo"
+    },
+    "how_it_works": {
+      "title": "Sailly hoạt động như thế nào",
+      "subtitle": "Thông minh, kết nối và đơn giản."
+    },
+    "dashboard_section": {
+      "heading": "Cô ấy luôn đứng đầu mọi thứ",
+      "description": "Trong khi Sailly xử lý cuộc gọi, cô ấy phân tích mọi cuộc trò chuyện. Bạn có được thông tin chi tiết theo thời gian thực về sự hài lòng của khách hàng, các câu hỏi thường gặp và các cuộc hẹn đã đặt trước.",
+      "features": [
+        {
+          "title": "Phân tích thời gian thực",
+          "desc": "Phát hiện tâm trạng và sự khẩn cấp ngay lập tức."
+        },
+        {
+          "title": "Tích hợp liền mạch",
+          "desc": "Kết nối trực tiếp với CRM của bạn."
+        },
+        {
+          "title": "Học tập thích ứng",
+          "desc": "Trở nên thông minh hơn với mọi cuộc trò chuyện."
+        }
+      ]
+    },
+    "conversation_section": {
+      "heading": "Cô ấy nói ngôn ngữ của bạn",
+      "description": "Khách hàng thậm chí thường không nhận ra họ đang nói chuyện với AI. Sailly thành thạo cách nói chuyện nhỏ, hiểu tiếng địa phương và giữ thái độ thân thiện trong những tình huống căng thẳng.",
+      "languages_label": "Ngôn ngữ",
+      "response_time_label": "Thời gian đáp ứng"
+    },
+    "trust_section": {
+      "heading": "Tại sao doanh nghiệp tin tưởng Sailly",
+      "trust_cards": [
+        {
+          "title": "Có sẵn 24/7",
+          "desc": "Không còn phải chờ đợi hoặc bỏ lỡ cuộc gọi."
+        },
+        {
+          "title": "GDPR Tuân thủ",
+          "desc": "Máy chủ ở Đức, tiêu chuẩn bảo mật cao nhất."
+        },
+        {
+          "title": "Sẵn sàng ngay lập tức",
+          "desc": "Thiết lập và đào tạo trong vài phút."
+        }
+      ]
+    },
+    "cta_section": {
+      "heading": "Sẵn sàng cho cấp độ tiếp theo?",
+      "description": "Hãy dùng thử Sailly miễn phí ngay hôm nay và trải nghiệm sự khác biệt.",
+      "cta_start": "Bắt đầu miễn phí ngay bây giờ",
+      "cta_contact": "Liên hệ"
+    }
+  },
+  "integrationen_page": {
+    "title": "Kết nối tất cả hệ thống của bạn",
+    "subtitle": "Hơn 500 tích hợp làm sẵn. Kết nối liền mạch, tự động đồng bộ.",
+    "cta": "Khám phá tích hợp",
+    "badge": "TÍCH HỢP",
+    "heading_part1": "Kết nối",
+    "heading_part2": "tất cả hệ thống của bạn",
+    "industry_badge": "Đặc thù ngành",
+    "industry_title": "Tích hợp cho ngành của bạn",
+    "industry_subtitle": "Được xây dựng cho khách sạn, nhà hàng và chăm sóc sức khỏe",
+    "hotels_title": "Khách sạn",
+    "hotels_desc": "Tích hợp liền mạch với hệ thống quản lý khách sạn.",
+    "restaurants_title": "Nhà hàng",
+    "restaurants_desc": "Kết nối trực tiếp với hệ thống đặt phòng.",
+    "healthcare_title": "Chăm sóc sức khỏe",
+    "healthcare_desc": "Tích hợp tuân thủ GDPR với hệ thống quản lý thực hành.",
+    "pos_label": "Hệ thống POS, menu",
+    "praxis_label": "Lịch tập, đơn thuốc",
+    "business_title": "Công cụ kinh doanh chung",
+    "crm_title": "CRM & Bán hàng",
+    "crm_desc": "Kết nối với hệ thống quản lý khách hàng của bạn.",
+    "calendar_title": "Lịch & Cuộc hẹn",
+    "calendar_desc": "Đồng bộ hóa lịch và quản lý các cuộc hẹn.",
+    "comm_title": "Giao tiếp",
+    "comm_desc": "Thông báo và liên lạc tự động.",
+    "api_title": "Xây dựng tích hợp tùy chỉnh",
+    "api_subtitle": "Sử dụng tài liệu API của chúng tôi để xây dựng tích hợp của riêng bạn.",
+    "api_docs": "Tài liệu API",
+    "cta_title": "Sẵn sàng kết nối?",
+    "cta_subtitle": "Trải nghiệm việc tích hợp hệ thống có thể dễ dàng như thế nào.",
+    "cta_demo": "Yêu cầu bản demo"
+  },
+  "strategic_partners_page": {
+    "title": "Ngăn xếp công nghệ",
+    "partners": "Đối tác chiến lược",
+    "badge": "Ngăn xếp công nghệ",
+    "heading_part1": "Chiến lược",
+    "heading_part2": "Đối tác",
+    "subtitle": "Sailly được xây dựng trên những công nghệ đã được chứng minh từ các nhà cung cấp hàng đầu.",
+    "stack_title": "Ngăn xếp công nghệ của chúng tôi",
+    "stack_subtitle": "Quan hệ đối tác đã được chứng minh cho độ tin cậy tối đa",
+    "ai_section_title": "Đối tác của Quỹ AI",
+    "ai_section_subtitle": "LLM tốt nhất cho cuộc trò chuyện tự nhiên",
+    "voice_section_title": "Đối tác công nghệ giọng nói",
+    "voice_section_subtitle": "Công nghệ giọng nói tiên tiến",
+    "infra_title": "Đối tác cơ sở hạ tầng và điện thoại",
+    "infra_subtitle": "Cơ sở hạ tầng đáng tin cậy sẵn sàng 24/7",
+    "compliance_title": "Tuân thủ & Bảo vệ dữ liệu",
+    "compliance_subtitle": "Tất cả các đối tác đều đáp ứng các tiêu chuẩn bảo vệ dữ liệu của EU",
+    "ecosystem_title": "Hệ sinh thái tích hợp",
+    "ecosystem_subtitle": "Kết nối liền mạch với các hệ thống hiện có của bạn",
+    "cta_title": "Tin tưởng vào công nghệ đã được chứng minh",
+    "cta_subtitle": "Trải nghiệm cách Sailly hoạt động với hệ thống của bạn.",
+    "cta_demo": "Trình diễn tích hợp",
+    "cta_all": "Tất cả tích hợp",
+    "main_features": "Các tính năng chính:",
+    "use_case_label": "Trường hợp sử dụng:",
+    "privacy_title": "Đảm bảo quyền riêng tư dữ liệu",
+    "german_servers": "Máy chủ EU",
+    "german_servers_desc": "Tất cả dữ liệu vẫn ở Châu Âu",
+    "e2e_enc": "Mã hóa đầu cuối",
+    "e2e_enc_desc": "AES-256 cho tất cả dữ liệu",
+    "no_sharing": "Không chia sẻ dữ liệu",
+    "no_sharing_desc": "Dữ liệu của bạn chỉ thuộc về bạn",
+    "eu_law": "Luật bảo vệ dữ liệu của EU",
+    "eu_law_desc": "Tuân theo luật pháp Châu Âu",
+    "speech_title": "Chuyển giọng nói thành văn bản và chuyển văn bản thành giọng nói",
+    "pipeline_title": "Đường ống xử lý giọng nói"
+  },
+  "languages_page": {
+    "title": "Đa ngôn ngữ",
+    "subtitle": "Sailly nói được hơn 30 ngôn ngữ",
+    "badge": "Đa ngôn ngữ",
+    "heading_part1": "Ngôn ngữ",
+    "heading_part2": "phương ngữ",
+    "hero_desc": "Sailly nói thông thạo hơn 30 ngôn ngữ và hiểu được các phương ngữ trong vùng. Khách hàng quốc tế của bạn cảm thấy được thấu hiểu ngay lập tức.",
+    "stats_languages": "Ngôn ngữ được hỗ trợ",
+    "stats_coverage": "Bảo hiểm toàn cầu",
+    "stats_response": "Thời gian đáp ứng",
+    "stats_accuracy": "Độ chính xác của lời nói",
+    "grid_title": "Ngôn ngữ được hỗ trợ",
+    "grid_subtitle": "Cuộc trò chuyện tự nhiên bằng ngôn ngữ mẹ đẻ của khách hàng",
+    "available_accents": "Các giọng có sẵn:",
+    "listen_sample": "Nghe mẫu",
+    "voice_title": "Chất lượng giọng nói tự nhiên",
+    "voice_subtitle": "AI tiên tiến cho cuộc trò chuyện giống con người",
+    "voice_special": "Điều gì khiến Sailly trở nên đặc biệt?",
+    "feature_dialect": {
+      "title": "Nhận dạng phương ngữ",
+      "desc": "Hiểu cách phát âm và đặc điểm vùng miền"
+    },
+    "feature_intonation": {
+      "title": "Ngữ điệu tự nhiên",
+      "desc": "Nói đúng trọng tâm và cảm xúc"
+    },
+    "feature_cultural": {
+      "title": "Thích ứng văn hóa",
+      "desc": "Xem xét các quy ước lịch sự về văn hóa"
+    },
+    "feature_volume": {
+      "title": "Âm lượng thích ứng",
+      "desc": "Tự động thích ứng với tình huống hội thoại"
+    },
+    "demo_sample_title": "Mẫu: Đặt phòng khách sạn",
+    "demo_hochdeutsch": "Tiếng Đức (Tiêu chuẩn)",
+    "demo_hochdeutsch_text": "Chúc một ngày tốt lành! Chào mừng đến với khách sạn Zur Post. Hôm nay tôi có thể giúp gì cho bạn?",
+    "demo_english": "Tiếng Anh (Anh)",
+    "demo_english_text": "Chào buổi chiều! Chào mừng đến với khách sạn Zur Post. Hôm nay tôi có thể giúp gì cho bạn?",
+    "demo_french": "Tiếng Pháp (Paris)",
+    "demo_french_text": "Chúc một ngày tốt lành! Chào mừng đến với khách sạn Zur Post. Hôm nay tôi có thể giúp gì cho bạn?",
+    "listen_btn": "Nghe",
+    "industry_title": "Thuật ngữ dành riêng cho ngành",
+    "industry_subtitle": "Sailly biết các thuật ngữ kỹ thuật trong ngành của bạn bằng mọi ngôn ngữ",
+    "industry_hotels": "Sự hiếu khách",
+    "industry_restaurants": "ẩm thực",
+    "industry_healthcare": "Chăm sóc sức khỏe",
+    "dialects_title": "Phương ngữ và giọng khu vực",
+    "dialects_subtitle": "Sailly cũng hiểu được sự khác biệt giữa các vùng",
+    "accuracy_label": "Sự chính xác",
+    "cta_title": "Nói ngôn ngữ của khách hàng của bạn",
+    "cta_subtitle": "Kiểm tra Sailly bằng ngôn ngữ ưa thích của bạn và trải nghiệm các cuộc trò chuyện tự nhiên.",
+    "cta_demo": "Bản trình diễn đa ngôn ngữ",
+    "cta_consult": "Yêu cầu tư vấn ngôn ngữ"
+  },
+  "data_insights_page": {
+    "title": "Dữ liệu & Thông tin chi tiết",
+    "subtitle": "Kết quả có thể đo lường được cho doanh nghiệp của bạn.",
+    "badge": "Lợi ích kinh doanh",
+    "heading_part1": "dữ liệu",
+    "heading_part2": "Thông tin chi tiết",
+    "roi_title": "Công cụ tính ROI: Sailly giúp ích gì cho bạn",
+    "roi_subtitle": "Tính lợi tức đầu tư của bạn bằng số liệu cụ thể",
+    "roi_your_numbers": "Những con số của bạn tự nói lên điều đó",
+    "impact_title": "Lợi ích kinh doanh có thể đo lường được",
+    "impact_subtitle": "Những cải tiến cụ thể bạn sẽ cảm nhận được ngay lập tức",
+    "impact_revenue": {
+      "title": "Tăng doanh thu",
+      "desc": "Nhiều đặt phòng hơn nhờ tình trạng phòng trống hoàn hảo"
+    },
+    "impact_efficiency": {
+      "title": "Đạt được hiệu quả",
+      "desc": "Tiết kiệm thời gian cho mỗi nhân viên cho các nhiệm vụ quan trọng"
+    },
+    "impact_satisfaction": {
+      "title": "Sự hài lòng của khách hàng",
+      "desc": "Sự hài lòng cao hơn thông qua phản hồi ngay lập tức"
+    },
+    "impact_savings": {
+      "title": "Tiết kiệm chi phí",
+      "desc": "Tiết kiệm chi phí nhân sự hàng tháng"
+    },
+    "stories_title": "Câu chuyện thành công của khách hàng",
+    "stories_subtitle": "Kết quả thực từ các công ty thực",
+    "comparison_title": "Tại sao Sailly lại tốt hơn",
+    "comparison_subtitle": "So sánh với các giải pháp truyền thống",
+    "traditional_title": "Trung tâm cuộc gọi truyền thống",
+    "sailly_title": "Sailly Tác nhân giọng nói",
+    "cta_title": "Sẵn sàng cho kết quả có thể đo lường được?",
+    "cta_subtitle": "Hãy bắt đầu ngay hôm nay và trải nghiệm cách Sailly biến đổi doanh nghiệp của bạn.",
+    "cta_roi": "Yêu cầu bản demo ROI",
+    "cta_consult": "Cuộc gọi tư vấn sách"
+  },
+  "loesungen_page": {
+    "title": "Giải pháp cho mọi ngành công nghiệp",
+    "subtitle": "Dù là phòng khám, khách sạn hay công ty luật – Sailly đều thích ứng với nhu cầu cụ thể của bạn.",
+    "badge": "ngành công nghiệp",
+    "industries": {
+      "hotels": {
+        "title": "Khách sạn",
+        "desc": "Đặt phòng, dịch vụ phòng & Câu hỏi thường gặp."
+      },
+      "medical": {
+        "title": "Thực hành y tế",
+        "desc": "Quản lý cuộc hẹn và đơn thuốc."
+      },
+      "restaurants": {
+        "title": "Nhà hàng",
+        "desc": "Đặt bàn và đặt hàng."
+      },
+      "services": {
+        "title": "Nhà cung cấp dịch vụ",
+        "desc": "Đặt lịch hẹn cho các tiệm, hội thảo và hơn thế nữa."
+      }
+    }
+  },
+  "demo_page": {
+    "title": "Yêu cầu bản demo",
+    "subtitle": "Trải nghiệm Sailly trực tiếp. Chúng tôi sẽ chỉ cho bạn cách cải thiện tình trạng sẵn sàng của bạn ngay lập tức.",
+    "badge": "Dùng thử miễn phí",
+    "firstname": "Tên",
+    "lastname": "Họ",
+    "email": "E-mail",
+    "company": "Công ty",
+    "phone": "Số điện thoại",
+    "message": "Tin nhắn",
+    "submit": "Yêu cầu bản demo",
+    "placeholder_firstname": "John",
+    "placeholder_lastname": "Nai",
+    "placeholder_company": "Acme Inc.",
+    "phone_label": "Điện thoại",
+    "optional_fields": "Thông tin tùy chọn"
+  },
+  "technologie_page": {
+    "title": "Công nghệ AI thế hệ tiếp theo",
+    "subtitle": "Tìm hiểu cách các mô hình ngôn ngữ và công cụ tích hợp của chúng tôi phối hợp với nhau.",
+    "badge": "Công nghệ"
+  },
+  "resources_page": {
+    "badge": "Tính năng",
+    "title": "tài nguyên_trang",
+    "subtitle": "Tìm hiểu thêm"
+  },
+  "agb_page": {
+    "badge": "Tính năng",
+    "title": "agb_page",
+    "subtitle": "Tìm hiểu thêm"
+  },
+  "datenschutz_page": {
+    "badge": "Tính năng",
+    "title": "datenschutz_page",
+    "subtitle": "Tìm hiểu thêm"
+  },
+  "impressum_page": {
+    "badge": "Tính năng",
+    "title": "ấn tượng_page",
+    "subtitle": "Tìm hiểu thêm"
+  },
+  "use_cases_banking": {
+    "badge": "DỊCH VỤ TÀI CHÍNH NGÂN HÀNG",
+    "title": "Tự động hóa quy trình làm việc cho ngân hàng",
+    "subtitle": "Chuyển đổi quy trình ngân hàng của bạn bằng tính năng tự động hóa được hỗ trợ bởi AI.",
+    "challenges_subtitle": "Các ngân hàng phải đối mặt với áp lực rất lớn từ quy định, số hóa và kỳ vọng của khách hàng",
+    "c1_title": "Độ phức tạp tuân thủ",
+    "c1_desc": "Các quy định thay đổi liên tục đòi hỏi phải điều chỉnh quy trình liên tục.",
+    "c1_stat": "Thay đổi quy định mỗi năm",
+    "c2_title": "Quy trình thủ công",
+    "c2_desc": "Quá trình xem xét và phê duyệt thủ công tốn thời gian.",
+    "c2_stat": "Thời gian xử lý khoản vay trung bình",
+    "c3_title": "Quản lý rủi ro",
+    "c3_desc": "Cần phải phân tích rủi ro phức tạp và phát hiện gian lận theo thời gian thực.",
+    "c3_stat": "Tổn thất gian lận hàng năm ở Đức",
+    "solutions_subtitle": "Quy trình làm việc được phát triển đặc biệt cho ngành tài chính",
+    "s1_title": "Kiểm tra tín dụng tự động",
+    "s1_desc": "Kiểm tra tín dụng được hỗ trợ bởi AI với khả năng phân tích tài liệu và đánh giá rủi ro tự động.",
+    "s2_title": "Giám sát tuân thủ",
+    "s2_desc": "Giám sát liên tục tất cả các giao dịch để phát hiện vi phạm tuân thủ.",
+    "s3_title": "Dịch vụ khách hàng thông minh",
+    "s3_desc": "Các chatbot AI 24/7 giải đáp thắc mắc của khách hàng với khả năng chuyển giao liền mạch cho các cố vấn con người.",
+    "workflow_title": "Quy trình xử lý khoản vay",
+    "w1": "Tự động chụp ứng dụng",
+    "w2": "Đánh giá tài liệu được hỗ trợ bởi AI",
+    "w3": "Tự động đánh giá mức độ tín nhiệm",
+    "w4": "Tính điểm rủi ro",
+    "w5": "Quyết định trong 15 phút",
+    "uc_subtitle": "Các trường hợp sử dụng cụ thể",
+    "uc1_title": "Chống rửa tiền",
+    "uc1_desc": "Tự động phát hiện các mẫu giao dịch đáng ngờ và tạo SAR.",
+    "uc2_title": "Tự động hóa KYC",
+    "uc2_desc": "Nhận dạng và xác minh khách hàng hoàn toàn tự động bằng cách kiểm tra tài liệu.",
+    "uc3_title": "Chấm điểm rủi ro",
+    "uc3_desc": "Đánh giá rủi ro tín dụng dựa trên AI với hơn 500 điểm dữ liệu.",
+    "uc4_title": "Phát hiện gian lận",
+    "uc4_desc": "Phát hiện các giao dịch gian lận theo thời gian thực bằng máy học.",
+    "uc5_title": "Báo cáo theo quy định",
+    "uc5_desc": "Tự động tạo và nộp tất cả các báo cáo theo quy định.",
+    "uc6_title": "Dịch vụ khách hàng",
+    "uc6_desc": "Hỗ trợ được hỗ trợ bởi AI với quyền truy cập vào tất cả dữ liệu khách hàng.",
+    "b1_label": "Giảm thời gian xử lý",
+    "b2_label": "Tỷ lệ tự động hóa cho các quy trình tiêu chuẩn",
+    "b3_label": "Tiết kiệm chi phí trong quản lý",
+    "b4_label": "Tỷ lệ tuân thủ trong kiểm toán",
+    "reg_title": "Tuân thủ quy định",
+    "reg_subtitle": "Tuân thủ đầy đủ mọi quy định liên quan",
+    "reg1_title": "Quy định của Đức",
+    "reg2_title": "Tiêu chuẩn quốc tế",
+    "cta_page_title": "Số hóa quy trình ngân hàng của bạn",
+    "cta_page_subtitle": "Bắt đầu tự động hóa quy trình tài chính của bạn ngay hôm nay.",
+    "cta_btn": "Demo ngân hàng",
+    "cta_contact_btn": "Tư vấn Fintech"
+  },
+  "use_cases_baubranche": {
+    "badge": "CÔNG NGHIỆP XÂY DỰNG",
+    "title": "Tự động hóa AI cho xây dựng",
+    "subtitle": "Tối ưu hóa quy trình xây dựng bằng tự động hóa thông minh.",
+    "challenges_subtitle": "Số hóa và hiệu quả trong ngành xây dựng",
+    "cta_page_title": "Hiện đại hóa quy trình xây dựng của bạn",
+    "cta_page_subtitle": "Bắt đầu với tự động hóa AI cho ngành xây dựng."
+  },
+  "use_cases_healthcare": {
+    "badge": "CHĂM SÓC SỨC KHỎE",
+    "title": "Tự động hóa AI cho chăm sóc sức khỏe",
+    "subtitle": "Cải thiện việc chăm sóc bệnh nhân bằng tự động hóa thông minh.",
+    "challenges_subtitle": "Những thách thức trong chăm sóc sức khỏe hiện đại",
+    "cta_page_title": "Cải thiện việc chăm sóc bệnh nhân",
+    "cta_page_subtitle": "Tự động hóa AI cho chăm sóc sức khỏe."
+  },
+  "use_cases_legal": {
+    "badge": "NGÀNH PHÁP LUẬT",
+    "title": "Tự động hóa AI cho các công ty luật",
+    "subtitle": "Tối ưu hóa quy trình pháp lý với tự động hóa AI thông minh.",
+    "challenges_subtitle": "Thách thức của các công ty luật hiện đại",
+    "cta_page_title": "Tối ưu hóa quy trình pháp lý của bạn",
+    "cta_page_subtitle": "Tự động hóa AI cho các công ty luật."
+  },
+  "use_cases_manufacturing": {
+    "badge": "CHẾ TẠO",
+    "title": "Tự động hóa AI cho sản xuất",
+    "subtitle": "Tăng hiệu quả sản xuất của bạn với tự động hóa AI.",
+    "challenges_subtitle": "Những thách thức trong sản xuất hiện đại",
+    "cta_page_title": "Tăng hiệu quả sản xuất của bạn",
+    "cta_page_subtitle": "Tự động hóa AI cho sản xuất."
+  },
+  "use_cases_public-sector": {
+    "title": "trường hợp sử dụng khu vực công",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "use_cases_retail": {
+    "badge": "BÁN LẺ & THƯƠNG MẠI",
+    "title": "Tự động hóa AI cho ngành bán lẻ",
+    "subtitle": "Tối ưu hóa hoạt động bán lẻ với tự động hóa AI thông minh.",
+    "challenges_subtitle": "Những thách thức trong bán lẻ hiện đại",
+    "cta_page_title": "Tối ưu hóa hoạt động bán lẻ của bạn",
+    "cta_page_subtitle": "Tự động hóa AI cho bán lẻ."
+  },
+  "use_cases_telecom": {
+    "badge": "VIỄN THÔNG",
+    "title": "Tự động hóa AI cho viễn thông",
+    "subtitle": "Cách mạng hóa dịch vụ viễn thông của bạn với tự động hóa AI.",
+    "challenges_subtitle": "Những thách thức trong viễn thông",
+    "cta_page_title": "Cách mạng hóa viễn thông của bạn",
+    "cta_page_subtitle": "Tự động hóa AI cho viễn thông."
+  },
+  "ai_impacts_customer-service": {
+    "title": "ai tác động đến dịch vụ khách hàng",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "ai_impacts_financial-services": {
+    "title": "ai tác động đến dịch vụ tài chính",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "ai_impacts_hr-recruiting": {
+    "title": "ai tác động đến tuyển dụng nhân sự",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "ai_impacts_it-ops": {
+    "title": "ai tác động đến nó",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "ai_impacts_marketing": {
+    "badge": "AI TÁC ĐỘNG TIẾP THỊ",
+    "title": "Chuyển đổi tiếp thị với AI",
+    "subtitle": "Cá nhân hóa các chiến dịch và tự động hóa quy trình tiếp thị."
+  },
+  "ai_impacts_sales": {
+    "badge": "AI TÁC ĐỘNG TÁC ĐỘNG BÁN HÀNG",
+    "title": "Tối ưu hóa doanh số với AI",
+    "subtitle": "Tăng kết quả bán hàng của bạn với sự hỗ trợ AI thông minh."
+  },
+  "ai_impacts_secops": {
+    "badge": "AI TÁC ĐỘNG GIÂY",
+    "title": "Hoạt động bảo mật với AI",
+    "subtitle": "Phát hiện và chống lại các mối đe dọa bảo mật với sự hỗ trợ của AI."
+  },
+  "ai_impacts_support": {
+    "badge": "HỖ TRỢ TÁC ĐỘNG AI",
+    "title": "Hỗ trợ WhatsApp với RAG",
+    "subtitle": "Cách mạng hóa hoạt động hỗ trợ khách hàng của bạn với các bot WhatsApp được hỗ trợ bởi AI."
+  },
+  "blog_page": {
+    "title": "trang blog",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "academy_page": {
+    "title": "trang học viện",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "docs_page": {
+    "title": "trang tài liệu",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "news_page": {
+    "title": "Tin tức & Cập nhật",
+    "subtitle": "Luôn cập nhật những diễn biến mới nhất tại Sailly.",
+    "badge": "Tin tức",
+    "read_more": "Đọc thêm",
+    "all_news": "Tất cả tin tức"
+  },
+  "community_page": {
+    "title": "trang cộng đồng",
+    "subtitle": "Nội dung ở đây",
+    "badge": "Tính năng"
+  },
+  "legal_pages": {
+    "agb_title": "Điều khoản và Điều kiện",
+    "datenschutz_title": "Chính sách bảo mật",
+    "impressum_title": "Thông báo pháp lý"
+  },
+  "use_cases_common": {
+    "demo_cta": "Yêu cầu bản demo",
+    "contact_cta": "Liên hệ với chúng tôi",
+    "benefits_title": "Lợi ích kinh doanh có thể đo lường được",
+    "roi_title": "ROI & Kết quả",
+    "features_title": "Tính năng cốt lõi",
+    "how_title": "Nó hoạt động như thế nào",
+    "steps_title": "Thành công sau 3 bước",
+    "challenges_title": "Thử thách",
+    "solutions_title": "Sailly Giải pháp",
+    "use_cases_title": "Trường hợp sử dụng",
+    "cta_title": "Sẵn sàng cho bước tiếp theo?",
+    "cta_subtitle": "Hãy bắt đầu ngay hôm nay và trải nghiệm sự khác biệt.",
+    "compliance_title": "Tuân thủ & Bảo mật"
+  },
+  "ai_impacts_common": {
+    "demo_cta": "Yêu cầu bản demo",
+    "contact_cta": "Liên hệ với chúng tôi",
+    "benefits_title": "Kết quả có thể đo lường được",
+    "features_title": "Đặc trưng",
+    "how_title": "Nó hoạt động như thế nào",
+    "roi_title": "Giá trị đo được",
+    "challenges_title": "Những thách thức hiện tại",
+    "solutions_title": "Sailly Giải pháp AI",
+    "cta_title": "Bắt đầu ngay bây giờ",
+    "cta_subtitle": "Trải nghiệm sức mạnh của AI trong doanh nghiệp của bạn."
+  },
+  "use_cases_public_sector": {
+    "badge": "KHU VỰC CÔNG",
+    "title": "Tự động hóa AI cho Chính phủ",
+    "subtitle": "Hiện đại hóa các quy trình hành chính bằng tự động hóa thông minh.",
+    "challenges_subtitle": "Những thách thức trong khu vực công",
+    "cta_page_title": "Hiện đại hóa quy trình hành chính của bạn",
+    "cta_page_subtitle": "Tự động hóa AI cho các cơ quan chính phủ."
+  },
+  "ai_impacts_it_ops": {
+    "badge": "AI TÁC ĐỘNG HOẠT ĐỘNG NÓ",
+    "title": "Tự động hóa hoạt động CNTT với AI",
+    "subtitle": "Giảm các nhiệm vụ CNTT thủ công và tăng hiệu quả."
+  },
+  "security_compliance_page": {
+    "badge": "AN NINH & TUÂN THỦ",
+    "heading_part1": "Bảo mật tối đa",
+    "heading_part2": "cho doanh nghiệp của bạn",
+    "subtitle": "Dữ liệu của bạn được an toàn với chúng tôi. Tiêu chuẩn bảo mật cao nhất và bảo vệ dữ liệu toàn diện.",
+    "cta": "Khám phá bảo mật",
+    "sec_badge": "Bảo vệ",
+    "sec_title": "Tính năng bảo mật toàn diện",
+    "sec_subtitle": "Bảo mật nhiều lớp ở mọi cấp độ",
+    "f1_title": "Mã hóa",
+    "f1_desc": "Mã hóa đầu cuối cho dữ liệu đang truyền và ở trạng thái nghỉ. AES-256.",
+    "f2_title": "Kiểm soát truy cập",
+    "f2_desc": "Quyền chi tiết và quản lý vai trò. SSO, MFA và Nhà cung cấp danh tính.",
+    "f3_title": "Ghi nhật ký kiểm tra",
+    "f3_desc": "Hoàn thành nhật ký kiểm tra cho tất cả các hành động. Truy xuất nguồn gốc và tuân thủ.",
+    "f4_title": "Cơ sở hạ tầng",
+    "f4_desc": "Bảo mật cơ sở hạ tầng đám mây hoặc triển khai tại chỗ. Sự lựa chọn của bạn.",
+    "f5_title": "Bảo vệ mối đe dọa",
+    "f5_desc": "Tự động phát hiện mối đe dọa. Bảo vệ DDoS, tường lửa.",
+    "f6_title": "Sao lưu và phục hồi",
+    "f6_desc": "Tự động sao lưu và khắc phục sự cố. Đảm bảo tính sẵn có của dữ liệu.",
+    "comp_title": "Chứng nhận & Tuân thủ",
+    "comp_subtitle": "Đáp ứng tất cả các tiêu chuẩn và quy định quan trọng",
+    "dp_title": "Bảo vệ dữ liệu",
+    "dp_desc": "Tuân thủ đầy đủ các quy định bảo vệ dữ liệu.",
+    "cert_title": "Chứng chỉ",
+    "cert_desc": "Tiêu chuẩn chất lượng và an ninh được quốc tế công nhận.",
+    "data_ctrl_title": "Dữ liệu của bạn, quyền kiểm soát của bạn",
+    "data_ctrl_subtitle": "Kiểm soát tối đa dữ liệu của bạn",
+    "dr_title": "Nơi lưu trữ dữ liệu",
+    "dr_desc": "Chọn nơi dữ liệu của bạn được lưu trữ. EU, Hoa Kỳ hoặc tại chỗ.",
+    "dm_title": "Giảm thiểu dữ liệu",
+    "dm_desc": "Chúng tôi chỉ thu thập dữ liệu cần thiết cho dịch vụ.",
+    "del_title": "Quyền xóa",
+    "del_desc": "Kiểm soát hoàn toàn dữ liệu của bạn. Xóa theo yêu cầu.",
+    "cta_title": "Bảo mật bạn có thể tin tưởng",
+    "cta_subtitle": "Tìm hiểu thêm về các biện pháp bảo mật và tiêu chuẩn tuân thủ của chúng tôi.",
+    "demo_cta": "Yêu cầu bản demo",
+    "comp_pill": "Sự tuân thủ",
+    "dp_pill": "Bảo vệ dữ liệu"
+  },
+  "workflow_builder_page": {
+    "badge": "Trình xây dựng quy trình làm việc",
+    "heading_part1": "Thị giác",
+    "heading_part2": "Trình tạo quy trình làm việc",
+    "subtitle": "Tạo quy trình làm việc phức tạp bằng trình tạo kéo và thả trực quan của chúng tôi. Không cần lập trình.",
+    "cta": "Hãy thử trình xây dựng",
+    "features_title": "Mọi thứ bạn cần",
+    "features_subtitle": "Trình xây dựng mạnh mẽ cho quy trình làm việc chuyên nghiệp",
+    "f1_title": "Kéo và thả",
+    "f1_desc": "Giao diện kéo và thả trực quan. Tạo quy trình công việc bằng cách kéo các thành phần.",
+    "f2_title": "Nhiều thành phần",
+    "f2_desc": "Hàng trăm thành phần được tạo sẵn cho tất cả các tác vụ và tích hợp thông thường.",
+    "f3_title": "Thử nghiệm trực tiếp",
+    "f3_desc": "Kiểm tra quy trình công việc của bạn trực tiếp trong trình tạo. Phản hồi và gỡ lỗi ngay lập tức.",
+    "f4_title": "Trình chỉnh sửa mã",
+    "f4_desc": "Chức năng nâng cao với trình chỉnh sửa mã tích hợp cho logic tùy chỉnh.",
+    "f5_title": "Phiên bản",
+    "f5_desc": "Kiểm soát phiên bản đầy đủ cho tất cả các quy trình công việc. Quay lại và so sánh.",
+    "f6_title": "Xác thực",
+    "f6_desc": "Tự động xác thực và kiểm tra lỗi trong quá trình tạo.",
+    "tpl_title": "Thư viện mẫu",
+    "tpl_subtitle": "Bắt đầu với các mẫu quy trình công việc được tạo sẵn",
+    "t1_title": "Xử lý tài liệu",
+    "t1_desc": "Mẫu để xử lý tài liệu tự động, OCR và phân loại.",
+    "t2_title": "Tích hợp dữ liệu",
+    "t2_desc": "Kết nối hệ thống và đồng bộ dữ liệu tự động.",
+    "t3_title": "AI & Tự động hóa",
+    "t3_desc": "Sử dụng AI để tự động hóa và đưa ra quyết định thông minh.",
+    "cta_title": "Sẵn sàng để tạo?",
+    "cta_subtitle": "Hãy bắt đầu ngay hôm nay với Trình tạo quy trình làm việc và tạo các quy trình tự động đầu tiên của bạn.",
+    "demo_cta": "Yêu cầu bản demo"
+  },
+  "templates_page": {
+    "badge": "MẪU",
+    "heading_part1": "làm sẵn",
+    "heading_part2": "Mẫu",
+    "subtitle": "Bắt đầu ngay với các mẫu quy trình làm việc chuyên nghiệp. Dành cho mọi ngành công nghiệp và trường hợp sử dụng.",
+    "cta": "Duyệt mẫu",
+    "all_title": "Tất cả các mẫu",
+    "all_subtitle": "Sẵn sàng sử dụng cho mọi ngành công nghiệp",
+    "use_btn": "Sử dụng mẫu",
+    "cta_title": "Bạn không thấy mẫu của mình?",
+    "cta_subtitle": "Tạo mẫu của riêng bạn hoặc để chúng tôi giúp bạn.",
+    "demo_cta": "Yêu cầu bản demo"
+  },
+  "ki_integration_page": {
+    "badge": "TÍCH HỢP AI",
+    "heading_part1": "Tích hợp AI",
+    "heading_part2": "cho doanh nghiệp của bạn",
+    "subtitle": "Tích hợp trực tiếp các mô hình AI mạnh mẽ nhất vào quy trình kinh doanh của bạn. Không có kiến ​​thức lập trình.",
+    "cta": "Thử tích hợp AI",
+    "models_title": "Các mô hình AI được hỗ trợ",
+    "models_subtitle": "Các mô hình tốt nhất cho mọi trường hợp sử dụng",
+    "features_title": "Tính năng tích hợp",
+    "cta_title": "Sẵn sàng cho sức mạnh AI?",
+    "cta_subtitle": "Hãy bắt đầu ngay hôm nay và giải phóng tiềm năng dữ liệu của bạn bằng AI.",
+    "demo_cta": "Yêu cầu bản demo"
+  },
+  "preise_page": {
+    "badge": "giá cả",
+    "title": "Đơn giản, giá cả hợp lý",
+    "subtitle": "Chọn kế hoạch phù hợp với doanh nghiệp của bạn.",
+    "monthly": "hàng tháng",
+    "yearly": "Hàng năm",
+    "save": "Tiết kiệm 20%",
+    "per_month": "mỗi tháng",
+    "get_started": "Bắt đầu",
+    "contact_sales": "Liên hệ bán hàng",
+    "faq_title": "Câu hỏi thường gặp",
+    "cta_title": "Vẫn còn thắc mắc?",
+    "cta_subtitle": "Nhóm của chúng tôi rất vui được giúp đỡ.",
+    "contact_cta": "Liên hệ với chúng tôi"
+  }
+}

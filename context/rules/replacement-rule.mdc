@@ -1,0 +1,16 @@
+---
+description: Clean replacement pattern — no legacy fallbacks during migrations
+alwaysApply: false
+---
+
+# Replacement Architecture Rule
+
+> Also covered in [`restaurant-voice-agent.mdc`](restaurant-voice-agent.mdc) § What to Always Reject.
+
+When replacing old code/config/thresholds:
+1. **REMOVE the old completely** — no fallback, no legacy branch
+2. **REPLACE everywhere** — grep all usages
+3. **VERIFY** — smoke + full validation after restart
+4. **COMMIT** — single atomic commit
+
+**Anti-pattern:** dual paths (`confidence_numeric` OR `confidence` string) — causes silent routing failures.

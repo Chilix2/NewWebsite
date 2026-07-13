@@ -1,0 +1,53 @@
+---
+description: STRICT pre-edit gate — blocks brain edits without compliance
+globs:
+  - server/brain/**
+alwaysApply: false
+---
+
+# Architecture Gate — STRICT Pre-Edit Blocker
+
+> Master: `restaurant-voice-agent.mdc`. **Do not edit any file in this glob until gate passes.**
+
+## STOP — Complete before first line of code
+
+### 1. Mandatory reads (all required)
+
+- [ ] `restaurant-voice-agent.mdc` — full RULE COMPLIANCE CHECK block prepared
+- [ ] `ARCHITECTURE_GATE.md`
+- [ ] `agent-vault/lessons.md`
+- [ ] `git log --oneline -5` — know what shipped recently
+
+### 2. Runtime confirmation (state in compliance block)
+
+- [ ] Production = `v4_pipeline_clean.py` → `ConversationFSM` — NOT legacy, NOT training path
+- [ ] Category B = `_phase_committed()` only
+- [ ] `check_forced_commits()` = training ONLY — do not modify for production fixes
+
+### 3. Absolute prohibitions — any YES = do not edit
+
+- [ ] Adding keyword/regex for intent (including `_FAQ_KW`, `_PRICE_KW`, denial lists for routing)
+- [ ] Adding `[TOOL:...]` text extraction
+- [ ] Adding tenant string literals in brain
+- [ ] New state field without `to_dict()`/`from_dict()`
+- [ ] LLM prompt that can emit Category B tools
+- [ ] Changing validation to mask product bug
+- [ ] ORing `order_commit_state.confirmed` into `slots.confirmed` — FSM track only (KI-025)
+- [ ] Truthy-check writes in `_slots_to_state` (`if slots.X:` instead of `if slots.X is not None:`) — stale data persists (KI-026)
+- [ ] `_force_commit_tools_if_missing` without `next_state == COMMITTED` gate — premature fires (KI-027)
+- [ ] FSM `step()` returning non-empty `response_text` for any intent in `_GROUNDING_REQUIRED_INTENTS` — must set `grounding_required=True` + clear `response_text` (KI-029)
+
+### 4. Only allowed exception to keyword ban
+
+- `_TRIVIAL_TURN_RE` — empty/noise turn bypass ONLY. Nothing else.
+
+### 5. Post-edit requirements (before saying "done")
+
+- [ ] `pytest server/tests/test_conversation_fsm.py` → 65/65
+- [ ] Server restarted, `lstart` verified
+- [ ] `--smoke` run with X/Y reported
+- [ ] Pass rate did not decrease (if it did → revert or fix, do not proceed)
+
+## Redis
+
+Every `ConversationState` field in `to_dict()` AND `from_dict()`. No exceptions.
