@@ -66,6 +66,61 @@
           "label": "Dostępność dla klientów"
         }
       }
+    },
+    "chat": {
+      "scenarios": [
+        {
+          "id": "hotel",
+          "guestName": "Thomas",
+          "guestAvatar": "/images/avatars/guest-hotel.jpg",
+          "guest": "Dobry wieczór! Czy mają Państwo jeszcze pokój na dwie noce w ten piątek?",
+          "agentGreeting": "Dobry wieczór! W czym mogę pomóc?",
+          "agent": "Oczywiście! Dostępny jest pokój dwuosobowy z widokiem na ogród. Czy mam go zarezerwować?",
+          "widget": {
+            "type": "booking",
+            "title": "Rezerwacja potwierdzona",
+            "detail": "Pokój dwuosobowy · pt–nd · 2 gości"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
+          "guest": "Czy mają Państwo stolik dla czterech osób w sobotę o 19:00?",
+          "agent": "Tak, mamy jeszcze wolne miejsca. Czy zarezerwować stolik?",
+          "widget": {
+            "type": "slots",
+            "date": "sob., 12 lip",
+            "times": [
+              "18:30",
+              "19:00",
+              "19:30",
+              "20:00"
+            ],
+            "selected": "19:00",
+            "confirmed": "Stolik zarezerwowany"
+          }
+        },
+        {
+          "id": "praxis",
+          "guestName": "Sabine",
+          "guestAvatar": "/images/avatars/guest-praxis.jpg",
+          "guest": "Czy możemy przyjść do lekarza jutro rano?",
+          "agent": "Tak, jutro rano są jeszcze wolne terminy. Która godzina Państwu odpowiada?",
+          "widget": {
+            "type": "slots",
+            "date": "pt., 11 lip",
+            "times": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30"
+            ],
+            "selected": "08:30",
+            "confirmed": "Wizyta umówiona"
+          }
+        }
+      ]
     }
   },
   "problems": {
@@ -116,7 +171,33 @@
         "title": "Gracz zespołowy",
         "desc": "Współpracuje z Państwa istniejącymi systemami (kalendarz, PMS, narzędzia rezerwacyjne)."
       }
-    }
+    },
+    "tags": [
+      {
+        "label": "#24/7",
+        "desc": "Także w nocy i w niedziele"
+      },
+      {
+        "label": "#30Języków",
+        "desc": "Goście z zagranicy mile widziani"
+      },
+      {
+        "label": "#RODO",
+        "desc": "Hosting w Niemczech"
+      },
+      {
+        "label": "#BezKolejki",
+        "desc": "Natychmiastowe odebranie"
+      },
+      {
+        "label": "#IntegracjaPMS",
+        "desc": "Kalendarz i rezerwacje"
+      },
+      {
+        "label": "#4TygodnieLive",
+        "desc": "Szybkie wdrożenie"
+      }
+    ]
   },
   "solutions": {
     "badge": "Rozwiązanie",

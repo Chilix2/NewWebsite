@@ -66,6 +66,61 @@
           "label": "Disponibilité pour les clients"
         }
       }
+    },
+    "chat": {
+      "scenarios": [
+        {
+          "id": "hotel",
+          "guestName": "Thomas",
+          "guestAvatar": "/images/avatars/guest-hotel.jpg",
+          "guest": "Bonsoir ! Avez-vous encore une chambre pour deux nuits ce vendredi ?",
+          "agentGreeting": "Bonsoir ! Comment puis-je vous aider ?",
+          "agent": "Bien sûr ! Une chambre double avec vue sur le jardin est disponible. Je vous la réserve ?",
+          "widget": {
+            "type": "booking",
+            "title": "Réservation confirmée",
+            "detail": "Chambre double · ven–dim · 2 personnes"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
+          "guest": "Avez-vous une table pour quatre samedi à 19 h ?",
+          "agent": "Oui, il nous reste de la place. Je vous réserve la table ?",
+          "widget": {
+            "type": "slots",
+            "date": "sam. 12 juil.",
+            "times": [
+              "18:30",
+              "19:00",
+              "19:30",
+              "20:00"
+            ],
+            "selected": "19:00",
+            "confirmed": "Table réservée"
+          }
+        },
+        {
+          "id": "praxis",
+          "guestName": "Sabine",
+          "guestAvatar": "/images/avatars/guest-praxis.jpg",
+          "guest": "Pouvons-nous venir chez le médecin demain matin ?",
+          "agent": "Oui, il reste des rendez-vous demain matin. Quelle heure vous convient ?",
+          "widget": {
+            "type": "slots",
+            "date": "ven. 11 juil.",
+            "times": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30"
+            ],
+            "selected": "08:30",
+            "confirmed": "Rendez-vous enregistré"
+          }
+        }
+      ]
     }
   },
   "problems": {
@@ -116,7 +171,33 @@
         "title": "Esprit d'équipe",
         "desc": "Fonctionne avec vos systèmes existants (calendrier, PMS, outils de réservation)."
       }
-    }
+    },
+    "tags": [
+      {
+        "label": "#24/7",
+        "desc": "Aussi la nuit et le dimanche"
+      },
+      {
+        "label": "#30Langues",
+        "desc": "Clients internationaux bienvenus"
+      },
+      {
+        "label": "#RGPD",
+        "desc": "Hébergé en Allemagne"
+      },
+      {
+        "label": "#SansAttente",
+        "desc": "Prise d'appel immédiate"
+      },
+      {
+        "label": "#IntégrationPMS",
+        "desc": "Calendrier & réservations"
+      },
+      {
+        "label": "#Live4Semaines",
+        "desc": "Opérationnel rapidement"
+      }
+    ]
   },
   "solutions": {
     "badge": "Solution",

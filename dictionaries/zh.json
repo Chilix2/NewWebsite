@@ -66,6 +66,61 @@
           "label": "客户可达性"
         }
       }
+    },
+    "chat": {
+      "scenarios": [
+        {
+          "id": "hotel",
+          "guestName": "Thomas",
+          "guestAvatar": "/images/avatars/guest-hotel.jpg",
+          "guest": "晚上好！这周五还有可以住两晚的房间吗？",
+          "agentGreeting": "晚上好！请问有什么可以帮您？",
+          "agent": "当然有！一间花园景观双人房目前可预订。需要我为您预订吗？",
+          "widget": {
+            "type": "booking",
+            "title": "预订已确认",
+            "detail": "双人房 · 周五–周日 · 2位客人"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
+          "guest": "周六晚上7点有四人桌吗？",
+          "agent": "有的，我们还有空位。需要我为您预订这张桌子吗？",
+          "widget": {
+            "type": "slots",
+            "date": "周六 7月12日",
+            "times": [
+              "18:30",
+              "19:00",
+              "19:30",
+              "20:00"
+            ],
+            "selected": "19:00",
+            "confirmed": "餐桌已预订"
+          }
+        },
+        {
+          "id": "praxis",
+          "guestName": "Sabine",
+          "guestAvatar": "/images/avatars/guest-praxis.jpg",
+          "guest": "我们明天早上可以来看医生吗？",
+          "agent": "可以，明天早上还有空余号源。您方便几点？",
+          "widget": {
+            "type": "slots",
+            "date": "周五 7月11日",
+            "times": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30"
+            ],
+            "selected": "08:30",
+            "confirmed": "预约已登记"
+          }
+        }
+      ]
     }
   },
   "problems": {
@@ -116,7 +171,33 @@
         "title": "团队协作者",
         "desc": "与您现有的系统（日历、PMS、预订工具）无缝协作。"
       }
-    }
+    },
+    "tags": [
+      {
+        "label": "#24/7",
+        "desc": "夜间和周日也在线"
+      },
+      {
+        "label": "#30种语言",
+        "desc": "欢迎国际客人"
+      },
+      {
+        "label": "#GDPR",
+        "desc": "数据托管在德国"
+      },
+      {
+        "label": "#无需等待",
+        "desc": "立即接听"
+      },
+      {
+        "label": "#PMS集成",
+        "desc": "日历与预订"
+      },
+      {
+        "label": "#4周上线",
+        "desc": "快速投入使用"
+      }
+    ]
   },
   "solutions": {
     "badge": "解决方案",

@@ -21,6 +21,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
       globalDict={dict}
       industryKey="services" 
       heroImage="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
+      heroVideo="/videos/services-studio.mp4?v=1"
       agentLine={dict.industries.services.agent_line ?? "Ihr Termin ist notiert — wir melden uns, sobald alles fertig ist."}
       locale={validLocale}
       audioScenarioKey="services-nail"

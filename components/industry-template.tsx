@@ -4,12 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  MessageSquare,
-  Calendar,
-  ShieldCheck,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { CinemaFrame } from "./cinema-frame";
 import { AudioDemoCard } from "./audio-demo-card";
 import { IndustryScenariosSection } from "./industry-scenarios-section";
@@ -32,6 +27,11 @@ const LOCALE_LANGUAGE_LABELS: Record<string, string> = {
   tr: "Türkçe", ru: "Русский", pl: "Polski", ar: "العربية", zh: "中文",
 };
 
+/**
+ * Industry sub-page in the Sierra pattern:
+ * hero → cinematic frame → challenges (soft light cards) →
+ * benefits (one warm container, icon-free list) → ROI band → scenarios → audio.
+ */
 export function IndustryTemplate({
   dict,
   globalDict,
@@ -108,12 +108,12 @@ export function IndustryTemplate({
 
           {/* Challenges → Benefits → ROI (merged hero block) */}
           <div className="mt-16 lg:mt-20 space-y-16 lg:space-y-20">
-            {/* Challenges — 3-col text */}
+            {/* Challenges — soft light cards, Sierra-style (no icons) */}
             <div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-10 lg:mb-14 max-w-2xl">
                 {dict.challenges.title}
               </h2>
-              <div className="grid sm:grid-cols-3 gap-x-8 gap-y-10">
+              <div className="grid sm:grid-cols-3 gap-5 lg:gap-6">
                 {dict.challenges.items.map((item: any, i: number) => (
                   <motion.div
                     key={i}
@@ -121,29 +121,41 @@ export function IndustryTemplate({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: i * 0.08 }}
+                    className="rounded-3xl bg-[#f7f4ee] p-6 lg:p-8 flex flex-col"
                   >
-                    <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-                    <p className="text-slate-500 leading-relaxed text-[15px]">{item.desc}</p>
+                    <span className="block w-8 h-[3px] rounded-full bg-primary/70 mb-5" aria-hidden="true" />
+                    <h3 className="text-lg font-bold mb-2.5 text-slate-900">{item.title}</h3>
+                    <p className="text-slate-600 leading-relaxed text-[15px]">{item.desc}</p>
                   </motion.div>
                 ))}
               </div>
             </div>
 
-            {/* Benefits — 3 rounded cards */}
-            <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-10 lg:mb-14 max-w-2xl">
-                {dict.benefits.title}
-              </h2>
-              <div className="grid sm:grid-cols-3 gap-5 lg:gap-6">
-                {dict.benefits.items.map((item: any, i: number) => (
-                  <div key={i} className="rounded-3xl bg-slate-50 border border-slate-100 p-6 lg:p-8">
-                    <div className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 text-primary">
-                      {i === 0 ? <Calendar className="w-5 h-5" /> : i === 1 ? <MessageSquare className="w-5 h-5" /> : <ShieldCheck className="w-5 h-5" />}
-                    </div>
-                    <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-                    <p className="text-slate-500 leading-relaxed text-[15px]">{item.desc}</p>
-                  </div>
-                ))}
+            {/* Benefits — one warm Sierra container: title left, icon-free list right */}
+            <div className="rounded-[2.5rem] bg-[#f7f4ee] p-7 sm:p-10 lg:p-14">
+              <div className="grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-10 lg:gap-16 items-start">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight lg:sticky lg:top-28">
+                  {dict.benefits.title}
+                </h2>
+                <div className="divide-y divide-slate-900/10">
+                  {dict.benefits.items.map((item: any, i: number) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: 14 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45, delay: i * 0.06 }}
+                      className="py-6 first:pt-0 last:pb-0"
+                    >
+                      <h3 className="text-lg sm:text-xl font-bold mb-2 text-slate-900">
+                        {item.title}
+                      </h3>
+                      <p className="text-slate-600 leading-relaxed text-[15px] sm:text-base">
+                        {item.desc}
+                      </p>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
 

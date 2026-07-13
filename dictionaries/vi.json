@@ -66,6 +66,61 @@
           "label": "Sẵn có cho khách hàng"
         }
       }
+    },
+    "chat": {
+      "scenarios": [
+        {
+          "id": "hotel",
+          "guestName": "Thomas",
+          "guestAvatar": "/images/avatars/guest-hotel.jpg",
+          "guest": "Chào buổi tối! Thứ Sáu này còn phòng cho hai đêm không ạ?",
+          "agentGreeting": "Chào buổi tối! Tôi có thể giúp gì cho quý khách?",
+          "agent": "Tất nhiên ạ! Còn một phòng đôi nhìn ra vườn. Tôi đặt phòng cho quý khách nhé?",
+          "widget": {
+            "type": "booking",
+            "title": "Đã xác nhận đặt phòng",
+            "detail": "Phòng đôi · T6–CN · 2 khách"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
+          "guest": "Thứ Bảy lúc 19:00 còn bàn cho bốn người không ạ?",
+          "agent": "Dạ còn, chúng tôi vẫn còn chỗ. Tôi đặt bàn cho quý khách nhé?",
+          "widget": {
+            "type": "slots",
+            "date": "T7, 12/7",
+            "times": [
+              "18:30",
+              "19:00",
+              "19:30",
+              "20:00"
+            ],
+            "selected": "19:00",
+            "confirmed": "Đã đặt bàn"
+          }
+        },
+        {
+          "id": "praxis",
+          "guestName": "Sabine",
+          "guestAvatar": "/images/avatars/guest-praxis.jpg",
+          "guest": "Sáng mai chúng tôi đến khám được không ạ?",
+          "agent": "Dạ được, sáng mai vẫn còn lịch trống. Quý khách muốn mấy giờ ạ?",
+          "widget": {
+            "type": "slots",
+            "date": "T6, 11/7",
+            "times": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30"
+            ],
+            "selected": "08:30",
+            "confirmed": "Đã đặt lịch hẹn"
+          }
+        }
+      ]
     }
   },
   "problems": {
@@ -116,7 +171,33 @@
         "title": "Người chơi đội",
         "desc": "Hoạt động liền mạch với các hệ thống hiện có của bạn (lịch, PMS, công cụ đặt chỗ)."
       }
-    }
+    },
+    "tags": [
+      {
+        "label": "#24/7",
+        "desc": "Cả ban đêm và Chủ nhật"
+      },
+      {
+        "label": "#30NgônNgữ",
+        "desc": "Chào đón khách quốc tế"
+      },
+      {
+        "label": "#GDPR",
+        "desc": "Lưu trữ tại Đức"
+      },
+      {
+        "label": "#KhôngChờĐợi",
+        "desc": "Trả lời ngay lập tức"
+      },
+      {
+        "label": "#TíchHợpPMS",
+        "desc": "Lịch & đặt chỗ"
+      },
+      {
+        "label": "#4TuầnLive",
+        "desc": "Triển khai nhanh"
+      }
+    ]
   },
   "solutions": {
     "badge": "Giải pháp",

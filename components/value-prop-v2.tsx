@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -93,12 +93,96 @@ export function ValuePropV2({ dict }: ValuePropV2Props) {
     (props.subtitle as string) ??
     "Sailly nimmt Anrufe an, bucht Termine und hält Ihr Team aus dem Telefonstress raus.";
 
+  const pausedRef = useRef(false);
+  const resumeTimerRef = useRef<number | null>(null);
+
+  /** Temporarily pause the auto-scroll (manual interaction), resume after idle. */
+  const pauseAutoScroll = (resumeAfterMs = 4000) => {
+    pausedRef.current = true;
+    if (resumeTimerRef.current) window.clearTimeout(resumeTimerRef.current);
+    if (resumeAfterMs > 0) {
+      resumeTimerRef.current = window.setTimeout(() => {
+        pausedRef.current = false;
+      }, resumeAfterMs);
+    }
+  };
+
   const scrollCarousel = (dir: -1 | 1) => {
     const el = carouselRef.current;
     if (!el) return;
+    pauseAutoScroll();
     const amount = el.clientWidth * 0.85;
     el.scrollBy({ left: dir * amount, behavior: "smooth" });
   };
+
+  /**
+   * Gentle back-and-forth auto-scroll: drifts to the end, bounces, drifts back.
+   * Pauses on hover / touch / manual scroll and honours prefers-reduced-motion.
+   */
+  useEffect(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    let raf = 0;
+    let direction: 1 | -1 = 1;
+    let lastTs = 0;
+    const SPEED = 22; // px per second — calm, readable drift
+    const EDGE_PAUSE_MS = 1400;
+    let edgeHoldUntil = 0;
+
+    const tick = (ts: number) => {
+      raf = requestAnimationFrame(tick);
+      if (!lastTs) {
+        lastTs = ts;
+        return;
+      }
+      const dt = Math.min(ts - lastTs, 64);
+      lastTs = ts;
+
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      if (maxScroll <= 4) return; // nothing to scroll
+      if (pausedRef.current || ts < edgeHoldUntil) return;
+
+      el.scrollLeft += (direction * SPEED * dt) / 1000;
+
+      if (el.scrollLeft >= maxScroll - 1) {
+        el.scrollLeft = maxScroll;
+        direction = -1;
+        edgeHoldUntil = ts + EDGE_PAUSE_MS;
+      } else if (el.scrollLeft <= 1) {
+        el.scrollLeft = 0;
+        direction = 1;
+        edgeHoldUntil = ts + EDGE_PAUSE_MS;
+      }
+    };
+
+    raf = requestAnimationFrame(tick);
+
+    const stop = () => pauseAutoScroll(4000);
+    const hoverStop = () => {
+      pausedRef.current = true;
+      if (resumeTimerRef.current) window.clearTimeout(resumeTimerRef.current);
+    };
+    const hoverResume = () => {
+      pausedRef.current = false;
+    };
+
+    el.addEventListener("pointerenter", hoverStop);
+    el.addEventListener("pointerleave", hoverResume);
+    el.addEventListener("touchstart", stop, { passive: true });
+    el.addEventListener("wheel", stop, { passive: true });
+
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener("pointerenter", hoverStop);
+      el.removeEventListener("pointerleave", hoverResume);
+      el.removeEventListener("touchstart", stop);
+      el.removeEventListener("wheel", stop);
+      if (resumeTimerRef.current) window.clearTimeout(resumeTimerRef.current);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <LazyMotion features={domAnimation}>
@@ -182,7 +266,7 @@ export function ValuePropV2({ dict }: ValuePropV2Props) {
 
             <div
               ref={carouselRef}
-              className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             >
               {tags.map((tag, i) => (
                 <m.div
@@ -192,7 +276,7 @@ export function ValuePropV2({ dict }: ValuePropV2Props) {
                   viewport={{ once: true }}
                   transition={{ duration: 0.35, delay: i * 0.04 }}
                   className={cn(
-                    "snap-start shrink-0 w-[72%] sm:w-[calc(33.333%-11px)] min-w-[220px] rounded-2xl p-5 sm:p-6 text-white",
+                    "shrink-0 w-[72%] sm:w-[calc(33.333%-11px)] min-w-[220px] rounded-2xl p-5 sm:p-6 text-white",
                     tag.cardClass
                   )}
                 >

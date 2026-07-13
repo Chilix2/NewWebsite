@@ -66,6 +66,61 @@
           "label": "고객의 가용성"
         }
       }
+    },
+    "chat": {
+      "scenarios": [
+        {
+          "id": "hotel",
+          "guestName": "Thomas",
+          "guestAvatar": "/images/avatars/guest-hotel.jpg",
+          "guest": "안녕하세요! 이번 주 금요일에 2박 가능한 객실이 아직 있나요?",
+          "agentGreeting": "안녕하세요! 무엇을 도와드릴까요?",
+          "agent": "물론입니다! 정원 전망 더블룸이 예약 가능합니다. 예약해 드릴까요?",
+          "widget": {
+            "type": "booking",
+            "title": "예약 확정",
+            "detail": "더블룸 · 금–일 · 게스트 2명"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
+          "guest": "토요일 저녁 7시에 4인 테이블 있나요?",
+          "agent": "네, 아직 자리가 있습니다. 테이블을 예약해 드릴까요?",
+          "widget": {
+            "type": "slots",
+            "date": "토, 7월 12일",
+            "times": [
+              "18:30",
+              "19:00",
+              "19:30",
+              "20:00"
+            ],
+            "selected": "19:00",
+            "confirmed": "테이블 예약 완료"
+          }
+        },
+        {
+          "id": "praxis",
+          "guestName": "Sabine",
+          "guestAvatar": "/images/avatars/guest-praxis.jpg",
+          "guest": "내일 아침에 진료 받으러 가도 될까요?",
+          "agent": "네, 내일 오전에 아직 예약 가능한 시간이 있습니다. 몇 시가 괜찮으세요?",
+          "widget": {
+            "type": "slots",
+            "date": "금, 7월 11일",
+            "times": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30"
+            ],
+            "selected": "08:30",
+            "confirmed": "예약 등록 완료"
+          }
+        }
+      ]
     }
   },
   "problems": {
@@ -116,7 +171,33 @@
         "title": "팀 플레이어",
         "desc": "기존 시스템(캘린더, PMS, 예약 도구)과 원활하게 작동합니다."
       }
-    }
+    },
+    "tags": [
+      {
+        "label": "#24/7",
+        "desc": "밤과 일요일에도"
+      },
+      {
+        "label": "#30개언어",
+        "desc": "해외 고객 환영"
+      },
+      {
+        "label": "#GDPR",
+        "desc": "독일 내 호스팅"
+      },
+      {
+        "label": "#대기없음",
+        "desc": "즉시 응답"
+      },
+      {
+        "label": "#PMS연동",
+        "desc": "캘린더 & 예약"
+      },
+      {
+        "label": "#4주내오픈",
+        "desc": "빠른 도입"
+      }
+    ]
   },
   "solutions": {
     "badge": "해결책",

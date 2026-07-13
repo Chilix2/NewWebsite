@@ -66,6 +66,61 @@
           "label": "Müşteriler İçin Ulaşılabilirlik"
         }
       }
+    },
+    "chat": {
+      "scenarios": [
+        {
+          "id": "hotel",
+          "guestName": "Thomas",
+          "guestAvatar": "/images/avatars/guest-hotel.jpg",
+          "guest": "İyi akşamlar! Bu cuma için iki gecelik boş odanız var mı?",
+          "agentGreeting": "İyi akşamlar! Size nasıl yardımcı olabilirim?",
+          "agent": "Elbette! Bahçe manzaralı bir çift kişilik odamız müsait. Sizin için rezerve edeyim mi?",
+          "widget": {
+            "type": "booking",
+            "title": "Rezervasyon onaylandı",
+            "detail": "Çift kişilik oda · Cum–Paz · 2 misafir"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
+          "guest": "Cumartesi saat 19:00 için dört kişilik masanız var mı?",
+          "agent": "Evet, hâlâ yerimiz var. Masayı sizin için ayırtayım mı?",
+          "widget": {
+            "type": "slots",
+            "date": "Cmt, 12 Tem",
+            "times": [
+              "18:30",
+              "19:00",
+              "19:30",
+              "20:00"
+            ],
+            "selected": "19:00",
+            "confirmed": "Masa rezerve edildi"
+          }
+        },
+        {
+          "id": "praxis",
+          "guestName": "Sabine",
+          "guestAvatar": "/images/avatars/guest-praxis.jpg",
+          "guest": "Yarın sabah doktora gelebilir miyiz?",
+          "agent": "Evet, yarın sabah için boş randevular var. Hangi saat size uygun?",
+          "widget": {
+            "type": "slots",
+            "date": "Cum, 11 Tem",
+            "times": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30"
+            ],
+            "selected": "08:30",
+            "confirmed": "Randevu kaydedildi"
+          }
+        }
+      ]
     }
   },
   "problems": {
@@ -116,7 +171,33 @@
         "title": "Takım Oyuncusu",
         "desc": "Mevcut sistemlerinizle (takvim, PMS, rezervasyon araçları) sorunsuz çalışır."
       }
-    }
+    },
+    "tags": [
+      {
+        "label": "#7/24",
+        "desc": "Gece ve pazar günleri dahil"
+      },
+      {
+        "label": "#30Dil",
+        "desc": "Uluslararası misafirlere açık"
+      },
+      {
+        "label": "#GDPR",
+        "desc": "Almanya'da barındırılıyor"
+      },
+      {
+        "label": "#BeklemeYok",
+        "desc": "Anında yanıt"
+      },
+      {
+        "label": "#PMSEntegrasyonu",
+        "desc": "Takvim & rezervasyon"
+      },
+      {
+        "label": "#4HaftadaCanlı",
+        "desc": "Hızla kullanıma hazır"
+      }
+    ]
   },
   "solutions": {
     "badge": "Çözüm",

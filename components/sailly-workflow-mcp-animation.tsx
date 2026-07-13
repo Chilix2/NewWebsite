@@ -9,25 +9,38 @@ import {
   TeamNotifyIcon,
 } from "./workflow-step-icons";
 
+/**
+ * Brand palette (matches globals.css / the rest of the page):
+ *   coral   #ff9b8a — primary accent
+ *   navy    #0f172a — Sailly dark
+ *   sand    #f3ede6 — resting connectors on the cream section
+ */
+const CORAL = "#ff9b8a";
+const NAVY = "#0f172a";
+const REST = "#e7e2da";
+
 const NODE_CONFIG = [
   {
     y: 52,
-    bg: "#ff9b8a",
+    bg: CORAL,
     ring: "none",
+    iconClass: "text-white",
     Icon: PhoneAnswerIcon,
     path: "M 88 52 C 140 52, 200 100, 280 140",
   },
   {
     y: 140,
     bg: "#ffffff",
-    ring: "#ff9b8a",
+    ring: CORAL,
+    iconClass: "text-slate-700",
     Icon: UnderstandActIcon,
     path: "M 88 140 C 160 140, 210 140, 280 140",
   },
   {
     y: 228,
-    bg: "#4f46e5",
+    bg: NAVY,
     ring: "none",
+    iconClass: "text-white",
     Icon: TeamNotifyIcon,
     path: "M 88 228 C 140 228, 200 180, 280 140",
   },
@@ -47,7 +60,8 @@ function prefersReducedMotion() {
 }
 
 /**
- * Swishy MCP-style workflow: 3 source nodes → Sailly hub with animated dashed paths.
+ * Swishy MCP-style workflow: 3 source nodes → Sailly hub with animated dashed
+ * paths, in the Sailly brand palette so it sits naturally on the cream section.
  */
 export function SaillyWorkflowMcpAnimation({
   className,
@@ -90,7 +104,7 @@ export function SaillyWorkflowMcpAnimation({
   return (
     <div
       className={cn(
-        "rounded-3xl bg-[#f8f9fa] border border-slate-100 p-6 lg:p-10 shadow-sm w-full",
+        "rounded-3xl bg-white border border-slate-100 p-6 lg:p-10 shadow-sm w-full",
         className
       )}
     >
@@ -107,7 +121,7 @@ export function SaillyWorkflowMcpAnimation({
               key={`path-${i}`}
               d={node.path}
               fill="none"
-              stroke={isActive ? "#2563eb" : "#e2e4e9"}
+              stroke={isActive ? CORAL : REST}
               strokeWidth={isActive ? 2.5 : 2}
               strokeDasharray="6 6"
               strokeLinecap="round"
@@ -130,12 +144,17 @@ export function SaillyWorkflowMcpAnimation({
                 fill={node.bg}
                 stroke={node.ring !== "none" ? node.ring : "transparent"}
                 strokeWidth={node.ring !== "none" ? 2.5 : 0}
-                opacity={isActive ? 1 : 0.55}
+                opacity={isActive ? 1 : 0.5}
                 style={{ transition: "opacity 0.35s ease" }}
               />
               <foreignObject x="-14" y="-14" width="28" height="28">
-                <div className="flex items-center justify-center w-full h-full">
-                  <Icon />
+                <div
+                  className={cn(
+                    "flex items-center justify-center w-full h-full",
+                    node.iconClass
+                  )}
+                >
+                  <Icon className="w-[22px] h-[22px]" />
                 </div>
               </foreignObject>
             </g>
@@ -150,7 +169,7 @@ export function SaillyWorkflowMcpAnimation({
             width="72"
             height="72"
             rx="18"
-            fill="#2563eb"
+            fill={NAVY}
             className={hubPulse && !reducedMotion ? "mcp-hub-active" : ""}
             style={{ transformOrigin: "0px 0px" }}
           />
@@ -161,10 +180,10 @@ export function SaillyWorkflowMcpAnimation({
             height="84"
             rx="22"
             fill="none"
-            stroke="#2563eb"
+            stroke={CORAL}
             strokeWidth="2"
             strokeDasharray="6 4"
-            opacity={hubPulse ? 0.8 : 0.35}
+            opacity={hubPulse ? 0.9 : 0.4}
             className={hubPulse && !reducedMotion ? "mcp-hub-active" : ""}
             style={{ transformOrigin: "0px 0px" }}
           />
