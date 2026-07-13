@@ -33,6 +33,7 @@ import {
   AlertCircle,
   FileCheck,
   Presentation,
+  Zap,
 } from "lucide-react"
 
 export default function WorkflowDiagrams() {
@@ -772,7 +773,7 @@ function MetricCard({
 
 // n8n Style Node
 function N8nNode({
-  icon: Icon,
+  icon,
   label,
   sublabel,
   type = "action",
@@ -790,6 +791,7 @@ function N8nNode({
   automated?: boolean
   manual?: boolean
 }) {
+  const Icon = icon as React.ComponentType<{ className?: string }>
   const iconColors = {
     blue: "text-amber-500",
     green: "text-green-500",

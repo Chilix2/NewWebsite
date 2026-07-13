@@ -6,7 +6,7 @@ import { LucideIcon } from "lucide-react"
 interface GlassIconProps {
   icon: LucideIcon
   className?: string
-  color?: "blue" | "purple" | "orange" | "green" | "red" | "cyan"
+  color?: "blue" | "purple" | "orange" | "green" | "red" | "cyan" | "gold"
   size?: "sm" | "md" | "lg" | "xl"
 }
 
@@ -18,6 +18,7 @@ export function GlassIcon({ icon: Icon, className, color = "blue", size = "md" }
     green: "from-emerald-400 to-teal-600",
     red: "from-red-400 to-rose-600",
     cyan: "from-amber-300 to-amber-500",
+    gold: "from-amber-400 to-yellow-600",
   }
 
   const shadows = {
@@ -27,6 +28,7 @@ export function GlassIcon({ icon: Icon, className, color = "blue", size = "md" }
     green: "shadow-emerald-500/30",
     red: "shadow-red-500/30",
     cyan: "shadow-cyan-500/30",
+    gold: "shadow-amber-500/30",
   }
 
   const sizes = {

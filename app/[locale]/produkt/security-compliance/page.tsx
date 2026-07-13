@@ -2,6 +2,7 @@ import { getDictionary } from "@/lib/dictionary";
 import { ArrowRight, Shield, Lock, CheckCircle, FileCheck, Eye, Key, Server } from "lucide-react";
 import Link from "next/link";
 import { ComplianceCertificates } from "@/components/compliance-certificates";
+import { GlassCard } from "@/components/ui/glass-card";
 import { FluidBackground } from "@/components/fluid-background";
 
 export default async function ProduktSecurityCompliancePage({ 

@@ -162,7 +162,7 @@ export default function IOSGlassFilters() {
           
           const enterHandler = () => handleMouseEnter(element)
           const leaveHandler = () => handleMouseLeave(element)
-          const moveHandler = (e: MouseEvent) => handleMouseMove(element, e)
+          const moveHandler = (e: Event) => handleMouseMove(element, e as MouseEvent)
           
           element.addEventListener('mouseenter', enterHandler, { passive: true })
           element.addEventListener('mouseleave', leaveHandler, { passive: true })

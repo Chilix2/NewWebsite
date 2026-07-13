@@ -137,7 +137,7 @@ export function SaillyOsPreview({ dict, locale = "de" }: SaillyOsPreviewProps) {
               const Icon = stat.icon;
               return (
                 <div
-                  key={stat.label}
+                  key={String(stat.label)}
                   className={cn(
                     "rounded-lg border border-slate-100 p-3",
                     stat.wide && "col-span-2 lg:col-span-1"

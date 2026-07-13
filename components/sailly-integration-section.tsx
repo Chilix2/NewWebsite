@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ComplianceCertificates } from "./compliance-certificates";
 import { cn } from "@/lib/utils";
+import { SaillyIcon } from "./sailly-icon";
 import { 
   Cloud, 
   Smartphone, 
@@ -303,7 +304,7 @@ export function SaillyIntegrationSection({ className }: SaillyIntegrationSection
                   "bg-white shadow-sm"
                 )}>
                   {(() => {
-                    const IconComponent = integration.icon;
+                    const IconComponent = integration.icon as React.ComponentType<{ className?: string }>;
                     return <IconComponent className={cn("w-6 h-6", integration.color)} />;
                   })()}
                 </div>
@@ -384,7 +385,7 @@ export function SaillyIntegrationSection({ className }: SaillyIntegrationSection
                 activeStep === index ? "bg-pink-100 text-pink-600" : "bg-gray-50 text-gray-600"
               )}>
                 {(() => {
-                  const IconComponent = step.icon;
+                  const IconComponent = step.icon as React.ComponentType<{ className?: string }>;
                   return <IconComponent className="w-6 h-6" />;
                 })()}
               </div>

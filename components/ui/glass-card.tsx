@@ -5,7 +5,7 @@ import React from "react";
 
 interface GlassCardProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: "light" | "dark" | "frosted";
-  intensity?: "sm" | "md" | "lg";
+  intensity?: "sm" | "md" | "lg" | "xl";
   hoverEffect?: boolean;
 }
 
@@ -27,7 +27,8 @@ export function GlassCard({
   const intensities = {
     sm: "backdrop-blur-sm",
     md: "backdrop-blur-md",
-    lg: "backdrop-blur-xl"
+    lg: "backdrop-blur-xl",
+    xl: "backdrop-blur-2xl"
   };
 
   return (

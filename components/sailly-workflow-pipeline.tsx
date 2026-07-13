@@ -200,7 +200,7 @@ export function SaillyWorkflowPipeline({
                 activeStep === index ? step.bgColor : "bg-gray-50"
               )}>
                 {(() => {
-                  const IconComponent = step.icon;
+                  const IconComponent = step.icon as React.ComponentType<{ className?: string }>;
                   return <IconComponent className={cn(
                     "w-6 h-6",
                     activeStep === index ? step.color : "text-gray-400"

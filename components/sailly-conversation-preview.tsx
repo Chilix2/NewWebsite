@@ -209,7 +209,7 @@ export function SaillyConversationPreview({ className, dict }: SaillyConversatio
           />
 
           <AnimatePresence mode="popLayout">
-            {visibleMessages.map((msg) => (
+            {visibleMessages.map((msg: any) => (
               <m.div
                 key={msg.id}
                 initial={{ opacity: 0, y: 20, scale: 0.9 }}

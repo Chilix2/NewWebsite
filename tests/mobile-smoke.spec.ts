@@ -263,7 +263,7 @@ test.describe('Safe Area Rendering', () => {
     const box = await header.boundingBox();
     
     expect(box).toBeTruthy();
-    expect(box?.top).toBeLessThanOrEqual(50); // Header should be near top
+    expect(box?.y).toBeLessThanOrEqual(50); // Header should be near top
   });
 });
 

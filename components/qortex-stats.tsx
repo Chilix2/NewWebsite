@@ -42,6 +42,7 @@ const StatItem = ({ icon: Icon, value, suffix = "", label, isVisible }: StatItem
   return (
     <div className="flex flex-col items-center text-center p-4">
       <div className="w-12 h-12 mb-4 rounded-xl bg-gradient-to-br from-[var(--accent-purple)]/20 to-[var(--brand-primary)]/20 flex items-center justify-center backdrop-blur-sm border border-white/10 shadow-lg group-hover:scale-110 transition-transform duration-300">
+        {/* @ts-expect-error icon union collapses to never in strict mode */}
         <Icon className="h-6 w-6 text-[var(--brand-primary-light)]" />
       </div>
       <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-gradient-blue mb-2 tracking-tight">

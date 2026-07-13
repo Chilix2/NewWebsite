@@ -217,6 +217,12 @@ const OrbMaterial = shaderMaterial(
 
 extend({ OrbMaterial });
 
+declare module "@react-three/fiber" {
+  interface ThreeElements {
+    orbMaterial: any;
+  }
+}
+
 // Declare the new material in JSX namespace
 declare global {
   namespace JSX {
@@ -336,7 +342,7 @@ export function SaillyOrb({
 export function useAudioAnalyzer() {
   const audioContextRef = useRef<AudioContext | null>(null);
   const analyserRef = useRef<AnalyserNode | null>(null);
-  const dataArrayRef = useRef<Uint8Array | null>(null);
+  const dataArrayRef = useRef<Uint8Array<ArrayBuffer> | null>(null);
   const sourceRef = useRef<MediaStreamAudioSourceNode | null>(null);
   const rafRef = useRef<number | null>(null);
   const [audioLevel, setAudioLevel] = React.useState(0);

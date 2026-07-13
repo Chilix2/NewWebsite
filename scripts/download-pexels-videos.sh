@@ -41,7 +41,9 @@ compress () {
 for entry in "${ASSETS[@]}"; do
   IFS='|' read -r name url page <<< "$entry"
   out="$DIR/$name"
-  if [[ -s "$out" && "${FORCE:-0}" != "1" ]]; then
+  min_bytes=100000  # anything smaller is a placeholder/broken download
+  size=$(stat -c%s "$out" 2>/dev/null || echo 0)
+  if [[ -s "$out" && "$size" -ge "$min_bytes" && "${FORCE:-0}" != "1" ]]; then
     echo "✓ $name already present ($(du -h "$out" | cut -f1)) — skipping"
     continue
   fi

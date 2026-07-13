@@ -3,6 +3,12 @@
 import { useEffect } from "react";
 import { onCLS, onINP, onFCP, onLCP, onTTFB } from "web-vitals";
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 export function WebVitalsReporter() {
   useEffect(() => {
     const handleMetric = (metric: any) => {

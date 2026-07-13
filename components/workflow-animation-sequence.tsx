@@ -120,7 +120,7 @@ export function WorkflowAnimationSequence({ className, steps: customSteps }: Wor
                       isActive ? "bg-pink-50" : "bg-transparent"
                     )}>
                       {(() => {
-                        const Icon = step.icon;
+                        const Icon = step.icon as React.ComponentType<{ className?: string }>;
                         return (
                           <Icon 
                             className={cn(
