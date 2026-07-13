@@ -99,7 +99,7 @@ const LABELS: Record<string, Record<string, string>> = {
 };
 
 function getLabels(locale: string) {
-  return LABELS[locale] || LABELS["de"];
+  return LABELS[locale] || LABELS["en"];
 }
 
 export function SaillyLiveDemo({ className, locale }: SaillyLiveDemoProps) {
