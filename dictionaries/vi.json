@@ -314,14 +314,7 @@
   "pricing_page": {
     "badge": "Ưu đãi đặc biệt",
     "title": "Đơn giản, minh bạch",
-    "trial_text": "Dùng thử: Được giảm giá 50% trong 30 ngày đầu tiên cho tất cả các gói.",
-    "meta": {
-      "popular": "Phổ biến nhất",
-      "per_month": "/tháng",
-      "starting_at": "",
-      "plus_fees": "+ cước gọi mỗi phút",
-      "per_minute_example": "Với 200 cuộc gọi/tháng bổ sung khoảng €24 (khoảng €0,12 mỗi phút)"
-    }
+    "trial_text": "Dùng thử: Được giảm giá 50% trong 30 ngày đầu tiên cho tất cả các gói."
   },
   "cta_section": {
     "title": "Cuộc gọi tiêu chuẩn tiếp theo của bạn đã được trả lời.",

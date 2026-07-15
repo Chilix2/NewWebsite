@@ -505,14 +505,7 @@
   "pricing_page": {
     "badge": "Offre spéciale",
     "title": "Des tarifs simples et transparents",
-    "trial_text": "Période d'essai : testez pendant 30 jours avec 50% de réduction sur tous les forfaits.",
-    "meta": {
-      "popular": "Forfait le plus populaire",
-      "per_month": "/mois",
-      "starting_at": "À partir de",
-      "plus_fees": "+ frais de conversation à la minute",
-      "per_minute_example": "Avec 200 appels/mois environ €24 supplémentaires (environ €0,12 par minute)"
-    }
+    "trial_text": "Période d'essai : testez pendant 30 jours avec 50% de réduction sur tous les forfaits."
   },
   "footer": {
     "product": "Produit",

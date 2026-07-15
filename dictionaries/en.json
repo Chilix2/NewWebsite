@@ -307,15 +307,16 @@
     "plans": {
       "starters": {
         "name": "Starters",
-        "description": "The fast lane for studios & salons: reservations and FAQs — live within 48 hours.",
+        "description": "The fast lane for studios & salons: reservations and FAQs — live within 48 hours. Powered by Grok Voice Agent.",
         "cta": "Start instantly",
         "features": [
-          "250 call minutes included",
+          "Up to 6,000 call minutes / month",
           "24/7 reservations & appointment booking",
           "FAQ answers: opening hours, prices, services",
           "Basic customer support & request capture",
           "Confirmations via email & SMS",
-          "Live in 48 hours — no setup project"
+          "Live in 48 hours — no setup project",
+          "Powered by Grok Voice Agent (highly cost-efficient)"
         ]
       },
       "standard": {
@@ -323,26 +324,28 @@
         "description": "The full phone assistant for your business — with summaries, call logs and calendar.",
         "cta": "Get started",
         "features": [
-          "1,000 call minutes included",
+          "Up to 15,000 call minutes / month",
           "Everything in Starters",
           "24/7 call answering & smart forwarding",
           "AI call summaries & transcripts",
           "Calendar integration (Google, Outlook & more)",
-          "Team notifications & dashboard"
+          "Team notifications & dashboard",
+          "Premium voice models (Claude, GPT-4)"
         ]
       },
       "gold": {
         "name": "Gold",
-        "description": "Phone + WhatsApp: reservations, ordering and delivery — seamlessly integrated with your systems.",
+        "description": "Phone + WhatsApp: reservations, ordering and delivery — direct, commission-free, save 15-30% vs Lieferando/Wolt/Uber.",
         "cta": "Choose Gold",
         "features": [
-          "2,500 call minutes included",
+          "25,000 call minutes + UNLIMITED WhatsApp channels",
           "Everything in Standard",
           "WhatsApp reservations & bookings with AI agent",
-          "WhatsApp order taking & delivery for restaurants",
+          "WhatsApp order taking & delivery for restaurants — 0% commission",
           "PMS, POS & practice software integrations",
           "Multiple phone numbers & parallel lines",
-          "Priority support"
+          "Priority support",
+          "💰 Saves restaurants 15-30% vs Lieferando/Wolt/Uber = €300-750/month at typical volume"
         ]
       },
       "future": {
@@ -350,7 +353,7 @@
         "description": "Tailor-made AI solutions for groups and chains — with a dedicated contact and SLA.",
         "cta": "Contact sales",
         "features": [
-          "Custom minute volume",
+          "Custom minute volume + custom WhatsApp automations",
           "Everything in Gold",
           "Multi-location & central management",
           "Custom AI workflows & API access",
@@ -363,8 +366,9 @@
       "popular": "Most popular",
       "per_month": "/month",
       "starting_at": "From",
-      "plus_fees": "plus minutes beyond the included volume (from €0.12/min)",
-      "per_minute_example": "All prices net. Included minutes per month; additional minutes from €0.12/min. Cancel monthly."
+      "plus_fees": "Minute overage: €0.12/min from 1st extra minute (no hidden fees).",
+      "per_minute_example": "All prices net. Minutes per month (do not roll over). Grok agent in Starters €0.01/min internally. Cancel monthly.",
+      "whatsapp_note": "Gold & Future: unlimited WhatsApp orders. Restaurants typically save €300-750/month by direct customer ordering vs Lieferando/Wolt commissions (15-30%)."
     }
   },
   "cta_section": {

@@ -314,14 +314,7 @@
   "pricing_page": {
     "badge": "특별 메뉴",
     "title": "간단하고 투명한 가격",
-    "trial_text": "평가판: 모든 플랜에 대해 처음 30일 동안 50% 할인을 받으세요.",
-    "meta": {
-      "popular": "가장 인기있는",
-      "per_month": "/월",
-      "starting_at": "",
-      "plus_fees": "+ 분당 통화 요금",
-      "per_minute_example": "월 200통화 기준 약 €24 추가(분당 약 €0.12)"
-    }
+    "trial_text": "평가판: 모든 플랜에 대해 처음 30일 동안 50% 할인을 받으세요."
   },
   "cta_section": {
     "title": "다음 일반 통화는 이미 응답되었습니다.",

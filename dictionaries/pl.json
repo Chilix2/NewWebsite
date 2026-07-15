@@ -505,14 +505,7 @@
   "pricing_page": {
     "badge": "Oferta specjalna",
     "title": "Proste, przejrzyste ceny",
-    "trial_text": "Okres próbny: 30 dni z 50% rabatem na wszystkie pakiety.",
-    "meta": {
-      "popular": "Najpopularniejszy pakiet",
-      "per_month": "/miesiąc",
-      "starting_at": "Od",
-      "plus_fees": "+ opłaty za rozmowy za minutę",
-      "per_minute_example": "Przy 200 połączeniach/miesiąc około €24 dodatkowych (ok. €0,12 za minutę)"
-    }
+    "trial_text": "Okres próbny: 30 dni z 50% rabatem na wszystkie pakiety."
   },
   "footer": {
     "product": "Produkt",

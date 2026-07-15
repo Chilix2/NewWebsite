@@ -505,14 +505,7 @@
   "pricing_page": {
     "badge": "特别优惠",
     "title": "简单透明的价格",
-    "trial_text": "试用期：所有套餐享受50%折扣，免费试用30天。",
-    "meta": {
-      "popular": "最受欢迎",
-      "per_month": "/月",
-      "starting_at": "起价",
-      "plus_fees": "+ 通话按分钟计费",
-      "per_minute_example": "每月200通来电，额外费用约€24（约每分钟€0.12）"
-    }
+    "trial_text": "试用期：所有套餐享受50%折扣，免费试用30天。"
   },
   "footer": {
     "product": "产品",

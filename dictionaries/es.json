@@ -505,14 +505,7 @@
   "pricing_page": {
     "badge": "Oferta Especial",
     "title": "Precios Simples y Transparentes",
-    "trial_text": "Período de Prueba: Pruebe 30 días con 50% de descuento en todos los planes.",
-    "meta": {
-      "popular": "Plan Más Popular",
-      "per_month": "/Mes",
-      "starting_at": "Desde",
-      "plus_fees": "+ Tarifas de llamada por minuto",
-      "per_minute_example": "Con 200 llamadas/mes aproximadamente €24 adicionales (aprox. €0,12 por minuto)"
-    }
+    "trial_text": "Período de Prueba: Pruebe 30 días con 50% de descuento en todos los planes."
   },
   "footer": {
     "product": "Producto",

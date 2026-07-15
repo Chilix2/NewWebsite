@@ -505,14 +505,7 @@
   "pricing_page": {
     "badge": "Özel Teklif",
     "title": "Basit, Şeffaf Fiyatlandırma",
-    "trial_text": "Deneme Süresi: Tüm paketlerde %50 indirimle 30 gün test edin.",
-    "meta": {
-      "popular": "En Popüler Paket",
-      "per_month": "/Ay",
-      "starting_at": "Başlangıç",
-      "plus_fees": "+ Dakika başına görüşme ücreti",
-      "per_minute_example": "Ay da 200 aramayla yaklaşık €24 ek ücret (dakikada yaklaşık €0,12)"
-    }
+    "trial_text": "Deneme Süresi: Tüm paketlerde %50 indirimle 30 gün test edin."
   },
   "footer": {
     "product": "Ürün",

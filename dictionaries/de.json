@@ -866,15 +866,16 @@
     "plans": {
       "starters": {
         "name": "Starters",
-        "description": "Der schnelle Einstieg für Studios & Salons: Reservierungen und FAQs — startklar in 48 Stunden.",
+        "description": "Der schnelle Einstieg für Studios & Salons: Reservierungen und FAQs — startklar in 48 Stunden. Powered by Grok Voice Agent.",
         "cta": "Sofort starten",
         "features": [
-          "250 Gesprächsminuten inklusive",
+          "Bis zu 6.000 Gesprächsminuten / Monat",
           "24/7 Reservierungen & Terminbuchung",
           "FAQ-Antworten: Öffnungszeiten, Preise, Services",
           "Basis-Kundensupport & Anliegen-Aufnahme",
           "Bestätigungen per E-Mail & SMS",
-          "Startklar in 48 Stunden — ohne Einrichtungsprojekt"
+          "Startklar in 48 Stunden — ohne Einrichtungsprojekt",
+          "Powered by Grok Voice Agent (hochgradig kostengünstig)"
         ]
       },
       "standard": {
@@ -882,26 +883,28 @@
         "description": "Der vollwertige Telefonassistent für Ihren Betrieb — mit Zusammenfassungen, Protokollen und Kalender.",
         "cta": "Jetzt starten",
         "features": [
-          "1.000 Gesprächsminuten inklusive",
+          "Bis zu 15.000 Gesprächsminuten / Monat",
           "Alles aus Starters",
           "24/7 Anrufannahme & intelligente Weiterleitung",
           "KI-Gesprächszusammenfassung & Protokolle",
           "Kalender-Integration (Google, Outlook & mehr)",
-          "Team-Benachrichtigungen & Dashboard"
+          "Team-Benachrichtigungen & Dashboard",
+          "Premium Voice Models (Claude, GPT-4)"
         ]
       },
       "gold": {
         "name": "Gold",
-        "description": "Telefon + WhatsApp: Reservierungen, Bestellungen und Lieferung — nahtlos in Ihre Systeme integriert.",
+        "description": "Telefon + WhatsApp: Reservierungen, Bestellungen und Lieferung — direkt, provisionsfrei, 15-30% Gebühren sparen vs. Lieferando/Wolt/Uber.",
         "cta": "Gold wählen",
         "features": [
-          "2.500 Gesprächsminuten inklusive",
+          "25.000 Gesprächsminuten + UNLIMITED WhatsApp-Kanäle",
           "Alles aus Standard",
           "WhatsApp-Reservierungen & Buchungen mit KI-Agent",
-          "WhatsApp-Bestellannahme & Lieferung für Gastronomie",
+          "WhatsApp-Bestellannahme & Lieferung für Gastro — 0% Provision",
           "PMS-, POS- & PVS-Integrationen",
           "Mehrere Rufnummern & parallele Leitungen",
-          "Prioritäts-Support"
+          "Prioritäts-Support",
+          "💰 Spart Restaurants 15-30% vs. Lieferando/Wolt/Uber = €300-750/Monat bei typischer Auslastung"
         ]
       },
       "future": {
@@ -909,7 +912,7 @@
         "description": "Maßgeschneiderte KI-Lösungen für Gruppen und Ketten — mit eigenem Ansprechpartner und SLA.",
         "cta": "Vertrieb kontaktieren",
         "features": [
-          "Individuelles Minutenvolumen",
+          "Individuelles Minutenvolumen + Custom WhatsApp-Automationen",
           "Alles aus Gold",
           "Multi-Standort & zentrale Verwaltung",
           "Maßgeschneiderte KI-Workflows & API-Zugang",
@@ -922,8 +925,9 @@
       "popular": "Beliebtestes Paket",
       "per_month": "/Monat",
       "starting_at": "Ab",
-      "plus_fees": "zzgl. Minuten über das Inklusivvolumen (ab 0,12 €/Min.)",
-      "per_minute_example": "Alle Preise netto. Inklusivminuten monatlich; zusätzliche Minuten ab 0,12 €/Min. Monatlich kündbar."
+      "plus_fees": "Minutenüberschuss: €0,12/Min. ab der 1. Zusatzminute (keine versteckten Gebühren).",
+      "per_minute_example": "Alle Preise netto. Minuten pro Monat (nicht abgelaufen). Grok-Agent in Starters €0,01/Min. intern. Monatlich kündbar.",
+      "whatsapp_note": "Gold & Future: WhatsApp-Bestellungen unbegrenzt. Restaurants sparen typischerweise €300-750/Monat durch direkte Kundenaufträge statt Lieferando/Wolt-Provisionen (15-30%)."
     }
   },
   "footer": {
