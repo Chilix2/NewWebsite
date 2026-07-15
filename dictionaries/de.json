@@ -75,7 +75,12 @@
           "widget": {
             "type": "slots",
             "date": "Sa, 12. Jul",
-            "times": ["18:30", "19:00", "19:30", "20:00"],
+            "times": [
+              "18:30",
+              "19:00",
+              "19:30",
+              "20:00"
+            ],
             "selected": "19:00",
             "confirmed": "Tisch reserviert"
           }
@@ -89,7 +94,12 @@
           "widget": {
             "type": "slots",
             "date": "Fr, 11. Jul",
-            "times": ["08:00", "08:30", "09:00", "09:30"],
+            "times": [
+              "08:00",
+              "08:30",
+              "09:00",
+              "09:30"
+            ],
             "selected": "08:30",
             "confirmed": "Termin eingetragen"
           }
@@ -162,12 +172,30 @@
       }
     },
     "tags": [
-      { "label": "#24/7", "desc": "Auch nachts und am Sonntag" },
-      { "label": "#30Sprachen", "desc": "Internationale Gäste willkommen" },
-      { "label": "#DSGVO", "desc": "Gehostet in Deutschland" },
-      { "label": "#KeineWarteschleife", "desc": "Sofortige Annahme" },
-      { "label": "#PMS-Anbindung", "desc": "Kalender & Reservierung" },
-      { "label": "#4WochenLive", "desc": "Schnell einsatzbereit" }
+      {
+        "label": "#24/7",
+        "desc": "Auch nachts und am Sonntag"
+      },
+      {
+        "label": "#30Sprachen",
+        "desc": "Internationale Gäste willkommen"
+      },
+      {
+        "label": "#DSGVO",
+        "desc": "Gehostet in Deutschland"
+      },
+      {
+        "label": "#KeineWarteschleife",
+        "desc": "Sofortige Annahme"
+      },
+      {
+        "label": "#PMS-Anbindung",
+        "desc": "Kalender & Reservierung"
+      },
+      {
+        "label": "#4WochenLive",
+        "desc": "Schnell einsatzbereit"
+      }
     ]
   },
   "solutions": {
@@ -286,7 +314,11 @@
             "guest": "Guten Abend! Haben Sie am Freitag noch ein Zimmer für zwei Nächte frei?",
             "agentGreeting": "Guten Abend! Wie kann ich Ihnen helfen?",
             "agent": "Gerne! Ein Doppelzimmer mit Gartenblick ist frei. Soll ich es für Sie reservieren?",
-            "widget": { "type": "booking", "title": "Buchung bestätigt", "detail": "Doppelzimmer · Fr–So · 2 Gäste" }
+            "widget": {
+              "type": "booking",
+              "title": "Buchung bestätigt",
+              "detail": "Doppelzimmer · Fr–So · 2 Gäste"
+            }
           },
           {
             "id": "checkout",
@@ -295,7 +327,11 @@
             "guestName": "Julia",
             "guest": "Können wir morgen bis 14 Uhr im Zimmer bleiben? Unser Flug geht erst abends.",
             "agent": "Ja, Late Check-out bis 14 Uhr ist möglich. Ich trage das direkt für Sie ein.",
-            "widget": { "type": "info", "title": "Late Check-out bestätigt", "detail": "Zimmer 412 · bis 14:00 Uhr" }
+            "widget": {
+              "type": "info",
+              "title": "Late Check-out bestätigt",
+              "detail": "Zimmer 412 · bis 14:00 Uhr"
+            }
           },
           {
             "id": "breakfast",
@@ -304,7 +340,11 @@
             "guestName": "Michael",
             "guest": "Wann gibt es Frühstück? Und könnten wir bitte zwei zusätzliche Handtücher bekommen?",
             "agent": "Frühstück ist von 7 bis 10:30 Uhr. Die Handtücher bringt der Housekeeping-Service gleich vorbei.",
-            "widget": { "type": "status", "label": "Serviceanfrage weitergeleitet", "detail": "Housekeeping · 2 Handtücher · Zimmer 218" }
+            "widget": {
+              "type": "status",
+              "label": "Serviceanfrage weitergeleitet",
+              "detail": "Housekeeping · 2 Handtücher · Zimmer 218"
+            }
           },
           {
             "id": "parking",
@@ -313,7 +353,11 @@
             "guestName": "Sandra",
             "guest": "Gibt es einen Parkplatz? Und können wir schon um 11 Uhr einchecken?",
             "agent": "Ja, Tiefgarage für 18 € pro Nacht. Early Check-in ab 11 Uhr ist heute verfügbar.",
-            "widget": { "type": "info", "title": "Anreise notiert", "detail": "Parkplatz reserviert · Check-in 11:00" }
+            "widget": {
+              "type": "info",
+              "title": "Anreise notiert",
+              "detail": "Parkplatz reserviert · Check-in 11:00"
+            }
           }
         ]
       },
@@ -372,7 +416,18 @@
             "guestName": "Anna",
             "guest": "Haben Sie am Samstag um 19 Uhr noch einen Tisch für vier Personen?",
             "agent": "Ja, wir haben noch Plätze frei. Soll ich den Tisch für Sie reservieren?",
-            "widget": { "type": "slots", "date": "Sa, 12. Jul", "times": ["18:30", "19:00", "19:30", "20:00"], "selected": "19:00", "confirmed": "Tisch reserviert" }
+            "widget": {
+              "type": "slots",
+              "date": "Sa, 12. Jul",
+              "times": [
+                "18:30",
+                "19:00",
+                "19:30",
+                "20:00"
+              ],
+              "selected": "19:00",
+              "confirmed": "Tisch reserviert"
+            }
           },
           {
             "id": "allergens",
@@ -381,7 +436,11 @@
             "guestName": "Lukas",
             "guest": "Meine Partnerin ist glutenfrei — was könnt ihr empfehlen?",
             "agent": "Wir haben mehrere glutenfreie Gerichte, auch als Tagesmenü. Soll ich das bei der Reservierung vermerken?",
-            "widget": { "type": "info", "title": "Hinweis gespeichert", "detail": "Glutenfrei · Reservierung Sa 19:00" }
+            "widget": {
+              "type": "info",
+              "title": "Hinweis gespeichert",
+              "detail": "Glutenfrei · Reservierung Sa 19:00"
+            }
           },
           {
             "id": "hours",
@@ -390,7 +449,11 @@
             "guestName": "Petra",
             "guest": "Habt ihr heute auch mittags geöffnet? Und wie lange ist die Küche da?",
             "agent": "Ja, wir öffnen um 11:30 Uhr. Die Küche bedient bis 14:30 und abends bis 22:00 Uhr.",
-            "widget": { "type": "status", "label": "Auskunft gegeben", "detail": "Mittag 11:30–14:30 · Abend bis 22:00" }
+            "widget": {
+              "type": "status",
+              "label": "Auskunft gegeben",
+              "detail": "Mittag 11:30–14:30 · Abend bis 22:00"
+            }
           },
           {
             "id": "takeaway",
@@ -399,7 +462,11 @@
             "guestName": "Markus",
             "guest": "Kann ich zwei Pasta-Gerichte um halb sieben zum Abholen bestellen?",
             "agent": "Klar! Tagliatelle und Pesto-Pasta — Abholung um 18:30 Uhr. Passt das?",
-            "widget": { "type": "booking", "title": "Bestellung aufgenommen", "detail": "2× Pasta · Abholung 18:30" }
+            "widget": {
+              "type": "booking",
+              "title": "Bestellung aufgenommen",
+              "detail": "2× Pasta · Abholung 18:30"
+            }
           }
         ]
       },
@@ -459,7 +526,18 @@
             "guest": "Können wir morgen früh zum Arzt kommen?",
             "agentGreeting": "Guten Tag, Praxis Dr. Weber. Wie kann ich helfen?",
             "agent": "Ja, morgen früh sind noch Termine frei. Passt 8:30 oder 9:00 Uhr?",
-            "widget": { "type": "slots", "date": "Fr, 11. Jul", "times": ["08:00", "08:30", "09:00", "09:30"], "selected": "08:30", "confirmed": "Termin eingetragen" }
+            "widget": {
+              "type": "slots",
+              "date": "Fr, 11. Jul",
+              "times": [
+                "08:00",
+                "08:30",
+                "09:00",
+                "09:30"
+              ],
+              "selected": "08:30",
+              "confirmed": "Termin eingetragen"
+            }
           },
           {
             "id": "prescription",
@@ -468,7 +546,11 @@
             "guestName": "Klaus",
             "guest": "Ich bräuchte ein Folgerezept für mein Blutdruckmittel, bitte.",
             "agent": "Gerne. Ich nehme das auf: Ramipril 5 mg. Abholung morgen ab 10 Uhr möglich.",
-            "widget": { "type": "info", "title": "Rezeptwunsch erfasst", "detail": "Ramipril 5 mg · Abholung ab 10:00" }
+            "widget": {
+              "type": "info",
+              "title": "Rezeptwunsch erfasst",
+              "detail": "Ramipril 5 mg · Abholung ab 10:00"
+            }
           },
           {
             "id": "hours",
@@ -477,7 +559,11 @@
             "guestName": "Elena",
             "guest": "Wann hat die Praxis heute geöffnet? Ich müsste kurz vorbeikommen.",
             "agent": "Heute bis 18 Uhr. Vormittag 8–12 Uhr, nachmittags 14–18 Uhr ohne Termin für Rezepte.",
-            "widget": { "type": "status", "label": "Auskunft gegeben", "detail": "Rezepte heute bis 18:00 · ohne Termin" }
+            "widget": {
+              "type": "status",
+              "label": "Auskunft gegeben",
+              "detail": "Rezepte heute bis 18:00 · ohne Termin"
+            }
           },
           {
             "id": "urgent",
@@ -486,7 +572,11 @@
             "guestName": "Frank",
             "guest": "Mein Kind hat seit gestern hohes Fieber — können wir heute noch rein?",
             "agent": "Das klingt dringend. Ich verbinde Sie sofort mit der Sprechstundenhilfe.",
-            "widget": { "type": "status", "label": "Weitergeleitet", "detail": "Dringend · MFA informiert" }
+            "widget": {
+              "type": "status",
+              "label": "Weitergeleitet",
+              "detail": "Dringend · MFA informiert"
+            }
           }
         ]
       },
@@ -546,7 +636,17 @@
             "guest": "Ich bräuchte ein Erstgespräch wegen einer GmbH-Gründung. Wann wäre etwas frei?",
             "agentGreeting": "Kanzlei Hoffmann & Partner, guten Tag.",
             "agent": "Gerne. Donnerstag um 14 oder 16 Uhr wäre möglich. Was passt Ihnen besser?",
-            "widget": { "type": "slots", "date": "Do, 17. Jul", "times": ["14:00", "16:00", "17:30"], "selected": "14:00", "confirmed": "Erstberatung eingetragen" }
+            "widget": {
+              "type": "slots",
+              "date": "Do, 17. Jul",
+              "times": [
+                "14:00",
+                "16:00",
+                "17:30"
+              ],
+              "selected": "14:00",
+              "confirmed": "Erstberatung eingetragen"
+            }
           },
           {
             "id": "callback",
@@ -555,7 +655,11 @@
             "guestName": "Frau Klein",
             "guest": "Können Sie mich bitte zurückrufen? Es geht um eine Steuerbescheid-Frage.",
             "agent": "Selbstverständlich. Ich notiere Ihr Anliegen — Rückruf heute noch vor 17 Uhr.",
-            "widget": { "type": "info", "title": "Rückruf geplant", "detail": "Steuerbescheid · heute bis 17:00" }
+            "widget": {
+              "type": "info",
+              "title": "Rückruf geplant",
+              "detail": "Steuerbescheid · heute bis 17:00"
+            }
           },
           {
             "id": "documents",
@@ -564,7 +668,11 @@
             "guestName": "Daniel",
             "guest": "Was soll ich zur Erstberatung mitbringen? Ich habe schon einen Gesellschaftsvertrag.",
             "agent": "Bitte Personalausweis, Gesellschaftsvertrag und letzte Steuerunterlagen mitbringen.",
-            "widget": { "type": "status", "label": "Checkliste gesendet", "detail": "Ausweis · Vertrag · Steuerunterlagen" }
+            "widget": {
+              "type": "status",
+              "label": "Checkliste gesendet",
+              "detail": "Ausweis · Vertrag · Steuerunterlagen"
+            }
           },
           {
             "id": "reschedule",
@@ -573,7 +681,11 @@
             "guestName": "Lisa",
             "guest": "Können wir den Termin am Donnerstag auf Freitag vormittag legen?",
             "agent": "Ja, Freitag 10 Uhr ist frei. Ich trage das für Sie um.",
-            "widget": { "type": "booking", "title": "Termin verschoben", "detail": "Fr, 10:00 Uhr · Erstberatung" }
+            "widget": {
+              "type": "booking",
+              "title": "Termin verschoben",
+              "detail": "Fr, 10:00 Uhr · Erstberatung"
+            }
           }
         ]
       },
@@ -633,7 +745,17 @@
             "guest": "Können Sie nächste Woche einen Termin für eine Heizungswartung machen?",
             "agentGreeting": "Werkstatt Müller, guten Tag!",
             "agent": "Gerne. Dienstag oder Mittwoch vormittags wäre frei. Was passt besser?",
-            "widget": { "type": "slots", "date": "Di, 15. Jul", "times": ["09:00", "10:30", "14:00"], "selected": "10:30", "confirmed": "Termin notiert" }
+            "widget": {
+              "type": "slots",
+              "date": "Di, 15. Jul",
+              "times": [
+                "09:00",
+                "10:30",
+                "14:00"
+              ],
+              "selected": "10:30",
+              "confirmed": "Termin notiert"
+            }
           },
           {
             "id": "quote",
@@ -642,7 +764,11 @@
             "guestName": "Nina",
             "guest": "Was kostet bei Ihnen ungefähr eine Komplettreinigung der Klimaanlage?",
             "agent": "Die Komplettreinigung liegt bei 89 €. Soll ich direkt einen Termin für Sie eintragen?",
-            "widget": { "type": "info", "title": "Auskunft gegeben", "detail": "Klimaanlage · ca. 89 €" }
+            "widget": {
+              "type": "info",
+              "title": "Auskunft gegeben",
+              "detail": "Klimaanlage · ca. 89 €"
+            }
           },
           {
             "id": "status",
@@ -651,7 +777,11 @@
             "guestName": "Oliver",
             "guest": "Ist mein Fahrrad schon fertig? Ich hatte es Montag abgegeben.",
             "agent": "Ja, die Reparatur ist abgeschlossen. Sie können es heute bis 18 Uhr abholen.",
-            "widget": { "type": "status", "label": "Bereit zur Abholung", "detail": "Fahrrad · heute bis 18:00" }
+            "widget": {
+              "type": "status",
+              "label": "Bereit zur Abholung",
+              "detail": "Fahrrad · heute bis 18:00"
+            }
           },
           {
             "id": "directions",
@@ -660,7 +790,11 @@
             "guestName": "Tim",
             "guest": "Wo genau seid ihr? Und habt ihr samstags geöffnet?",
             "agent": "Hauptstraße 12, Parkplatz hinten. Samstags 9–13 Uhr, sonst Mo–Fr 8–18 Uhr.",
-            "widget": { "type": "info", "title": "Infos weitergegeben", "detail": "Hauptstr. 12 · Sa 9–13 Uhr" }
+            "widget": {
+              "type": "info",
+              "title": "Infos weitergegeben",
+              "detail": "Hauptstr. 12 · Sa 9–13 Uhr"
+            }
           }
         ]
       },
@@ -730,41 +864,57 @@
     "title": "Einfache, transparente Preise",
     "trial_text": "Testphase: 30 Tage testen mit 50% Rabatt auf alle Pakete.",
     "plans": {
+      "starters": {
+        "name": "Starters",
+        "description": "Der schnelle Einstieg für Studios & Salons: Reservierungen und FAQs — startklar in 48 Stunden.",
+        "cta": "Sofort starten",
+        "features": [
+          "250 Gesprächsminuten inklusive",
+          "24/7 Reservierungen & Terminbuchung",
+          "FAQ-Antworten: Öffnungszeiten, Preise, Services",
+          "Basis-Kundensupport & Anliegen-Aufnahme",
+          "Bestätigungen per E-Mail & SMS",
+          "Startklar in 48 Stunden — ohne Einrichtungsprojekt"
+        ]
+      },
       "standard": {
         "name": "Standard",
-        "description": "Professionelle Anrufweiterleitung mit intelligenter Zusammenfassung.",
+        "description": "Der vollwertige Telefonassistent für Ihren Betrieb — mit Zusammenfassungen, Protokollen und Kalender.",
         "cta": "Jetzt starten",
         "features": [
-          "24/7 Anrufannahme & Weiterleitung",
-          "KI-Gesprächszusammenfassung",
-          "Detaillierte Gesprächsprotokolle",
-          "Terminbuchung",
-          "Bereit für manuellen Upload"
+          "1.000 Gesprächsminuten inklusive",
+          "Alles aus Starters",
+          "24/7 Anrufannahme & intelligente Weiterleitung",
+          "KI-Gesprächszusammenfassung & Protokolle",
+          "Kalender-Integration (Google, Outlook & mehr)",
+          "Team-Benachrichtigungen & Dashboard"
         ]
       },
       "gold": {
         "name": "Gold",
-        "description": "Nahtlose Integration in Ihre bestehende Software-Landschaft.",
+        "description": "Telefon + WhatsApp: Reservierungen, Bestellungen und Lieferung — nahtlos in Ihre Systeme integriert.",
         "cta": "Gold wählen",
         "features": [
-          "Alles im Standard-Paket",
-          "Direkte Software-Integration",
-          "Branchenspezifische Workflows",
-          "Mehrsprachig (bis zu 12 Sprachen)",
-          "Echtzeit-Datensynchronisation",
-          "Zzgl. Minutenpreise für Anrufe"
+          "2.500 Gesprächsminuten inklusive",
+          "Alles aus Standard",
+          "WhatsApp-Reservierungen & Buchungen mit KI-Agent",
+          "WhatsApp-Bestellannahme & Lieferung für Gastronomie",
+          "PMS-, POS- & PVS-Integrationen",
+          "Mehrere Rufnummern & parallele Leitungen",
+          "Prioritäts-Support"
         ]
       },
       "future": {
         "name": "Future",
-        "description": "Maßgeschneiderte KI-Lösungen für höchste Ansprüche.",
+        "description": "Maßgeschneiderte KI-Lösungen für Gruppen und Ketten — mit eigenem Ansprechpartner und SLA.",
         "cta": "Vertrieb kontaktieren",
         "features": [
-          "Alles im Gold-Paket",
-          "Training eigener KI-Modelle",
-          "Fortgeschrittene Konversations-KI",
-          "Komplexe Workflow-Automatisierung",
-          "Dedizierter Solution Architect"
+          "Individuelles Minutenvolumen",
+          "Alles aus Gold",
+          "Multi-Standort & zentrale Verwaltung",
+          "Maßgeschneiderte KI-Workflows & API-Zugang",
+          "Individuelle Integrationen & Migrationen",
+          "Dedizierter Ansprechpartner & SLA"
         ]
       }
     },
@@ -772,8 +922,8 @@
       "popular": "Beliebtestes Paket",
       "per_month": "/Monat",
       "starting_at": "Ab",
-      "plus_fees": "+ Gesprächsgebühren pro Minute",
-      "per_minute_example": "Bei 200 Anrufen/Monat ca. €24 zusätzlich (ca. 0,12€ pro Minute)"
+      "plus_fees": "zzgl. Minuten über das Inklusivvolumen (ab 0,12 €/Min.)",
+      "per_minute_example": "Alle Preise netto. Inklusivminuten monatlich; zusätzliche Minuten ab 0,12 €/Min. Monatlich kündbar."
     }
   },
   "footer": {

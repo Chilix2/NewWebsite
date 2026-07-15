@@ -506,45 +506,6 @@
     "badge": "Oferta specjalna",
     "title": "Proste, przejrzyste ceny",
     "trial_text": "Okres próbny: 30 dni z 50% rabatem na wszystkie pakiety.",
-    "plans": {
-      "standard": {
-        "name": "Standard",
-        "description": "Profesjonalne przekierowanie połączeń z inteligentnym podsumowaniem.",
-        "cta": "Zacznij teraz",
-        "features": [
-          "Odbieranie i przekierowanie połączeń 24/7",
-          "Podsumowanie rozmów przez AI",
-          "Szczegółowe protokoły rozmów",
-          "Umawianie wizyt",
-          "Gotowość do ręcznego przesyłania"
-        ]
-      },
-      "gold": {
-        "name": "Gold",
-        "description": "Bezproblemowa integracja z Państwa istniejącą infrastrukturą oprogramowania.",
-        "cta": "Wybierz Gold",
-        "features": [
-          "Wszystko z pakietu Standard",
-          "Bezpośrednia integracja z oprogramowaniem",
-          "Branżowe przepływy pracy",
-          "Wielojęzyczność (do 12 języków)",
-          "Synchronizacja danych w czasie rzeczywistym",
-          "Plus opłaty minutowe za połączenia"
-        ]
-      },
-      "future": {
-        "name": "Future",
-        "description": "Indywidualne rozwiązania AI dla najwyższych wymagań.",
-        "cta": "Skontaktuj się z działem sprzedaży",
-        "features": [
-          "Wszystko z pakietu Gold",
-          "Trenowanie własnych modeli AI",
-          "Zaawansowana konwersacyjna AI",
-          "Złożona automatyzacja procesów",
-          "Dedykowany architekt rozwiązań"
-        ]
-      }
-    },
     "meta": {
       "popular": "Najpopularniejszy pakiet",
       "per_month": "/miesiąc",

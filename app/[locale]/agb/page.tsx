@@ -6,12 +6,12 @@ import { LegalLayout, LegalSection } from "@/components/sierra/legal-layout";
 const CONTENT: Record<"de" | "en", { title: string; updated: string; sections: LegalSection[] }> = {
   de: {
     title: "Allgemeine Geschäftsbedingungen",
-    updated: "Stand: Juli 2026 — Sailly ist ein Angebot der Key Digital, Hennef",
+    updated: "Stand: Juli 2026 — Sailly, Hennef",
     sections: [
       {
         heading: "1. Geltungsbereich",
         paragraphs: [
-          "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge über die Nutzung des KI-Telefonassistenten „Sailly“ zwischen Key Digital, Alter Weg 70, 53773 Hennef (nachfolgend „Anbieter“) und Unternehmern im Sinne des § 14 BGB (nachfolgend „Kunde“). Das Angebot richtet sich ausschließlich an Unternehmen; ein Verkauf an Verbraucher erfolgt nicht.",
+          "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge über die Nutzung des KI-Telefonassistenten „Sailly“ zwischen Sailly, Alter Weg 70, 53773 Hennef (nachfolgend „Anbieter“) und Unternehmern im Sinne des § 14 BGB (nachfolgend „Kunde“). Das Angebot richtet sich ausschließlich an Unternehmen; ein Verkauf an Verbraucher erfolgt nicht.",
         ],
       },
       {
@@ -72,12 +72,12 @@ const CONTENT: Record<"de" | "en", { title: string; updated: string; sections: L
   },
   en: {
     title: "Terms of Service",
-    updated: "Last updated: July 2026 — Sailly is a service of Key Digital, Hennef, Germany",
+    updated: "Last updated: July 2026 — Sailly, Hennef, Germany",
     sections: [
       {
         heading: "1. Scope",
         paragraphs: [
-          "These Terms govern all contracts for the use of the \"Sailly\" AI phone assistant between Key Digital, Alter Weg 70, 53773 Hennef, Germany (\"Provider\") and entrepreneurs within the meaning of Sec. 14 German Civil Code (\"Customer\"). The service is offered to businesses only, not to consumers.",
+          "These Terms govern all contracts for the use of the \"Sailly\" AI phone assistant between Sailly, Alter Weg 70, 53773 Hennef, Germany (\"Provider\") and entrepreneurs within the meaning of Sec. 14 German Civil Code (\"Customer\"). The service is offered to businesses only, not to consumers.",
         ],
       },
       {

@@ -506,45 +506,6 @@
     "badge": "Offre spéciale",
     "title": "Des tarifs simples et transparents",
     "trial_text": "Période d'essai : testez pendant 30 jours avec 50% de réduction sur tous les forfaits.",
-    "plans": {
-      "standard": {
-        "name": "Standard",
-        "description": "Transfert d'appels professionnel avec résumé intelligent.",
-        "cta": "Commencer maintenant",
-        "features": [
-          "Prise et transfert d'appels 24/7",
-          "Résumé des conversations par IA",
-          "Comptes rendus détaillés des conversations",
-          "Prise de rendez-vous",
-          "Prêt pour le téléchargement manuel"
-        ]
-      },
-      "gold": {
-        "name": "Gold",
-        "description": "Intégration transparente dans votre infrastructure logicielle existante.",
-        "cta": "Choisir Gold",
-        "features": [
-          "Tout du forfait Standard",
-          "Intégration logicielle directe",
-          "Workflows spécifiques au secteur",
-          "Multilingue (jusqu'à 12 langues)",
-          "Synchronisation des données en temps réel",
-          "Plus tarifs à la minute pour les appels"
-        ]
-      },
-      "future": {
-        "name": "Future",
-        "description": "Solutions IA sur mesure pour les exigences les plus élevées.",
-        "cta": "Contacter l'équipe commerciale",
-        "features": [
-          "Tout du forfait Gold",
-          "Entraînement de modèles IA personnalisés",
-          "IA conversationnelle avancée",
-          "Automatisation de workflows complexes",
-          "Architecte solutions dédié"
-        ]
-      }
-    },
     "meta": {
       "popular": "Forfait le plus populaire",
       "per_month": "/mois",

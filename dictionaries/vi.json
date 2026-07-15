@@ -315,45 +315,6 @@
     "badge": "Ưu đãi đặc biệt",
     "title": "Đơn giản, minh bạch",
     "trial_text": "Dùng thử: Được giảm giá 50% trong 30 ngày đầu tiên cho tất cả các gói.",
-    "plans": {
-      "standard": {
-        "name": "Tiêu chuẩn",
-        "description": "Chuyển tiếp giọng nói chuyên nghiệp với tính năng tóm tắt cuộc gọi thông minh.",
-        "cta": "Bắt đầu",
-        "features": [
-          "Chuyển tiếp giọng nói 24/7",
-          "Tóm tắt cuộc gọi AI",
-          "Giao thức cuộc gọi chi tiết",
-          "Đặt lịch hẹn",
-          "Sẵn sàng tải lên hệ thống thủ công"
-        ]
-      },
-      "gold": {
-        "name": "Vàng",
-        "description": "Tích hợp liền mạch với hệ sinh thái phần mềm hiện có của bạn.",
-        "cta": "Chọn vàng",
-        "features": [
-          "Mọi thứ đều đạt tiêu chuẩn",
-          "Tích hợp phần mềm trực tiếp",
-          "Quy trình công việc cụ thể theo ngành",
-          "Hỗ trợ đa ngôn ngữ (tối đa 12)",
-          "Đồng bộ hóa dữ liệu thời gian thực",
-          "Mô hình sử dụng trả tiền mỗi phút"
-        ]
-      },
-      "future": {
-        "name": "Tương lai",
-        "description": "Các giải pháp AI được thiết kế riêng cho nhu cầu cao nhất.",
-        "cta": "Liên hệ bán hàng",
-        "features": [
-          "Mọi thứ đều bằng vàng",
-          "Đào tạo mô hình AI tùy chỉnh",
-          "AI đàm thoại nâng cao",
-          "Tự động hóa quy trình làm việc phức tạp",
-          "Kiến trúc sư giải pháp chuyên dụng"
-        ]
-      }
-    },
     "meta": {
       "popular": "Phổ biến nhất",
       "per_month": "/tháng",

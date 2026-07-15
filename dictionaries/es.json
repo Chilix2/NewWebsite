@@ -506,45 +506,6 @@
     "badge": "Oferta Especial",
     "title": "Precios Simples y Transparentes",
     "trial_text": "Período de Prueba: Pruebe 30 días con 50% de descuento en todos los planes.",
-    "plans": {
-      "standard": {
-        "name": "Standard",
-        "description": "Transferencia profesional de llamadas con resumen inteligente.",
-        "cta": "Comenzar Ahora",
-        "features": [
-          "Atención y Transferencia de Llamadas 24/7",
-          "Resumen de Conversaciones con IA",
-          "Registros Detallados de Conversaciones",
-          "Programación de Citas",
-          "Listo para Carga Manual"
-        ]
-      },
-      "gold": {
-        "name": "Gold",
-        "description": "Integración perfecta con su infraestructura de software existente.",
-        "cta": "Elegir Gold",
-        "features": [
-          "Todo lo del Plan Standard",
-          "Integración Directa de Software",
-          "Flujos de Trabajo Específicos del Sector",
-          "Multilingüe (Hasta 12 Idiomas)",
-          "Sincronización de Datos en Tiempo Real",
-          "Más Tarifas por Minuto de Llamada"
-        ]
-      },
-      "future": {
-        "name": "Future",
-        "description": "Soluciones de IA a medida para las más altas exigencias.",
-        "cta": "Contactar con Ventas",
-        "features": [
-          "Todo lo del Plan Gold",
-          "Entrenamiento de Modelos de IA Propios",
-          "IA Conversacional Avanzada",
-          "Automatización de Flujos de Trabajo Complejos",
-          "Arquitecto de Soluciones Dedicado"
-        ]
-      }
-    },
     "meta": {
       "popular": "Plan Más Popular",
       "per_month": "/Mes",

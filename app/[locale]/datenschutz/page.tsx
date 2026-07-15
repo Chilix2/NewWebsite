@@ -11,7 +11,7 @@ const CONTENT: Record<"de" | "en", { title: string; updated: string; sections: L
       {
         heading: "1. Verantwortlicher",
         paragraphs: [
-          "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\nKey Digital, Alter Weg 70, 53773 Hennef, Deutschland\nE-Mail: kontakt@sailly.de",
+          "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:\nSailly, Alter Weg 70, 53773 Hennef, Deutschland\nE-Mail: kontakt@sailly.de",
         ],
       },
       {
@@ -67,7 +67,7 @@ const CONTENT: Record<"de" | "en", { title: string; updated: string; sections: L
       {
         heading: "1. Controller",
         paragraphs: [
-          "Controller within the meaning of the GDPR:\nKey Digital, Alter Weg 70, 53773 Hennef, Germany\nEmail: kontakt@sailly.de",
+          "Controller within the meaning of the GDPR:\nSailly, Alter Weg 70, 53773 Hennef, Germany\nEmail: kontakt@sailly.de",
         ],
       },
       {

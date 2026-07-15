@@ -506,45 +506,6 @@
     "badge": "Özel Teklif",
     "title": "Basit, Şeffaf Fiyatlandırma",
     "trial_text": "Deneme Süresi: Tüm paketlerde %50 indirimle 30 gün test edin.",
-    "plans": {
-      "standard": {
-        "name": "Standard",
-        "description": "Akıllı özet ile profesyonel çağrı yönlendirme.",
-        "cta": "Hemen Başlayın",
-        "features": [
-          "7/24 Çağrı Karşılama & Yönlendirme",
-          "Yapay Zeka Görüşme Özeti",
-          "Detaylı Görüşme Kayıtları",
-          "Randevu Planlama",
-          "Manuel Yükleme İçin Hazır"
-        ]
-      },
-      "gold": {
-        "name": "Gold",
-        "description": "Mevcut yazılım altyapınızla kusursuz entegrasyon.",
-        "cta": "Gold Seçin",
-        "features": [
-          "Standard Paketteki Her Şey",
-          "Doğrudan Yazılım Entegrasyonu",
-          "Sektöre Özel İş Akışları",
-          "Çok Dilli (12 Dile Kadar)",
-          "Gerçek Zamanlı Veri Senkronizasyonu",
-          "Aramalar İçin Dakika Başı Ücret Hariç"
-        ]
-      },
-      "future": {
-        "name": "Future",
-        "description": "En yüksek beklentiler için özel yapay zeka çözümleri.",
-        "cta": "Satış Ekibiyle İletişime Geçin",
-        "features": [
-          "Gold Paketteki Her Şey",
-          "Özel Yapay Zeka Modeli Eğitimi",
-          "Gelişmiş Konuşma Yapay Zekası",
-          "Karmaşık İş Akışı Otomasyonu",
-          "Özel Çözüm Mimarı"
-        ]
-      }
-    },
     "meta": {
       "popular": "En Popüler Paket",
       "per_month": "/Ay",

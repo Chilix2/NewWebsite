@@ -2,7 +2,12 @@ import Link from "next/link";
 import { getDictionary } from "@/lib/dictionary";
 import { SierraHero, Section, CtaBand, Reveal } from "@/components/sierra/page-kit";
 
-const PRICES: Record<string, string> = { standard: "299", gold: "499", future: "899" };
+const PRICES: Record<string, { de: string; intl: string }> = {
+  starters: { de: "59,99", intl: "59.99" },
+  standard: { de: "149", intl: "149" },
+  gold: { de: "279", intl: "279" },
+  future: { de: "449", intl: "449" },
+};
 
 export default async function LocalePricingPage({
   params,
@@ -13,14 +18,14 @@ export default async function LocalePricingPage({
   const dict = await getDictionary(locale);
   const t = dict?.pricing_page ?? {};
   const meta = t.meta ?? {};
-  const planKeys = ["standard", "gold", "future"] as const;
+  const planKeys = ["starters", "standard", "gold", "future"] as const;
 
   return (
     <div className="bg-white min-h-screen text-slate-900">
       <SierraHero kicker={t.badge} title1={t.title} subtitle={t.trial_text} />
 
       <Section className="pt-4">
-        <div className="grid lg:grid-cols-3 gap-5 lg:gap-6 items-stretch">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 items-stretch">
           {planKeys.map((key, i) => {
             const plan = t.plans?.[key] ?? {};
             const popular = key === "gold";
@@ -49,7 +54,7 @@ export default async function LocalePricingPage({
                 </p>
                 <p className="mt-6 flex items-baseline gap-1.5">
                   <span className={`text-sm ${popular ? "text-white/60" : "text-slate-500"}`}>{meta.starting_at}</span>
-                  <span className="text-4xl font-bold tracking-tight">€{PRICES[key]}</span>
+                  <span className="text-4xl font-bold tracking-tight">€{locale === "de" ? PRICES[key].de : PRICES[key].intl}</span>
                   <span className={`text-sm ${popular ? "text-white/60" : "text-slate-500"}`}>{meta.per_month}</span>
                 </p>
                 <p className={`mt-1 text-xs ${popular ? "text-white/50" : "text-slate-400"}`}>{meta.plus_fees}</p>

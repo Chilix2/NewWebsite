@@ -10,7 +10,7 @@ const CONTENT: Record<"de" | "en", { title: string; updated: string; sections: L
       {
         heading: "Anbieter",
         paragraphs: [
-          "Key Digital\nInhaber: [Inhaber-Name]\nAlter Weg 70\n53773 Hennef\nDeutschland",
+          "Sailly\nInhaber: [Inhaber-Name]\nAlter Weg 70\n53773 Hennef\nDeutschland",
         ],
       },
       {
@@ -48,7 +48,7 @@ const CONTENT: Record<"de" | "en", { title: string; updated: string; sections: L
       {
         heading: "Provider",
         paragraphs: [
-          "Key Digital\nOwner: [Owner name]\nAlter Weg 70\n53773 Hennef\nGermany",
+          "Sailly\nOwner: [Owner name]\nAlter Weg 70\n53773 Hennef\nGermany",
         ],
       },
       {
