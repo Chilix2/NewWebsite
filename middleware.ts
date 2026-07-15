@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { updateSession } from "@/lib/supabase/middleware";
 
 const locales = ["de", "en", "tr", "es", "ar", "zh", "ru", "pl", "fr", "el", "ko", "vi", "th"];
 const defaultLocale = "de";
@@ -24,7 +25,10 @@ function getLocale(request: NextRequest) {
   return defaultLocale;
 }
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
+  // Keep the Supabase auth session fresh (no-op when Supabase env is absent).
+  const { supabaseResponse } = await updateSession(request);
+
   const { pathname } = request.nextUrl;
   
   // Check if pathname already has locale
@@ -32,7 +36,7 @@ export function middleware(request: NextRequest) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
 
-  if (pathnameHasLocale) return NextResponse.next();
+  if (pathnameHasLocale) return supabaseResponse;
 
   // Determine locale (respects cookie preference)
   const locale = getLocale(request);
@@ -43,8 +47,9 @@ export function middleware(request: NextRequest) {
   // Preserve query parameters
   newUrl.search = request.nextUrl.search;
   
-  // Create redirect response and set locale cookie
+  // Create redirect response, carry over refreshed auth cookies, set locale cookie
   const response = NextResponse.redirect(newUrl);
+  supabaseResponse.cookies.getAll().forEach((cookie) => response.cookies.set(cookie));
   response.cookies.set(LOCALE_COOKIE, locale, {
     maxAge: 365 * 24 * 60 * 60, // 1 year
     path: "/",
@@ -58,6 +63,6 @@ export const config = {
   matcher: [
     // Skip internal Next.js paths, static assets, media files, and root-level special routes
     // Also skip search engine verification files (google*.html, bing*.html, etc)
-    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|opengraph-image|manifest.json|google[a-f0-9]+\\.html|bing[a-f0-9]+\\.html|.*\\.(?:svg|png|jpg|jpeg|gif|webp|woff|woff2|ttf|eot|otf|mp3|wav|m4a|mp4|webm|ico|json)$).*)",
+    "/((?!api|auth|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|opengraph-image|manifest.json|google[a-f0-9]+\\.html|bing[a-f0-9]+\\.html|.*\\.(?:svg|png|jpg|jpeg|gif|webp|woff|woff2|ttf|eot|otf|mp3|wav|m4a|mp4|webm|ico|json)$).*)",
   ],
 };

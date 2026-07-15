@@ -8,7 +8,8 @@ export async function GET(request: NextRequest) {
   const next = searchParams.get("next") ?? "/";
 
   if (!code) {
-    return NextResponse.redirect(`${origin}/de/login?error=missing_code`);
+    const loc = request.cookies.get("NEXT_LOCALE")?.value ?? "de";
+    return NextResponse.redirect(`${origin}/${loc}/login?error=missing_code`);
   }
 
   let response = NextResponse.redirect(`${origin}${next}`);
