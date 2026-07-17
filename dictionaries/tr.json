@@ -178,7 +178,7 @@
         "desc": "Gece ve pazar günleri dahil"
       },
       {
-        "label": "#30Dil",
+        "label": "#50+Dil",
         "desc": "Uluslararası misafirlere açık"
       },
       {
@@ -783,11 +783,11 @@
   },
   "languages_page": {
     "title": "Çok Dilli",
-    "subtitle": "Sailly 30+ dil konuşuyor",
+    "subtitle": "Sailly 50+ dil konuşuyor",
     "badge": "Çok Dilli",
     "heading_part1": "Diller",
     "heading_part2": "Lehçeler",
-    "hero_desc": "Sailly 30+ dili akıcı bir şekilde konuşur ve bölgesel lehçeleri anlar. Uluslararası müşterileriniz hemen anlaşıldığını hissederler.",
+    "hero_desc": "Sailly 50+ dili akıcı bir şekilde konuşur ve bölgesel lehçeleri anlar. Uluslararası müşterileriniz hemen anlaşıldığını hissederler.",
     "stats_languages": "Desteklenen Diller",
     "stats_coverage": "Küresel Kapsam",
     "stats_response": "Yanıt Süresi",

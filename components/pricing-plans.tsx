@@ -16,42 +16,38 @@ import { Badge } from "@/components/ui/badge";
 
 interface PricingPlansProps {
   dict: any;
-  locale?: string; // Using any for simplicity as the dictionary type isn't strictly defined here, but ideally should be typed
+  locale?: string;
 }
+
+const PLAN_KEYS = ["starters", "main", "president_suite", "first_class"] as const;
+
+const PRICES: Record<string, { de: string; intl: string }> = {
+  starters: { de: "59,99", intl: "59.99" },
+  main: { de: "149", intl: "149" },
+  president_suite: { de: "279", intl: "279" },
+  first_class: { de: "449", intl: "449" },
+};
 
 export function PricingPlans({ dict, locale = "de" }: PricingPlansProps) {
   const router = useRouter();
   const t = dict.pricing_page;
 
-  const plans = [
-    {
-      name: t.plans.standard.name,
-      price: "299",
-      description: t.plans.standard.description,
-      features: t.plans.standard.features,
-      cta: t.plans.standard.cta,
-      variant: "outline",
-      popular: false,
-    },
-    {
-      name: t.plans.gold.name,
-      price: "499",
-      description: t.plans.gold.description,
-      features: t.plans.gold.features,
-      cta: t.plans.gold.cta,
-      variant: "default",
-      popular: true,
-    },
-    {
-      name: t.plans.future.name,
-      price: "899",
-      description: t.plans.future.description,
-      features: t.plans.future.features,
-      cta: t.plans.future.cta,
-      variant: "outline",
-      popular: false,
-    },
-  ];
+  const plans = PLAN_KEYS.map((key) => {
+    const plan = t.plans?.[key] ?? {};
+    const isLast = key === "first_class";
+    const price = PRICES[key];
+    return {
+      key,
+      name: plan.name,
+      description: plan.description,
+      features: plan.features ?? [],
+      prev_tier: plan.prev_tier ?? "",
+      cta: plan.cta,
+      popular: key === "main",
+      price: locale === "de" ? price.de : price.intl,
+      isLast,
+    };
+  });
 
   return (
     <section className="py-12 bg-gray-50 dark:bg-gray-900">
@@ -68,10 +64,10 @@ export function PricingPlans({ dict, locale = "de" }: PricingPlansProps) {
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-3 lg:gap-12 max-w-7xl mx-auto">
+        <div className="grid gap-8 lg:grid-cols-4 lg:gap-6 max-w-7xl mx-auto">
           {plans.map((plan) => (
             <Card
-              key={plan.name}
+              key={plan.key}
               className={`flex flex-col relative ${
                 plan.popular
                   ? "border-primary shadow-lg dark:border-primary"
@@ -89,30 +85,26 @@ export function PricingPlans({ dict, locale = "de" }: PricingPlansProps) {
                   {plan.description}
                 </CardDescription>
                 <div className="mt-4 flex items-baseline text-gray-900 dark:text-white">
-                  {plan.name === "Future" && (
+                  {plan.isLast && (
                      <span className="text-sm font-medium mr-1">{t.meta.starting_at}</span>
                   )}
                   <span className="text-4xl font-extrabold tracking-tight">
                     €{plan.price}
                   </span>
-                  
-                  {plan.name !== "Future" && (
+                  {!plan.isLast && (
                     <span className="ml-1 text-gray-500">{t.meta.per_month}</span>
                   )}
                 </div>
-                {plan.name === "Gold" && (
-                  <div className="mt-4">
-                    <p className="text-sm text-gray-500">
-                      {t.meta.plus_fees}
-                    </p>
-                    <p className="text-xs text-gray-400 mt-2 italic">
-                      {t.meta.per_minute_example || ""}
-                    </p>
-                  </div>
-                )}
               </CardHeader>
               <CardContent className="flex-1">
                 <ul className="space-y-4">
+                  {plan.prev_tier && (
+                    <li className="flex items-start">
+                      <span className="text-base font-semibold text-gray-700 dark:text-gray-200">
+                        {plan.prev_tier}
+                      </span>
+                    </li>
+                  )}
                   {plan.features.map((feature: string) => (
                     <li key={feature} className="flex items-start">
                       <Check className="flex-shrink-0 w-5 h-5 text-green-500" />
@@ -126,7 +118,7 @@ export function PricingPlans({ dict, locale = "de" }: PricingPlansProps) {
               <CardFooter>
                 <Button
                   className="w-full"
-                  variant={plan.variant as "default" | "outline"}
+                  variant={plan.popular ? "default" : "outline"}
                   onClick={() => router.push(`/${locale}/login?tab=register`)}
                 >
                   {plan.cta}
@@ -139,4 +131,3 @@ export function PricingPlans({ dict, locale = "de" }: PricingPlansProps) {
     </section>
   );
 }
-

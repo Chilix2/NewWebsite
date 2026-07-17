@@ -66,7 +66,7 @@ const TAG_CARD_CLASSES = [
 
 const DEFAULT_TAGS: TagConfig[] = [
   { label: "#24/7", desc: "Auch nachts und am Sonntag", cardClass: TAG_CARD_CLASSES[0] },
-  { label: "#30Sprachen", desc: "Internationale Gäste willkommen", cardClass: TAG_CARD_CLASSES[1] },
+  { label: "#50+Sprachen", desc: "Internationale Gäste willkommen", cardClass: TAG_CARD_CLASSES[1] },
   { label: "#DSGVO", desc: "Gehostet in Deutschland", cardClass: TAG_CARD_CLASSES[2] },
   { label: "#KeineWarteschleife", desc: "Sofortige Annahme", cardClass: TAG_CARD_CLASSES[3] },
   { label: "#PMS-Anbindung", desc: "Kalender & Reservierung", cardClass: TAG_CARD_CLASSES[4] },

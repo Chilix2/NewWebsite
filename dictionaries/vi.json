@@ -164,7 +164,7 @@
         "desc": "Ghi lại các cuộc hẹn trực tiếp vào lịch của bạn và luôn cung cấp thông tin giá cả chính xác."
       },
       "multilingual": {
-        "title": "Nói được hơn 30 ngôn ngữ",
+        "title": "Nói được hơn 50 ngôn ngữ",
         "desc": "Chào đón khách quốc tế bằng ngôn ngữ mẹ đẻ của họ và phá bỏ rào cản."
       },
       "integration": {
@@ -178,7 +178,7 @@
         "desc": "Cả ban đêm và Chủ nhật"
       },
       {
-        "label": "#30NgônNgữ",
+        "label": "#50+NgônNgữ",
         "desc": "Chào đón khách quốc tế"
       },
       {
@@ -343,7 +343,7 @@
           },
           {
             "title": "Khách quốc tế",
-            "desc": "Loại bỏ rào cản ngôn ngữ. Sailly tư vấn cho khách của bạn một cách trôi chảy bằng hơn 30 ngôn ngữ."
+            "desc": "Loại bỏ rào cản ngôn ngữ. Sailly tư vấn cho khách của bạn một cách trôi chảy bằng hơn 50 ngôn ngữ."
           }
         ]
       },
@@ -783,11 +783,11 @@
   },
   "languages_page": {
     "title": "Đa ngôn ngữ",
-    "subtitle": "Sailly nói được hơn 30 ngôn ngữ",
+    "subtitle": "Sailly nói được hơn 50 ngôn ngữ",
     "badge": "Đa ngôn ngữ",
     "heading_part1": "Ngôn ngữ",
     "heading_part2": "phương ngữ",
-    "hero_desc": "Sailly nói thông thạo hơn 30 ngôn ngữ và hiểu được các phương ngữ trong vùng. Khách hàng quốc tế của bạn cảm thấy được thấu hiểu ngay lập tức.",
+    "hero_desc": "Sailly nói thông thạo hơn 50 ngôn ngữ và hiểu được các phương ngữ trong vùng. Khách hàng quốc tế của bạn cảm thấy được thấu hiểu ngay lập tức.",
     "stats_languages": "Ngôn ngữ được hỗ trợ",
     "stats_coverage": "Bảo hiểm toàn cầu",
     "stats_response": "Thời gian đáp ứng",

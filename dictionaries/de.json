@@ -177,7 +177,7 @@
         "desc": "Auch nachts und am Sonntag"
       },
       {
-        "label": "#30Sprachen",
+        "label": "#50+Sprachen",
         "desc": "Internationale Gäste willkommen"
       },
       {
@@ -270,7 +270,7 @@
           },
           {
             "title": "Internationale Gäste",
-            "desc": "Beseitigen Sie Sprachbarrieren. Sailly berät Ihre Gäste fließend in über 30 Sprachen."
+            "desc": "Beseitigen Sie Sprachbarrieren. Sailly berät Ihre Gäste fließend in über 50 Sprachen."
           }
         ]
       },
@@ -808,7 +808,7 @@
     "steps": {
       "answer": {
         "title": "Anruf annehmen",
-        "desc": "Sailly nimmt jeden Anruf sofort entgegen — freundlich, professionell, in über 30 Sprachen."
+        "desc": "Sailly nimmt jeden Anruf sofort entgegen — freundlich, professionell, in über 50 Sprachen."
       },
       "understand": {
         "title": "Verstehen & handeln",
@@ -878,13 +878,13 @@
           "Powered by Grok Voice Agent (hochgradig kostengünstig)"
         ]
       },
-      "standard": {
-        "name": "Standard",
+      "main": {
+        "name": "Main",
+        "prev_tier": "Alles aus Starters, plus:",
         "description": "Der vollwertige Telefonassistent für Ihren Betrieb — mit Zusammenfassungen, Protokollen und Kalender.",
         "cta": "Jetzt starten",
         "features": [
           "Bis zu 15.000 Gesprächsminuten / Monat",
-          "Alles aus Starters",
           "24/7 Anrufannahme & intelligente Weiterleitung",
           "KI-Gesprächszusammenfassung & Protokolle",
           "Kalender-Integration (Google, Outlook & mehr)",
@@ -892,13 +892,13 @@
           "Premium Voice Models (Claude, GPT-4)"
         ]
       },
-      "gold": {
-        "name": "Gold",
+      "president_suite": {
+        "name": "President Suite",
+        "prev_tier": "Alles aus Main, plus:",
         "description": "Telefon + WhatsApp: Reservierungen, Bestellungen und Lieferung — direkt, provisionsfrei, 15-30% Gebühren sparen vs. Lieferando/Wolt/Uber.",
-        "cta": "Gold wählen",
+        "cta": "President Suite wählen",
         "features": [
           "25.000 Gesprächsminuten + UNLIMITED WhatsApp-Kanäle",
-          "Alles aus Standard",
           "WhatsApp-Reservierungen & Buchungen mit KI-Agent",
           "WhatsApp-Bestellannahme & Lieferung für Gastro — 0% Provision",
           "PMS-, POS- & PVS-Integrationen",
@@ -907,13 +907,13 @@
           "💰 Spart Restaurants 15-30% vs. Lieferando/Wolt/Uber = €300-750/Monat bei typischer Auslastung"
         ]
       },
-      "future": {
-        "name": "Future",
+      "first_class": {
+        "name": "First Class",
+        "prev_tier": "Alles aus President Suite, plus:",
         "description": "Maßgeschneiderte KI-Lösungen für Gruppen und Ketten — mit eigenem Ansprechpartner und SLA.",
         "cta": "Vertrieb kontaktieren",
         "features": [
           "Individuelles Minutenvolumen + Custom WhatsApp-Automationen",
-          "Alles aus Gold",
           "Multi-Standort & zentrale Verwaltung",
           "Maßgeschneiderte KI-Workflows & API-Zugang",
           "Individuelle Integrationen & Migrationen",
@@ -1129,7 +1129,7 @@
       "steps": [
         {
           "title": "Anruf annehmen",
-          "desc": "Sailly nimmt jeden Anruf sofort entgegen — freundlich, professionell, in über 30 Sprachen."
+          "desc": "Sailly nimmt jeden Anruf sofort entgegen — freundlich, professionell, in über 50 Sprachen."
         },
         {
           "title": "Verstehen & handeln",
@@ -1264,12 +1264,13 @@
   },
   "languages_page": {
     "title": "Multilingual",
-    "subtitle": "Sailly spricht über 30 Sprachen",
+    "subtitle": "Sailly versteht über 50 Sprachen",
     "badge": "Multilingual",
     "heading_part1": "Sprachen",
     "heading_part2": "Dialekte",
-    "hero_desc": "Sailly spricht über 30 Sprachen fließend und versteht regionale Dialekte. Ihre internationalen Kunden fühlen sich sofort verstanden.",
-    "stats_languages": "Unterstützte Sprachen",
+    "hero_desc": "Sailly versteht über 50 Sprachen und regionale Dialekte. Ihre internationalen Kunden fühlen sich sofort verstanden. Sprachausgabe in 7 Sprachen mit natürlicher Stimme.",
+    "stats_languages": "Sprachverständnis (STT)",
+    "stats_tts": "Sprachausgabe (TTS)",
     "stats_coverage": "Weltweite Abdeckung",
     "stats_response": "Reaktionszeit",
     "stats_accuracy": "Sprachgenauigkeit",

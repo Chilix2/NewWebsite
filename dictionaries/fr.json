@@ -164,7 +164,7 @@
         "desc": "Inscrit les rendez-vous directement dans votre calendrier et communique toujours les prix corrects."
       },
       "multilingual": {
-        "title": "Parle 30+ langues",
+        "title": "Parle 50+ langues",
         "desc": "Accueille les clients internationaux dans leur langue maternelle et élimine les barrières."
       },
       "integration": {
@@ -178,7 +178,7 @@
         "desc": "Aussi la nuit et le dimanche"
       },
       {
-        "label": "#30Langues",
+        "label": "#50+Langues",
         "desc": "Clients internationaux bienvenus"
       },
       {
@@ -288,7 +288,7 @@
           },
           {
             "title": "Clients internationaux",
-            "desc": "Éliminez les barrières linguistiques. Sailly conseille vos clients couramment dans plus de 30 langues."
+            "desc": "Éliminez les barrières linguistiques. Sailly conseille vos clients couramment dans plus de 50 langues."
           }
         ]
       },
@@ -783,11 +783,11 @@
   },
   "languages_page": {
     "title": "Multilingue",
-    "subtitle": "Sailly parle plus de 30 langues",
+    "subtitle": "Sailly parle plus de 50 langues",
     "badge": "Multilingue",
     "heading_part1": "Langues",
     "heading_part2": "Dialectes",
-    "hero_desc": "Sailly parle couramment plus de 30 langues et comprend les dialectes régionaux. Vos clients internationaux se sentent immédiatement compris.",
+    "hero_desc": "Sailly parle couramment plus de 50 langues et comprend les dialectes régionaux. Vos clients internationaux se sentent immédiatement compris.",
     "stats_languages": "Langues soutenues",
     "stats_coverage": "Couverture mondiale",
     "stats_response": "Temps de réponse",

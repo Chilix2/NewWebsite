@@ -24,7 +24,7 @@ export default async function ProductPage({
         title: dict?.howItWorks?.steps?.answer?.title ?? "Anruf annehmen",
         desc:
           dict?.howItWorks?.steps?.answer?.desc ??
-          "Sailly nimmt jeden Anruf sofort entgegen — freundlich, professionell, in über 30 Sprachen.",
+          "Sailly nimmt jeden Anruf sofort entgegen — freundlich, professionell, in über 50 Sprachen.",
       },
       {
         title: dict?.howItWorks?.steps?.understand?.title ?? "Verstehen & handeln",

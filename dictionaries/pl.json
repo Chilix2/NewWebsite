@@ -164,7 +164,7 @@
         "desc": "Zapisuje wizyty bezpośrednio w Państwa kalendarzu i zawsze podaje aktualne ceny."
       },
       "multilingual": {
-        "title": "Mówi w 30+ językach",
+        "title": "Mówi w 50+ językach",
         "desc": "Wita międzynarodowych gości w ich ojczystym języku i usuwa bariery."
       },
       "integration": {
@@ -178,7 +178,7 @@
         "desc": "Także w nocy i w niedziele"
       },
       {
-        "label": "#30Języków",
+        "label": "#50+Języków",
         "desc": "Goście z zagranicy mile widziani"
       },
       {
@@ -787,7 +787,7 @@
     "badge": "Wielojęzyczny",
     "heading_part1": "Języki",
     "heading_part2": "Dialekty",
-    "hero_desc": "Sailly płynnie mówi 30+ językami i rozumie dialekty regionalne. Twoi międzynarodowi klienci czują się natychmiast zrozumiani.",
+    "hero_desc": "Sailly płynnie mówi 50+ językami i rozumie dialekty regionalne. Twoi międzynarodowi klienci czują się natychmiast zrozumiani.",
     "stats_languages": "Obsługiwane języki",
     "stats_coverage": "Zasięg światowy",
     "stats_response": "Czas odpowiedzi",

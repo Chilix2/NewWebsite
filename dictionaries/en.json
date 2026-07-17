@@ -177,7 +177,7 @@
         "desc": "Nights and Sundays included"
       },
       {
-        "label": "#30Languages",
+        "label": "#50+Languages",
         "desc": "International guests welcome"
       },
       {
@@ -286,7 +286,7 @@
     "steps": {
       "answer": {
         "title": "Answer the call",
-        "desc": "Sailly picks up every call instantly — friendly, professional, in 30+ languages."
+        "desc": "Sailly picks up every call instantly — friendly, professional, in 50+ languages."
       },
       "understand": {
         "title": "Understand & act",
@@ -319,13 +319,13 @@
           "Powered by Grok Voice Agent (highly cost-efficient)"
         ]
       },
-      "standard": {
-        "name": "Standard",
+      "main": {
+        "name": "Main",
+        "prev_tier": "Everything in Starters, plus:",
         "description": "The full phone assistant for your business — with summaries, call logs and calendar.",
         "cta": "Get started",
         "features": [
           "Up to 15,000 call minutes / month",
-          "Everything in Starters",
           "24/7 call answering & smart forwarding",
           "AI call summaries & transcripts",
           "Calendar integration (Google, Outlook & more)",
@@ -333,13 +333,13 @@
           "Premium voice models (Claude, GPT-4)"
         ]
       },
-      "gold": {
-        "name": "Gold",
+      "president_suite": {
+        "name": "President Suite",
+        "prev_tier": "Everything in Main, plus:",
         "description": "Phone + WhatsApp: reservations, ordering and delivery — direct, commission-free, save 15-30% vs Lieferando/Wolt/Uber.",
-        "cta": "Choose Gold",
+        "cta": "Choose President Suite",
         "features": [
           "25,000 call minutes + UNLIMITED WhatsApp channels",
-          "Everything in Standard",
           "WhatsApp reservations & bookings with AI agent",
           "WhatsApp order taking & delivery for restaurants — 0% commission",
           "PMS, POS & practice software integrations",
@@ -348,13 +348,13 @@
           "💰 Saves restaurants 15-30% vs Lieferando/Wolt/Uber = €300-750/month at typical volume"
         ]
       },
-      "future": {
-        "name": "Future",
+      "first_class": {
+        "name": "First Class",
+        "prev_tier": "Everything in President Suite, plus:",
         "description": "Tailor-made AI solutions for groups and chains — with a dedicated contact and SLA.",
         "cta": "Contact sales",
         "features": [
           "Custom minute volume + custom WhatsApp automations",
-          "Everything in Gold",
           "Multi-location & central management",
           "Custom AI workflows & API access",
           "Individual integrations & migrations",
@@ -399,7 +399,7 @@
           },
           {
             "title": "International Guests",
-            "desc": "Eliminate language barriers. Sailly advises your guests fluently in over 30 languages."
+            "desc": "Eliminate language barriers. Sailly advises your guests fluently in over 50 languages."
           }
         ]
       },
@@ -1129,7 +1129,7 @@
       "steps": [
         {
           "title": "Answer the call",
-          "desc": "Sailly picks up every call instantly — friendly, professional, in 30+ languages."
+          "desc": "Sailly picks up every call instantly — friendly, professional, in 50+ languages."
         },
         {
           "title": "Understand & act",
@@ -1264,12 +1264,13 @@
   },
   "languages_page": {
     "title": "Multilingual",
-    "subtitle": "Sailly speaks 30+ languages",
+    "subtitle": "Sailly understands 50+ languages",
     "badge": "Multilingual",
     "heading_part1": "Languages",
     "heading_part2": "Dialects",
-    "hero_desc": "Sailly speaks 30+ languages fluently and understands regional dialects. Your international customers feel understood immediately.",
-    "stats_languages": "Supported Languages",
+    "hero_desc": "Sailly understands 50+ languages and regional dialects. Voice output in 7 languages with natural-sounding speech. Your international customers feel understood immediately.",
+    "stats_languages": "Speech Recognition (STT)",
+    "stats_tts": "Voice Output (TTS)",
     "stats_coverage": "Global Coverage",
     "stats_response": "Response Time",
     "stats_accuracy": "Speech Accuracy",

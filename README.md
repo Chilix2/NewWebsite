@@ -37,7 +37,7 @@ Sailly is an **AI voice agent** that handles phone calls for service businesses 
 - **Answers calls** that would otherwise go unanswered (30% of business calls are missed)
 - **Books appointments** directly into the business's calendar system
 - **Handles complex questions** about menu items, room availability, treatment details, pricing, etc.
-- **Speaks 30+ languages** including German, English, Turkish, Arabic, Chinese, Russian, Polish, French, Greek, Korean, Vietnamese, and Thai
+- **Speaks 50+ languages** including German, English, Turkish, Arabic, Chinese, Russian, Polish, French, Greek, Korean, Vietnamese, Thai, and 40+ more via Deepgram Nova-3 speech recognition
 - **Escalates to humans** for sensitive or complex situations
 - **GDPR-compliant** with German server hosting, ISO 27001, end-to-end encryption
 
@@ -46,7 +46,7 @@ Sailly is an **AI voice agent** that handles phone calls for service businesses 
 | Benefit | Detail |
 |---------|--------|
 | Always available | 24/7 call handling, no hold music |
-| Multi-language | 30+ languages with natural, empathetic voice |
+| Multi-language | 50+ languages with natural, empathetic voice |
 | Deep integrations | PMS, CRM, calendar, 500+ apps |
 | Quick setup | 4 weeks to go live |
 | Security | GDPR, ISO 27001, HIPAA, end-to-end encryption |

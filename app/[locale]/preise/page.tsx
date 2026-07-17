@@ -4,9 +4,18 @@ import { SierraHero, Section, CtaBand, Reveal } from "@/components/sierra/page-k
 
 const PRICES: Record<string, { de: string; intl: string }> = {
   starters: { de: "59,99", intl: "59.99" },
-  standard: { de: "149", intl: "149" },
-  gold: { de: "279", intl: "279" },
-  future: { de: "449", intl: "449" },
+  main: { de: "149", intl: "149" },
+  president_suite: { de: "279", intl: "279" },
+  first_class: { de: "449", intl: "449" },
+};
+
+const PLAN_KEYS = ["starters", "main", "president_suite", "first_class"] as const;
+
+/** Tier display labels shown in the card when showing cascading features */
+const PREV_TIER_LABELS: Record<string, string> = {
+  main: "Alles aus Starters, plus:",
+  president_suite: "Alles aus Main, plus:",
+  first_class: "Alles aus President Suite, plus:",
 };
 
 export default async function LocalePricingPage({
@@ -18,7 +27,6 @@ export default async function LocalePricingPage({
   const dict = await getDictionary(locale);
   const t = dict?.pricing_page ?? {};
   const meta = t.meta ?? {};
-  const planKeys = ["starters", "standard", "gold", "future"] as const;
 
   return (
     <div className="bg-white min-h-screen text-slate-900">
@@ -26,9 +34,13 @@ export default async function LocalePricingPage({
 
       <Section className="pt-4">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 items-stretch">
-          {planKeys.map((key, i) => {
+          {PLAN_KEYS.map((key, i) => {
             const plan = t.plans?.[key] ?? {};
-            const popular = key === "gold";
+            const popular = key === "main";
+            const isFirst = key === "starters";
+            const isLast = key === "first_class";
+            const prevLabel = PREV_TIER_LABELS[key] ?? plan.prev_tier ?? "";
+
             return (
               <Reveal
                 key={key}
@@ -53,13 +65,21 @@ export default async function LocalePricingPage({
                   {plan.description}
                 </p>
                 <p className="mt-6 flex items-baseline gap-1.5">
-                  <span className={`text-sm ${popular ? "text-white/60" : "text-slate-500"}`}>{meta.starting_at}</span>
+                  {isLast && <span className={`text-sm ${popular ? "text-white/60" : "text-slate-500"}`}>{meta.starting_at}</span>}
                   <span className="text-4xl font-bold tracking-tight">€{locale === "de" ? PRICES[key].de : PRICES[key].intl}</span>
-                  <span className={`text-sm ${popular ? "text-white/60" : "text-slate-500"}`}>{meta.per_month}</span>
+                  {!isLast && <span className={`text-sm ${popular ? "text-white/60" : "text-slate-500"}`}>{meta.per_month}</span>}
                 </p>
                 <p className={`mt-1 text-xs ${popular ? "text-white/50" : "text-slate-400"}`}>{meta.plus_fees}</p>
 
+                {/* Cascading feature list */}
                 <ul className={`mt-7 space-y-0 divide-y ${popular ? "divide-white/10" : "divide-slate-900/10"}`}>
+                  {!isFirst && prevLabel && (
+                    <li
+                      className={`py-3 text-[15px] leading-relaxed font-semibold ${popular ? "text-white/90" : "text-slate-800"}`}
+                    >
+                      {prevLabel}
+                    </li>
+                  )}
                   {(plan.features ?? []).map((f: string, fi: number) => (
                     <li
                       key={fi}

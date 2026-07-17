@@ -164,7 +164,7 @@
         "desc": "Registra citas directamente en su calendario y siempre comunica los precios correctos."
       },
       "multilingual": {
-        "title": "Habla Más de 30 Idiomas",
+        "title": "Habla Más de 50 Idiomas",
         "desc": "Recibe a los huéspedes internacionales en su idioma materno y elimina las barreras lingüísticas."
       },
       "integration": {
@@ -178,7 +178,7 @@
         "desc": "También de noche y los domingos"
       },
       {
-        "label": "#30Idiomas",
+        "label": "#50+Idiomas",
         "desc": "Huéspedes internacionales bienvenidos"
       },
       {
@@ -288,7 +288,7 @@
           },
           {
             "title": "Huéspedes Internacionales",
-            "desc": "Elimine las barreras lingüísticas. Sailly asesora a sus huéspedes con fluidez en más de 30 idiomas."
+            "desc": "Elimine las barreras lingüísticas. Sailly asesora a sus huéspedes con fluidez en más de 50 idiomas."
           }
         ]
       },
@@ -783,11 +783,11 @@
   },
   "languages_page": {
     "title": "Multilingüe",
-    "subtitle": "Sailly habla más de 30 idiomas",
+    "subtitle": "Sailly habla más de 50 idiomas",
     "badge": "Multilingüe",
     "heading_part1": "Idiomas",
     "heading_part2": "Dialectos",
-    "hero_desc": "Sailly habla con fluidez más de 30 idiomas y entiende dialectos regionales. Sus clientes internacionales se sienten comprendidos inmediatamente.",
+    "hero_desc": "Sailly habla con fluidez más de 50 idiomas y entiende dialectos regionales. Sus clientes internacionales se sienten comprendidos inmediatamente.",
     "stats_languages": "Idiomas soportados",
     "stats_coverage": "Cobertura global",
     "stats_response": "Tiempo de respuesta",
