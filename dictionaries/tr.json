@@ -37,13 +37,13 @@
       }
     },
     "pricing": "Fiyatlandırma",
-    "demo": "Demo Talep Edin"
+    "demo": "Live Demo"
   },
   "hero": {
     "eyebrow": "Ekibiniz misafirlerle ilgilensin. Sailly ofis işlerini halleder.",
     "title": "Ekibinizi rahatlatan dijital asistan.",
     "subtitle": "Sailly aramaları yanıtlar, randevuları ayarlar ve soruları cevaplar – günün her saati. Çalışanlarınıza asıl önemli olana odaklanma özgürlüğü verin: Müşterileriniz.",
-    "primary_cta": "Demo Talep Edin",
+    "primary_cta": "Live Demo",
     "secondary_cta": "Daha Fazla Bilgi",
     "badges": {
       "gdpr": "KVKK Uyumlu",
@@ -70,55 +70,70 @@
     "chat": {
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "İyi akşamlar! Bu cuma için iki gecelik boş odanız var mı?",
-          "agentGreeting": "İyi akşamlar! Size nasıl yardımcı olabilirim?",
-          "agent": "Elbette! Bahçe manzaralı bir çift kişilik odamız müsait. Sizin için rezerve edeyim mi?",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "Merhaba, ben Nina — pazar günleri de açık mısınız?",
+          "agent": "Evet Nina — pazar 10–18. Randevu yazayım mı?",
           "widget": {
             "type": "booking",
-            "title": "Rezervasyon onaylandı",
-            "detail": "Çift kişilik oda · Cum–Paz · 2 misafir"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "Cumartesi saat 19:00 için dört kişilik masanız var mı?",
-          "agent": "Evet, hâlâ yerimiz var. Masayı sizin için ayırtayım mı?",
-          "widget": {
-            "type": "slots",
-            "date": "Cmt, 12 Tem",
-            "times": [
-              "18:30",
-              "19:00",
-              "19:30",
-              "20:00"
-            ],
-            "selected": "19:00",
-            "confirmed": "Masa rezerve edildi"
+            "title": "Randevu onaylandı",
+            "detail": "Pazar · 11:00 · Spa"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "Yarın sabah doktora gelebilir miyiz?",
-          "agent": "Evet, yarın sabah için boş randevular var. Hangi saat size uygun?",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "guest": "Merhaba, ben Sabine.",
+          "agent": "Merhaba Sabine — perşembe 14:30'da boş bir MR randevusu var. İster misiniz?",
           "widget": {
-            "type": "slots",
-            "date": "Cum, 11 Tem",
-            "times": [
-              "08:00",
-              "08:30",
-              "09:00",
-              "09:30"
-            ],
-            "selected": "08:30",
-            "confirmed": "Randevu kaydedildi"
+            "type": "booking",
+            "title": "MR randevusu onaylandı",
+            "detail": "Perşembe · 14:30"
+          },
+          "agentGreeting": "Günaydın, Dr. Weber muayenehanesi.",
+          "guestFollowUp": "Evet, lütfen.",
+          "agentFollowUp": "Tamam — kaydettim."
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "Merhaba, ben Elena — yemeğim nerede, sipariş #CGH6P8?",
+          "agent": "Elena, #CGH6P8 siparişi yolda — yaklaşık sekiz dakika.",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "Yolda",
+            "detail": "Varış ~8 dk · #CGH6P8"
           }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "Merhaba, ben Anna — bugün 19:30 için 2 kişilik masa var mı? Park yeri?",
+          "agent": "Evet Anna — 19:30 uygun, park kapının önünde.",
+          "widget": {
+            "type": "booking",
+            "title": "Masa rezerve edildi",
+            "detail": "Bugün · 19:30 · 2 kişi · Park var"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "Merhaba, ben Mia — saçımı boyatmak istiyorum.",
+          "agent": "Tabii Mia! Sandra mı Tom mu — ve ne zaman?",
+          "widget": {
+            "type": "booking",
+            "title": "Sandra ile randevu",
+            "detail": "Perşembe · 14:00 · Boya"
+          },
+          "guestFollowUp": "Sandra, perşembe 14:00 lütfen.",
+          "agentFollowUp": "Tamam — Sandra ile randevu alındı."
         }
       ]
     }
@@ -498,7 +513,7 @@
   "cta_section": {
     "title": "Bir Sonraki Adıma Hazır mısınız?",
     "subtitle": "Sailly ile bugün başlayın ve müşteri hizmetinizi dönüştürün.",
-    "demo": "Ücretsiz Demo Talep Edin",
+    "demo": "Live Demo",
     "contact": "Danışmanlık Randevusu Alın",
     "guarantee": "30 Gün Para İade Garantisi"
   },

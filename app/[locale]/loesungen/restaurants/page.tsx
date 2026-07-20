@@ -22,9 +22,15 @@ export default async function RestaurantsPage({ params }: { params: Promise<{ lo
       industryKey="restaurants" 
       heroImage="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80"
       heroVideo="/videos/restaurant-guests.mp4?v=1"
-      agentLine={dict.industries.restaurants.agent_line ?? "Ihr Tisch für vier ist reserviert — bis Samstag um 19 Uhr."}
+      agentLine={
+        dict.industries.restaurants.agent_line ??
+        "Wir haben Parkplätze vor der Tür."
+      }
+      agentLine2={
+        dict.industries.restaurants.agent_line_2 ??
+        "Wir freuen uns auf Sie, bis gleich."
+      }
       locale={locale}
-      audioScenarioKey="restaurant"
     />
   );
 }

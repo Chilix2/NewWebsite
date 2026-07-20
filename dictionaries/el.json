@@ -30,7 +30,7 @@
       }
     },
     "pricing": "Τιμολόγηση",
-    "demo": "Ζητήστε επίδειξη",
+    "demo": "Live Demo",
     "company": {
       "title": "Εταιρεία",
       "items": {
@@ -43,7 +43,7 @@
     "eyebrow": "Η ομάδα σας εξυπηρετεί επισκέπτες. Sailly Χειρίζεται τα υπόλοιπα.",
     "title": "Ο ψηφιακός βοηθός, που ανακουφίζει την ομάδα σας.",
     "subtitle": "Sailly δέχεται κλήσεις, προγραμματίζει ραντεβού και απαντά σε ερωτήσεις - όλο το εικοσιτετράωρο. Δώστε στο προσωπικό σας την ελευθερία να επικεντρωθεί σε αυτό που έχει μεγαλύτερη σημασία: τους πελάτες σας.",
-    "primary_cta": "Ζητήστε επίδειξη",
+    "primary_cta": "Live Demo",
     "secondary_cta": "Μάθετε περισσότερα",
     "badges": {
       "gdpr": "GDPR Συμβατό",
@@ -70,55 +70,70 @@
     "chat": {
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "Καλησπέρα! Έχετε ακόμη ένα δωμάτιο για δύο βράδια αυτή την Παρασκευή;",
-          "agentGreeting": "Καλησπέρα! Πώς μπορώ να σας βοηθήσω;",
-          "agent": "Φυσικά! Υπάρχει διαθέσιμο ένα δίκλινο με θέα στον κήπο. Να το κρατήσω για εσάς;",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "Γεια σας, είμαι η Nina — είστε ανοιχτά και την Κυριακή;",
+          "agent": "Ναι, Nina — Κυριακή 10–18. Να κλείσω ραντεβού;",
           "widget": {
             "type": "booking",
-            "title": "Η κράτηση επιβεβαιώθηκε",
-            "detail": "Δίκλινο · Παρ–Κυρ · 2 επισκέπτες"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "Έχετε τραπέζι για τέσσερα άτομα το Σάββατο στις 19:00;",
-          "agent": "Ναι, υπάρχουν ακόμη θέσεις. Να κρατήσω το τραπέζι για εσάς;",
-          "widget": {
-            "type": "slots",
-            "date": "Σάβ, 12 Ιουλ",
-            "times": [
-              "18:30",
-              "19:00",
-              "19:30",
-              "20:00"
-            ],
-            "selected": "19:00",
-            "confirmed": "Το τραπέζι κρατήθηκε"
+            "title": "Το ραντεβού επιβεβαιώθηκε",
+            "detail": "Κυριακή · 11:00 · Spa"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "Μπορούμε να έρθουμε στον γιατρό αύριο το πρωί;",
-          "agent": "Ναι, αύριο το πρωί υπάρχουν ακόμη ελεύθερα ραντεβού. Ποια ώρα σας εξυπηρετεί;",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "guest": "Γεια σας, είμαι η Sabine.",
+          "agent": "Γεια σας Sabine — υπάρχει κενό MRI την Πέμπτη στις 14:30. Το θέλετε;",
           "widget": {
-            "type": "slots",
-            "date": "Παρ, 11 Ιουλ",
-            "times": [
-              "08:00",
-              "08:30",
-              "09:00",
-              "09:30"
-            ],
-            "selected": "08:30",
-            "confirmed": "Το ραντεβού καταχωρήθηκε"
+            "type": "booking",
+            "title": "MRI επιβεβαιωμένο",
+            "detail": "Πέμπτη · 14:30"
+          },
+          "agentGreeting": "Καλημέρα, ιατρείο Δρ. Weber.",
+          "guestFollowUp": "Ναι, παρακαλώ.",
+          "agentFollowUp": "Εντάξει — το καταχωρώ."
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "Γεια σας, είμαι η Elena — πού είναι το φαγητό μου, παραγγελία #CGH6P8;",
+          "agent": "Elena, η παραγγελία #CGH6P8 είναι καθ' οδόν — περίπου οκτώ λεπτά.",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "Καθ' οδόν",
+            "detail": "Άφιξη ~8 λεπ · #CGH6P8"
           }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "Γεια σας, είμαι η Anna — έχετε τραπέζι για 2 στις 19:30 σήμερα; Και πάρκινγκ;",
+          "agent": "Ναι, Anna — 19:30 εντάξει, πάρκινγκ έξω.",
+          "widget": {
+            "type": "booking",
+            "title": "Τραπέζι κρατημένο",
+            "detail": "Σήμερα · 19:30 · 2 άτομα · Πάρκινγκ ναι"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "Γεια σας, είμαι η Mia — θα ήθελα να βάψω τα μαλλιά μου.",
+          "agent": "Φυσικά, Mia! Sandra ή Tom — και πότε;",
+          "widget": {
+            "type": "booking",
+            "title": "Ραντεβού με Sandra",
+            "detail": "Πέμπτη · 14:00 · Βαφή"
+          },
+          "guestFollowUp": "Sandra, Πέμπτη στις 14:00 παρακαλώ.",
+          "agentFollowUp": "Έτοιμο — ραντεβού με τη Sandra."
         }
       ]
     }
@@ -319,7 +334,7 @@
   "cta_section": {
     "title": "Η επόμενη τυπική κλήση σας έχει ήδη απαντηθεί.",
     "subtitle": "Δοκιμάστε Sailly και ζήστε το μέλλον της εξυπηρέτησης πελατών.",
-    "demo": "Ζητήστε δωρεάν επίδειξη",
+    "demo": "Live Demo",
     "contact": "Επικοινωνήστε",
     "guarantee": "Εγγύηση επιστροφής χρημάτων 30 ημερών"
   },
@@ -714,7 +729,7 @@
   },
   "integrationen_page": {
     "title": "Συνδέστε όλα τα συστήματά σας",
-    "subtitle": "500+ έτοιμες ενσωματώσεις. Συνδέεται απρόσκοπτα, συγχρονίζεται αυτόματα.",
+    "subtitle": "Έτοιμες ενσωματώσεις. Συνδέεται απρόσκοπτα, συγχρονίζεται αυτόματα.",
     "cta": "Εξερευνήστε τις ενσωματώσεις",
     "badge": "ΟΛΟΚΛΗΡΩΣΕΙΣ",
     "heading_part1": "Συνδέω",

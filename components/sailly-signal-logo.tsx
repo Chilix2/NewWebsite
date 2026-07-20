@@ -4,6 +4,18 @@ import React, { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
 /**
+ * Stable SVG gradient ids (no useId). React useId can diverge across SSR /
+ * client trees and breaks `url(#…)` hydration inside foreignObject hubs.
+ */
+function gradientIdFor(
+  prefix: string,
+  tone: "brand" | "light",
+  instanceId?: string
+): string {
+  return instanceId ? `${prefix}-${instanceId}` : `${prefix}-${tone}`;
+}
+
+/**
  * Sailly brand wave — "Abstract Study Model 03 / The Signal".
  *
  * Geometry (from brand spec image_8cba02.png):
@@ -166,6 +178,10 @@ interface SaillySignalLogoProps {
   className?: string;
   size?: "sm" | "md" | "lg" | "xl";
   animated?: boolean;
+  /** White wave for light/pastel backgrounds */
+  tone?: "brand" | "light";
+  /** Optional stable id when multiple logos share a document */
+  instanceId?: string;
 }
 
 const sizes: Record<string, string> = {
@@ -179,8 +195,9 @@ export function SaillySignalLogo({
   className,
   size = "md",
   animated = true,
+  tone = "brand",
+  instanceId,
 }: SaillySignalLogoProps) {
-  const id = React.useId().replace(/:/g, "");
   return (
     <div
       className={cn(
@@ -189,7 +206,12 @@ export function SaillySignalLogo({
         className
       )}
     >
-      <SignalWaveSvg animated={animated} gradientId={`sgnl-${id}`} className="w-full h-full" />
+      <SignalWaveSvg
+        animated={animated}
+        gradientId={gradientIdFor("sgnl", tone, instanceId)}
+        tone={tone}
+        className="w-full h-full"
+      />
     </div>
   );
 }
@@ -205,6 +227,7 @@ interface SaillyLogoLockupProps {
   animated?: boolean;
   /** White wave + wordmark for dark/video backgrounds (Sierra header style). */
   tone?: "brand" | "light";
+  instanceId?: string;
 }
 
 export function SaillyLogoLockup({
@@ -212,8 +235,8 @@ export function SaillyLogoLockup({
   wordmarkClass = "text-2xl",
   animated = true,
   tone = "brand",
+  instanceId,
 }: SaillyLogoLockupProps) {
-  const id = React.useId().replace(/:/g, "");
   return (
     <span
       className={cn(
@@ -234,7 +257,7 @@ export function SaillyLogoLockup({
       >
         <SignalWaveSvg
           animated={animated}
-          gradientId={`lkup-${id}`}
+          gradientId={gradientIdFor("lkup", tone, instanceId)}
           tone={tone}
           className="absolute inset-0 w-full h-full"
         />
@@ -253,12 +276,17 @@ export function SaillyLogoLockup({
 }
 
 /** Small white wave mark for agent bubbles (Sierra Agent icon pattern). */
-export function SaillyAgentMark({ className }: { className?: string }) {
-  const id = React.useId().replace(/:/g, "");
+export function SaillyAgentMark({
+  className,
+  instanceId,
+}: {
+  className?: string;
+  instanceId?: string;
+}) {
   return (
     <SignalWaveSvg
       animated={false}
-      gradientId={`agent-${id}`}
+      gradientId={gradientIdFor("agent", "light", instanceId)}
       tone="light"
       className={cn("w-5 h-5 shrink-0", className)}
     />

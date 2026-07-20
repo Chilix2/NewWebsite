@@ -37,13 +37,13 @@
       }
     },
     "pricing": "الأسعار",
-    "demo": "طلب عرض توضيحي"
+    "demo": "Live Demo"
   },
   "hero": {
     "eyebrow": "فريقكم يهتم بالضيوف. Sailly يتولى المكتب.",
     "title": "المساعد الرقمي الذي يُخفف العبء عن فريقكم.",
     "subtitle": "يتولى Sailly الردّ على المكالمات، وحجز المواعيد، والإجابة على الاستفسارات – على مدار الساعة. امنحوا موظفيكم الحرية للتركيز على ما يهم حقاً: عملاؤكم.",
-    "primary_cta": "طلب عرض توضيحي",
+    "primary_cta": "Live Demo",
     "secondary_cta": "اعرف المزيد",
     "badges": {
       "gdpr": "متوافق مع GDPR",
@@ -70,55 +70,70 @@
     "chat": {
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "مساء الخير! هل لديكم غرفة متاحة لليلتين يوم الجمعة القادم؟",
-          "agentGreeting": "مساء الخير! كيف يمكنني مساعدتك؟",
-          "agent": "بالتأكيد! تتوفر غرفة مزدوجة بإطلالة على الحديقة. هل أحجزها لك؟",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "مرحباً، أنا نينا — هل أنتم مفتوحون يوم الأحد أيضاً؟",
+          "agent": "نعم نينا — الأحد من 10 إلى 18. أحجز لك موعداً؟",
           "widget": {
             "type": "booking",
-            "title": "تم تأكيد الحجز",
-            "detail": "غرفة مزدوجة · الجمعة–الأحد · ضيفان"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "هل لديكم طاولة لأربعة أشخاص يوم السبت الساعة 19:00؟",
-          "agent": "نعم، لا تزال لدينا أماكن متاحة. هل أحجز الطاولة لك؟",
-          "widget": {
-            "type": "slots",
-            "date": "السبت 12 يوليو",
-            "times": [
-              "18:30",
-              "19:00",
-              "19:30",
-              "20:00"
-            ],
-            "selected": "19:00",
-            "confirmed": "تم حجز الطاولة"
+            "title": "تم تأكيد الموعد",
+            "detail": "الأحد · 11:00 · سبا"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "هل يمكننا الحضور إلى الطبيب غدًا صباحًا؟",
-          "agent": "نعم، لا تزال هناك مواعيد متاحة غدًا صباحًا. ما الوقت المناسب لك؟",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "guest": "مرحباً، أنا سابينه.",
+          "agent": "مرحباً سابينه — يتوفر موعد رنين مغناطيسي الخميس الساعة 14:30. هل تريدينه؟",
           "widget": {
-            "type": "slots",
-            "date": "الجمعة 11 يوليو",
-            "times": [
-              "08:00",
-              "08:30",
-              "09:00",
-              "09:30"
-            ],
-            "selected": "08:30",
-            "confirmed": "تم تسجيل الموعد"
+            "type": "booking",
+            "title": "تم تأكيد موعد الرنين",
+            "detail": "الخميس · 14:30"
+          },
+          "agentGreeting": "صباح الخير، عيادة الدكتور فيبر.",
+          "guestFollowUp": "نعم من فضلك.",
+          "agentFollowUp": "حسناً — سجّلته."
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "مرحباً، أنا إلينا — أين طعامي، طلب #CGH6P8؟",
+          "agent": "إلينا، الطلب #CGH6P8 في الطريق — حوالي ثماني دقائق.",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "في الطريق",
+            "detail": "الوصول ~8 دق · #CGH6P8"
           }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "مرحباً، أنا آنا — هل لديكم طاولة لشخصين الساعة 19:30 اليوم؟ وموقف سيارات؟",
+          "agent": "نعم آنا — 19:30 مناسبة، الموقف أمام الباب.",
+          "widget": {
+            "type": "booking",
+            "title": "تم حجز الطاولة",
+            "detail": "اليوم · 19:30 · شخصان · موقف نعم"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "مرحباً، أنا ميا — أود صبغ شعري.",
+          "agent": "بالتأكيد ميا! مع ساندرا أو توم — ومتى؟",
+          "widget": {
+            "type": "booking",
+            "title": "موعد مع ساندرا",
+            "detail": "الخميس · 14:00 · صبغ"
+          },
+          "guestFollowUp": "ساندرا، الخميس الساعة 14:00 من فضلك.",
+          "agentFollowUp": "تمام — الموعد مع ساندرا مسجّل."
         }
       ]
     }
@@ -498,7 +513,7 @@
   "cta_section": {
     "title": "مستعدون للخطوة التالية؟",
     "subtitle": "ابدأوا اليوم مع Sailly وحوّلوا خدمة عملائكم.",
-    "demo": "طلب عرض توضيحي مجاني",
+    "demo": "Live Demo",
     "contact": "حجز موعد استشاري",
     "guarantee": "ضمان استرداد الأموال لمدة 30 يوماً"
   },

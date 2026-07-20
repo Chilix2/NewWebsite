@@ -37,13 +37,13 @@
       }
     },
     "pricing": "Цены",
-    "demo": "Запросить демо"
+    "demo": "Live Demo"
   },
   "hero": {
     "eyebrow": "Ваша команда работает с гостями. Sailly берёт на себя офис.",
     "title": "Цифровой ассистент, который разгружает Вашу команду.",
     "subtitle": "Sailly принимает звонки, назначает встречи и отвечает на вопросы — круглосуточно. Дайте Вашим сотрудникам свободу сосредоточиться на главном: Ваших клиентах.",
-    "primary_cta": "Запросить демо",
+    "primary_cta": "Live Demo",
     "secondary_cta": "Узнать больше",
     "badges": {
       "gdpr": "Соответствие GDPR",
@@ -70,55 +70,70 @@
     "chat": {
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "Добрый вечер! У вас ещё есть номер на две ночи в эту пятницу?",
-          "agentGreeting": "Добрый вечер! Чем могу помочь?",
-          "agent": "Конечно! Свободен двухместный номер с видом на сад. Забронировать его для вас?",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "Здравствуйте, это Нина — вы открыты по воскресеньям?",
+          "agent": "Да, Нина — по воскресеньям с 10 до 18. Записать вас?",
           "widget": {
             "type": "booking",
-            "title": "Бронирование подтверждено",
-            "detail": "Двухместный номер · пт–вс · 2 гостя"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "Есть ли у вас столик на четверых в субботу в 19:00?",
-          "agent": "Да, места ещё есть. Забронировать столик для вас?",
-          "widget": {
-            "type": "slots",
-            "date": "сб, 12 июл",
-            "times": [
-              "18:30",
-              "19:00",
-              "19:30",
-              "20:00"
-            ],
-            "selected": "19:00",
-            "confirmed": "Столик забронирован"
+            "title": "Запись подтверждена",
+            "detail": "Воскресенье · 11:00 · Spa"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "Можем ли мы прийти к врачу завтра утром?",
-          "agent": "Да, завтра утром ещё есть свободное время. Какое время вам подходит?",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "guest": "Здравствуйте, это Сабина.",
+          "agent": "Здравствуйте, Сабина — есть свободный слот МРТ в четверг в 14:30. Берёте?",
           "widget": {
-            "type": "slots",
-            "date": "пт, 11 июл",
-            "times": [
-              "08:00",
-              "08:30",
-              "09:00",
-              "09:30"
-            ],
-            "selected": "08:30",
-            "confirmed": "Запись оформлена"
+            "type": "booking",
+            "title": "МРТ подтверждено",
+            "detail": "Четверг · 14:30"
+          },
+          "agentGreeting": "Добрый день, клиника доктора Вебера.",
+          "guestFollowUp": "Да, пожалуйста.",
+          "agentFollowUp": "Отлично — записываю."
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "Здравствуйте, это Елена — где моя еда, заказ #CGH6P8?",
+          "agent": "Елена, заказ #CGH6P8 в пути — около восьми минут.",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "В пути",
+            "detail": "Прибытие ~8 мин · #CGH6P8"
           }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "Здравствуйте, это Анна — есть стол на двоих на 19:30 сегодня? И парковка?",
+          "agent": "Да, Анна — 19:30 подходит, парковка у входа.",
+          "widget": {
+            "type": "booking",
+            "title": "Стол забронирован",
+            "detail": "Сегодня · 19:30 · 2 гостя · Парковка да"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "Здравствуйте, это Миа — хочу покрасить волосы.",
+          "agent": "Конечно, Миа! К Сандре или Тому — и когда?",
+          "widget": {
+            "type": "booking",
+            "title": "Запись к Сандре",
+            "detail": "Четверг · 14:00 · Окрашивание"
+          },
+          "guestFollowUp": "Сандра, в четверг в 14:00 пожалуйста.",
+          "agentFollowUp": "Готово — запись к Сандре есть."
         }
       ]
     }
@@ -498,7 +513,7 @@
   "cta_section": {
     "title": "Готовы к следующему шагу?",
     "subtitle": "Начните с Sailly уже сегодня и трансформируйте Ваш клиентский сервис.",
-    "demo": "Запросить бесплатную демо",
+    "demo": "Live Demo",
     "contact": "Записаться на консультацию",
     "guarantee": "30 дней гарантия возврата денег"
   },

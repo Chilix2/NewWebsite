@@ -1,131 +1,113 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-
-import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
+import { getIndustryTheme } from "@/lib/industry-themes";
+import {
+  PRICING_PLAN_KEYS,
+  PRICING_PLAN_THEMES,
+  formatPlanPrice,
+} from "@/lib/pricing-plans";
 
 interface PricingPlansProps {
   dict: any;
   locale?: string;
 }
 
-const PLAN_KEYS = ["starters", "main", "president_suite", "first_class"] as const;
-
-const PRICES: Record<string, { de: string; intl: string }> = {
-  starters: { de: "59,99", intl: "59.99" },
-  main: { de: "149", intl: "149" },
-  president_suite: { de: "279", intl: "279" },
-  first_class: { de: "449", intl: "449" },
-};
-
 export function PricingPlans({ dict, locale = "de" }: PricingPlansProps) {
   const router = useRouter();
   const t = dict.pricing_page;
-
-  const plans = PLAN_KEYS.map((key) => {
-    const plan = t.plans?.[key] ?? {};
-    const isLast = key === "first_class";
-    const price = PRICES[key];
-    return {
-      key,
-      name: plan.name,
-      description: plan.description,
-      features: plan.features ?? [],
-      prev_tier: plan.prev_tier ?? "",
-      cta: plan.cta,
-      popular: key === "main",
-      price: locale === "de" ? price.de : price.intl,
-      isLast,
-    };
-  });
+  const meta = t?.meta ?? {};
 
   return (
-    <section className="py-12 bg-gray-50 dark:bg-gray-900">
+    <section className="py-12 bg-white">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4">
             {t.badge}
           </Badge>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             {t.title}
           </h2>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-            {t.trial_text}
-          </p>
+          <p className="mt-4 text-lg text-slate-600">{t.trial_text}</p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-4 lg:gap-6 max-w-7xl mx-auto">
-          {plans.map((plan) => (
-            <Card
-              key={plan.key}
-              className={`flex flex-col relative ${
-                plan.popular
-                  ? "border-primary shadow-lg dark:border-primary"
-                  : "border-gray-200 dark:border-gray-800"
-              }`}
-            >
-              {plan.popular && (
-                <div className="absolute top-0 right-0 px-3 py-1 text-xs font-medium text-white bg-primary rounded-bl-lg">
-                  {t.meta.popular}
-                </div>
-              )}
-              <CardHeader>
-                <CardTitle className="text-2xl font-bold">{plan.name}</CardTitle>
-                <CardDescription className="mt-2 min-h-[50px]">
-                  {plan.description}
-                </CardDescription>
-                <div className="mt-4 flex items-baseline text-gray-900 dark:text-white">
-                  {plan.isLast && (
-                     <span className="text-sm font-medium mr-1">{t.meta.starting_at}</span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6 max-w-4xl mx-auto">
+          {PRICING_PLAN_KEYS.map((key) => {
+            const plan = t.plans?.[key] ?? {};
+            const popular = key === "main";
+            const isLast = key === "first_class";
+            const theme = getIndustryTheme(PRICING_PLAN_THEMES[key]);
+            const highlight = (plan.features ?? [])[0] ?? "";
+
+            return (
+              <div
+                key={key}
+                className={cn(
+                  "relative overflow-hidden rounded-[28px] p-6 sm:p-8 w-full aspect-square",
+                  "bg-gradient-to-tl shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] flex flex-col",
+                  popular &&
+                    "shadow-[0_20px_50px_rgba(232,149,122,0.28),inset_0_1px_0_rgba(255,255,255,0.35)]",
+                  theme.container
+                )}
+              >
+                <div
+                  className={cn(
+                    "absolute -top-10 -right-10 w-40 h-40 rounded-full blur-2xl pointer-events-none",
+                    theme.blobA
                   )}
-                  <span className="text-4xl font-extrabold tracking-tight">
-                    €{plan.price}
-                  </span>
-                  {!plan.isLast && (
-                    <span className="ml-1 text-gray-500">{t.meta.per_month}</span>
+                />
+                <div
+                  className={cn(
+                    "absolute -bottom-12 -left-8 w-48 h-48 rounded-full blur-3xl pointer-events-none opacity-[0.125]",
+                    theme.blobB
                   )}
-                </div>
-              </CardHeader>
-              <CardContent className="flex-1">
-                <ul className="space-y-4">
-                  {plan.prev_tier && (
-                    <li className="flex items-start">
-                      <span className="text-base font-semibold text-gray-700 dark:text-gray-200">
-                        {plan.prev_tier}
+                />
+
+                <div className="relative z-10 flex flex-col flex-1 min-h-0">
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white drop-shadow-sm min-w-0">
+                      {plan.name}
+                    </h3>
+                    {popular && (
+                      <span className="shrink-0 rounded-full bg-white/95 text-slate-900 text-[11px] sm:text-xs font-bold px-3 py-1.5 shadow-sm leading-tight text-right max-w-[9.5rem]">
+                        {meta.popular}
                       </span>
-                    </li>
-                  )}
-                  {plan.features.map((feature: string) => (
-                    <li key={feature} className="flex items-start">
-                      <Check className="flex-shrink-0 w-5 h-5 text-green-500" />
-                      <span className="ml-3 text-base text-gray-600 dark:text-gray-300">
-                        {feature}
+                    )}
+                  </div>
+                  <div className="mt-6 flex items-baseline text-white">
+                    {isLast && (
+                      <span className="text-sm font-medium mr-1 text-white/70">
+                        {meta.starting_at}
                       </span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-              <CardFooter>
-                <Button
-                  className="w-full"
-                  variant={plan.popular ? "default" : "outline"}
-                  onClick={() => router.push(`/${locale}/login?tab=register`)}
-                >
-                  {plan.cta}
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
+                    )}
+                    <span className="text-4xl font-bold tracking-tight">
+                      €{formatPlanPrice(key, locale)}
+                    </span>
+                    {!isLast && (
+                      <span className="ml-1 text-white/70">{meta.per_month}</span>
+                    )}
+                  </div>
+                  {highlight && (
+                    <p className="mt-4 text-[15px] text-white/90 line-clamp-2">
+                      {highlight}
+                    </p>
+                  )}
+                  <div className="mt-auto pt-6">
+                    <Button
+                      className="w-full rounded-full min-h-[44px] touch-manipulation bg-white text-slate-900 hover:bg-white/90 shadow-md"
+                      variant="default"
+                      onClick={() => router.push(`/${locale}/preise/${key}`)}
+                    >
+                      {meta.details_cta ?? "Details"}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

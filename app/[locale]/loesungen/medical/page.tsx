@@ -21,10 +21,14 @@ export default async function MedicalPage({ params }: { params: Promise<{ locale
       globalDict={dict}
       industryKey="medical" 
       heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80"
-      heroVideo="/videos/praxis-reception.mp4?v=1"
-      agentLine={dict.industries.medical.agent_line ?? "Ihr Termin am Dienstag um 9:30 Uhr ist eingetragen."}
+      heroVideo="/videos/praxis-reception.mp4?v=2"
+      agentLine={
+        dict.industries.medical.agent_line ?? "Ihr Termin ist eingetragen."
+      }
+      agentLine2={
+        dict.industries.medical.agent_line_2 ?? "Laborergebnisse liegen vor."
+      }
       locale={locale}
-      audioScenarioKey="medical"
     />
   );
 }

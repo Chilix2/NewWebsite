@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { LazyMotion, domAnimation, m, AnimatePresence } from "framer-motion";
 import { Check, ChevronLeft, ChevronRight, Wifi } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { assignGuestAvatars } from "@/lib/guest-avatars";
 
 const GUEST_BUBBLE =
   "self-start w-full max-w-[94%] mr-4 rounded-[20px] bg-black/40 backdrop-blur-2xl border border-white/10 px-4 py-3.5 shadow-[0_8px_32px_rgba(0,0,0,0.32)]";
@@ -38,92 +39,60 @@ function AgentRow({ label }: { label: string }) {
   );
 }
 
-type ScenarioWidget =
+export type ScenarioWidget =
   | { type: "booking"; title: string; detail: string }
   | { type: "slots"; date: string; times: string[]; selected: string; confirmed: string }
-  | { type: "status"; icon: "wifi"; label: string; detail: string };
+  | { type: "status"; icon?: "wifi" | "maps"; label: string; detail: string };
 
-interface ChatScenario {
+export interface ChatScenario {
   id: string;
   guestName: string;
-  guestAvatar: string;
+  guestAvatar?: string;
   guest: string;
   agentGreeting?: string;
   agent: string;
+  guestFollowUp?: string;
+  agentFollowUp?: string;
   widget: ScenarioWidget;
 }
 
 interface HeroChatOverlayProps {
   dict: any;
+  scenario?: ChatScenario | null;
+  videoDurationSec?: number;
+  finishEarlySec?: number;
   active?: boolean;
-  onCycleComplete?: () => void;
 }
 
-const DEFAULT_SCENARIOS: ChatScenario[] = [
-  {
-    id: "hotel",
-    guestName: "Thomas",
-    guestAvatar: "/images/avatars/guest-hotel.jpg",
-    guest: "Guten Abend! Haben Sie am Freitag noch ein Zimmer für zwei Nächte frei?",
-    agentGreeting: "Guten Abend! Wie kann ich Ihnen helfen?",
-    agent: "Gerne! Ein Doppelzimmer mit Gartenblick ist frei. Soll ich es für Sie reservieren?",
-    widget: {
-      type: "booking",
-      title: "Buchung bestätigt",
-      detail: "Doppelzimmer · Fr–So · 2 Gäste",
-    },
-  },
-  {
-    id: "restaurant",
-    guestName: "Anna",
-    guestAvatar: "/images/avatars/guest-restaurant.jpg",
-    guest: "Haben Sie am Samstag um 19 Uhr noch einen Tisch für vier?",
-    agent: "Ja, wir haben noch Plätze frei. Soll ich den Tisch für Sie reservieren?",
-    widget: {
-      type: "slots",
-      date: "Sa, 12. Jul",
-      times: ["18:30", "19:00", "19:30", "20:00"],
-      selected: "19:00",
-      confirmed: "Tisch reserviert",
-    },
-  },
-  {
-    id: "praxis",
-    guestName: "Sabine",
-    guestAvatar: "/images/avatars/guest-praxis.jpg",
-    guest: "Können wir morgen früh zum Arzt kommen?",
-    agent: "Ja, morgen früh sind noch Termine frei. Welche Uhrzeit passt Ihnen?",
-    widget: {
-      type: "slots",
-      date: "Fr, 11. Jul",
-      times: ["08:00", "08:30", "09:00", "09:30"],
-      selected: "08:30",
-      confirmed: "Termin eingetragen",
-    },
-  },
-];
-
-function buildScenarios(chat: Record<string, unknown>): ChatScenario[] {
-  const scenarios = chat.scenarios as ChatScenario[] | undefined;
-  if (scenarios?.length) return scenarios;
-
-  const base = DEFAULT_SCENARIOS[0];
-  const fallbackDetail =
-    base.widget.type === "booking" ? base.widget.detail : "Doppelzimmer · Fr–So · 2 Gäste";
-  return [
-    {
-      ...base,
-      guest: (chat.guest as string) ?? base.guest,
-      agent: (chat.agent as string) ?? base.agent,
-      widget: {
-        type: "booking",
-        title: (chat.widget_title as string) ?? "Buchung bestätigt",
-        detail: (chat.widget_detail as string) ?? fallbackDetail,
-      },
-    },
-    DEFAULT_SCENARIOS[1],
-    DEFAULT_SCENARIOS[2],
-  ];
+/** Simplified Google Maps pin mark for live location status widgets. */
+function GoogleMapsIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 48 48"
+      className={className}
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="#34A853"
+        d="M24 4c-7.7 0-14 6.3-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.7-6.3-14-14-14z"
+      />
+      <path
+        fill="#FBBC04"
+        d="M24 4c-2.4 0-4.6.6-6.6 1.7L24 18l6.6-12.3C28.6 4.6 26.4 4 24 4z"
+      />
+      <path
+        fill="#EA4335"
+        d="M17.4 5.7C13.1 8 10 12.6 10 18c0 3.6 1.7 8.1 4.2 12.5L24 18 17.4 5.7z"
+      />
+      <path
+        fill="#4285F4"
+        d="M30.6 5.7 24 18l9.8 12.5C36.3 26.1 38 21.6 38 18c0-5.4-3.1-10-7.4-12.3z"
+      />
+      <circle fill="#fff" cx="24" cy="18" r="6.5" />
+      <circle fill="#1A73E8" cx="24" cy="18" r="3.2" />
+    </svg>
+  );
 }
 
 function GuestRow({ name, avatar }: { name: string; avatar: string }) {
@@ -159,8 +128,12 @@ function WidgetContent({ widget }: { widget: ScenarioWidget }) {
   if (widget.type === "status") {
     return (
       <div className="flex items-center gap-3 px-1 py-1">
-        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 shrink-0">
-          <Wifi className="w-4 h-4 text-white/90" />
+        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 shrink-0 overflow-hidden">
+          {widget.icon === "maps" ? (
+            <GoogleMapsIcon className="w-5 h-5" />
+          ) : (
+            <Wifi className="w-4 h-4 text-white/90" />
+          )}
         </span>
         <span>
           <span className="block text-sm font-medium text-white">{widget.label}</span>
@@ -202,66 +175,87 @@ function WidgetContent({ widget }: { widget: ScenarioWidget }) {
   );
 }
 
+type Beat =
+  | "greeting"
+  | "guest"
+  | "agent"
+  | "guestFollowUp"
+  | "agentFollowUp"
+  | "widget";
+
+function buildStepPlan(scenario: ChatScenario): Beat[] {
+  const beats: Beat[] = [];
+  if (scenario.agentGreeting) beats.push("greeting");
+  beats.push("guest", "agent");
+  if (scenario.guestFollowUp) {
+    beats.push("guestFollowUp");
+    if (scenario.agentFollowUp) beats.push("agentFollowUp");
+  }
+  beats.push("widget");
+  return beats;
+}
+
 /**
- * Sierra-style hero chat: stacked frosted-glass cards with round guest avatars,
- * white Sailly agent mark, and cycling conversation scenarios.
+ * Hero chat locked to one video scenario; timing scales so the conversation
+ * finishes ~finishEarlySec before the clip ends.
  */
 export function HeroChatOverlay({
   dict,
+  scenario: scenarioProp,
+  videoDurationSec = 12,
+  finishEarlySec = 2,
   active = true,
-  onCycleComplete,
 }: HeroChatOverlayProps) {
   const chat = dict.hero?.chat ?? dict.chat ?? {};
   const agentLabel = chat.agent_label ?? "Sailly";
-  const scenarios = buildScenarios(chat);
+  const scenario = useMemo(() => {
+    const fromDict = (chat.scenarios as ChatScenario[] | undefined)?.[0];
+    const resolved = scenarioProp ?? fromDict;
+    if (!resolved) return null;
+    return assignGuestAvatars([resolved])[0] ?? null;
+  }, [scenarioProp, chat.scenarios]);
 
-  const [scenarioIdx, setScenarioIdx] = useState(0);
   const [step, setStep] = useState(0);
-  const onCycleCompleteRef = useRef(onCycleComplete);
-  onCycleCompleteRef.current = onCycleComplete;
-
-  const scenario = scenarios[scenarioIdx];
+  const beats = useMemo(
+    () => (scenario ? buildStepPlan(scenario) : []),
+    [scenario]
+  );
+  const maxStep = beats.length;
 
   useEffect(() => {
-    if (!active) {
+    if (!active || !scenario || maxStep === 0) {
       setStep(0);
-      setScenarioIdx(0);
       return;
     }
 
     setStep(0);
-    const maxStep = scenario.agentGreeting ? 4 : 3;
-    const delays = scenario.agentGreeting
-      ? [500, 1800, 2200, 2800, 4500]
-      : [500, 2000, 2800, 4500];
+    const budgetMs = Math.max(
+      3200,
+      (Math.max(videoDurationSec, 4) - finishEarlySec) * 1000
+    );
+    const interval = Math.floor(budgetMs / maxStep);
+    const timers: ReturnType<typeof setTimeout>[] = [];
 
-    let currentStep = 0;
-    let timer: ReturnType<typeof setTimeout>;
+    for (let i = 1; i <= maxStep; i++) {
+      timers.push(setTimeout(() => setStep(i), interval * i));
+    }
 
-    const showNext = () => {
-      currentStep += 1;
-      if (currentStep > maxStep) {
-        setScenarioIdx((s) => {
-          const next = (s + 1) % scenarios.length;
-          if (next === 0 && s === scenarios.length - 1) {
-            setTimeout(() => onCycleCompleteRef.current?.(), 800);
-          }
-          return next;
-        });
-        return;
-      }
-      setStep(currentStep);
-      timer = setTimeout(showNext, delays[currentStep] ?? 4000);
-    };
+    return () => timers.forEach(clearTimeout);
+  }, [active, scenario?.id, videoDurationSec, finishEarlySec, maxStep]);
 
-    timer = setTimeout(showNext, delays[0]);
-    return () => clearTimeout(timer);
-  }, [scenarioIdx, scenarios.length, scenario.agentGreeting, active]);
+  if (!scenario) return null;
 
-  const greetingStep = scenario.agentGreeting ? 1 : 0;
-  const guestStep = greetingStep + 1;
-  const agentStep = guestStep + 1;
-  const widgetStep = agentStep + 1;
+  const beatIndex = (name: Beat) => {
+    const i = beats.indexOf(name);
+    return i === -1 ? 999 : i + 1;
+  };
+
+  const greetingStep = beatIndex("greeting");
+  const guestStep = beatIndex("guest");
+  const agentStep = beatIndex("agent");
+  const guestFollowStep = beatIndex("guestFollowUp");
+  const agentFollowStep = beatIndex("agentFollowUp");
+  const widgetStep = beatIndex("widget");
 
   return (
     <LazyMotion features={domAnimation}>
@@ -283,7 +277,7 @@ export function HeroChatOverlay({
                     ? { opacity: step >= guestStep ? 0.45 : 1, y: 0, scale: 1 }
                     : { opacity: 0, y: 12, scale: 0.98 }
                 }
-                transition={{ duration: 0.45, ease: "easeOut" }}
+                transition={{ duration: 0.25, ease: "easeOut" }}
                 className={AGENT_BUBBLE}
               >
                 <AgentRow label={agentLabel} />
@@ -293,35 +287,94 @@ export function HeroChatOverlay({
               </m.div>
             )}
 
-            {/* Guest message — dark glass */}
             <m.div
               initial={false}
               animate={
                 step >= guestStep
-                  ? { opacity: 1, y: 0, scale: 1 }
+                  ? {
+                      opacity: step >= agentStep ? 0.55 : 1,
+                      y: 0,
+                      scale: 1,
+                    }
                   : { opacity: 0, y: 14, scale: 0.98 }
               }
-              transition={{ duration: 0.45, ease: "easeOut" }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
               className={GUEST_BUBBLE}
             >
-              <GuestRow name={scenario.guestName} avatar={scenario.guestAvatar} />
+              <GuestRow
+                name={scenario.guestName}
+                avatar={scenario.guestAvatar ?? "/images/avatars/guest-hotel.jpg"}
+              />
               <p className="text-[15px] text-white leading-snug">{scenario.guest}</p>
             </m.div>
 
-            {/* Agent reply — warm glass */}
             <m.div
               initial={false}
               animate={
                 step >= agentStep
-                  ? { opacity: 1, y: 0, scale: 1 }
+                  ? {
+                      opacity:
+                        step >= guestFollowStep && scenario.guestFollowUp
+                          ? 0.5
+                          : 1,
+                      y: 0,
+                      scale: 1,
+                    }
                   : { opacity: 0, y: 14, scale: 0.98 }
               }
-              transition={{ duration: 0.45, ease: "easeOut" }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
               className={AGENT_BUBBLE}
             >
               <AgentRow label={agentLabel} />
-              <p className="text-[15px] text-white font-medium leading-snug">{scenario.agent}</p>
+              <p className="text-[15px] text-white font-medium leading-snug">
+                {scenario.agent}
+              </p>
             </m.div>
+
+            {scenario.guestFollowUp && (
+              <m.div
+                initial={false}
+                animate={
+                  step >= guestFollowStep
+                    ? {
+                        opacity: step >= agentFollowStep ? 0.55 : 1,
+                        y: 0,
+                        scale: 1,
+                      }
+                    : { opacity: 0, y: 14, scale: 0.98 }
+                }
+                transition={{ duration: 0.25, ease: "easeOut" }}
+                className={GUEST_BUBBLE}
+              >
+                <GuestRow
+                  name={scenario.guestName}
+                  avatar={
+                    scenario.guestAvatar ?? "/images/avatars/guest-hotel.jpg"
+                  }
+                />
+                <p className="text-[15px] text-white leading-snug">
+                  {scenario.guestFollowUp}
+                </p>
+              </m.div>
+            )}
+
+            {scenario.agentFollowUp && (
+              <m.div
+                initial={false}
+                animate={
+                  step >= agentFollowStep
+                    ? { opacity: 1, y: 0, scale: 1 }
+                    : { opacity: 0, y: 14, scale: 0.98 }
+                }
+                transition={{ duration: 0.25, ease: "easeOut" }}
+                className={AGENT_BUBBLE}
+              >
+                <AgentRow label={agentLabel} />
+                <p className="text-[15px] text-white font-medium leading-snug">
+                  {scenario.agentFollowUp}
+                </p>
+              </m.div>
+            )}
 
             <m.div
               initial={false}
@@ -330,7 +383,7 @@ export function HeroChatOverlay({
                   ? { opacity: 1, y: 0, scale: 1 }
                   : { opacity: 0, y: 14, scale: 0.98 }
               }
-              transition={{ duration: 0.45, ease: "easeOut" }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
               className={WIDGET_BUBBLE}
             >
               <WidgetContent widget={scenario.widget} />

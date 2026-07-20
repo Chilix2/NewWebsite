@@ -38,7 +38,7 @@ export function IndustriesV2({ dict, locale }: IndustriesV2Props) {
   const squareCards: IndustryCard[] = [
     {
       key: "hotels",
-      video: "/videos/hotel-tea-service.mp4?v=1",
+      video: "/videos/hotel-homepage-v2.mp4",
       title: industries.hotels?.hero?.title ?? "Hotellerie",
       label: navItems.hotels ?? "Hotels",
       desc: firstChallenge(
@@ -63,7 +63,7 @@ export function IndustriesV2({ dict, locale }: IndustriesV2Props) {
   const wideCards: IndustryCard[] = [
     {
       key: "medical",
-      video: "/videos/praxis-reception.mp4?v=1",
+      video: "/videos/praxis-reception.mp4?v=2",
       title: industries.medical?.hero?.title ?? "Praxen",
       label: navItems.medical ?? "Praxen",
       desc: firstChallenge(
@@ -74,7 +74,7 @@ export function IndustriesV2({ dict, locale }: IndustriesV2Props) {
     },
     {
       key: "legal",
-      video: "/videos/legal-justice.mp4?v=1",
+      video: "/videos/legal-justice.mp4",
       title: industries.legal?.hero?.title ?? "Kanzleien & Steuerberatung",
       label: navItems.legal ?? "Kanzleien & Steuerberatung",
       desc: firstChallenge(
@@ -85,7 +85,7 @@ export function IndustriesV2({ dict, locale }: IndustriesV2Props) {
     },
     {
       key: "services",
-      video: "/videos/services-studio.mp4?v=1",
+      video: "/videos/services-2.mp4",
       title: industries.services?.hero?.title ?? "Dienstleister & KMU",
       label: navItems.services ?? "Dienstleister",
       desc: firstChallenge(

@@ -37,13 +37,13 @@
       }
     },
     "pricing": "价格",
-    "demo": "申请演示"
+    "demo": "Live Demo"
   },
   "hero": {
     "eyebrow": "您的团队服务客人，Sailly 打理办公。",
     "title": "为您的团队减负的数字助手。",
     "subtitle": "Sailly 接听电话、预约安排、回答问题——全天候无休。让您的员工重新专注于最重要的事：您的客户。",
-    "primary_cta": "申请演示",
+    "primary_cta": "Live Demo",
     "secondary_cta": "了解更多",
     "badges": {
       "gdpr": "符合GDPR标准",
@@ -70,55 +70,70 @@
     "chat": {
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "晚上好！这周五还有可以住两晚的房间吗？",
-          "agentGreeting": "晚上好！请问有什么可以帮您？",
-          "agent": "当然有！一间花园景观双人房目前可预订。需要我为您预订吗？",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "你好，我是Nina——你们周日也营业吗？",
+          "agent": "是的，Nina——周日10点到18点。要帮您预约吗？",
           "widget": {
             "type": "booking",
-            "title": "预订已确认",
-            "detail": "双人房 · 周五–周日 · 2位客人"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "周六晚上7点有四人桌吗？",
-          "agent": "有的，我们还有空位。需要我为您预订这张桌子吗？",
-          "widget": {
-            "type": "slots",
-            "date": "周六 7月12日",
-            "times": [
-              "18:30",
-              "19:00",
-              "19:30",
-              "20:00"
-            ],
-            "selected": "19:00",
-            "confirmed": "餐桌已预订"
+            "title": "预约已确认",
+            "detail": "周日 · 11:00 · Spa"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "我们明天早上可以来看医生吗？",
-          "agent": "可以，明天早上还有空余号源。您方便几点？",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "guest": "你好，我是Sabine。",
+          "agent": "您好Sabine——周四14:30有一个核磁空档，要预约吗？",
           "widget": {
-            "type": "slots",
-            "date": "周五 7月11日",
-            "times": [
-              "08:00",
-              "08:30",
-              "09:00",
-              "09:30"
-            ],
-            "selected": "08:30",
-            "confirmed": "预约已登记"
+            "type": "booking",
+            "title": "核磁预约已确认",
+            "detail": "周四 · 14:30"
+          },
+          "agentGreeting": "您好，Weber医生诊所。",
+          "guestFollowUp": "好的，谢谢。",
+          "agentFollowUp": "好的——已为您登记。"
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "你好，我是Elena——我的餐到哪了，订单#CGH6P8？",
+          "agent": "Elena，订单#CGH6P8正在配送——大约八分钟。",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "配送中",
+            "detail": "约8分钟到达 · #CGH6P8"
           }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "你好，我是Anna——今天19:30还有2人桌吗？有停车位吗？",
+          "agent": "可以，Anna——19:30没问题，门口有停车位。",
+          "widget": {
+            "type": "booking",
+            "title": "已预订餐桌",
+            "detail": "今天 · 19:30 · 2人 · 可停车"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "你好，我是Mia——想染头发。",
+          "agent": "当然，Mia！Sandra还是Tom——什么时候？",
+          "widget": {
+            "type": "booking",
+            "title": "Sandra预约",
+            "detail": "周四 · 14:00 · 染发"
+          },
+          "guestFollowUp": "Sandra，周四14:00，谢谢。",
+          "agentFollowUp": "好的——已预约Sandra。"
         }
       ]
     }
@@ -498,7 +513,7 @@
   "cta_section": {
     "title": "准备好迈出下一步了吗？",
     "subtitle": "立即开始使用 Sailly，变革您的客户服务。",
-    "demo": "申请免费演示",
+    "demo": "Live Demo",
     "contact": "预约咨询",
     "guarantee": "30天退款保证"
   },

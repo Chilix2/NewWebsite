@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -105,7 +105,37 @@ export default function SaillyHeaderV2({ dict, locale }: NavProps) {
     };
   }, [mobileMenuOpen, hasMounted, menuScrollY]);
 
-  useEffect(() => setMobileMenuOpen(false), [pathname]);
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setOpenDropdown(null);
+    setLangOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (openDropdown !== "solutions" && !langOpen) return;
+    const onPointerDown = (e: MouseEvent | TouchEvent) => {
+      const target = e.target as Node | null;
+      if (!target) return;
+      const el = target instanceof Element ? target : null;
+      if (el?.closest("[data-header-dropdown]")) return;
+      setOpenDropdown(null);
+      setLangOpen(false);
+    };
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpenDropdown(null);
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("touchstart", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("touchstart", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [openDropdown, langOpen]);
 
   const switchLocale = (newLocale: string) => {
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=${31536000}; samesite=lax`;
@@ -153,7 +183,7 @@ export default function SaillyHeaderV2({ dict, locale }: NavProps) {
   if (!hasMounted) {
     return (
       <header className="fixed top-0 w-full z-[100] px-4 sm:px-6 py-4 bg-transparent">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="max-w-5xl mx-auto flex items-center justify-between">
           <SaillyLogoLockup wordmarkClass="text-lg" animated={false} tone="light" />
           <div className="p-3 text-white/80">
             <Menu size={24} />
@@ -176,10 +206,7 @@ export default function SaillyHeaderV2({ dict, locale }: NavProps) {
             : "bg-white border-b border-transparent"
       )}
       onMouseEnter={() => setHeaderHovered(true)}
-      onMouseLeave={() => {
-        setHeaderHovered(false);
-        setOpenDropdown(null);
-      }}
+      onMouseLeave={() => setHeaderHovered(false)}
     >
       {overlayMode && (
         <div
@@ -188,7 +215,7 @@ export default function SaillyHeaderV2({ dict, locale }: NavProps) {
         />
       )}
 
-      <div className="max-w-7xl mx-auto flex items-center justify-between relative">
+      <div className="max-w-5xl mx-auto flex items-center justify-between relative">
         <Link
           href={`/${locale}`}
           className="flex items-center relative z-50 group min-h-[44px]"
@@ -217,11 +244,19 @@ export default function SaillyHeaderV2({ dict, locale }: NavProps) {
 
           <div
             className="relative"
-            onMouseEnter={() => setOpenDropdown("solutions")}
+            data-header-dropdown="solutions"
+            onMouseEnter={() => {
+              setOpenDropdown("solutions");
+              setLangOpen(false);
+            }}
             onMouseLeave={() => setOpenDropdown(null)}
           >
             <button
               type="button"
+              onClick={() => {
+                setOpenDropdown((prev) => (prev === "solutions" ? null : "solutions"));
+                setLangOpen(false);
+              }}
               className={cn(
                 "flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-full transition-colors",
                 overlayMode
@@ -245,22 +280,25 @@ export default function SaillyHeaderV2({ dict, locale }: NavProps) {
             </button>
 
             {openDropdown === "solutions" && (
-              <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-slate-100 shadow-xl rounded-xl z-50 py-2">
-                {solutionsNav.map((item) => (
-                  <Link
-                    key={item.key}
-                    href={item.href}
-                    className={cn(
-                      "flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition-colors",
-                      pathname === item.href
-                        ? "bg-primary/10 text-primary"
-                        : "text-slate-700 hover:bg-slate-50"
-                    )}
-                  >
-                    <item.icon className="w-4 h-4 text-primary/70" />
-                    {dict.nav?.solutions?.items?.[item.key] ?? item.key}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-0 pt-2 w-64 z-50">
+                <div className="bg-white border border-slate-100 shadow-xl rounded-xl py-2">
+                  {solutionsNav.map((item) => (
+                    <Link
+                      key={item.key}
+                      href={item.href}
+                      onClick={() => setOpenDropdown(null)}
+                      className={cn(
+                        "flex items-center gap-3 px-4 py-2.5 text-sm font-medium transition-colors",
+                        pathname === item.href
+                          ? "bg-primary/10 text-primary"
+                          : "text-slate-700 hover:bg-slate-50"
+                      )}
+                    >
+                      <item.icon className="w-4 h-4 text-primary/70" />
+                      {dict.nav?.solutions?.items?.[item.key] ?? item.key}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -293,9 +331,12 @@ export default function SaillyHeaderV2({ dict, locale }: NavProps) {
             Anmelden
           </Link>
 
-          <div className="relative">
+          <div className="relative" data-header-dropdown="lang">
             <button
-              onClick={() => setLangOpen(!langOpen)}
+              onClick={() => {
+                setLangOpen(!langOpen);
+                setOpenDropdown(null);
+              }}
               className={cn(
                 "flex items-center gap-1 px-2.5 py-1.5 text-xs font-medium rounded-full transition-all min-h-[44px] min-w-[44px] justify-center",
                 overlayMode

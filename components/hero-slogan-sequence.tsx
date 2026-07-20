@@ -156,7 +156,7 @@ export function HeroSloganSequence({
         {showLogo && (
           <div className={phase === "logo-in" ? "hero-logo-reveal" : ""}>
             <SaillyLogoLockup
-              tone="brand"
+              tone="light"
               animated
               wordmarkClass={SLOGAN_TEXT_SIZE}
             />

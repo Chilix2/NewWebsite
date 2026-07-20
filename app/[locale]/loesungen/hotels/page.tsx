@@ -21,10 +21,12 @@ export default async function HotelsPage({ params }: { params: Promise<{ locale:
       globalDict={dict}
       industryKey="hotels"
       heroImage="/images/hero-hotel.jpg"
-      heroVideo="/videos/hotel-checkin.mp4?v=1"
-      agentLine={dict.industries.hotels.agent_line ?? "Ihr Zimmer ist reserviert. Wir freuen uns auf Sie."}
+      heroVideo="/videos/legal-office.mp4?v=1"
+      agentLine={dict.industries.hotels.agent_line ?? "Ihr Zimmer ist reserviert."}
+      agentLine2={
+        dict.industries.hotels.agent_line_2 ?? "Wir freuen uns auf Sie."
+      }
       locale={validLocale}
-      audioScenarioKey="hotel"
     />
   );
 }

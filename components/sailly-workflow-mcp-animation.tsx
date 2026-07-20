@@ -22,31 +22,22 @@ const REST = "#e7e2da";
 const NODE_CONFIG = [
   {
     y: 52,
-    bg: CORAL,
-    ring: "none",
-    iconClass: "text-white",
     Icon: PhoneAnswerIcon,
     path: "M 88 52 C 140 52, 200 100, 280 140",
   },
   {
     y: 140,
-    bg: "#ffffff",
-    ring: CORAL,
-    iconClass: "text-slate-700",
     Icon: UnderstandActIcon,
     path: "M 88 140 C 160 140, 210 140, 280 140",
   },
   {
     y: 228,
-    bg: NAVY,
-    ring: "none",
-    iconClass: "text-white",
     Icon: TeamNotifyIcon,
     path: "M 88 228 C 140 228, 200 180, 280 140",
   },
 ] as const;
 
-const STEP_DURATION_MS = 1600;
+const STEP_DURATION_MS = 2200;
 const TOTAL_STEPS = 3;
 
 interface SaillyWorkflowMcpAnimationProps {
@@ -104,13 +95,14 @@ export function SaillyWorkflowMcpAnimation({
   return (
     <div
       className={cn(
-        "rounded-3xl bg-white border border-slate-100 p-6 lg:p-10 shadow-sm w-full",
+        "rounded-3xl bg-white border border-slate-100 p-6 lg:p-10 shadow-sm w-full h-full min-h-[360px] flex flex-col justify-center",
         className
       )}
     >
       <svg
         viewBox="0 0 400 280"
-        className="w-full h-auto max-h-[280px]"
+        className="w-full h-full max-h-none min-h-[280px]"
+        preserveAspectRatio="xMidYMid meet"
         aria-hidden="true"
       >
         {/* Connector paths */}
@@ -133,28 +125,21 @@ export function SaillyWorkflowMcpAnimation({
           );
         })}
 
-        {/* Source nodes */}
+        {/* Source nodes — icons fill the former ring size (r=30 → 60×60) */}
         {NODE_CONFIG.map((node, i) => {
           const isActive = displayStep === i;
           const Icon = node.Icon;
           return (
             <g key={`node-${i}`} transform={`translate(52, ${node.y})`}>
-              <circle
-                r="28"
-                fill={node.bg}
-                stroke={node.ring !== "none" ? node.ring : "transparent"}
-                strokeWidth={node.ring !== "none" ? 2.5 : 0}
-                opacity={isActive ? 1 : 0.5}
-                style={{ transition: "opacity 0.35s ease" }}
-              />
-              <foreignObject x="-14" y="-14" width="28" height="28">
+              <foreignObject x="-30" y="-30" width="60" height="60">
                 <div
-                  className={cn(
-                    "flex items-center justify-center w-full h-full",
-                    node.iconClass
-                  )}
+                  className="flex items-center justify-center w-full h-full"
+                  style={{
+                    opacity: isActive ? 1 : 0.5,
+                    transition: "opacity 0.35s ease",
+                  }}
                 >
-                  <Icon className="w-[22px] h-[22px]" />
+                  <Icon className="w-full h-full" />
                 </div>
               </foreignObject>
             </g>
@@ -169,7 +154,9 @@ export function SaillyWorkflowMcpAnimation({
             width="72"
             height="72"
             rx="18"
-            fill={NAVY}
+            fill="#ffffff"
+            stroke={CORAL}
+            strokeWidth="2"
             className={hubPulse && !reducedMotion ? "mcp-hub-active" : ""}
             style={{ transformOrigin: "0px 0px" }}
           />
@@ -189,7 +176,12 @@ export function SaillyWorkflowMcpAnimation({
           />
           <foreignObject x="-24" y="-24" width="48" height="48">
             <div className="flex items-center justify-center w-full h-full">
-              <SaillySignalLogo size="md" animated={!reducedMotion} className="w-12 h-12" />
+              <SaillySignalLogo
+                size="md"
+                animated={!reducedMotion}
+                instanceId="workflow-hub"
+                className="w-12 h-12"
+              />
             </div>
           </foreignObject>
         </g>

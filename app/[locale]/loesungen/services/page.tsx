@@ -2,6 +2,14 @@ import { getDictionary } from "@/lib/dictionary";
 import { IndustryTemplate } from "@/components/industry-template";
 import type { Metadata } from "next";
 
+const SERVICES_HERO_VIDEOS = [
+  "/videos/services-2.mp4",
+  "/videos/services-3.mp4",
+  "/videos/services-4.mp4",
+  "/videos/services-5.mp4",
+  "/videos/services-6.mp4",
+];
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale);
@@ -16,15 +24,20 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
   const dict = await getDictionary(validLocale);
 
   return (
-    <IndustryTemplate 
-      dict={dict.industries.services} 
+    <IndustryTemplate
+      dict={dict.industries.services}
       globalDict={dict}
-      industryKey="services" 
+      industryKey="services"
       heroImage="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
-      heroVideo="/videos/services-studio.mp4?v=1"
-      agentLine={dict.industries.services.agent_line ?? "Ihr Termin ist notiert — wir melden uns, sobald alles fertig ist."}
+      heroVideos={SERVICES_HERO_VIDEOS}
+      agentLine={
+        dict.industries.services.agent_line ?? "Es klingelt & keine freie Hand"
+      }
+      agentLine2={
+        dict.industries.services.agent_line_2 ??
+        "Keine Sorge, wir gehen immer ran"
+      }
       locale={validLocale}
-      audioScenarioKey="services-nail"
     />
   );
 }

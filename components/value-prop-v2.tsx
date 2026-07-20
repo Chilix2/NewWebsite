@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef } from "react";
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { PillarAnimationView, type PillarAnimation } from "./value-prop-animations";
 
@@ -85,51 +84,34 @@ export function ValuePropV2({ dict }: ValuePropV2Props) {
           cardClass: TAG_CARD_CLASSES[i % TAG_CARD_CLASSES.length],
         }))
       : DEFAULT_TAGS;
-  const carouselRef = useRef<HTMLDivElement>(null);
 
-  const titleLine1 = (props.title_line1 as string) ?? "Mehr als nur";
-  const titleLine2 = (props.title_line2 as string) ?? "ein Anrufbeantworter";
+  /** Duplicate strip for seamless infinite film-loop */
+  const loopTags = [...tags, ...tags];
+  const trackRef = useRef<HTMLDivElement>(null);
+  const pausedRef = useRef(false);
+
+  const title =
+    (props.title as string) ??
+    ((props.title_line1 || props.title_line2)
+      ? `${props.title_line1 ?? ""} ${props.title_line2 ?? ""}`.trim()
+      : "Mitarbeiter mit Mehrwert.");
   const subtitle =
     (props.subtitle as string) ??
     "Sailly nimmt Anrufe an, bucht Termine und hält Ihr Team aus dem Telefonstress raus.";
 
-  const pausedRef = useRef(false);
-  const resumeTimerRef = useRef<number | null>(null);
-
-  /** Temporarily pause the auto-scroll (manual interaction), resume after idle. */
-  const pauseAutoScroll = (resumeAfterMs = 4000) => {
-    pausedRef.current = true;
-    if (resumeTimerRef.current) window.clearTimeout(resumeTimerRef.current);
-    if (resumeAfterMs > 0) {
-      resumeTimerRef.current = window.setTimeout(() => {
-        pausedRef.current = false;
-      }, resumeAfterMs);
-    }
-  };
-
-  const scrollCarousel = (dir: -1 | 1) => {
-    const el = carouselRef.current;
-    if (!el) return;
-    pauseAutoScroll();
-    const amount = el.clientWidth * 0.85;
-    el.scrollBy({ left: dir * amount, behavior: "smooth" });
-  };
-
   /**
-   * Gentle back-and-forth auto-scroll: drifts to the end, bounces, drifts back.
-   * Pauses on hover / touch / manual scroll and honours prefers-reduced-motion.
+   * Continuous horizontal loop — starts on mount, no buttons.
+   * Translates the track; when halfway (first copy scrolled out), resets.
    */
   useEffect(() => {
-    const el = carouselRef.current;
-    if (!el) return;
+    const track = trackRef.current;
+    if (!track) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     let raf = 0;
-    let direction: 1 | -1 = 1;
     let lastTs = 0;
-    const SPEED = 22; // px per second — calm, readable drift
-    const EDGE_PAUSE_MS = 1400;
-    let edgeHoldUntil = 0;
+    let offset = 0;
+    const SPEED = 28; // px/sec
 
     const tick = (ts: number) => {
       raf = requestAnimationFrame(tick);
@@ -140,55 +122,43 @@ export function ValuePropV2({ dict }: ValuePropV2Props) {
       const dt = Math.min(ts - lastTs, 64);
       lastTs = ts;
 
-      const maxScroll = el.scrollWidth - el.clientWidth;
-      if (maxScroll <= 4) return; // nothing to scroll
-      if (pausedRef.current || ts < edgeHoldUntil) return;
+      if (pausedRef.current) return;
 
-      el.scrollLeft += (direction * SPEED * dt) / 1000;
+      const half = track.scrollWidth / 2;
+      if (half <= 1) return;
 
-      if (el.scrollLeft >= maxScroll - 1) {
-        el.scrollLeft = maxScroll;
-        direction = -1;
-        edgeHoldUntil = ts + EDGE_PAUSE_MS;
-      } else if (el.scrollLeft <= 1) {
-        el.scrollLeft = 0;
-        direction = 1;
-        edgeHoldUntil = ts + EDGE_PAUSE_MS;
-      }
+      offset += (SPEED * dt) / 1000;
+      if (offset >= half) offset -= half;
+      track.style.transform = `translate3d(${-offset}px,0,0)`;
     };
 
     raf = requestAnimationFrame(tick);
 
-    const stop = () => pauseAutoScroll(4000);
-    const hoverStop = () => {
+    const pause = () => {
       pausedRef.current = true;
-      if (resumeTimerRef.current) window.clearTimeout(resumeTimerRef.current);
     };
-    const hoverResume = () => {
+    const resume = () => {
       pausedRef.current = false;
     };
 
-    el.addEventListener("pointerenter", hoverStop);
-    el.addEventListener("pointerleave", hoverResume);
-    el.addEventListener("touchstart", stop, { passive: true });
-    el.addEventListener("wheel", stop, { passive: true });
+    track.addEventListener("pointerenter", pause);
+    track.addEventListener("pointerleave", resume);
+    track.addEventListener("touchstart", pause, { passive: true });
+    track.addEventListener("touchend", resume, { passive: true });
 
     return () => {
       cancelAnimationFrame(raf);
-      el.removeEventListener("pointerenter", hoverStop);
-      el.removeEventListener("pointerleave", hoverResume);
-      el.removeEventListener("touchstart", stop);
-      el.removeEventListener("wheel", stop);
-      if (resumeTimerRef.current) window.clearTimeout(resumeTimerRef.current);
+      track.removeEventListener("pointerenter", pause);
+      track.removeEventListener("pointerleave", resume);
+      track.removeEventListener("touchstart", pause);
+      track.removeEventListener("touchend", resume);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <LazyMotion features={domAnimation}>
       <section className="bg-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          {/* Sierra-style centered header */}
           <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -197,16 +167,11 @@ export function ValuePropV2({ dict }: ValuePropV2Props) {
             className="text-center max-w-3xl mx-auto mb-12 lg:mb-16"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-slate-900 tracking-tight leading-[1.15]">
-              <span className="inline-block bg-amber-400 text-slate-900 px-2.5 py-0.5 rounded-sm">
-                {titleLine1}
-              </span>
-              <br />
-              {titleLine2}
+              {title}
             </h2>
             <p className="mt-5 text-base sm:text-lg text-slate-500 leading-relaxed">{subtitle}</p>
           </m.div>
 
-          {/* 2×2 pillar grid — Sierra arrangement */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 mb-8 lg:mb-10">
             {PILLARS.map((pillar, i) => {
               const card = cards[pillar.key] ?? {};
@@ -241,48 +206,24 @@ export function ValuePropV2({ dict }: ValuePropV2Props) {
             })}
           </div>
 
-          {/* Bottom hashtag carousel */}
-          <div className="relative">
-            <div className="hidden sm:flex absolute -left-2 top-1/2 -translate-y-1/2 z-10">
-              <button
-                type="button"
-                onClick={() => scrollCarousel(-1)}
-                aria-label="Zurück"
-                className="w-9 h-9 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:text-slate-900"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-            </div>
-            <div className="hidden sm:flex absolute -right-2 top-1/2 -translate-y-1/2 z-10">
-              <button
-                type="button"
-                onClick={() => scrollCarousel(1)}
-                aria-label="Weiter"
-                className="w-9 h-9 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:text-slate-900"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
-
+          {/* Auto-looping hashtag film — no nav buttons */}
+          <div className="overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0">
             <div
-              ref={carouselRef}
-              className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              ref={trackRef}
+              className="flex gap-4 w-max will-change-transform motion-reduce:transform-none"
+              style={{ transform: "translate3d(0,0,0)" }}
             >
-              {tags.map((tag, i) => (
-                <m.div
-                  key={tag.label}
-                  initial={{ opacity: 0, y: 12 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.35, delay: i * 0.04 }}
+              {loopTags.map((tag, i) => (
+                <div
+                  key={`${tag.label}-${i}`}
                   className={cn(
-                    "shrink-0 w-[72%] sm:w-[calc(33.333%-11px)] min-w-[220px] rounded-2xl p-5 sm:p-6 text-white",
+                    "shrink-0 w-[72vw] sm:w-[calc((100vw-3rem)/3.2)] lg:w-[380px] max-w-[380px] min-w-[220px] rounded-2xl p-5 sm:p-6 text-white",
                     tag.cardClass
                   )}
                 >
                   <p className="text-lg sm:text-xl font-bold tracking-tight">{tag.label}</p>
                   <p className="mt-2 text-sm text-white/80 leading-snug">{tag.desc}</p>
-                </m.div>
+                </div>
               ))}
             </div>
           </div>

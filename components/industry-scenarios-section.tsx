@@ -1,10 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { LazyMotion, domAnimation, m, AnimatePresence } from "framer-motion";
 import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { assignGuestAvatars } from "@/lib/guest-avatars";
+import { getIndustryTheme, type IndustryTheme } from "@/lib/industry-themes";
 
 type ScenarioWidget =
   | { type: "booking"; title: string; detail: string }
@@ -24,64 +26,6 @@ export interface IndustryScenario {
   widget: ScenarioWidget;
 }
 
-interface IndustryTheme {
-  container: string;
-  blobA: string;
-  blobB: string;
-  agentCard: string;
-  guestCard: string;
-  widgetCard: string;
-  accent: string;
-}
-
-const THEMES: Record<string, IndustryTheme> = {
-  hotels: {
-    container: "from-[#e8dcc8] via-[#d9c9a8] to-[#c4ad82]",
-    blobA: "bg-[#b8956a]/25",
-    blobB: "bg-[#8b6914]/15",
-    agentCard: "bg-[#5c4a3a]/60",
-    guestCard: "bg-black/40",
-    widgetCard: "bg-[#5c4a3a]/50",
-    accent: "#8b6914",
-  },
-  restaurants: {
-    container: "from-[#fde8df] via-[#f5c4b0] to-[#e8957a]",
-    blobA: "bg-[#e07a5f]/20",
-    blobB: "bg-[#c45c3e]/15",
-    agentCard: "bg-[#6b3d32]/55",
-    guestCard: "bg-black/38",
-    widgetCard: "bg-[#6b3d32]/48",
-    accent: "#c45c3e",
-  },
-  medical: {
-    container: "from-[#dcefe8] via-[#b8ddd0] to-[#8ec4b0]",
-    blobA: "bg-[#4a9b8e]/20",
-    blobB: "bg-[#2d6f63]/12",
-    agentCard: "bg-[#2d5a52]/58",
-    guestCard: "bg-black/36",
-    widgetCard: "bg-[#2d5a52]/48",
-    accent: "#2d6f63",
-  },
-  legal: {
-    container: "from-[#dde3f0] via-[#b8c4dc] to-[#8a9bc4]",
-    blobA: "bg-[#4c5c8a]/18",
-    blobB: "bg-[#2e3a5c]/12",
-    agentCard: "bg-[#2e3a5c]/58",
-    guestCard: "bg-black/38",
-    widgetCard: "bg-[#2e3a5c]/48",
-    accent: "#2e3a5c",
-  },
-  services: {
-    container: "from-[#e2e8ef] via-[#c5d0dc] to-[#9aafc4]",
-    blobA: "bg-[#5b6b7a]/18",
-    blobB: "bg-[#3d4f5f]/12",
-    agentCard: "bg-[#3d4f5f]/58",
-    guestCard: "bg-black/38",
-    widgetCard: "bg-[#3d4f5f]/48",
-    accent: "#3d4f5f",
-  },
-};
-
 function AgentMark() {
   return (
     <svg viewBox="9 23 76 54" fill="none" className="w-5 h-5 shrink-0" aria-hidden="true">
@@ -95,27 +39,6 @@ function AgentMark() {
       />
       <circle cx="18" cy="44" r="5.5" fill="white" />
     </svg>
-  );
-}
-
-function VoiceWaveform({ active }: { active: boolean }) {
-  const heights = [40, 70, 55, 90, 60, 75, 45];
-  return (
-    <div className="flex items-end gap-[3px] h-4 ml-auto">
-      {heights.map((h, i) => (
-        <span
-          key={i}
-          className={cn(
-            "w-[3px] rounded-full bg-white/75 transition-all duration-300",
-            active && "animate-[wave_0.9s_ease-in-out_infinite]"
-          )}
-          style={{
-            height: `${h}%`,
-            animationDelay: active ? `${i * 80}ms` : undefined,
-          }}
-        />
-      ))}
-    </div>
   );
 }
 
@@ -275,7 +198,6 @@ function ScenarioChat({
           <div className="flex items-center gap-2.5 mb-2">
             <GuestAvatar name={scenario.guestName} src={scenario.guestAvatar} />
             <span className="text-[12px] text-white/75 font-medium">{scenario.guestName}</span>
-            <VoiceWaveform active={step === guestStep} />
           </div>
           <p className="text-[14px] text-white leading-snug">{scenario.guest}</p>
         </m.div>
@@ -323,28 +245,8 @@ function ScenarioCard({
   agentLabel: string;
   isActive: boolean;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || !("IntersectionObserver" in window)) {
-      setInView(true);
-      return;
-    }
-    const obs = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      { threshold: 0.45 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-
-  const shouldPlay = isActive || inView;
-
   return (
     <article
-      ref={ref}
       className={cn(
         "snap-center shrink-0 w-[min(88vw,360px)] sm:w-[340px] lg:w-[380px] transition-opacity duration-300",
         isActive ? "opacity-100" : "opacity-80 lg:opacity-70"
@@ -365,7 +267,7 @@ function ScenarioCard({
           scenario={scenario}
           theme={theme}
           agentLabel={agentLabel}
-          play={shouldPlay}
+          play={isActive}
         />
       </div>
     </article>
@@ -385,32 +287,124 @@ interface IndustryScenariosSectionProps {
 /**
  * Sierra "agents in real-world scenarios" pattern: headline + horizontal cards
  * with industry-colored containers and animated voice-agent chat dialogs.
+ * Horizontal auto-advance only — never scrolls the page vertically.
  */
 export function IndustryScenariosSection({ scenarios, industryKey }: IndustryScenariosSectionProps) {
-  const theme = THEMES[industryKey] ?? THEMES.services;
+  const theme = getIndustryTheme(industryKey);
   const agentLabel = scenarios.agent_label ?? "Sailly";
-  const items = scenarios.items?.slice(0, 5) ?? [];
+  const items = useMemo(
+    () => assignGuestAvatars(scenarios.items?.slice(0, 5) ?? []),
+    [scenarios.items]
+  );
   const [activeIdx, setActiveIdx] = useState(0);
+  const [sectionInView, setSectionInView] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  const pausedRef = useRef(false);
+  const resumeTimerRef = useRef<number | null>(null);
+  const syncingRef = useRef(false);
 
   useEffect(() => {
-    if (items.length <= 1) return;
+    const el = sectionRef.current;
+    if (!el || !("IntersectionObserver" in window)) {
+      setSectionInView(true);
+      return;
+    }
+    const obs = new IntersectionObserver(
+      ([entry]) => setSectionInView(entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  const pauseAutoAdvance = (resumeAfterMs = 5000) => {
+    pausedRef.current = true;
+    if (resumeTimerRef.current) window.clearTimeout(resumeTimerRef.current);
+    if (resumeAfterMs > 0) {
+      resumeTimerRef.current = window.setTimeout(() => {
+        pausedRef.current = false;
+      }, resumeAfterMs);
+    }
+  };
+
+  // Horizontal-only: keep the active card centered in the carousel (no page jump)
+  useEffect(() => {
+    if (!sectionInView || !items.length) return;
+    const container = scrollRef.current;
+    const el = container?.children[activeIdx] as HTMLElement | undefined;
+    if (!container || !el) return;
+    const left = el.offsetLeft - (container.clientWidth - el.clientWidth) / 2;
+    syncingRef.current = true;
+    container.scrollTo({ left: Math.max(0, left), behavior: "smooth" });
+    const t = window.setTimeout(() => {
+      syncingRef.current = false;
+    }, 600);
+    return () => window.clearTimeout(t);
+  }, [activeIdx, sectionInView, items.length]);
+
+  // Auto-advance cards every 9s while section is visible
+  useEffect(() => {
+    if (!sectionInView || items.length <= 1) return;
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
     const timer = setInterval(() => {
-      setActiveIdx((i) => {
-        const next = (i + 1) % items.length;
-        const el = scrollRef.current?.children[next] as HTMLElement | undefined;
-        el?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-        return next;
-      });
+      if (pausedRef.current) return;
+      setActiveIdx((i) => (i + 1) % items.length);
     }, 9000);
+
     return () => clearInterval(timer);
-  }, [items.length]);
+  }, [sectionInView, items.length]);
+
+  // Manual scroll → pick nearest card as active; pause auto-advance briefly
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    let raf = 0;
+    const onScroll = () => {
+      if (syncingRef.current) return;
+      pauseAutoAdvance(5000);
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const center = el.scrollLeft + el.clientWidth / 2;
+        let best = 0;
+        let bestDist = Infinity;
+        Array.from(el.children).forEach((child, i) => {
+          const node = child as HTMLElement;
+          const mid = node.offsetLeft + node.clientWidth / 2;
+          const dist = Math.abs(mid - center);
+          if (dist < bestDist) {
+            bestDist = dist;
+            best = i;
+          }
+        });
+        setActiveIdx((prev) => (prev === best ? prev : best));
+      });
+    };
+
+    const stop = () => pauseAutoAdvance(5000);
+    el.addEventListener("scroll", onScroll, { passive: true });
+    el.addEventListener("touchstart", stop, { passive: true });
+    el.addEventListener("wheel", stop, { passive: true });
+    el.addEventListener("pointerdown", stop);
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener("scroll", onScroll);
+      el.removeEventListener("touchstart", stop);
+      el.removeEventListener("wheel", stop);
+      el.removeEventListener("pointerdown", stop);
+      if (resumeTimerRef.current) window.clearTimeout(resumeTimerRef.current);
+    };
+  }, []);
 
   if (!items.length) return null;
 
   return (
     <LazyMotion features={domAnimation}>
-      <section className="py-16 lg:py-24 bg-white overflow-hidden">
+      <section ref={sectionRef} className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <m.div
             initial={{ opacity: 0, y: 16 }}
@@ -429,7 +423,7 @@ export function IndustryScenariosSection({ scenarios, industryKey }: IndustrySce
 
           <div
             ref={scrollRef}
-            className="flex gap-6 lg:gap-8 overflow-x-auto pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="flex gap-6 lg:gap-8 overflow-x-auto overscroll-x-contain pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
             {items.map((scenario, i) => (
               <ScenarioCard

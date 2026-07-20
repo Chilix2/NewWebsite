@@ -1,11 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useMemo } from "react";
 import Link from "next/link";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { CinemaFrame } from "./cinema-frame";
-import { HeroChatOverlay } from "./hero-chat-overlay";
+import { HeroChatOverlay, type ChatScenario } from "./hero-chat-overlay";
 
 interface ProduktHeroV2Props {
   dict: Record<string, unknown>;
@@ -19,6 +19,18 @@ interface ProduktHeroV2Props {
 export function ProduktHeroV2({ dict, locale }: ProduktHeroV2Props) {
   const page = (dict.produkt_page ?? {}) as Record<string, unknown>;
   const hero = (page.hero ?? {}) as Record<string, string>;
+  const landingHero = (dict.hero ?? {}) as {
+    chat?: { scenarios?: ChatScenario[] };
+  };
+  const scenario = useMemo(() => {
+    const scenarios = landingHero.chat?.scenarios ?? [];
+    return (
+      scenarios.find((s) => s.id === "restaurant") ??
+      scenarios.find((s) => s.id === "spa") ??
+      scenarios[0] ??
+      null
+    );
+  }, [landingHero.chat?.scenarios]);
 
   return (
     <LazyMotion features={domAnimation}>
@@ -72,7 +84,14 @@ export function ProduktHeroV2({ dict, locale }: ProduktHeroV2Props) {
               priority
             />
             <div className="absolute inset-x-0 bottom-0 z-10 flex justify-end p-4 sm:p-8 lg:p-10 pointer-events-none">
-              <HeroChatOverlay dict={dict} />
+              {scenario && (
+                <HeroChatOverlay
+                  dict={dict}
+                  scenario={scenario}
+                  videoDurationSec={14}
+                  finishEarlySec={2}
+                />
+              )}
             </div>
           </m.div>
         </div>

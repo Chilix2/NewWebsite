@@ -37,13 +37,13 @@
       }
     },
     "pricing": "Precios",
-    "demo": "Solicitar Demo"
+    "demo": "Live Demo"
   },
   "hero": {
     "eyebrow": "Su equipo atiende al huésped. Sailly se encarga de la oficina.",
     "title": "El asistente digital que libera a su equipo.",
     "subtitle": "Sailly responde llamadas, programa citas y responde preguntas – las 24 horas. Dé a sus empleados la libertad de concentrarse en lo que realmente importa: sus clientes.",
-    "primary_cta": "Solicitar Demo",
+    "primary_cta": "Live Demo",
     "secondary_cta": "Más Información",
     "badges": {
       "gdpr": "Conforme al RGPD",
@@ -70,55 +70,70 @@
     "chat": {
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "¡Buenas noches! ¿Les queda una habitación para dos noches este viernes?",
-          "agentGreeting": "¡Buenas noches! ¿En qué puedo ayudarle?",
-          "agent": "¡Por supuesto! Hay una habitación doble con vista al jardín disponible. ¿Se la reservo?",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "Hola, soy Nina — ¿abrís también los domingos?",
+          "agent": "Sí, Nina — domingos de 10 a 18. ¿Te apunto una cita?",
           "widget": {
             "type": "booking",
-            "title": "Reserva confirmada",
-            "detail": "Habitación doble · vie–dom · 2 huéspedes"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "¿Tienen una mesa para cuatro el sábado a las 19:00?",
-          "agent": "Sí, todavía tenemos sitio. ¿Le reservo la mesa?",
-          "widget": {
-            "type": "slots",
-            "date": "sáb, 12 jul",
-            "times": [
-              "18:30",
-              "19:00",
-              "19:30",
-              "20:00"
-            ],
-            "selected": "19:00",
-            "confirmed": "Mesa reservada"
+            "title": "Cita confirmada",
+            "detail": "Domingo · 11:00 · Spa"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "¿Podemos ir al médico mañana por la mañana?",
-          "agent": "Sí, mañana por la mañana quedan citas libres. ¿Qué hora le viene bien?",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "guest": "Hola, soy Sabine.",
+          "agent": "Hola Sabine — hay un hueco de RM el jueves a las 14:30. ¿Lo quiere?",
           "widget": {
-            "type": "slots",
-            "date": "vie, 11 jul",
-            "times": [
-              "08:00",
-              "08:30",
-              "09:00",
-              "09:30"
-            ],
-            "selected": "08:30",
-            "confirmed": "Cita registrada"
+            "type": "booking",
+            "title": "Cita de RM confirmada",
+            "detail": "Jueves · 14:30"
+          },
+          "agentGreeting": "Buenos días, consulta del Dr. Weber.",
+          "guestFollowUp": "Sí, por favor.",
+          "agentFollowUp": "Listo — lo apunto."
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "Hola, soy Elena — ¿dónde está mi comida, pedido #CGH6P8?",
+          "agent": "Elena, el pedido #CGH6P8 va de camino — unos ocho minutos.",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "En camino",
+            "detail": "Llegada ~8 min · #CGH6P8"
           }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "Hola, soy Anna — ¿tenéis mesa para 2 a las 19:30 hoy? ¿Y parking?",
+          "agent": "Sí, Anna — 19:30 vale, parking delante.",
+          "widget": {
+            "type": "booking",
+            "title": "Mesa reservada",
+            "detail": "Hoy · 19:30 · 2 personas · Parking sí"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "Hola, soy Mia — me gustaría teñirme el pelo.",
+          "agent": "Claro, Mia! ¿Con Sandra o Tom — y cuándo?",
+          "widget": {
+            "type": "booking",
+            "title": "Cita con Sandra",
+            "detail": "Jueves · 14:00 · Tinte"
+          },
+          "guestFollowUp": "Sandra, el jueves a las 14:00 por favor.",
+          "agentFollowUp": "Listo — cita con Sandra apuntada."
         }
       ]
     }
@@ -498,7 +513,7 @@
   "cta_section": {
     "title": "¿Listo para el Siguiente Paso?",
     "subtitle": "Comience hoy con Sailly y transforme su servicio al cliente.",
-    "demo": "Solicitar Demo Gratuita",
+    "demo": "Live Demo",
     "contact": "Concertar Cita de Asesoría",
     "guarantee": "Garantía de Devolución de 30 Días"
   },

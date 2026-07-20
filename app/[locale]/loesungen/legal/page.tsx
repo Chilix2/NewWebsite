@@ -27,10 +27,10 @@ export default async function LegalPage({ params }: { params: Promise<{ locale: 
       globalDict={dict}
       industryKey="legal"
       heroImage="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
-      heroVideo="/videos/legal-office.mp4?v=1"
-      agentLine={industryDict.agent_line ?? "Ihr Erstberatungstermin ist am Donnerstag um 14 Uhr eingetragen."}
+      heroVideo="/videos/legal-office-v2.mp4"
+      agentLine={industryDict.agent_line ?? "Mehr Zeit für Mandanten"}
+      agentLine2={industryDict.agent_line_2 ?? "Entlastung am Telefon"}
       locale={validLocale}
-      audioScenarioKey="legal"
     />
   );
 }

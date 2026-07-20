@@ -37,6 +37,25 @@ export default async function ProduktSecurityCompliancePage({
         subtitle={t.subtitle}
         ctaLabel={t.cta}
         ctaHref={`/${locale}/contact`}
+        image={
+          <div className="relative w-64 h-64">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full drop-shadow-lg">
+              <defs>
+                <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#4285F4" />
+                  <stop offset="100%" stopColor="#34A853" />
+                </linearGradient>
+              </defs>
+              <path d="M100 15 L180 50 L180 110 C180 150 130 185 100 190 C70 185 20 150 20 110 L20 50 Z" fill="url(#shieldGrad)" opacity="0.15" stroke="url(#shieldGrad)" strokeWidth="3" />
+              <rect x="75" y="78" width="50" height="44" rx="6" fill="url(#shieldGrad)" />
+              <path d="M85 78V68C85 58 95 50 100 50C105 50 115 58 115 68V78" stroke="url(#shieldGrad)" strokeWidth="5" strokeLinecap="round" fill="none" />
+              <circle cx="100" cy="97" r="6" fill="white" />
+              <path d="M100 103V113" stroke="white" strokeWidth="3" strokeLinecap="round" />
+              <circle cx="100" cy="170" r="10" fill="none" stroke="#34A853" strokeWidth="2" />
+              <path d="M94 170L98 174L106 166" stroke="#34A853" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+        }
       />
 
       <Section>

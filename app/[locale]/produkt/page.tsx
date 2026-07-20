@@ -55,7 +55,7 @@ export default async function ProductPage({
 
       <SaillyOsProductSection dict={dict} locale={locale} />
 
-      <section className="py-20 lg:py-24 overflow-hidden bg-white">
+      <section className="py-20 lg:py-24 overflow-hidden bg-[#faf7f4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 md:order-1 relative flex justify-center">
             <SaillyConversationPreview dict={dict} />

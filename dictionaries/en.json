@@ -31,7 +31,7 @@
       }
     },
     "pricing": "Pricing",
-    "demo": "Request Demo",
+    "demo": "Live Demo",
     "company": {
       "title": "Company",
       "items": {
@@ -43,7 +43,7 @@
   "hero": {
     "title_line1": "You handle your business.",
     "title_line2": "Sailly the calls.",
-    "primary_cta": "Request Demo",
+    "primary_cta": "Live Demo",
     "chat": {
       "agent_label": "Sailly",
       "guest_name": "Call · Guest",
@@ -54,54 +54,69 @@
       "widget_detail": "Double room · Fri–Sun · 2 guests",
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "Good evening! Do you still have a room for two nights this Friday?",
-          "agentGreeting": "Good evening! How can I help you today?",
-          "agent": "Of course! A double room with a garden view is available. Shall I reserve it for you?",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "Hi, this is Nina — are you open on Sundays too?",
+          "agent": "Yes, Nina — Sundays 10 am to 6 pm. Shall I book you a slot?",
           "widget": {
             "type": "booking",
-            "title": "Booking confirmed",
-            "detail": "Double room · Fri–Sun · 2 guests"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "Do you have a table for four on Saturday at 7 pm?",
-          "agent": "Yes, we still have seats available. Shall I reserve the table for you?",
-          "widget": {
-            "type": "slots",
-            "date": "Sat, Jul 12",
-            "times": [
-              "6:30 PM",
-              "7:00 PM",
-              "7:30 PM",
-              "8:00 PM"
-            ],
-            "selected": "7:00 PM",
-            "confirmed": "Table reserved"
+            "title": "Appointment confirmed",
+            "detail": "Sunday · 11:00 AM · Spa"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "Can we come to the doctor tomorrow morning?",
-          "agent": "Yes, there are still appointments available tomorrow morning. What time works for you?",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "agentGreeting": "Good morning, Dr. Weber's practice.",
+          "guest": "Hi, this is Sabine.",
+          "agent": "Hello Sabine — an MRI slot is free Thursday at 2:30 pm. Would you like it?",
+          "guestFollowUp": "Yes, please.",
+          "agentFollowUp": "All set — I've booked it for you.",
           "widget": {
-            "type": "slots",
-            "date": "Fri, Jul 11",
-            "times": [
-              "8:00 AM",
-              "8:30 AM",
-              "9:00 AM",
-              "9:30 AM"
-            ],
-            "selected": "8:30 AM",
-            "confirmed": "Appointment booked"
+            "type": "booking",
+            "title": "MRI appointment confirmed",
+            "detail": "Thursday · 2:30 PM"
+          }
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "Hi, this is Elena — where's my food, order #CGH6P8?",
+          "agent": "Elena, order #CGH6P8 is on the way — about eight minutes.",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "On the way",
+            "detail": "Arrival in ~8 min · #CGH6P8"
+          }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "Hi, this is Anna — do you still have a table for 2 at 7:30 tonight? And parking?",
+          "agent": "Yes, Anna — 7:30 works, parking right outside.",
+          "widget": {
+            "type": "booking",
+            "title": "Table reserved",
+            "detail": "Tonight · 7:30 PM · 2 guests · Parking yes"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "Hi, this is Mia — I'd like to get my hair colored.",
+          "agent": "Of course, Mia! Sandra or Tom — and when?",
+          "guestFollowUp": "Sandra, Thursday at 2 pm please.",
+          "agentFollowUp": "All set — appointment with Sandra is booked.",
+          "widget": {
+            "type": "booking",
+            "title": "Appointment with Sandra",
+            "detail": "Thursday · 2:00 PM · Color"
           }
         }
       ]
@@ -150,8 +165,7 @@
   },
   "value_props": {
     "badge": "Why Sailly",
-    "title_line1": "More than just",
-    "title_line2": "an answering machine",
+    "title": "Staff that adds value.",
     "subtitle": "Sailly picks up calls, books appointments and keeps your team out of phone stress.",
     "cards": {
       "always_on": {
@@ -303,6 +317,8 @@
   "pricing_page": {
     "badge": "Special Offer",
     "title": "Simple, Transparent Pricing",
+    "heading_part1": "Simple,",
+    "heading_part2": "Transparent Pricing",
     "trial_text": "Trial: Get 50% off for the first 30 days on all plans.",
     "plans": {
       "starters": {
@@ -368,13 +384,20 @@
       "starting_at": "From",
       "plus_fees": "Minute overage: €0.12/min from 1st extra minute (no hidden fees).",
       "per_minute_example": "All prices net. Minutes per month (do not roll over). Grok agent in Starters €0.01/min internally. Cancel monthly.",
-      "whatsapp_note": "Gold & Future: unlimited WhatsApp orders. Restaurants typically save €300-750/month by direct customer ordering vs Lieferando/Wolt commissions (15-30%)."
+      "whatsapp_note": "Gold & Future: unlimited WhatsApp orders. Restaurants typically save €300-750/month by direct customer ordering vs Lieferando/Wolt commissions (15-30%).",
+      "details_cta": "Details",
+      "checkout_kicker": "Checkout",
+      "checkout_title": "Plan overview",
+      "overview_title": "What's included",
+      "checkout_cta": "Checkout now",
+      "demo_cta": "Watch live demo",
+      "back_to_plans": "All plans"
     }
   },
   "cta_section": {
     "title": "Your next standard call is already answered.",
     "subtitle": "Sailly takes over your phone — your team gets its time back. Live in four weeks.",
-    "demo": "Request Free Demo",
+    "demo": "Live Demo",
     "contact": "Get in Touch",
     "guarantee": "30-day money-back guarantee"
   },
@@ -382,10 +405,13 @@
     "hotels": {
       "hero": {
         "title": "Your Digital Concierge for a Relaxed Reception.",
+        "heading_part1": "Hotels &",
+        "heading_part2": "Hospitality",
         "subtitle": "Support your reception team with an AI assistant that takes calls, manages reservations and answers guest questions – 24/7, friendly and professional.",
         "cta": "View Hotel Demo"
       },
-      "agent_line": "Your room is booked. We look forward to seeing you.",
+      "agent_line": "Your room is booked.",
+      "agent_line_2": "We look forward to seeing you.",
       "challenges": {
         "title": "Relief for Your Reception",
         "items": [
@@ -495,10 +521,13 @@
     "restaurants": {
       "hero": {
         "title": "More Time for Your Guests, Less on the Phone.",
+        "heading_part1": "Restaurants &",
+        "heading_part2": "Cafés",
         "subtitle": "Let Sailly take reservations while you're the perfect host. No ringing in the dining room, no no-shows.",
         "cta": "View Restaurant Demo"
       },
-      "agent_line": "Your table for four is reserved — Saturday at 7 pm.",
+      "agent_line": "We have parking right outside.",
+      "agent_line_2": "We look forward to seeing you — see you soon.",
       "challenges": {
         "title": "Full House Without Phone Stress",
         "items": [
@@ -604,10 +633,13 @@
     "medical": {
       "hero": {
         "title": "The Digital Medical Assistant for Your Practice.",
+        "heading_part1": "Medical Practices &",
+        "heading_part2": "Clinics",
         "subtitle": "Ensure accessibility for your patients and relieve your medical staff. Appointment scheduling and prescription ordering – empathetic and data protection compliant.",
         "cta": "View Practice Demo"
       },
-      "agent_line": "Your appointment on Tuesday at 9:30 am is confirmed.",
+      "agent_line": "Your appointment is booked.",
+      "agent_line_2": "Your lab results are ready.",
       "challenges": {
         "title": "More Time for Patients",
         "items": [
@@ -714,12 +746,15 @@
     "legal": {
       "hero": {
         "title": "Your Digital Front Office for Law and Tax Practices.",
+        "heading_part1": "Legal &",
+        "heading_part2": "Tax Advisory",
         "subtitle": "Ensure accessibility for clients and relieve your team. Initial consultations, appointments and callbacks — confidential, structured and GDPR compliant.",
         "cta": "View Legal Demo"
       },
-      "agent_line": "Your initial consultation is scheduled for Thursday at 2 pm.",
+      "agent_line": "More time for clients",
+      "agent_line_2": "Relief on the phone",
       "challenges": {
-        "title": "More Time for Client Work",
+        "title": "",
         "items": [
           {
             "title": "Focus on Advisory",
@@ -823,12 +858,15 @@
     "services": {
       "hero": {
         "title": "The Master Works, the Assistant Handles the Office.",
+        "heading_part1": "Service",
+        "heading_part2": "Providers",
         "subtitle": "Whether crafts, studio or workshop: Focus on your craft. Sailly takes care of appointments, prices and customer inquiries.",
         "cta": "View SME Demo"
       },
-      "agent_line": "Your appointment is noted — we'll call you as soon as it's ready.",
+      "agent_line": "It's ringing & no free hand",
+      "agent_line_2": "Don't worry — we always pick up",
       "challenges": {
-        "title": "Focus on Your Craft",
+        "title": "Undisturbed focus on your work",
         "items": [
           {
             "title": "Work Undisturbed",
@@ -1108,7 +1146,7 @@
     "cta": {
       "title": "Ready for the Next Step?",
       "subtitle": "Start with Sailly now and transform your customer service.",
-      "primary": "Request Free Demo",
+      "primary": "Live Demo",
       "secondary": "Schedule Consultation",
       "guarantee": "30-day money-back guarantee"
     }
@@ -1120,7 +1158,7 @@
       "title_line1": "Answer every call.",
       "title_line2": "Book every appointment.",
       "description": "Sailly picks up every call, answers questions and enters bookings directly in your system — friendly, reliable, around the clock.",
-      "cta_primary": "Request a demo",
+      "cta_primary": "Live Demo",
       "cta_secondary": "View pricing"
     },
     "how_it_works": {
@@ -1186,13 +1224,13 @@
     "cta_section": {
       "heading": "Ready for the next step?",
       "description": "Sailly takes over your phone — your team gets its time back. Live in four weeks.",
-      "cta_start": "Request a demo",
+      "cta_start": "Live Demo",
       "cta_contact": "Book a consultation"
     }
   },
   "integrationen_page": {
     "title": "Connect All Your Systems",
-    "subtitle": "500+ ready-made integrations. Seamlessly connect, automatically sync.",
+    "subtitle": "Ready-made integrations. Seamlessly connect, automatically sync.",
     "cta": "Explore integrations",
     "badge": "INTEGRATIONS",
     "heading_part1": "Connect",
@@ -1211,7 +1249,7 @@
     "healthcare_desc": "GDPR-compliant integration with practice management systems.",
     "pos_label": "POS systems, menus",
     "praxis_label": "Practice calendar, prescriptions",
-    "business_title": "General Business Tools",
+    "business_title": "Business-Tools",
     "crm_title": "CRM & Sales",
     "crm_desc": "Connect to your customer management systems.",
     "calendar_title": "Calendar & Appointments",
@@ -1223,7 +1261,7 @@
     "api_docs": "API Documentation",
     "cta_title": "Ready to connect?",
     "cta_subtitle": "Experience how easy system integration can be.",
-    "cta_demo": "Request demo"
+    "cta_demo": "Live Demo"
   },
   "strategic_partners_page": {
     "title": "Technology Stack",
@@ -1385,7 +1423,7 @@
     }
   },
   "demo_page": {
-    "title": "Request a Demo",
+    "title": "Live Demo",
     "subtitle": "Experience Sailly live. We'll show you how to improve your availability immediately.",
     "badge": "Free Trial",
     "firstname": "First name",
@@ -1394,12 +1432,50 @@
     "company": "Company",
     "phone": "Phone number",
     "message": "Message",
-    "submit": "Request demo",
+    "submit": "Live Demo",
     "placeholder_firstname": "John",
     "placeholder_lastname": "Doe",
     "placeholder_company": "Acme Inc.",
     "phone_label": "Phone",
     "optional_fields": "Optional Information"
+  },
+  "contact_page": {
+    "badge": "CONTACT",
+    "heading_part1": "Talk",
+    "heading_part2": "to Sailly",
+    "subtitle": "Leave your message with our voice agent — or write to us. We'll get back to you soon.",
+    "hero_cta": "Get a call now",
+    "voice_title": "Call Sailly",
+    "voice_desc": "Sailly answers all your questions.",
+    "phone_label": "Your phone number",
+    "phone_placeholder": "170 1234567",
+    "phone_hint": "We'll call you right away — no hold music.",
+    "privacy_note": "Your number is only used for this contact call.",
+    "start_call": "Call Sailly",
+    "calling": "Calling you…",
+    "ringing": "Ringing…",
+    "connected": "Connected — leave your message",
+    "ended": "Call ended",
+    "error": "The call could not be started. Please try again later or use the form.",
+    "success_title": "Thank you!",
+    "success_detail": "Sailly took your message. We'll be in touch shortly.",
+    "form_title": "Prefer to write?",
+    "form_desc": "Send a short message — we reply quickly on weekdays.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send message",
+    "form_success": "Message sent. We'll be in touch soon.",
+    "form_error": "Send failed. Please email hallo@sailly.de.",
+    "email_label": "Email",
+    "email_value": "hallo@sailly.de",
+    "hours_label": "Business hours",
+    "hours_value": "Available 24/7",
+    "cta_title": "Want to experience Sailly live?",
+    "cta_subtitle": "Try the voice agent directly on your phone.",
+    "cta_demo": "Live Demo",
+    "cta_back": "Back"
   },
   "technologie_page": {
     "title": "Next-Generation AI Technology",
@@ -1605,7 +1681,7 @@
     "impressum_title": "Legal Notice"
   },
   "use_cases_common": {
-    "demo_cta": "Request demo",
+    "demo_cta": "Live Demo",
     "contact_cta": "Contact us",
     "benefits_title": "Measurable Business Benefits",
     "roi_title": "ROI & Results",
@@ -1620,7 +1696,7 @@
     "compliance_title": "Compliance & Security"
   },
   "ai_impacts_common": {
-    "demo_cta": "Request demo",
+    "demo_cta": "Live Demo",
     "contact_cta": "Contact us",
     "benefits_title": "Measurable Results",
     "features_title": "Features",
@@ -1681,7 +1757,7 @@
     "del_desc": "Full control over your data. Deletion on request.",
     "cta_title": "Security you can trust",
     "cta_subtitle": "Learn more about our security measures and compliance standards.",
-    "demo_cta": "Request demo",
+    "demo_cta": "Live Demo",
     "comp_pill": "Compliance",
     "dp_pill": "Data Protection"
   },
@@ -1715,7 +1791,7 @@
     "t3_desc": "Use AI for intelligent automation and decisions.",
     "cta_title": "Ready to create?",
     "cta_subtitle": "Start today with the Workflow Builder and create your first automated processes.",
-    "demo_cta": "Request demo"
+    "demo_cta": "Live Demo"
   },
   "templates_page": {
     "badge": "TEMPLATES",
@@ -1728,7 +1804,7 @@
     "use_btn": "Use template",
     "cta_title": "Don't see your template?",
     "cta_subtitle": "Create your own template or let us help you.",
-    "demo_cta": "Request demo"
+    "demo_cta": "Live Demo"
   },
   "ki_integration_page": {
     "badge": "AI INTEGRATION",
@@ -1741,7 +1817,7 @@
     "features_title": "Integration Features",
     "cta_title": "Ready for AI power?",
     "cta_subtitle": "Start today and unleash the potential of your data with AI.",
-    "demo_cta": "Request demo"
+    "demo_cta": "Live Demo"
   },
   "preise_page": {
     "badge": "Pricing",

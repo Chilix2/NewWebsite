@@ -30,7 +30,7 @@
       }
     },
     "pricing": "ราคา",
-    "demo": "ขอการสาธิต",
+    "demo": "Live Demo",
     "company": {
       "title": "บริษัท",
       "items": {
@@ -43,7 +43,7 @@
     "eyebrow": "ทีมของคุณให้บริการแขก Sailly จัดการส่วนที่เหลือ",
     "title": "ผู้ช่วยดิจิทัลที่บรรเทาทีมของคุณ",
     "subtitle": "Sailly รับสาย กำหนดเวลาการนัดหมาย และตอบคำถามตลอดเวลา ให้อิสระแก่พนักงานของคุณในการมุ่งเน้นไปที่สิ่งที่สำคัญที่สุด: ลูกค้าของคุณ",
-    "primary_cta": "ขอการสาธิต",
+    "primary_cta": "Live Demo",
     "secondary_cta": "เรียนรู้เพิ่มเติม",
     "badges": {
       "gdpr": "GDPR เป็นไปตามข้อกำหนด",
@@ -70,55 +70,70 @@
     "chat": {
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "สวัสดีค่ะ วันศุกร์นี้ยังมีห้องว่างสำหรับสองคืนไหมคะ",
-          "agentGreeting": "สวัสดีค่ะ มีอะไรให้ช่วยไหมคะ",
-          "agent": "มีค่ะ ห้องดับเบิลวิวสวนยังว่างอยู่ ให้จองไว้ให้เลยไหมคะ",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "สวัสดีค่ะ ดิฉันนีน่า — วันอาทิตย์เปิดไหมคะ?",
+          "agent": "เปิดค่ะ นีน่า — อาทิตย์ 10–18 น. จองคิวให้ไหมคะ?",
           "widget": {
             "type": "booking",
-            "title": "ยืนยันการจองแล้ว",
-            "detail": "ห้องดับเบิล · ศ.–อา. · ผู้เข้าพัก 2 ท่าน"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "วันเสาร์เวลา 19:00 มีโต๊ะสำหรับสี่ท่านไหมคะ",
-          "agent": "มีค่ะ ยังมีที่ว่างอยู่ ให้จองโต๊ะไว้ให้เลยไหมคะ",
-          "widget": {
-            "type": "slots",
-            "date": "ส. 12 ก.ค.",
-            "times": [
-              "18:30",
-              "19:00",
-              "19:30",
-              "20:00"
-            ],
-            "selected": "19:00",
-            "confirmed": "จองโต๊ะแล้ว"
+            "title": "ยืนยันนัดแล้ว",
+            "detail": "อาทิตย์ · 11:00 · สปา"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "พรุ่งนี้เช้าขอเข้าพบแพทย์ได้ไหมคะ",
-          "agent": "ได้ค่ะ พรุ่งนี้เช้ายังมีคิวว่าง สะดวกกี่โมงคะ",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "guest": "สวัสดีค่ะ ดิฉันซาบีน",
+          "agent": "สวัสดีซาบีน — มีคิว MRI ว่างวันพฤหัส 14:30 ต้องการไหมคะ?",
           "widget": {
-            "type": "slots",
-            "date": "ศ. 11 ก.ค.",
-            "times": [
-              "08:00",
-              "08:30",
-              "09:00",
-              "09:30"
-            ],
-            "selected": "08:30",
-            "confirmed": "บันทึกนัดหมายแล้ว"
+            "type": "booking",
+            "title": "ยืนยัน MRI แล้ว",
+            "detail": "พฤหัส · 14:30"
+          },
+          "agentGreeting": "สวัสดีค่ะ คลินิกแพทย์เวเบอร์",
+          "guestFollowUp": "ได้ค่ะ",
+          "agentFollowUp": "เรียบร้อย — จองให้แล้วค่ะ"
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "สวัสดีค่ะ ดิฉันเอเลนา — อาหารอยู่ไหน ออเดอร์ #CGH6P8?",
+          "agent": "เอเลนา ออเดอร์ #CGH6P8 กำลังมา — ประมาณแปดนาที",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "กำลังจัดส่ง",
+            "detail": "ถึงใน ~8 นาที · #CGH6P8"
           }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "สวัสดีค่ะ ดิฉันอันนา — มีโต๊ะ 2 ที่ 19:30 วันนี้ไหม มีที่จอดรถไหม?",
+          "agent": "มีค่ะ อันนา — 19:30 ได้ ที่จอดรถหน้าประตู",
+          "widget": {
+            "type": "booking",
+            "title": "จองโต๊ะแล้ว",
+            "detail": "วันนี้ · 19:30 · 2 ท่าน · มีที่จอด"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "สวัสดีค่ะ ดิฉันเมีย — อยากย้อมผมค่ะ",
+          "agent": "ได้เลย เมีย! ซานดรา หรือ ทอม — แล้วเมื่อไหร่?",
+          "widget": {
+            "type": "booking",
+            "title": "นัดกับซานดรา",
+            "detail": "พฤหัส · 14:00 · ย้อมผม"
+          },
+          "guestFollowUp": "ซานดรา พฤหัส 14:00 ค่ะ",
+          "agentFollowUp": "เรียบร้อย — นัดซานดราแล้วค่ะ"
         }
       ]
     }
@@ -319,7 +334,7 @@
   "cta_section": {
     "title": "การโทรมาตรฐานครั้งถัดไปของคุณได้รับสายแล้ว",
     "subtitle": "ทดสอบ Sailly และสัมผัสกับอนาคตของการบริการลูกค้า",
-    "demo": "ขอสาธิตฟรี",
+    "demo": "Live Demo",
     "contact": "ได้รับการติดต่อ",
     "guarantee": "รับประกันคืนเงินภายใน 30 วัน"
   },

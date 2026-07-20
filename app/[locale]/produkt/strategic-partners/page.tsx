@@ -9,11 +9,13 @@ import {
   CtaBand,
   Reveal,
 } from "@/components/sierra/page-kit";
+import { PARTNER_LOGOS } from "@/components/partner-logos";
 
 const AI_PARTNERS = [
-  { name: "OpenAI GPT-4", useCase: "Hauptmodell für komplexe Gespräche" },
-  { name: "Anthropic Claude", useCase: "Backup-System und Spezialfälle" },
-  { name: "Google Gemini", useCase: "Spezielle Integrationen" },
+  { name: "OpenAI GPT-4", useCase: "Hauptmodell für komplexe Gespräche", color: "#00A67E", logo: "OpenAI" },
+  { name: "Anthropic Claude", useCase: "Backup-System und Spezialfälle", color: "#D97757", logo: "Claude" },
+  { name: "Google Gemini", useCase: "Spezielle Integrationen", color: "#4285F4", logo: "Gemini" },
+  { name: "xAI Grok", useCase: "WhatsApp Delivery & Bildverständnis", color: "#1DA1F2", logo: "Grok" },
 ];
 
 const VOICE_PIPELINE = [
@@ -49,6 +51,24 @@ const CERTS = [
   { cert: "TISAX", desc: "Automotive-Sicherheitsstandard" },
 ];
 
+function LogoFilmTrack() {
+  const doubled = [...PARTNER_LOGOS, ...PARTNER_LOGOS];
+  return (
+    <div className="overflow-hidden py-8" aria-hidden="true">
+      <div className="logo-film-track items-center">
+        {doubled.map(({ name, Logo }, i) => (
+          <div
+            key={`${name}-${i}`}
+            className="flex items-center justify-center shrink-0 mx-10 h-12"
+          >
+            <Logo />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default async function StrategicPartnersPage({
   params,
 }: {
@@ -70,11 +90,20 @@ export default async function StrategicPartnersPage({
       {/* AI models */}
       <Section>
         <SectionHead title={t.ai_section_title} subtitle={t.ai_section_subtitle} />
-        <div className="grid sm:grid-cols-3 gap-5 lg:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           {AI_PARTNERS.map((p, i) => (
             <CreamCard key={p.name} title={p.name} desc={p.useCase} meta={t.use_case_label} delay={i * 0.06} />
           ))}
         </div>
+      </Section>
+
+      {/* Logo film loop — Hamming-style brand marks */}
+      <Section tinted className="!pb-0">
+        <SectionHead
+          title="Technologie-Partner"
+          subtitle="Sailly baut auf die weltweit führenden KI- und Infrastruktur-Plattformen"
+        />
+        <LogoFilmTrack />
       </Section>
 
       {/* Voice pipeline */}
@@ -131,16 +160,16 @@ export default async function StrategicPartnersPage({
         <NavyBand title={t.privacy_title}>
           <div className="mt-8 grid sm:grid-cols-3 gap-8">
             <div>
-              <h3 className="font-bold text-white">{t.german_servers}</h3>
-              <p className="mt-1.5 text-sm text-white/60 leading-relaxed">{t.german_servers_desc}</p>
+              <h3 className="font-bold text-slate-900">{t.german_servers}</h3>
+              <p className="mt-1.5 text-sm text-slate-500 leading-relaxed">{t.german_servers_desc}</p>
             </div>
             <div>
-              <h3 className="font-bold text-white">{t.e2e_enc}</h3>
-              <p className="mt-1.5 text-sm text-white/60 leading-relaxed">{t.e2e_enc_desc}</p>
+              <h3 className="font-bold text-slate-900">{t.e2e_enc}</h3>
+              <p className="mt-1.5 text-sm text-slate-500 leading-relaxed">{t.e2e_enc_desc}</p>
             </div>
             <div>
-              <h3 className="font-bold text-white">{t.no_sharing ?? t.no_sh}</h3>
-              <p className="mt-1.5 text-sm text-white/60 leading-relaxed">{t.no_sharing_desc ?? t.no_sh_desc}</p>
+              <h3 className="font-bold text-slate-900">{t.no_sharing ?? t.no_sh}</h3>
+              <p className="mt-1.5 text-sm text-slate-500 leading-relaxed">{t.no_sharing_desc ?? t.no_sh_desc}</p>
             </div>
           </div>
         </NavyBand>

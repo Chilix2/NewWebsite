@@ -30,7 +30,7 @@
       }
     },
     "pricing": "giá cả",
-    "demo": "Yêu cầu bản demo",
+    "demo": "Live Demo",
     "company": {
       "title": "Công ty",
       "items": {
@@ -43,7 +43,7 @@
     "eyebrow": "Nhóm của bạn phục vụ khách. Sailly Xử lý phần còn lại.",
     "title": "Trợ lý kỹ thuật số, giúp nhóm của bạn nhẹ nhõm hơn.",
     "subtitle": "Sailly nhận cuộc gọi, lên lịch cuộc hẹn và trả lời câu hỏi – suốt ngày đêm. Cho nhân viên của bạn quyền tự do tập trung vào điều quan trọng nhất: khách hàng của bạn.",
-    "primary_cta": "Yêu cầu bản demo",
+    "primary_cta": "Live Demo",
     "secondary_cta": "Tìm hiểu thêm",
     "badges": {
       "gdpr": "GDPR Tuân thủ",
@@ -70,55 +70,70 @@
     "chat": {
       "scenarios": [
         {
-          "id": "hotel",
-          "guestName": "Thomas",
-          "guestAvatar": "/images/avatars/guest-hotel.jpg",
-          "guest": "Chào buổi tối! Thứ Sáu này còn phòng cho hai đêm không ạ?",
-          "agentGreeting": "Chào buổi tối! Tôi có thể giúp gì cho quý khách?",
-          "agent": "Tất nhiên ạ! Còn một phòng đôi nhìn ra vườn. Tôi đặt phòng cho quý khách nhé?",
+          "id": "spa",
+          "guestName": "Nina",
+          "guestAvatar": "/images/avatars/hero-spa.jpg",
+          "guest": "Xin chào, tôi là Nina — cuối tuần các bạn có mở cửa không?",
+          "agent": "Có Nina — Chủ nhật 10–18. Tôi đặt lịch giúp bạn nhé?",
           "widget": {
             "type": "booking",
-            "title": "Đã xác nhận đặt phòng",
-            "detail": "Phòng đôi · T6–CN · 2 khách"
-          }
-        },
-        {
-          "id": "restaurant",
-          "guestName": "Anna",
-          "guestAvatar": "/images/avatars/guest-restaurant.jpg",
-          "guest": "Thứ Bảy lúc 19:00 còn bàn cho bốn người không ạ?",
-          "agent": "Dạ còn, chúng tôi vẫn còn chỗ. Tôi đặt bàn cho quý khách nhé?",
-          "widget": {
-            "type": "slots",
-            "date": "T7, 12/7",
-            "times": [
-              "18:30",
-              "19:00",
-              "19:30",
-              "20:00"
-            ],
-            "selected": "19:00",
-            "confirmed": "Đã đặt bàn"
+            "title": "Đã xác nhận lịch",
+            "detail": "Chủ nhật · 11:00 · Spa"
           }
         },
         {
           "id": "praxis",
           "guestName": "Sabine",
-          "guestAvatar": "/images/avatars/guest-praxis.jpg",
-          "guest": "Sáng mai chúng tôi đến khám được không ạ?",
-          "agent": "Dạ được, sáng mai vẫn còn lịch trống. Quý khách muốn mấy giờ ạ?",
+          "guestAvatar": "/images/avatars/hero-praxis-v2.jpg",
+          "guest": "Xin chào, tôi là Sabine.",
+          "agent": "Chào Sabine — có suất MRI thứ Năm lúc 14:30. Bạn muốn không?",
           "widget": {
-            "type": "slots",
-            "date": "T6, 11/7",
-            "times": [
-              "08:00",
-              "08:30",
-              "09:00",
-              "09:30"
-            ],
-            "selected": "08:30",
-            "confirmed": "Đã đặt lịch hẹn"
+            "type": "booking",
+            "title": "Đã xác nhận MRI",
+            "detail": "Thứ Năm · 14:30"
+          },
+          "agentGreeting": "Xin chào, phòng khám bác sĩ Weber.",
+          "guestFollowUp": "Vâng, làm ơn.",
+          "agentFollowUp": "Xong — tôi đã ghi lại."
+        },
+        {
+          "id": "delivery",
+          "guestName": "Elena",
+          "guestAvatar": "/images/avatars/hero-delivery.jpg",
+          "guest": "Xin chào, tôi là Elena — đồ ăn đâu rồi, đơn #CGH6P8?",
+          "agent": "Elena, đơn #CGH6P8 đang giao — khoảng tám phút.",
+          "widget": {
+            "type": "status",
+            "icon": "maps",
+            "label": "Đang giao",
+            "detail": "Đến trong ~8 phút · #CGH6P8"
           }
+        },
+        {
+          "id": "restaurant",
+          "guestName": "Anna",
+          "guestAvatar": "/images/avatars/hero-restaurant.jpg",
+          "guest": "Xin chào, tôi là Anna — còn bàn 2 người lúc 19:30 hôm nay không? Có chỗ đậu xe?",
+          "agent": "Có Anna — 19:30 ổn, đậu xe ngay trước cửa.",
+          "widget": {
+            "type": "booking",
+            "title": "Đã giữ bàn",
+            "detail": "Hôm nay · 19:30 · 2 khách · Có đậu xe"
+          }
+        },
+        {
+          "id": "salon",
+          "guestName": "Mia",
+          "guestAvatar": "/images/avatars/hero-salon.jpg",
+          "guest": "Xin chào, tôi là Mia — tôi muốn nhuộm tóc.",
+          "agent": "Được chứ Mia! Sandra hay Tom — và khi nào?",
+          "widget": {
+            "type": "booking",
+            "title": "Lịch với Sandra",
+            "detail": "Thứ Năm · 14:00 · Nhuộm"
+          },
+          "guestFollowUp": "Sandra, thứ Năm lúc 14:00 ạ.",
+          "agentFollowUp": "Xong — đã đặt với Sandra."
         }
       ]
     }
@@ -319,7 +334,7 @@
   "cta_section": {
     "title": "Cuộc gọi tiêu chuẩn tiếp theo của bạn đã được trả lời.",
     "subtitle": "Hãy thử nghiệm Sailly và trải nghiệm tương lai của dịch vụ khách hàng.",
-    "demo": "Yêu cầu bản demo miễn phí",
+    "demo": "Live Demo",
     "contact": "Liên hệ",
     "guarantee": "Đảm bảo hoàn tiền trong 30 ngày"
   },

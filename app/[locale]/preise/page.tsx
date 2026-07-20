@@ -1,22 +1,13 @@
 import Link from "next/link";
 import { getDictionary } from "@/lib/dictionary";
 import { SierraHero, Section, CtaBand, Reveal } from "@/components/sierra/page-kit";
-
-const PRICES: Record<string, { de: string; intl: string }> = {
-  starters: { de: "59,99", intl: "59.99" },
-  main: { de: "149", intl: "149" },
-  president_suite: { de: "279", intl: "279" },
-  first_class: { de: "449", intl: "449" },
-};
-
-const PLAN_KEYS = ["starters", "main", "president_suite", "first_class"] as const;
-
-/** Tier display labels shown in the card when showing cascading features */
-const PREV_TIER_LABELS: Record<string, string> = {
-  main: "Alles aus Starters, plus:",
-  president_suite: "Alles aus Main, plus:",
-  first_class: "Alles aus President Suite, plus:",
-};
+import { cn } from "@/lib/utils";
+import { getIndustryTheme } from "@/lib/industry-themes";
+import {
+  PRICING_PLAN_KEYS,
+  PRICING_PLAN_THEMES,
+  formatPlanPrice,
+} from "@/lib/pricing-plans";
 
 export default async function LocalePricingPage({
   params,
@@ -30,84 +21,98 @@ export default async function LocalePricingPage({
 
   return (
     <div className="bg-white min-h-screen text-slate-900">
-      <SierraHero kicker={t.badge} title1={t.title} subtitle={t.trial_text} />
+      <SierraHero
+        title1={t.heading_part1 ?? t.title}
+        title2={t.heading_part2}
+        subtitle={t.trial_text}
+      />
 
       <Section className="pt-4">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 items-stretch">
-          {PLAN_KEYS.map((key, i) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6 max-w-4xl mx-auto">
+          {PRICING_PLAN_KEYS.map((key, i) => {
             const plan = t.plans?.[key] ?? {};
             const popular = key === "main";
-            const isFirst = key === "starters";
             const isLast = key === "first_class";
-            const prevLabel = PREV_TIER_LABELS[key] ?? plan.prev_tier ?? "";
+            const theme = getIndustryTheme(PRICING_PLAN_THEMES[key]);
+            const highlight =
+              (plan.features ?? [])[0] ??
+              (typeof plan.description === "string"
+                ? plan.description.split(/[—.–]/)[0]?.trim()
+                : "");
 
             return (
-              <Reveal
-                key={key}
-                delay={i * 0.07}
-                className={
-                  popular
-                    ? "rounded-3xl bg-[#0f172a] text-white p-7 lg:p-9 flex flex-col relative"
-                    : "rounded-3xl bg-[#f7f4ee] p-7 lg:p-9 flex flex-col"
-                }
-              >
-                {popular && (
-                  <span className="absolute -top-3 left-7 rounded-full bg-primary text-white text-xs font-bold px-3.5 py-1.5">
-                    {meta.popular}
-                  </span>
-                )}
-                <span
-                  className={`block w-8 h-[3px] rounded-full mb-5 ${popular ? "bg-primary" : "bg-primary/70"}`}
-                  aria-hidden="true"
-                />
-                <h2 className="text-xl font-bold">{plan.name}</h2>
-                <p className={`mt-2 text-[15px] leading-relaxed ${popular ? "text-white/70" : "text-slate-600"}`}>
-                  {plan.description}
-                </p>
-                <p className="mt-6 flex items-baseline gap-1.5">
-                  {isLast && <span className={`text-sm ${popular ? "text-white/60" : "text-slate-500"}`}>{meta.starting_at}</span>}
-                  <span className="text-4xl font-bold tracking-tight">€{locale === "de" ? PRICES[key].de : PRICES[key].intl}</span>
-                  {!isLast && <span className={`text-sm ${popular ? "text-white/60" : "text-slate-500"}`}>{meta.per_month}</span>}
-                </p>
-                <p className={`mt-1 text-xs ${popular ? "text-white/50" : "text-slate-400"}`}>{meta.plus_fees}</p>
-
-                {/* Cascading feature list */}
-                <ul className={`mt-7 space-y-0 divide-y ${popular ? "divide-white/10" : "divide-slate-900/10"}`}>
-                  {!isFirst && prevLabel && (
-                    <li
-                      className={`py-3 text-[15px] leading-relaxed font-semibold ${popular ? "text-white/90" : "text-slate-800"}`}
-                    >
-                      {prevLabel}
-                    </li>
+              <Reveal key={key} delay={i * 0.07}>
+                <div
+                  className={cn(
+                    "relative overflow-hidden rounded-[28px] p-6 sm:p-8 w-full aspect-square",
+                    "bg-gradient-to-tl shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]",
+                    "flex flex-col",
+                    popular &&
+                      "shadow-[0_20px_50px_rgba(232,149,122,0.28),inset_0_1px_0_rgba(255,255,255,0.35)]",
+                    theme.container
                   )}
-                  {(plan.features ?? []).map((f: string, fi: number) => (
-                    <li
-                      key={fi}
-                      className={`py-3 text-[15px] leading-relaxed first:pt-0 ${popular ? "text-white/80" : "text-slate-700"}`}
-                    >
-                      {f}
-                    </li>
-                  ))}
-                </ul>
+                >
+                  <div
+                    className={cn(
+                      "absolute -top-10 -right-10 w-40 h-40 rounded-full blur-2xl pointer-events-none",
+                      theme.blobA
+                    )}
+                  />
+                  <div
+                    className={cn(
+                      "absolute -bottom-12 -left-8 w-48 h-48 rounded-full blur-3xl pointer-events-none opacity-[0.125]",
+                      theme.blobB
+                    )}
+                  />
 
-                <div className="mt-auto pt-8">
-                  <Link
-                    href={`/${locale}/demo`}
-                    className={
-                      popular
-                        ? "block text-center rounded-full bg-primary text-white font-semibold px-6 py-3.5 hover:bg-primary/90 transition-all min-h-[44px]"
-                        : "block text-center rounded-full bg-[#0f172a] text-white font-semibold px-6 py-3.5 hover:bg-[#0f172a]/90 transition-all min-h-[44px]"
-                    }
-                  >
-                    {plan.cta}
-                  </Link>
+                  <div className="relative z-10 flex flex-col flex-1 min-h-0">
+                    <div className="flex items-start justify-between gap-3">
+                      <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white drop-shadow-sm min-w-0">
+                        {plan.name}
+                      </h2>
+                      {popular && (
+                        <span className="shrink-0 rounded-full bg-white/95 text-slate-900 text-[11px] sm:text-xs font-bold px-3 py-1.5 shadow-sm leading-tight text-right max-w-[9.5rem]">
+                          {meta.popular}
+                        </span>
+                      )}
+                    </div>
+
+                    <p className="mt-6 flex items-baseline gap-1.5 text-white">
+                      {isLast && (
+                        <span className="text-sm text-white/70">{meta.starting_at}</span>
+                      )}
+                      <span className="text-4xl sm:text-5xl font-bold tracking-tight drop-shadow-sm">
+                        €{formatPlanPrice(key, locale)}
+                      </span>
+                      {!isLast && (
+                        <span className="text-sm text-white/70">{meta.per_month}</span>
+                      )}
+                    </p>
+
+                    {highlight && (
+                      <p className="mt-4 text-[15px] sm:text-base leading-snug text-white/90 line-clamp-2">
+                        {highlight}
+                      </p>
+                    )}
+
+                    <div className="mt-auto pt-6">
+                      <Link
+                        href={`/${locale}/preise/${key}`}
+                        className="block text-center rounded-full font-semibold px-6 py-3.5 min-h-[44px] transition-all touch-manipulation bg-white text-slate-900 hover:bg-white/90 shadow-md"
+                      >
+                        {meta.details_cta ?? "Details"}
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </Reveal>
             );
           })}
         </div>
         <Reveal className="mt-6">
-          <p className="text-sm text-slate-400 text-center">{meta.per_minute_example}</p>
+          <p className="text-sm text-slate-400 text-center max-w-2xl mx-auto">
+            {meta.per_minute_example}
+          </p>
         </Reveal>
       </Section>
 

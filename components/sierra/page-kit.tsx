@@ -49,7 +49,10 @@ export function SierraHero({
   subtitle,
   ctaLabel,
   ctaHref,
+  image,
   children,
+  contentClassName,
+  titleClassName,
 }: {
   kicker?: string;
   title1: string;
@@ -57,32 +60,47 @@ export function SierraHero({
   subtitle?: string;
   ctaLabel?: string;
   ctaHref?: string;
+  image?: React.ReactNode;
   children?: React.ReactNode;
+  contentClassName?: string;
+  titleClassName?: string;
 }) {
   return (
     <section className="pt-6 lg:pt-10 pb-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <Reveal className="max-w-3xl space-y-4">
-          {kicker && <Kicker>{kicker}</Kicker>}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.06] text-slate-900">
-            {title1}
-            {title2 && <span className="text-slate-400"> {title2}</span>}
-          </h1>
-          {subtitle && (
-            <p className="text-lg sm:text-xl text-slate-500 leading-relaxed max-w-2xl">{subtitle}</p>
+        <div className={image ? "lg:grid lg:grid-cols-[1fr_auto] lg:gap-12 lg:items-center" : ""}>
+          <Reveal className={cn("max-w-3xl space-y-4", contentClassName)}>
+            {kicker && <Kicker>{kicker}</Kicker>}
+            <h1
+              className={cn(
+                "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.06] text-slate-900",
+                titleClassName
+              )}
+            >
+              {title1}
+              {title2 && <span className="text-primary"> {title2}</span>}
+            </h1>
+            {subtitle && (
+              <p className="text-lg sm:text-xl text-slate-500 leading-relaxed max-w-2xl">{subtitle}</p>
+            )}
+            {ctaLabel && ctaHref && (
+              <div className="pt-4">
+                <Link
+                  href={ctaHref}
+                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 min-h-[44px]"
+                >
+                  {ctaLabel}
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            )}
+          </Reveal>
+          {image && (
+            <Reveal delay={0.1} className="hidden lg:block">
+              {image}
+            </Reveal>
           )}
-          {ctaLabel && ctaHref && (
-            <div className="pt-4">
-              <Link
-                href={ctaHref}
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 min-h-[44px]"
-              >
-                {ctaLabel}
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          )}
-        </Reveal>
+        </div>
         {children}
       </div>
     </section>
@@ -187,7 +205,10 @@ export function CreamPanel({
   );
 }
 
-/** Dark navy band for metrics or CTAs. */
+/** Soft peach band for metric / ROI stats rows. */
+export { StatsBand } from "./stats-band";
+
+/** Cream band for CTAs and privacy copy — same fill as cream cards (#f7f4ee). */
 export function NavyBand({
   title,
   subtitle,
@@ -200,9 +221,11 @@ export function NavyBand({
   className?: string;
 }) {
   return (
-    <Reveal className={cn("rounded-3xl bg-[#0f172a] text-white p-8 lg:p-12", className)}>
-      {title && <h2 className="text-2xl sm:text-3xl font-bold tracking-tight max-w-2xl">{title}</h2>}
-      {subtitle && <p className="mt-3 text-white/60 max-w-2xl">{subtitle}</p>}
+    <Reveal className={cn("rounded-3xl bg-[#f7f4ee] p-8 lg:p-12", className)}>
+      {title && (
+        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 max-w-2xl">{title}</h2>
+      )}
+      {subtitle && <p className="mt-3 text-slate-500 max-w-2xl">{subtitle}</p>}
       {children}
     </Reveal>
   );
@@ -236,7 +259,7 @@ export function CtaBand({
         {secondaryLabel && secondaryHref && (
           <Link
             href={secondaryHref}
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/10 text-white font-semibold rounded-full hover:bg-white/20 transition-all min-h-[44px]"
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-white border border-slate-200 text-slate-800 font-semibold rounded-full hover:bg-slate-50 transition-all min-h-[44px]"
           >
             {secondaryLabel}
           </Link>

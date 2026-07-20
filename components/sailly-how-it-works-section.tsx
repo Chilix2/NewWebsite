@@ -69,7 +69,7 @@ export function SaillyHowItWorksSection({
         >
           <div
             className={cn(
-              "grid gap-10 lg:gap-14 items-start",
+              "grid gap-10 lg:gap-14 items-stretch",
               variant === "homepage" && !aside ? "lg:grid-cols-2" : "lg:grid-cols-[1.1fr_1fr]"
             )}
           >
@@ -78,11 +78,12 @@ export function SaillyHowItWorksSection({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.05 }}
+              className="h-full min-h-0"
             >
               <SaillyWorkflowMcpAnimation onActiveStepChange={setActiveStep} />
             </m.div>
 
-            <div className="space-y-4">
+            <div className="h-full min-h-0 flex flex-col gap-4">
               {steps.map((step, i) => {
                 const Icon = WORKFLOW_STEP_ICONS[i] ?? WORKFLOW_STEP_ICONS[0];
                 const isActive = activeStep === i;
@@ -94,21 +95,21 @@ export function SaillyHowItWorksSection({
                     viewport={{ once: true }}
                     transition={{ duration: 0.45, delay: i * 0.08 }}
                     className={cn(
-                      "rounded-3xl border p-5 sm:p-6 shadow-sm transition-all duration-350",
+                      "flex-1 rounded-3xl border p-5 sm:p-6 shadow-sm transition-all duration-350 flex",
                       isActive
                         ? "bg-white border-primary/30 shadow-md ring-1 ring-primary/15"
                         : "bg-white/70 border-slate-100 opacity-75"
                     )}
                   >
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 w-full items-start">
                       <div className="flex flex-col items-center gap-2 shrink-0">
                         <span
                           className={cn(
-                            "flex items-center justify-center w-11 h-11 rounded-2xl transition-colors duration-350",
-                            isActive ? "bg-primary/15 text-primary" : "bg-slate-100 text-slate-400"
+                            "block w-11 h-11 transition-opacity duration-350",
+                            isActive ? "opacity-100" : "opacity-70"
                           )}
                         >
-                          <Icon className="w-5 h-5" />
+                          <Icon className="w-full h-full" />
                         </span>
                         <span
                           className={cn(
@@ -119,7 +120,7 @@ export function SaillyHowItWorksSection({
                           {String(i + 1).padStart(2, "0")}
                         </span>
                       </div>
-                      <div className="pt-0.5">
+                      <div className="pt-0.5 min-w-0">
                         <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5">
                           {step.title}
                         </h3>
