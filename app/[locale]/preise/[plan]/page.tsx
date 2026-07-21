@@ -3,10 +3,9 @@ import { notFound } from "next/navigation";
 import { getDictionary } from "@/lib/dictionary";
 import { Section, Reveal } from "@/components/sierra/page-kit";
 import { cn } from "@/lib/utils";
-import { getIndustryTheme } from "@/lib/industry-themes";
 import {
   PRICING_PLAN_KEYS,
-  PRICING_PLAN_THEMES,
+  PRICING_PLAN_CARD_CLASSES,
   formatPlanPrice,
   isPricingPlanKey,
   type PricingPlanKey,
@@ -38,7 +37,6 @@ export default async function PricingPlanCheckoutPage({
   const popular = planKey === "main";
   const isFirst = planKey === "starters";
   const isLast = planKey === "first_class";
-  const theme = getIndustryTheme(PRICING_PLAN_THEMES[planKey]);
   const prevLabel = plan.prev_tier ?? PREV_TIER_FALLBACK[planKey] ?? "";
   const checkoutHref =
     planKey === "first_class"
@@ -75,25 +73,10 @@ export default async function PricingPlanCheckoutPage({
           <Reveal>
             <div
               className={cn(
-                "relative overflow-hidden rounded-[28px] p-6 sm:p-8 w-full aspect-square max-w-md mx-auto lg:mx-0",
-                "bg-gradient-to-tl shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] flex flex-col",
-                popular &&
-                  "shadow-[0_20px_50px_rgba(232,149,122,0.28),inset_0_1px_0_rgba(255,255,255,0.35)]",
-                theme.container
+                "relative overflow-hidden rounded-3xl p-7 sm:p-9 w-full aspect-square max-w-md mx-auto lg:mx-0 flex flex-col",
+                PRICING_PLAN_CARD_CLASSES[planKey]
               )}
             >
-              <div
-                className={cn(
-                  "absolute -top-10 -right-10 w-40 h-40 rounded-full blur-2xl pointer-events-none",
-                  theme.blobA
-                )}
-              />
-              <div
-                className={cn(
-                  "absolute -bottom-12 -left-8 w-48 h-48 rounded-full blur-3xl pointer-events-none opacity-[0.125]",
-                  theme.blobB
-                )}
-              />
               <div className="relative z-10 flex flex-col flex-1">
                 {popular && (
                   <span className="self-start rounded-full bg-white/95 text-slate-900 text-xs font-bold px-3.5 py-1.5 mb-4">

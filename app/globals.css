@@ -209,6 +209,14 @@
   .will-change-transform {
     will-change: transform;
   }
+
+  /* Force-retain proof-band keyframes in Tailwind v4 output */
+  .animate-brand-proof-left {
+    animation: brand-proof-left 56s linear infinite;
+  }
+  .animate-brand-proof-right {
+    animation: brand-proof-right 56s linear infinite;
+  }
   
   /* Minimum touch target size (48px) */
   .touch-target {
@@ -319,6 +327,19 @@
   100% { transform: rotateZ(-360deg) rotateX(-58deg) scale(1.15); }
 }
 
+@keyframes brand-orbit-stagger-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translateY(8px);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
 /* D · Chaos — independent planet orbit from custom start angle */
 @keyframes brand-orbit-chaos {
   from { transform: rotate(var(--chaos-start, 0deg)) translateX(235%) rotate(calc(-1 * var(--chaos-start, 0deg))); }
@@ -333,6 +354,121 @@
   0%, 100% { transform: rotateY(0deg) rotateZ(0deg) scale(1); }
   40% { transform: rotateY(180deg) rotateZ(12deg) scale(1.08); }
   70% { transform: rotateY(300deg) rotateZ(-8deg) scale(0.92); }
+}
+
+/* Proof-band full loop (~56s): wave in → orbit Sailly → resolve → restart */
+@keyframes brand-proof-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-54vw, var(--lane-y), 0) scale(0.55);
+  }
+  3% {
+    opacity: 1;
+  }
+  7% {
+    transform: translate3d(-40vw, calc(var(--lane-y) - 14px), 0) scale(0.7);
+  }
+  12% {
+    transform: translate3d(-28vw, calc(var(--lane-y) + 12px), 0) scale(0.82);
+  }
+  17% {
+    transform: translate3d(-16vw, calc(var(--lane-y) - 8px), 0) scale(0.92);
+  }
+  22% {
+    transform: translate3d(-7vw, var(--lane-y), 0) scale(1);
+  }
+  26% {
+    opacity: 1;
+    transform: rotate(var(--a)) translateX(var(--r)) rotate(calc(-1 * var(--a)));
+  }
+  34% {
+    transform: rotate(calc(var(--a) + 72deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) + 72deg)));
+  }
+  42% {
+    transform: rotate(calc(var(--a) + 144deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) + 144deg)));
+  }
+  50% {
+    transform: rotate(calc(var(--a) + 216deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) + 216deg)));
+  }
+  58% {
+    transform: rotate(calc(var(--a) + 288deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) + 288deg)));
+  }
+  66% {
+    transform: rotate(calc(var(--a) + 360deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) + 360deg)));
+  }
+  74% {
+    opacity: 1;
+    transform: translate3d(-8vw, var(--lane-y), 0) scale(1);
+  }
+  84% {
+    opacity: 0.55;
+    transform: translate3d(-28vw, calc(var(--lane-y) + 10px), 0) scale(0.78);
+  }
+  92% {
+    opacity: 0;
+    transform: translate3d(-46vw, calc(var(--lane-y) - 6px), 0) scale(0.6);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-54vw, var(--lane-y), 0) scale(0.55);
+  }
+}
+
+@keyframes brand-proof-right {
+  0% {
+    opacity: 0;
+    transform: translate3d(54vw, var(--lane-y), 0) scale(0.55);
+  }
+  3% {
+    opacity: 1;
+  }
+  7% {
+    transform: translate3d(40vw, calc(var(--lane-y) + 14px), 0) scale(0.7);
+  }
+  12% {
+    transform: translate3d(28vw, calc(var(--lane-y) - 12px), 0) scale(0.82);
+  }
+  17% {
+    transform: translate3d(16vw, calc(var(--lane-y) + 8px), 0) scale(0.92);
+  }
+  22% {
+    transform: translate3d(7vw, var(--lane-y), 0) scale(1);
+  }
+  26% {
+    opacity: 1;
+    transform: rotate(var(--a)) translateX(var(--r)) rotate(calc(-1 * var(--a)));
+  }
+  34% {
+    transform: rotate(calc(var(--a) - 72deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) - 72deg)));
+  }
+  42% {
+    transform: rotate(calc(var(--a) - 144deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) - 144deg)));
+  }
+  50% {
+    transform: rotate(calc(var(--a) - 216deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) - 216deg)));
+  }
+  58% {
+    transform: rotate(calc(var(--a) - 288deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) - 288deg)));
+  }
+  66% {
+    transform: rotate(calc(var(--a) - 360deg)) translateX(var(--r)) rotate(calc(-1 * (var(--a) - 360deg)));
+  }
+  74% {
+    opacity: 1;
+    transform: translate3d(8vw, var(--lane-y), 0) scale(1);
+  }
+  84% {
+    opacity: 0.55;
+    transform: translate3d(28vw, calc(var(--lane-y) - 10px), 0) scale(0.78);
+  }
+  92% {
+    opacity: 0;
+    transform: translate3d(46vw, calc(var(--lane-y) + 6px), 0) scale(0.6);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(54vw, var(--lane-y), 0) scale(0.55);
+  }
 }
 
 /* Sailly Image-Inspired Custom Utilities */
@@ -441,6 +577,10 @@
   display: flex;
   width: max-content;
   animation: logo-scroll 40s linear infinite;
+}
+
+.logo-film-track-slow {
+  animation-duration: 80s;
 }
 
 .logo-film-track:hover {

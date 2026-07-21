@@ -19,12 +19,23 @@ export const PRICING_PRICES: Record<
   first_class: { de: "449", intl: "449" },
 };
 
-/** Exact theme keys from /produkt/integrationen industry + business cards */
+/**
+ * Value-prop style solid two-stop gradients (`bg-gradient-to-br from-X to-Y`),
+ * using the same lilac / orange / blue / gold hexes as the industry themes.
+ */
+export const PRICING_PLAN_CARD_CLASSES: Record<PricingPlanKey, string> = {
+  starters: "bg-gradient-to-br from-[#c9b6e8] to-[#9b7fd4]", // services lilac
+  main: "bg-gradient-to-br from-[#f5c4b0] to-[#e8957a]", // restaurants orange
+  president_suite: "bg-gradient-to-br from-[#b8c4dc] to-[#8a9bc4]", // legal blue
+  first_class: "bg-gradient-to-br from-[#d9c9a8] to-[#c4ad82]", // hotels sand/gold
+};
+
+/** @deprecated Prefer PRICING_PLAN_CARD_CLASSES — kept for theme-key references */
 export const PRICING_PLAN_THEMES: Record<PricingPlanKey, string> = {
-  starters: "services", // Business-Tools lila
-  main: "restaurants", // Gastronomie orange
-  president_suite: "legal", // Kanzleien blue
-  first_class: "hotels", // Hotellerie sand/gold
+  starters: "services",
+  main: "restaurants",
+  president_suite: "legal",
+  first_class: "hotels",
 };
 
 export function isPricingPlanKey(value: string): value is PricingPlanKey {

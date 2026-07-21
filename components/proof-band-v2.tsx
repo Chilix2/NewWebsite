@@ -1,55 +1,100 @@
 "use client";
 
-import React from "react";
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import React, { useEffect, useMemo, useState } from "react";
+import { BrandOrbit } from "@/components/brand-orbit";
+import { getAllIntegrationBrands, type IntegrationBrand } from "@/lib/integration-brands";
+import { cn } from "@/lib/utils";
 
 interface ProofBandV2Props {
   dict: any;
 }
 
+const BATCH_SIZE = 12;
+const LOOP_MS = 32_000;
+const FADE_MS = 700;
+
+function chunkBrands(brands: IntegrationBrand[], size: number): IntegrationBrand[][] {
+  if (brands.length === 0) return [];
+  const batches: IntegrationBrand[][] = [];
+  for (let i = 0; i < brands.length; i += size) {
+    batches.push(brands.slice(i, i + size));
+  }
+  const last = batches[batches.length - 1];
+  if (batches.length > 1 && last.length < size) {
+    batches[batches.length - 1] = [...last, ...brands.slice(0, size - last.length)];
+  }
+  return batches;
+}
+
 /**
- * Credibility band directly under the hero (Sierra places its logo wall here).
- * Sailly's honest equivalent: verifiable outcome metrics + who it's built for.
+ * Spiral+Tilt orbit clipped to the animation's visible bounds
+ * (3D tilt makes the square read ~2:1 — crop empty top/bottom).
  */
 export function ProofBandV2({ dict }: ProofBandV2Props) {
   const stats = dict.hero?.stats ?? {};
-  const items = stats.items ?? {};
-  const entries = Object.entries(items) as [string, { value: string; label: string }][];
+  const brands = useMemo(() => getAllIntegrationBrands(), []);
+  const batches = useMemo(() => chunkBrands(brands, BATCH_SIZE), [brands]);
 
-  if (entries.length === 0) return null;
+  const [batchIdx, setBatchIdx] = useState(0);
+  const [staggerEnabled, setStaggerEnabled] = useState(true);
+
+  useEffect(() => {
+    if (batches.length <= 1) return;
+
+    let switchTimer: ReturnType<typeof setTimeout> | undefined;
+    let fadeInTimer: ReturnType<typeof setTimeout> | undefined;
+    const loopTimer = setInterval(() => {
+      // Phase 1: fade ring out (350ms)
+      setStaggerEnabled(false);
+      // Phase 2: switch batch while invisible
+      switchTimer = setTimeout(() => {
+        setBatchIdx((i) => (i + 1) % batches.length);
+      }, 350);
+      // Phase 3: stagger icons back in (starts at ~400ms, finishes ~1.2s)
+      fadeInTimer = setTimeout(() => {
+        setStaggerEnabled(true);
+      }, 400);
+    }, LOOP_MS);
+
+    return () => {
+      clearInterval(loopTimer);
+      if (switchTimer) clearTimeout(switchTimer);
+      if (fadeInTimer) clearTimeout(fadeInTimer);
+    };
+  }, [batches.length]);
+
+  const active = batches[batchIdx] ?? brands.slice(0, BATCH_SIZE);
 
   return (
-    <LazyMotion features={domAnimation}>
-      <section className="bg-white py-16 lg:py-20 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <m.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center text-sm font-medium text-slate-400 mb-10"
-          >
-            {stats.title ?? "Ergebnisse unserer Partner"}
-          </m.p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 max-w-4xl mx-auto">
-            {entries.map(([key, item], i) => (
-              <m.div
-                key={key}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="text-center"
-              >
-                <p className="text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
-                  {item.value}
-                </p>
-                <p className="mt-2 text-sm text-slate-500">{item.label}</p>
-              </m.div>
-            ))}
+    <section className="bg-white py-[60px] border-b border-slate-100">
+      <p className="text-center text-[20px] leading-[28px] font-bold text-slate-900 mb-3 px-4 sm:px-6">
+        {stats.title ?? "Sailly funktioniert nahtlos mit"}
+      </p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-center">
+        {/*
+          Visible spiral-tilt bbox is ~2:1 (e.g. 478×233).
+          Clip the square orbit to that so empty top/bottom aren't part of the layout.
+          Wider aspect (2/1.4) prevents clipping with expanded orbitExtraPx=30.
+        */}
+        <div className="relative w-[min(92%,380px)] aspect-[2/1.4] overflow-hidden rounded-2xl">
+          <div className="absolute left-1/2 top-1/2 w-full aspect-square -translate-x-1/2 -translate-y-1/2">
+            <BrandOrbit
+              brands={active}
+              variant="spiralTilt"
+              showLabel={false}
+              maxPlanets={BATCH_SIZE}
+              orbitExtraPx={30}
+              staggerEnabled={staggerEnabled}
+              className="w-full max-w-none translate-x-[2px] -translate-y-[12px]"
+              hubClassName="bg-amber-100/40 border-amber-300/50"
+              satellitesClassName={cn(
+                "transition-opacity duration-300 ease-out motion-reduce:transition-none",
+                staggerEnabled ? "opacity-100" : "opacity-0"
+              )}
+            />
           </div>
         </div>
-      </section>
-    </LazyMotion>
+      </div>
+    </section>
   );
 }

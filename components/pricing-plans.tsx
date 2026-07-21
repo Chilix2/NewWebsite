@@ -4,10 +4,9 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { getIndustryTheme } from "@/lib/industry-themes";
 import {
   PRICING_PLAN_KEYS,
-  PRICING_PLAN_THEMES,
+  PRICING_PLAN_CARD_CLASSES,
   formatPlanPrice,
 } from "@/lib/pricing-plans";
 
@@ -34,38 +33,21 @@ export function PricingPlans({ dict, locale = "de" }: PricingPlansProps) {
           <p className="mt-4 text-lg text-slate-600">{t.trial_text}</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5 max-w-4xl mx-auto">
           {PRICING_PLAN_KEYS.map((key) => {
             const plan = t.plans?.[key] ?? {};
             const popular = key === "main";
             const isLast = key === "first_class";
-            const theme = getIndustryTheme(PRICING_PLAN_THEMES[key]);
             const highlight = (plan.features ?? [])[0] ?? "";
 
             return (
               <div
                 key={key}
                 className={cn(
-                  "relative overflow-hidden rounded-[28px] p-6 sm:p-8 w-full aspect-square",
-                  "bg-gradient-to-tl shadow-[inset_0_1px_0_rgba(255,255,255,0.35)] flex flex-col",
-                  popular &&
-                    "shadow-[0_20px_50px_rgba(232,149,122,0.28),inset_0_1px_0_rgba(255,255,255,0.35)]",
-                  theme.container
+                  "relative overflow-hidden rounded-3xl p-7 sm:p-9 w-full aspect-square flex flex-col",
+                  PRICING_PLAN_CARD_CLASSES[key]
                 )}
               >
-                <div
-                  className={cn(
-                    "absolute -top-10 -right-10 w-40 h-40 rounded-full blur-2xl pointer-events-none",
-                    theme.blobA
-                  )}
-                />
-                <div
-                  className={cn(
-                    "absolute -bottom-12 -left-8 w-48 h-48 rounded-full blur-3xl pointer-events-none opacity-[0.125]",
-                    theme.blobB
-                  )}
-                />
-
                 <div className="relative z-10 flex flex-col flex-1 min-h-0">
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white drop-shadow-sm min-w-0">

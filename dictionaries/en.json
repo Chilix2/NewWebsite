@@ -127,7 +127,7 @@
       "setup": "Live in 4 Weeks"
     },
     "stats": {
-      "title": "Results from our Partners",
+      "title": "Sailly works seamlessly with",
       "items": {
         "satisfaction": {
           "value": "85%+",
@@ -181,35 +181,51 @@
         "desc": "Phone, email and messaging — one conversation history, one team overview."
       },
       "integration": {
-        "title": "Guests stay happy",
+        "title": "Satisfaction on both sides",
         "desc": "No hold music, clear answers — and bookings that actually arrive."
       }
     },
     "tags": [
-      {
-        "label": "#24/7",
-        "desc": "Nights and Sundays included"
-      },
-      {
-        "label": "#50+Languages",
-        "desc": "International guests welcome"
-      },
-      {
-        "label": "#GDPR",
-        "desc": "Hosted in Germany"
-      },
-      {
-        "label": "#NoHoldMusic",
-        "desc": "Picked up immediately"
-      },
-      {
-        "label": "#PMSIntegration",
-        "desc": "Calendar & reservations"
-      },
-      {
-        "label": "#4WeeksLive",
-        "desc": "Up and running fast"
-      }
+      { "label": "#24/7", "desc": "Nights and Sundays included" },
+      { "label": "#50+Languages", "desc": "International guests welcome" },
+      { "label": "#GDPR", "desc": "Hosted in Germany" },
+      { "label": "#NoHoldMusic", "desc": "Picked up immediately" },
+      { "label": "#PMSIntegration", "desc": "Calendar & reservations" },
+      { "label": "#4WeeksLive", "desc": "Up and running fast" },
+      { "label": "#TableBooking", "desc": "Check availability and book" },
+      { "label": "#Orders", "desc": "Take and complete orders" },
+      { "label": "#DeliveryStatus", "desc": "Where is my order?" },
+      { "label": "#Appointments", "desc": "Check slots and book in" },
+      { "label": "#Reschedule", "desc": "Move or cancel appointments" },
+      { "label": "#FAQ", "desc": "Hours, prices, services" },
+      { "label": "#MenuInfo", "desc": "Dishes, allergens, suggestions" },
+      { "label": "#RoomStatus", "desc": "Availability and room types" },
+      { "label": "#CheckInInfo", "desc": "Arrival, parking, Wi-Fi" },
+      { "label": "#SpaBooking", "desc": "Treatments and open slots" },
+      { "label": "#ClinicTriage", "desc": "Clarify need, find the right slot" },
+      { "label": "#LegalIntake", "desc": "Capture and sort inquiries" },
+      { "label": "#Confirmations", "desc": "SMS or email after the call" },
+      { "label": "#Reminders", "desc": "Cut down no-shows" },
+      { "label": "#CallSummary", "desc": "Short notes for your team" },
+      { "label": "#Handoff", "desc": "Escalate to a human when needed" },
+      { "label": "#Callback", "desc": "Capture callback requests" },
+      { "label": "#ParallelCalls", "desc": "Handle multiple calls at once" },
+      { "label": "#NaturalVoice", "desc": "Sounds human, answers clearly" },
+      { "label": "#KnowledgeBase", "desc": "Answers with your live data" },
+      { "label": "#Research", "desc": "Find info and complete tasks" },
+      { "label": "#Upselling", "desc": "Offer extras and upgrades" },
+      { "label": "#Complaints", "desc": "Listen calmly and escalate" },
+      { "label": "#Directions", "desc": "Address and how to get there" },
+      { "label": "#CancelPolicy", "desc": "Explain terms clearly" },
+      { "label": "#MultiLocation", "desc": "Route by branch or number" },
+      { "label": "#CRMSync", "desc": "Keep contacts and cases in sync" },
+      { "label": "#WhatsApp", "desc": "Reachable via messaging too" },
+      { "label": "#EmailChannel", "desc": "One assistant, many channels" },
+      { "label": "#SpamFilter", "desc": "Filter out junk calls" },
+      { "label": "#NoVoicemail", "desc": "Real talks instead of a tape" },
+      { "label": "#FollowUp", "desc": "Track open items" },
+      { "label": "#PaymentInfo", "desc": "Prices, deposits, invoices" },
+      { "label": "#TeamRelief", "desc": "Take phone stress off staff" }
     ]
   },
   "solutions": {

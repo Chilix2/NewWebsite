@@ -127,7 +127,7 @@
       "setup": "4 Wochen bis Live"
     },
     "stats": {
-      "title": "Ergebnisse unserer Partner",
+      "title": "Sailly funktioniert nahtlos mit",
       "items": {
         "satisfaction": {
           "value": "85%+",
@@ -181,35 +181,51 @@
         "desc": "Telefon, E-Mail und Messaging — ein Gesprächsverlauf, ein Team-Überblick."
       },
       "integration": {
-        "title": "Gäste bleiben zufrieden",
+        "title": "Zufriedenheit auf beiden Seiten",
         "desc": "Keine Warteschleife, klare Antworten — und Buchungen, die wirklich ankommen."
       }
     },
     "tags": [
-      {
-        "label": "#24/7",
-        "desc": "Auch nachts und am Sonntag"
-      },
-      {
-        "label": "#50+Sprachen",
-        "desc": "Internationale Gäste willkommen"
-      },
-      {
-        "label": "#DSGVO",
-        "desc": "Gehostet in Deutschland"
-      },
-      {
-        "label": "#KeineWarteschleife",
-        "desc": "Sofortige Annahme"
-      },
-      {
-        "label": "#PMS-Anbindung",
-        "desc": "Kalender & Reservierung"
-      },
-      {
-        "label": "#4WochenLive",
-        "desc": "Schnell einsatzbereit"
-      }
+      { "label": "#24/7", "desc": "Auch nachts und am Sonntag" },
+      { "label": "#50+Sprachen", "desc": "Internationale Gäste willkommen" },
+      { "label": "#DSGVO", "desc": "Gehostet in Deutschland" },
+      { "label": "#KeineWarteschleife", "desc": "Sofortige Annahme" },
+      { "label": "#PMS-Anbindung", "desc": "Kalender & Reservierung" },
+      { "label": "#4WochenLive", "desc": "Schnell einsatzbereit" },
+      { "label": "#Tischreservierung", "desc": "Frei prüfen und verbindlich buchen" },
+      { "label": "#Bestellungen", "desc": "Orders aufnehmen und abschließen" },
+      { "label": "#Lieferstatus", "desc": "Wo bleibt meine Bestellung?" },
+      { "label": "#Terminbuchung", "desc": "Verfügbarkeit prüfen und eintragen" },
+      { "label": "#Umbuchen", "desc": "Termine verschieben oder absagen" },
+      { "label": "#FAQ", "desc": "Öffnungszeiten, Preise, Leistungen" },
+      { "label": "#MenüAuskunft", "desc": "Gerichte, Allergene, Empfehlungen" },
+      { "label": "#Zimmerstatus", "desc": "Verfügbarkeit und Zimmertypen" },
+      { "label": "#CheckInInfo", "desc": "Anreise, Parken, Wi-Fi" },
+      { "label": "#SpaTermine", "desc": "Behandlungen und Slots vergeben" },
+      { "label": "#PraxisTriage", "desc": "Anliegen klären, passenden Slot finden" },
+      { "label": "#KanzleiEingang", "desc": "Anfragen vorsortieren und erfassen" },
+      { "label": "#Bestätigungen", "desc": "SMS oder E-Mail nach dem Gespräch" },
+      { "label": "#Erinnerungen", "desc": "No-Shows reduzieren" },
+      { "label": "#AnrufZusammenfassung", "desc": "Kurzprotokoll für Ihr Team" },
+      { "label": "#Weiterleitung", "desc": "Bei Bedarf an einen Menschen" },
+      { "label": "#Rückruf", "desc": "Callback-Wunsch aufnehmen" },
+      { "label": "#ParalleleAnrufe", "desc": "Mehrere Gespräche gleichzeitig" },
+      { "label": "#NatürlicheStimme", "desc": "Klingt menschlich, antwortet klar" },
+      { "label": "#Wissensbasis", "desc": "Antwortet mit Ihren aktuellen Daten" },
+      { "label": "#Recherche", "desc": "Infos finden und Aufgaben erledigen" },
+      { "label": "#Upselling", "desc": "Extras und Upgrades anbieten" },
+      { "label": "#Beschwerden", "desc": "Ruhig aufnehmen und eskalieren" },
+      { "label": "#Anfahrt", "desc": "Adresse und Wegbeschreibung" },
+      { "label": "#Stornoregeln", "desc": "Konditionen verständlich erklären" },
+      { "label": "#MultiStandort", "desc": "Filialen und Nummern zuordnen" },
+      { "label": "#CRMSync", "desc": "Kontakte und Vorgänge synchron" },
+      { "label": "#WhatsApp", "desc": "Auch per Messaging erreichbar" },
+      { "label": "#EMailKanal", "desc": "Ein Assistent, mehrere Kanäle" },
+      { "label": "#SpamFilter", "desc": "Werbeanrufe aussortieren" },
+      { "label": "#VoicemailErsatz", "desc": "Kein Band — echte Gespräche" },
+      { "label": "#FollowUp", "desc": "Offene Punkte nachverfolgen" },
+      { "label": "#ZahlungsInfo", "desc": "Preise, Anzahlung, Rechnung" },
+      { "label": "#TeamEntlastung", "desc": "Telefonstress vom Personal nehmen" }
     ]
   },
   "solutions": {

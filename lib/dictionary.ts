@@ -40,12 +40,14 @@ const cache = new Map<string, any>();
 
 export const getDictionary = async (locale: string) => {
   const validLocale = locale && locale in dictionaries ? locale : "de";
-  if (cache.has(validLocale)) return cache.get(validLocale);
+  // Avoid stale copy in dev — JSON edits must show up without a full restart
+  const useCache = process.env.NODE_ENV === "production";
+  if (useCache && cache.has(validLocale)) return cache.get(validLocale);
 
   const dict = await dictionaries[validLocale]();
   const merged =
     validLocale === "en" ? dict : mergeWithFallback(await dictionaries.en(), dict);
 
-  cache.set(validLocale, merged);
+  if (useCache) cache.set(validLocale, merged);
   return merged;
 };
